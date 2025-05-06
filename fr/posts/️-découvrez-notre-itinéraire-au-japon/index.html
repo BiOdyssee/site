@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="fr"  
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🗺️ Découvrez notre itinéraire au Japon ! | BiOdyssée</title>
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+  
+
+    
+
+<link rel="canonical" href="http://localhost:1313/fr/posts/%EF%B8%8F-d%C3%A9couvrez-notre-itin%C3%A9raire-au-japon/" />
+
+
+
+<meta name="author" content="" />
+<meta name="description" content="Voici une carte interactive pour suivre notre itinéraire, découvrir chaque étape de notre voyage à travers des photos, des récits et des liens vers les lieux explorés.
+" />
+
+
+<meta name="keywords" content="Tout savoir sur l&#39;expédition 2026">
+
+
+
+<meta name="generator" content="Hugo 0.143.1">
+
+
+<meta property="og:url" content="http://localhost:1313/fr/posts/%EF%B8%8F-d%C3%A9couvrez-notre-itin%C3%A9raire-au-japon/">
+  <meta property="og:site_name" content="BiOdyssée">
+  <meta property="og:title" content="🗺️ Découvrez notre itinéraire au Japon !">
+  <meta property="og:description" content="Voici une carte interactive pour suivre notre itinéraire, découvrir chaque étape de notre voyage à travers des photos, des récits et des liens vers les lieux explorés.">
+  <meta property="og:locale" content="fr">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-04-14T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-04-14T00:00:00+00:00">
+
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="🗺️ Découvrez notre itinéraire au Japon !">
+  <meta name="twitter:description" content="Voici une carte interactive pour suivre notre itinéraire, découvrir chaque étape de notre voyage à travers des photos, des récits et des liens vers les lieux explorés.">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+<script src="//unpkg.com/valine@1.5.2/dist/Valine.min.js"></script>
+
+
+
+
+
+
+
+    
+    <link rel="stylesheet" href="/css/custom.css" />
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="py-4"> 
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="Retourne ça !">
+        <div class="h-10 rounded-full">
+          <img src="/images/logo.jpg" alt="BiOdyssée" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="http://localhost:1313/" class="text-lg font-semibold cursor-pointer">
+          BiOdyssée
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm" style="color: #ffffff" >À la (re)découverte du vivant</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="Contact">
+    <ion-icon name="information-circle"></ion-icon>Contact</div>
+</li>
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="Rechercher">
+    <ion-icon name="search"></ion-icon>
+    Rechercher
+  </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="Archives">
+    <ion-icon name="archive"></ion-icon>
+    Archives
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="Toutes les catégories">
+    <ion-icon name="grid"></ion-icon>
+    Toutes les catégories
+  </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0"
+        class="text-sm font-semibold cursor-pointer hover:underline"
+        @click="flip = !flip"
+        title="Contact"
+      >Contact</div>
+      
+      
+
+      
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="Rechercher">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+
+
+
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="Archives">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="Toutes les catégories">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+
+
+
+
+
+      
+
+      
+
+      
+
+
+ 
+<div class="dropdown dropdown-end">
+  <div tabindex="0" role="button" class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" aria-label="Select an option">
+  <ion-icon name="earth-outline"> </ion-icon> 
+  
+  </div>
+  <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-xl">
+    
+      <li>
+        <a href="/fr" class="inline-flex items-center p-2 cursor-pointer" style = "color: #000000">
+          Français
+        </a>
+      </li>
+    
+      <li>
+        <a href="/ja" class="inline-flex items-center p-2 cursor-pointer" style = "color: #000000">
+          日本語
+        </a>
+      </li>
+    
+      <li>
+        <a href="/en" class="inline-flex items-center p-2 cursor-pointer" style = "color: #000000">
+          English
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+    </section>
+  </div>
+</nav>
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+           
+
+          <div class="container">
+            
+<div class="lg:grid lg:grid-cols-4 gap-4 mt-4 px-4">
+  <div class="hidden lg:block">
+    
+  </div>
+
+  <div class="lg:col-span-2">
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="🗺️ Découvrez notre itinéraire au Japon !">
+  <meta itemprop="description" content="Voici une carte interactive pour suivre notre itinéraire, découvrir chaque étape de notre voyage à travers des photos, des récits et des liens vers les lieux explorés.">
+  <meta itemprop="datePublished" content="2025-04-14T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-04-14T00:00:00+00:00">
+  <meta itemprop="wordCount" content="100">
+  <meta itemprop="keywords" content="Tout savoir sur l&#39;expédition 2026">
+
+      <header>
+        <h1 itemprop="headline">🗺️ Découvrez notre itinéraire au Japon !</h1>
+        <p class="text-sm">
+          
+            lundi, avr. 14, 2025
+          
+
+          | <span>1 minute de lecture</span>
+
+          
+          | <span>Mise à jour le
+            
+              lundi, avr. 14, 2025
+            </span>
+          
+        </p>
+
+        
+        <div class="flex justify-between">
+          
+
+          
+
+<div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=http://localhost:1313/fr/posts/%EF%B8%8F-d%C3%A9couvrez-notre-itin%C3%A9raire-au-japon/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="text-gray-500 group-hover:text-white" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%f0%9f%97%ba%ef%b8%8f%20D%c3%a9couvrez%20notre%20itin%c3%a9raire%20au%20Japon%20!%20http://localhost:1313/fr/posts/%EF%B8%8F-d%C3%A9couvrez-notre-itin%C3%A9raire-au-japon/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="text-gray-500 group-hover:text-white" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div> 
+
+        </div>
+      </header>
+
+      <section id="dream-single-post-content" itemprop="articleBody">
+       
+
+        <p>Voici une <strong>carte interactive</strong> pour suivre notre itinéraire, découvrir chaque étape de notre voyage à travers des photos, des récits et des liens vers les lieux explorés.</p>
+<p>Sur cette carte interactive, vous pouvez suivre tous les arrêts prévus au fil de notre voyage. Chaque étape est marquée par des photos, des anecdotes et quelques liens pour en savoir plus sur les lieux que nous explorons et les personnes que nous rencontrons. C’est notre manière de partager un bout d’aventure avec vous, au fil des découvertes et des rencontres. N’hésitez pas à cliquer sur les points pour voyager avec nous !</p>
+<!-- Importation de Leaflet -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<!-- Création du conteneur de la carte -->
+<div id="map" style="width: 100%; height: 500px;"></div>
+<script>
+  // Vérification que Leaflet est bien chargé
+  console.log("Leaflet chargé ?", typeof L !== "undefined");
+
+  // Création de la carte centrée sur le Japon
+  var map = L.map('map').setView([36, 137], 5);
+
+  // Ajout d'une couche de tuiles (OpenStreetMap)
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; OpenStreetMap contributors'
+  }).addTo(map);
+  
+<!-- Ajout des points des villes avec images-->
+ var locations = [
+    { coords: [35.682839, 139.759455], 
+      text: "<b>Tokyo</b><br>Capitale du Japon<br><img src='/images/tokyo.jpg'width='150px'>" },
+    { coords: [35.011564, 135.768149], 
+      text: "<b>Kyoto</b><br>Ancienne capitale<br><img src='/images/kyoto.jpg' width='150px'>" },
+    { coords: [34.693738, 135.502165], 
+      text: "<b>Osaka</b><br> Forêt primitive de Kasugayama<br>"},
+    { coords: [43.0667, 141.3500],
+      text: "<b>Sapporo</b>" },
+    { coords: [43.5333, 142.9500],
+      text: "<b>Daisetsuzan</b><br>Parc national de Daisetsuzan<br>"},
+    { coords: [43.0156, 144.3817],
+      text: "<b>Kushiro</b><br>Parc national de Kushiro Shitsugen, écomusée du lac Toro-ko, sanctuaire de Tsurui-Itō Tanchō<br>"},
+    { coords: [35.5011, 134.2351],
+      text: "<b>Tottori</b><br>Zones humides de Hachigoro Toshima, parc Hyogo de la cigogne blanche orientale<br>"},
+    { coords: [30.3580, 130.5280],
+      text: "<b>Yakushima</b><br>Parc national de Yakushima<br> " },
+    { coords: [26.2124, 127.6809],
+      text: "<b>Okinawa</b><br>Manko Waterbird and Wetland Center<br> "},
+    { coords: [24.3900, 123.8400],
+      text: "<b>Iriomote-Ishigaki</b><br>Hirugi Mangrove Community<br>"},
+    { coords: [40.5167, 140.2167],
+      text: "<b>Shirakami-Sanchi</b><br>Forêt milléniare inscrite au World National Heritage<br> " }
+
+
+
+
+];
+
+<!-- Ajoute des pop-ip--> 
+locations.forEach(loc => {L.marker(loc.coords).addTo(map).bindPopup(loc.text);});
+
+</script>
+<!-- pour ajouter un lien vers un post : <a href='/fr/posts/premier-article/'>Voir le post sur Tokyo</a -->
+
+        
+      </section>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/fr/posts/recherche-partenariat/" title=" ❗Recherche partenariat❗">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">Page précédente</span>
+            <span class="max-w-48 truncate"> ❗Recherche partenariat❗</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/fr/posts/presentation-association/" title="Présentation de l&#39;association BiOdyssée">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">Page suivante</span>
+            <span class="max-w-48 truncate">Présentation de l&#39;association BiOdyssée</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+
+      
+      <div class="divider"></div>
+
+      <section class="space-y-4">
+        
+
+
+
+
+<article>
+
+  <div id="vcomments"></div>
+<script src="https://unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+  new Valine({
+    el: '#vcomments',
+    appId: '',
+    appKey: '',
+    placeholder: 'Leave a comment...',
+    lang: 'en',
+    avatar: 'mp',
+    visitor: true,
+    requiredFields: ['nick','mail']
+  });
+</script>
+
+
+</article>
+
+
+
+
+
+
+      </section>
+      
+    </article>
+  </div>
+
+  <div class="hidden lg:flex lg:flex-col lg:items-end">
+    
+      <nav id="TableOfContents"></nav>
+    
+  </div>
+</div>
+
+
+
+            
+<footer class="flex justify-between items-center gap-2 px-4 py-4">
+
+  <div>
+  
+  <p>© 2025 BiOdyssée</p>
+  
+
+  
+  <p>Tous droits réservés</p>
+  
+</div>
+
+   
+
+</footer>
+
+
+<script>
+  function scrollCategories(direction) {
+    const container = document.getElementById("categoriesScroll");
+    const scrollAmount = 300; 
+    container.scrollBy({
+      left: direction * scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+</script>
+
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid dream-grid-about">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Voilà l&#39;équipe de la mission 2026</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Voilà une brève présentation de l&rsquo;équipe fondatrice de BiOdyssée et qui participera à l&rsquo;expédition 2026 au Japon.</p>
+<p><img src="/images/nous.jpg" alt="photo équipe"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Hugo </div>
+
+        <div class="prose dark:prose-invert">
+          <p>Étudiant en Gestion et ingénierie de l&rsquo;environnement à AgroParisTech, je suis passionné par la paléontologie et l’évolution 🦖🦴🧬. J’aspire à travailler dans le domaine de la gestion des milieux naturels, plus précisément pour la conservation ou la restauration des milieux humides en France 🐸🐟🌿, qui ont perdu une part très importante de leur surface ces derniers siècles. Je me suis ainsi toujours intéressé à l’évolution des espèces et des écosystèmes dans le temps, c’est pourquoi ce projet de césure me motive tant !</p>
+<p><strong>Contact :</strong>
+<a href="mailto:hugo.roger@agroparistech.fr" target="_blank">hugo.roger@agroparistech.fr</a>
+</p>
+<p><img src="/images/hugo.jpg" alt="photo rando"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Lucie </div>
+
+        <div class="prose dark:prose-invert">
+          <p>Étudiante en Gestion et ingénierie de l&rsquo;environnement à AgroParisTech, je suis fascinée par à peu près tout ce qui se rapporte à l’océan 🌊. C’est dans l’optique d’allier travail et passion, que je m’oriente vers la biologie marine. Plus particulièrement, j’aimerais travailler dans la conservation ou la gestion des écosystèmes marins. La faune 🐠🐋🐙, autant que la flore aquatique me passionnent et c’est pour pouvoir l’observer de plus près que je fais de la plongée sous-marine 🤿. Ce projet est pour moi l’opportunité de découvrir de nouveaux milieux aquatiques 🌊🪸🌿 et de comprendre tous les enjeux qui pèsent dessus.</p>
+<p><strong>Contact :</strong>
+<a href="mailto:lucie.lowagie@agroparistech.fr" target="_blank">lucie.lowagie@agroparistech.fr</a>
+</p>
+<p><img src="/images/lucie-plongee.jpg" alt="photo plongée"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Solal</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Étudiant en agronomie et passionné par l’histoire 🧭⌛🏹 et l’éthologie 🐁🧠🧪, j’espère utiliser cette opportunité pour observer le comportement des animaux dans leur milieu naturel. Par la suite, j’aimerais faire de la recherche 👨‍🔬 ou être professeur dans l’enseignement supérieur 🧑‍🏫, et cette césure me permettrait de développer mes capacités de synthèse et d’observation. Le fait de pouvoir allier recherche historique et observation animale — le tout dans le but de ne pas reproduire les erreurs du passé — est la raison pour laquelle ce projet m’intéresse.</p>
+<p><strong>Contact :</strong>
+<a href="mailto:solal.free@agroparistech.fr" target="_blank">solal.free@agroparistech.fr</a>
+</p>
+<p><img src="/images/solal.jpg" alt="photo qui fait peur"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Théophile </div>
+
+        <div class="prose dark:prose-invert">
+          <p>Étudiant en ingénierie de l&rsquo;environnement passionné d’entomologie et en particulier de myrmécologie 🐜, mon objectif est de faire de la recherche en environnement en particulier sur les dynamiques génétiques des populations 🧬🐜 (de fourmis bien évidemment). Je fais partie de l’association naturaliste &ldquo;les &ldquo;Blairoudeurs 🦡&rdquo; avec laquelle je suis parti faire de la prospection et de la sensibilisation en Corse lors de la Mission Isula. Ce projet de césure est une super opportunité de continuer cette expérience mais à une échelle bien plus vaste et exotique tout en continuant de me former sur la connaissance des différents écosystèmes et leurs moyens de gestions dans un autre pays.</p>
+<p><strong>Contact :</strong>
+<a href="mailto:theophie.thomas@agroparistech.fr" target="_blank">theophie.thomas@agroparistech.fr</a>
+</p>
+<p><img src="/images/theophile.jpg" alt="photo stylée"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Réseaux sociaux</div>
+
+        <ul class="menu menu-horizontal flex-wrap w-full px-0 [&_ion-icon]:text-lg">
+  
+
+  
+  <li>
+    <a href="https://www.facebook.com/profile.php?id=61576052068851" target="_blank" title="Facebook">
+      <ion-icon name="logo-facebook"></ion-icon>
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://www.instagram.com/bio_dyssee/" target="_blank" title="Instagram">
+      <ion-icon name="logo-instagram"></ion-icon>
+    </a>
+  </li>
+  
+  <li>
+    <a href="mailto:biodyssee2026@gmail.com" target="_blank" title="Email">
+      <ion-icon name="mail-outline"></ion-icon>
+    </a>
+  </li>
+  
+</ul>
+
+      </div>
+    </article>
+  </div>
+  
+
+  
+</div>
+
+            
+
+            
+<footer class="flex justify-between items-center gap-2 px-4 py-4">
+
+  <div>
+  
+  <p>© 2025 BiOdyssée</p>
+  
+
+  
+  <p>Tous droits réservés</p>
+  
+</div>
+
+   
+
+</footer>
+
+
+<script>
+  function scrollCategories(direction) {
+    const container = document.getElementById("categoriesScroll");
+    const scrollAmount = 300; 
+    container.scrollBy({
+      left: direction * scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+</script>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
+

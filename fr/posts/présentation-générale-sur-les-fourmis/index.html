@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="fr"  
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=4321&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Présentation générale sur les fourmis 🐜 | BiOdyssée</title>
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+  
+
+    
+
+<link rel="canonical" href="http://localhost:4321/fr/posts/pr%C3%A9sentation-g%C3%A9n%C3%A9rale-sur-les-fourmis/" />
+
+
+
+<meta name="author" content="theophile" />
+<meta name="description" content="Voici le premier article de la &ldquo;Rubrique Fourmi&rdquo; tenue par Théophile. Partez à la découverte des fourmis&hellip;
+" />
+
+
+<meta name="keywords" content="La rubrique fourmi de Théophile">
+
+
+
+<meta name="generator" content="Hugo 0.143.1">
+
+
+<meta property="og:url" content="http://localhost:4321/fr/posts/pr%C3%A9sentation-g%C3%A9n%C3%A9rale-sur-les-fourmis/">
+  <meta property="og:site_name" content="BiOdyssée">
+  <meta property="og:title" content="Présentation générale sur les fourmis 🐜">
+  <meta property="og:description" content="Voici le premier article de la “Rubrique Fourmi” tenue par Théophile. Partez à la découverte des fourmis…">
+  <meta property="og:locale" content="fr">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-04-21T14:00:00+01:00">
+    <meta property="article:modified_time" content="2025-04-21T14:00:00+01:00">
+
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Présentation générale sur les fourmis 🐜">
+  <meta name="twitter:description" content="Voici le premier article de la “Rubrique Fourmi” tenue par Théophile. Partez à la découverte des fourmis…">
+
+
+
+
+<link rel="stylesheet" href="/css/output.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+<script src="//unpkg.com/valine@1.5.2/dist/Valine.min.js"></script>
+
+
+
+
+
+
+
+    
+    <link rel="stylesheet" href="/css/custom.css" />
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="py-4"> 
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="Retourne ça !">
+        <div class="h-10 rounded-full">
+          <img src="/images/logo.jpg" alt="BiOdyssée" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="http://localhost:4321/" class="text-lg font-semibold cursor-pointer">
+          BiOdyssée
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm" style="color: #ffffff" >À la (re)découverte du vivant</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="Contact">
+    <ion-icon name="information-circle"></ion-icon>Contact</div>
+</li>
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="Rechercher">
+    <ion-icon name="search"></ion-icon>
+    Rechercher
+  </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="Archives">
+    <ion-icon name="archive"></ion-icon>
+    Archives
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="Toutes les catégories">
+    <ion-icon name="grid"></ion-icon>
+    Toutes les catégories
+  </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0"
+        class="text-sm font-semibold cursor-pointer hover:underline"
+        @click="flip = !flip"
+        title="Contact"
+      >Contact</div>
+      
+      
+
+      
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="Rechercher">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+
+
+
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="Archives">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="Toutes les catégories">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+
+
+
+
+
+      
+
+      
+
+      
+
+
+ 
+<div class="dropdown dropdown-end">
+  <div tabindex="0" role="button" class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" aria-label="Select an option">
+  <ion-icon name="earth-outline"> </ion-icon> 
+  
+  </div>
+  <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-xl">
+    
+      <li>
+        <a href="/fr" class="inline-flex items-center p-2 cursor-pointer" style = "color: #000000">
+          Français
+        </a>
+      </li>
+    
+      <li>
+        <a href="/ja" class="inline-flex items-center p-2 cursor-pointer" style = "color: #000000">
+          日本語
+        </a>
+      </li>
+    
+      <li>
+        <a href="/en" class="inline-flex items-center p-2 cursor-pointer" style = "color: #000000">
+          English
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+    </section>
+  </div>
+</nav>
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+           
+
+          <div class="container">
+            
+<div class="lg:grid lg:grid-cols-4 gap-4 mt-4 px-4">
+  <div class="hidden lg:block">
+    
+  </div>
+
+  <div class="lg:col-span-2">
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="Présentation générale sur les fourmis 🐜">
+  <meta itemprop="description" content="Voici le premier article de la “Rubrique Fourmi” tenue par Théophile. Partez à la découverte des fourmis…">
+  <meta itemprop="datePublished" content="2025-04-21T14:00:00+01:00">
+  <meta itemprop="dateModified" content="2025-04-21T14:00:00+01:00">
+  <meta itemprop="wordCount" content="496">
+  <meta itemprop="keywords" content="La rubrique fourmi de Théophile">
+
+      <header>
+        <h1 itemprop="headline">Présentation générale sur les fourmis 🐜</h1>
+        <p class="text-sm">
+          
+            lundi, avr. 21, 2025
+          
+
+          | <span>3 minutes de lecture</span>
+
+          
+          | <span>Mise à jour le
+            
+              lundi, avr. 21, 2025
+            </span>
+          
+        </p>
+
+        
+        <div class="flex justify-between">
+          
+            
+
+
+<div class="flex items-center">
+  
+    <div class="avatar mr-1">
+      <div class="w-8 rounded-full">
+        <img class="my-0" src="/images/authors/avatar_theophile.jpg" alt="Théophile" />
+      </div>
+    </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+    
+      
+        <span itemprop="name">Théophile</span>
+      
+    
+  </span>
+</div>
+
+          
+
+          
+
+<div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=http://localhost:4321/fr/posts/pr%C3%A9sentation-g%C3%A9n%C3%A9rale-sur-les-fourmis/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="text-gray-500 group-hover:text-white" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=Pr%c3%a9sentation%20g%c3%a9n%c3%a9rale%20sur%20les%20fourmis%20%f0%9f%90%9c%20http://localhost:4321/fr/posts/pr%C3%A9sentation-g%C3%A9n%C3%A9rale-sur-les-fourmis/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="text-gray-500 group-hover:text-white" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div> 
+
+        </div>
+      </header>
+
+      <section id="dream-single-post-content" itemprop="articleBody">
+       
+    <img class="w-full z-30" src="/images/fourmi.jpg" alt="Présentation générale sur les fourmis 🐜" />
+
+
+        <p>Voici le premier article de la &ldquo;Rubrique Fourmi&rdquo; tenue par Théophile. Partez à la découverte des fourmis&hellip;</p>
+<p>Les fourmis sont ce qu&rsquo;on appelle des <strong>hyménoptères eusociaux</strong> (c&rsquo;est à dire qu&rsquo;elles présentent une organisation sociale complexe que l&rsquo;on détaillera plus tard) formant la famille des <strong>Formicidae</strong>.</p>
+<p>Mais que veux dire tout cela ? Remontons un peu leurs arbre phylogénétique pour mieux comprendre ce qu’elles sont !</p>
+<h2 id="embranchement--arthropode">Embranchement : Arthropode</h2>
+<p>Les <strong>arthropodes</strong> sont des animaux caractérisés par leur corps segmenté, avec des segments souvent spécialisés (on parle de métamérie hétéronome). Leur corps est recouvert d’une cuticule rigide, formant une sorte de carapace. Ils possèdent un exosquelette et des appendices articulés.</p>
+<p>Cet embranchement comprend de nombreux groupes bien connus, comme :</p>
+<ul>
+<li>Les crustacés (crabes, crevettes, etc.)</li>
+<li>Les arachnides (araignées, scorpions, etc.)</li>
+<li>Les myriapodes (milles pattes, centipèdes, etc.)</li>
+<li>Et bien sûr, les Insectes !</li>
+</ul>
+<p><img src="/images/fourmi/arthropode.png" alt="composition arthropode"></p>
+<h2 id="classe--insecte">Classe : Insecte</h2>
+<p>Les <strong>insectes</strong> ont un corps segmenté en trois parties : la tête, le thorax et l&rsquo;abdomen. Ils possèdent une cuticule composée de chitine (molécule caractéristique qui lui donne sa structure rigide), percée de stigmates menant à un système respiratoire organisé en trachées. Ils sont également dotés de trois paires de pattes et, chez la plupart des espèces, d’une ou deux paires d’ailes.</p>
+<p>Cette classe comprend une immense diversité, notamment :</p>
+<ul>
+<li>Les Lépidoptères (papillons)</li>
+<li>Les Orthoptères (criquets, sauterelles, grillons, etc.)</li>
+<li>Les Coléoptères (coccinelles, scarabés, etc.)</li>
+<li>Les Odonates (libellules)</li>
+<li>Et les Hyménoptères&hellip;</li>
+</ul>
+<p><img src="/images/fourmi/insecte.png" alt="composition insecte"></p>
+<h2 id="ordre---hymenoptère">Ordre :  Hymenoptère</h2>
+<p>Les <strong>Hyménoptères</strong> se caractérisent par deux paires d’ailes membraneuses avec comme particularité que les ailes antérieures sont plus grandes que les ailes postérieures. Ils présentent aussi ce que l&rsquo;on appelle un dimorphisme génétique, c&rsquo;est à dire que les mâles sont différents des femelles. En effet les mâles sont des individus haploïdes (issus d’œufs non fécondés, ils n’ont qu’un seul jeu de chromosomes), tandis que les femelles sont diploïdes. De plus ils ont un thorax très développé, notamment le second segment, aussi appelé le mésothorax, qui contient la musculature principale nécessaire au vol.</p>
+<p>Cet ordre comprend des espèces très souvent sociales, comme <strong>les abeilles</strong> (Apidae), <strong>les guêpes</strong> (Vespidae), <strong>les frelons</strong>, et bien sûr, <strong>les fourmis</strong>.</p>
+<p><img src="/images/fourmi/hymenoptere.png" alt="composition hymenoptère"></p>
+<h2 id="famille--formicidé">Famille : Formicidé</h2>
+<p>Les fourmis sont des insectes strictement <strong>eusociaux</strong>, ce qui signifie qu’il n’existe pas d’espèces de fourmis solitaires, contrairement à certaines abeilles ou guêpes.</p>
+<p>On recense actuellement environ 16 000 espèces décrites, mais les scientifiques estiment qu’il pourrait en exister entre 25 000 et 40 000 au total.</p>
+<p>Grâce à leur incroyable organisation sociale, leur capacité d’adaptation et leur division du travail, les fourmis ont colonisé presque tous les milieux terrestres, à l’exception du Groenland, de l’Antarctique et de quelques îles océaniques isolées.</p>
+<p>Les fourmis, en tant que hyménoptères apocrites (sous-ordre caractérisé par un étranglement entre le thorax et l’abdomen), ont un corps divisé en :</p>
+<ul>
+<li>Tête</li>
+<li>Thorax (ou mésosoma chez les fourmis)</li>
+<li>Pétiole (segment(s) étroit(s) reliant le thorax à l’abdomen)</li>
+<li>Gastre (ou abdomen proprement dit)</li>
+</ul>
+<p>Ce découpage morphologique est lié à leur mode de vie et leur spécialisation au sein de la colonie.</p>
+<p><img src="/images/fourmi/schema_fourmi_fr.png" alt="schéma fourmi"></p>
+
+        
+      </section>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/fr/posts/test-image-et-quiz/" title="test image et quiz">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">Page précédente</span>
+            <span class="max-w-48 truncate">test image et quiz</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/fr/posts/recherche-partenariat/" title=" ❗Recherche partenariat❗">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">Page suivante</span>
+            <span class="max-w-48 truncate"> ❗Recherche partenariat❗</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+
+      
+      <div class="divider"></div>
+
+      <section class="space-y-4">
+        
+
+
+
+
+<article>
+
+  <div id="vcomments"></div>
+<script src="https://unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+  new Valine({
+    el: '#vcomments',
+    appId: '',
+    appKey: '',
+    placeholder: 'Leave a comment...',
+    lang: 'en',
+    avatar: 'mp',
+    visitor: true,
+    requiredFields: ['nick','mail']
+  });
+</script>
+
+
+</article>
+
+
+
+
+
+
+      </section>
+      
+    </article>
+  </div>
+
+  <div class="hidden lg:flex lg:flex-col lg:items-end">
+    
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#embranchement--arthropode">Embranchement : Arthropode</a></li>
+    <li><a href="#classe--insecte">Classe : Insecte</a></li>
+    <li><a href="#ordre---hymenoptère">Ordre :  Hymenoptère</a></li>
+    <li><a href="#famille--formicidé">Famille : Formicidé</a></li>
+  </ul>
+</nav>
+    
+  </div>
+</div>
+
+
+
+            
+<footer class="flex justify-between items-center gap-2 px-4 py-4">
+
+  <div>
+  
+  <p>© 2025 BiOdyssée</p>
+  
+
+  
+  <p>Tous droits réservés</p>
+  
+</div>
+
+   
+
+</footer>
+
+
+<script>
+  function scrollCategories(direction) {
+    const container = document.getElementById("categoriesScroll");
+    const scrollAmount = 300; 
+    container.scrollBy({
+      left: direction * scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+</script>
+
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid dream-grid-about">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Voilà l&#39;équipe de la mission 2026</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Voilà une brève présentation de l&rsquo;équipe fondatrice de BiOdyssée et qui participera à l&rsquo;expédition 2026 au Japon.</p>
+<p><img src="/images/nous.jpg" alt="photo équipe"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Hugo </div>
+
+        <div class="prose dark:prose-invert">
+          <p>Étudiant en Gestion et ingénierie de l&rsquo;environnement à AgroParisTech, je suis passionné par la paléontologie et l’évolution 🦖🦴🧬. J’aspire à travailler dans le domaine de la gestion des milieux naturels, plus précisément pour la conservation ou la restauration des milieux humides en France 🐸🐟🌿, qui ont perdu une part très importante de leur surface ces derniers siècles. Je me suis ainsi toujours intéressé à l’évolution des espèces et des écosystèmes dans le temps, c’est pourquoi ce projet de césure me motive tant !</p>
+<p><strong>Contact :</strong>
+<a href="mailto:hugo.roger@agroparistech.fr" target="_blank">hugo.roger@agroparistech.fr</a>
+</p>
+<p><img src="/images/hugo.jpg" alt="photo rando"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Lucie </div>
+
+        <div class="prose dark:prose-invert">
+          <p>Étudiante en Gestion et ingénierie de l&rsquo;environnement à AgroParisTech, je suis fascinée par à peu près tout ce qui se rapporte à l’océan 🌊. C’est dans l’optique d’allier travail et passion, que je m’oriente vers la biologie marine. Plus particulièrement, j’aimerais travailler dans la conservation ou la gestion des écosystèmes marins. La faune 🐠🐋🐙, autant que la flore aquatique me passionnent et c’est pour pouvoir l’observer de plus près que je fais de la plongée sous-marine 🤿. Ce projet est pour moi l’opportunité de découvrir de nouveaux milieux aquatiques 🌊🪸🌿 et de comprendre tous les enjeux qui pèsent dessus.</p>
+<p><strong>Contact :</strong>
+<a href="mailto:lucie.lowagie@agroparistech.fr" target="_blank">lucie.lowagie@agroparistech.fr</a>
+</p>
+<p><img src="/images/lucie-plongee.jpg" alt="photo plongée"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Solal</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Étudiant en agronomie et passionné par l’histoire 🧭⌛🏹 et l’éthologie 🐁🧠🧪, j’espère utiliser cette opportunité pour observer le comportement des animaux dans leur milieu naturel. Par la suite, j’aimerais faire de la recherche 👨‍🔬 ou être professeur dans l’enseignement supérieur 🧑‍🏫, et cette césure me permettrait de développer mes capacités de synthèse et d’observation. Le fait de pouvoir allier recherche historique et observation animale — le tout dans le but de ne pas reproduire les erreurs du passé — est la raison pour laquelle ce projet m’intéresse.</p>
+<p><strong>Contact :</strong>
+<a href="mailto:solal.free@agroparistech.fr" target="_blank">solal.free@agroparistech.fr</a>
+</p>
+<p><img src="/images/solal.jpg" alt="photo qui fait peur"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Théophile </div>
+
+        <div class="prose dark:prose-invert">
+          <p>Étudiant en ingénierie de l&rsquo;environnement passionné d’entomologie et en particulier de myrmécologie 🐜, mon objectif est de faire de la recherche en environnement en particulier sur les dynamiques génétiques des populations 🧬🐜 (de fourmis bien évidemment). Je fais partie de l’association naturaliste &ldquo;les &ldquo;Blairoudeurs 🦡&rdquo; avec laquelle je suis parti faire de la prospection et de la sensibilisation en Corse lors de la Mission Isula. Ce projet de césure est une super opportunité de continuer cette expérience mais à une échelle bien plus vaste et exotique tout en continuant de me former sur la connaissance des différents écosystèmes et leurs moyens de gestions dans un autre pays.</p>
+<p><strong>Contact :</strong>
+<a href="mailto:theophie.thomas@agroparistech.fr" target="_blank">theophie.thomas@agroparistech.fr</a>
+</p>
+<p><img src="/images/theophile.jpg" alt="photo stylée"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Réseaux sociaux</div>
+
+        <ul class="menu menu-horizontal flex-wrap w-full px-0 [&_ion-icon]:text-lg">
+  
+
+  
+  <li>
+    <a href="https://www.facebook.com/profile.php?id=61576052068851" target="_blank" title="Facebook">
+      <ion-icon name="logo-facebook"></ion-icon>
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://www.instagram.com/bio_dyssee/" target="_blank" title="Instagram">
+      <ion-icon name="logo-instagram"></ion-icon>
+    </a>
+  </li>
+  
+  <li>
+    <a href="mailto:biodyssee2026@gmail.com" target="_blank" title="Email">
+      <ion-icon name="mail-outline"></ion-icon>
+    </a>
+  </li>
+  
+</ul>
+
+      </div>
+    </article>
+  </div>
+  
+
+  
+</div>
+
+            
+
+            
+<footer class="flex justify-between items-center gap-2 px-4 py-4">
+
+  <div>
+  
+  <p>© 2025 BiOdyssée</p>
+  
+
+  
+  <p>Tous droits réservés</p>
+  
+</div>
+
+   
+
+</footer>
+
+
+<script>
+  function scrollCategories(direction) {
+    const container = document.getElementById("categoriesScroll");
+    const scrollAmount = 300; 
+    container.scrollBy({
+      left: direction * scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+</script>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+  <script src="/js/grid.js"></script>
+
+
+
+
+<script src="/js/main.js"></script>
+
+    
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
+

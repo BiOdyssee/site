@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="ja"  
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+
+
+タグ一覧 | BiOdyssée</title>
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+  
+
+    
+
+<link rel="canonical" href="http://localhost:1313/ja/tags/" />
+
+
+
+<meta name="author" content="" />
+<meta name="description" content="" />
+
+
+
+<meta name="generator" content="Hugo 0.143.1">
+
+
+<meta property="og:url" content="http://localhost:1313/ja/tags/">
+  <meta property="og:site_name" content="BiOdyssée">
+  <meta property="og:title" content="Tags">
+  <meta property="og:locale" content="ja">
+  <meta property="og:type" content="website">
+
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Tags">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+     
+
+    
+    <link rel="stylesheet" href="/css/custom.css" />
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="py-4"> 
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="Flip it!">
+        <div class="h-10 rounded-full">
+          <img src="/images/logo.jpg" alt="BiOdyssée" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="http://localhost:1313/" class="text-lg font-semibold cursor-pointer">
+          BiOdyssée
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm" style="color: #ffffff" >À la (re)découverte du vivant</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="About">
+    <ion-icon name="information-circle"></ion-icon>About</div>
+</li>
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/ja/search" title="検索">
+    <ion-icon name="search"></ion-icon>
+    検索
+  </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/ja/posts" title="アーカイブ">
+    <ion-icon name="archive"></ion-icon>
+    アーカイブ
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/ja/categories" title="カテゴリー一覧">
+    <ion-icon name="grid"></ion-icon>
+    カテゴリー一覧
+  </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0"
+        class="text-sm font-semibold cursor-pointer hover:underline"
+        @click="flip = !flip"
+        title="About"
+      >About</div>
+      
+      
+
+      
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/ja/search" title="検索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+
+
+
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/ja/posts" title="アーカイブ">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/ja/categories" title="カテゴリー一覧">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+
+
+
+
+
+      
+
+      
+
+      
+
+
+ 
+<div class="dropdown dropdown-end">
+  <div tabindex="0" role="button" class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" aria-label="Select an option">
+  <ion-icon name="earth-outline"> </ion-icon> 
+  
+  </div>
+  <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-xl">
+    
+      <li>
+        <a href="/fr" class="inline-flex items-center p-2 cursor-pointer" style = "color: #000000">
+          Français
+        </a>
+      </li>
+    
+      <li>
+        <a href="/ja" class="inline-flex items-center p-2 cursor-pointer" style = "color: #000000">
+          日本語
+        </a>
+      </li>
+    
+      <li>
+        <a href="/en" class="inline-flex items-center p-2 cursor-pointer" style = "color: #000000">
+          English
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+    </section>
+  </div>
+</nav>
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+           
+
+          <div class="container">
+            
+
+
+<div class="flex flex-col md:flex-row mt-4">
+
+
+  <div class="md:basis-[200px] lg:basis-[300px] p-4 prose dark:prose-invert">
+    <h1 class="text-2xl">タグ一覧</h1>
+    <p class="text-sm">0タグ</p>
+    <div class="flex flex-wrap gap-4 mt-6">
+      
+    </div>
+  </div>
+  
+  <div class="divider divider-vertical md:divider-horizontal px-4 md:px-0"></div>
+  
+  <div class="flex-1">
+    
+
+    
+    <div class="dream-grid">
+    
+    </div>
+    
+
+    
+  </div>
+</div>
+
+
+
+
+            
+<footer class="flex justify-between items-center gap-2 px-4 py-4">
+
+  <div>
+  
+  <p>© 2025 BiOdyssée</p>
+  
+
+  
+  <p>Tous droits réservés</p>
+  
+</div>
+
+   
+
+</footer>
+
+
+<script>
+  function scrollCategories(direction) {
+    const container = document.getElementById("categoriesScroll");
+    const scrollAmount = 300; 
+    container.scrollBy({
+      left: direction * scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+</script>
+
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid dream-grid-about">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">こちらが2026年ミッションのメンバーです。</div>
+
+        <div class="prose dark:prose-invert">
+          <p>こちらは、BiOdysséeの創設メンバーであり、2026年の日本遠征に参加するメンバーの簡単な紹介です。</p>
+<p><img src="/images/nous.jpg" alt="photo équipe"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Hugo </div>
+
+        <div class="prose dark:prose-invert">
+          <p>AgroParisTechで環境マネジメントと工学を学んでいる学生で、古生物学と進化に情熱を持っています🦖🦴🧬。
+将来は自然環境の管理、特にフランスにおける湿地の保全や再生に関わる仕事を目指しています🐸🐟🌿。
+これらの湿地は過去数世紀の間に大きく減少してしまいました。
+昔から種や生態系の進化と変遷に興味があり、それがこのギャップイヤー・プロジェクトに強く惹かれる理由でもあります！</p>
+<p><strong>Contact :</strong>
+<a href="mailto:hugo.roger@agroparistech.fr" target="_blank">hugo.roger@agroparistech.fr</a>
+</p>
+<p><img src="/images/hugo.jpg" alt="photo rando"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Lucie </div>
+
+        <div class="prose dark:prose-invert">
+          <p>環境マネジメントと工学を学ぶ学生であり、海に関するあらゆることに魅了されています🌊。
+仕事と情熱を結びつけたいという思いから、海洋生物学の道を目指しています。
+特に、海洋生態系の保全や管理に関わる仕事をしたいと考えています。
+海の動物たち🐠🐋🐙はもちろん、水中の植物にも強く惹かれており、それらをもっと間近で観察したくてスキューバダイビング🤿をしています。
+このプロジェクトは、私にとって新たな水中環境を発見し🌊🪸🌿、それらに関わる課題を深く理解する絶好のチャンスです。</p>
+<p><strong>Contact :</strong>
+<a href="mailto:lucie.lowagie@agroparistech.fr" target="_blank">lucie.lowagie@agroparistech.fr</a>
+</p>
+<p><img src="/images/lucie-plongee.jpg" alt="photo plongée"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Solal</div>
+
+        <div class="prose dark:prose-invert">
+          <p>農学を学んでおり、歴史🧭⌛🏹と動物行動学（エトロジー）🐁🧠🧪に情熱を持っています。
+この機会を活かして、動物たちが自然な環境でどのように振る舞うかを観察したいと考えています。
+将来的には研究👨‍🔬や高等教育機関での教育🧑‍🏫に携わることを目指しており、このギャップイヤーは、観察力や情報整理・分析の力を高める絶好のチャンスです。
+歴史的な視点と動物の観察を結びつけ、「過去の過ちを繰り返さない」という目的のもとに活動できることこそが、このプロジェクトに惹かれる理由です。</p>
+<p><strong>Contact :</strong>
+<a href="mailto:solal.free@agroparistech.fr" target="_blank">solal.free@agroparistech.fr</a>
+</p>
+<p><img src="/images/solal.jpg" alt="photo qui fait peur"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Théophile </div>
+
+        <div class="prose dark:prose-invert">
+          <p>環境工学を学ぶ学生で、昆虫学、特にアリの研究（ミルメコロジー）🐜に強い関心があります。
+私の目標は、環境分野、特にアリの集団遺伝学的ダイナミクス🧬🐜に関する研究に携わることです。
+私は自然観察を行う団体「Blairoudeurs 🦡」のメンバーでもあり、コルシカ島で行われた「Mission Isula」にて、調査や環境教育活動に参加しました。
+このギャップイヤー・プロジェクトは、そうした経験をさらに広く、よりエキゾチックなスケールで継続できる素晴らしい機会であり、他国の生態系やその管理方法について学び続けるチャンスでもあります。</p>
+<p><strong>Contact :</strong>
+<a href="mailto:theophie.thomas@agroparistech.fr" target="_blank">theophie.thomas@agroparistech.fr</a>
+</p>
+<p><img src="/images/theophile.jpg" alt="photo stylée"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">SNS</div>
+
+        <ul class="menu menu-horizontal flex-wrap w-full px-0 [&_ion-icon]:text-lg">
+  
+
+  
+  <li>
+    <a href="https://www.facebook.com/profile.php?id=61576052068851" target="_blank" title="Facebook">
+      <ion-icon name="logo-facebook"></ion-icon>
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://www.instagram.com/bio_dyssee/" target="_blank" title="Instagram">
+      <ion-icon name="logo-instagram"></ion-icon>
+    </a>
+  </li>
+  
+  <li>
+    <a href="mailto:biodyssee2026@gmail.com" target="_blank" title="Email">
+      <ion-icon name="mail-outline"></ion-icon>
+    </a>
+  </li>
+  
+</ul>
+
+      </div>
+    </article>
+  </div>
+  
+
+  
+</div>
+
+            
+
+            
+<footer class="flex justify-between items-center gap-2 px-4 py-4">
+
+  <div>
+  
+  <p>© 2025 BiOdyssée</p>
+  
+
+  
+  <p>Tous droits réservés</p>
+  
+</div>
+
+   
+
+</footer>
+
+
+<script>
+  function scrollCategories(direction) {
+    const container = document.getElementById("categoriesScroll");
+    const scrollAmount = 300; 
+    container.scrollBy({
+      left: direction * scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+</script>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
+

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Page d&#39;Accueil on BiOdyssée</title>
+    <link>http://localhost:1313/ja/</link>
+    <description>Recent content in Page d&#39;Accueil on BiOdyssée</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <lastBuildDate>Wed, 16 Apr 2025 14:00:00 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/ja/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title> ❗パートナー募集❗</title>
+      <link>http://localhost:1313/ja/posts/%E3%83%91%E3%83%BC%E3%83%88%E3%83%8A%E3%83%BC%E5%8B%9F%E9%9B%86/</link>
+      <pubDate>Wed, 16 Apr 2025 14:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/ja/posts/%E3%83%91%E3%83%BC%E3%83%88%E3%83%8A%E3%83%BC%E5%8B%9F%E9%9B%86/</guid>
+      <description>&lt;p&gt;🤝&lt;strong&gt;私たちのプロジェクトを共に育てるパートナーを募集しています！&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;私たちの冒険は始まったばかり。さらに前へ進むためには、皆さまのお力が必要です！&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>🗺️ 日本の旅を一緒に辿ってみましょう！</title>
+      <link>http://localhost:1313/ja/posts/%EF%B8%8F-%E6%97%A5%E6%9C%AC%E3%81%AE%E6%97%85%E3%82%92%E4%B8%80%E7%B7%92%E3%81%AB%E8%BE%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%81%BE%E3%81%97%E3%82%87%E3%81%86/</link>
+      <pubDate>Mon, 14 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ja/posts/%EF%B8%8F-%E6%97%A5%E6%9C%AC%E3%81%AE%E6%97%85%E3%82%92%E4%B8%80%E7%B7%92%E3%81%AB%E8%BE%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%81%BE%E3%81%97%E3%82%87%E3%81%86/</guid>
+      <description>&lt;p&gt;こちらは、インタラクティブな地図です。&#xA;私たちの旅のルートをたどりながら、各地での出来事を写真やエピソード、そして訪れた場所へのリンクとともにご覧いただけます。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>BiOdyssée（ビオディッセー）紹介</title>
+      <link>http://localhost:1313/ja/posts/presentation-association/</link>
+      <pubDate>Tue, 08 Apr 2025 14:00:00 +0100</pubDate>
+      <guid>http://localhost:1313/ja/posts/presentation-association/</guid>
+      <description>&lt;p&gt;BiOdyssée（ビオディッセー）は、生物多様性の保全に取り組む団体です。&#xA;世界中の保全活動を探求し、その課題、方法、影響を理解することを目的としています。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

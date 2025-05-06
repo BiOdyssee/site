@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="fr"  
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles | BiOdyssée</title>
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+  
+
+    
+
+<link rel="canonical" href="http://localhost:1313/posts/" />
+
+
+
+<meta name="author" content="" />
+<meta name="description" content="Tous les articles sur la biodiversité" />
+
+
+<meta name="keywords" content="">
+
+
+
+<meta name="generator" content="Hugo 0.143.1">
+
+
+<meta property="og:url" content="http://localhost:1313/posts/">
+  <meta property="og:site_name" content="BiOdyssée">
+  <meta property="og:title" content="Articles">
+  <meta property="og:description" content="Tous les articles sur la biodiversité">
+  <meta property="og:locale" content="fr">
+  <meta property="og:type" content="website">
+
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Articles">
+  <meta name="twitter:description" content="Tous les articles sur la biodiversité">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+     
+
+    
+    <link rel="stylesheet" href="/css/custom.css" />
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="py-4"> 
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="Retourne ça !">
+        <div class="h-10 rounded-full">
+          <img src="/images/logo.jpg" alt="BiOdyssée" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="http://localhost:1313/" class="text-lg font-semibold cursor-pointer">
+          BiOdyssée
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm" style="color: #ffffff" >À la (re)découverte du vivant</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="Contact">
+    <ion-icon name="information-circle"></ion-icon>Contact</div>
+</li>
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="Rechercher">
+    <ion-icon name="search"></ion-icon>
+    Rechercher
+  </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="Archives">
+    <ion-icon name="archive"></ion-icon>
+    Archives
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="Toutes les catégories">
+    <ion-icon name="grid"></ion-icon>
+    Toutes les catégories
+  </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0"
+        class="text-sm font-semibold cursor-pointer hover:underline"
+        @click="flip = !flip"
+        title="Contact"
+      >Contact</div>
+      
+      
+
+      
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="Rechercher">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+
+
+
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="Archives">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="Toutes les catégories">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+
+
+
+
+
+      
+
+      
+
+      
+
+
+ 
+<div class="dropdown dropdown-end">
+  <div tabindex="0" role="button" class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" aria-label="Select an option">
+  <ion-icon name="earth-outline"> </ion-icon> 
+  
+  </div>
+  <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-xl">
+    
+      <li>
+        <a href="/fr" class="inline-flex items-center p-2 cursor-pointer" style = "color: #000000">
+          Français
+        </a>
+      </li>
+    
+      <li>
+        <a href="/ja" class="inline-flex items-center p-2 cursor-pointer" style = "color: #000000">
+          日本語
+        </a>
+      </li>
+    
+      <li>
+        <a href="/en" class="inline-flex items-center p-2 cursor-pointer" style = "color: #000000">
+          English
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+    </section>
+  </div>
+</nav>
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+           
+
+          <div class="container">
+            
+
+<div class="mt-8 lg:mt-12 px-4">
+  <div class="mx-auto prose dark:prose-invert">
+    <h1 class="text-3xl">
+      Articles
+    </h1>
+    
+  </div>
+
+  <div class="max-w-[65ch] mx-auto mt-8 lg:mt-12">
+    <ul class="timeline timeline-vertical">
+      
+      
+      <li class="[--timeline-col-start:64px]">
+        <hr class="dark:bg-base-content" />
+        <div class="timeline-start !justify-self-start">
+          <div class="text-lg font-semibold">2025</div>
+        </div>
+        <div class="timeline-middle flex items-center mx-8 my-2">
+          <ion-icon name="time"></ion-icon>
+        </div>
+        <div class="timeline-end timeline-box dark:border-base-content/60 prose dark:prose-invert my-8">
+          <ul>
+            
+            <li>
+              <a href="/fr/posts/quest-ce-que-la-biodiversit%C3%A9/">Qu&#39;est-ce que la biodiversité ? </a>
+            </li>
+            
+            <li>
+              <a href="/fr/posts/recherche-partenariat/"> ❗Recherche partenariat❗</a>
+            </li>
+            
+            <li>
+              <a href="/fr/posts/%EF%B8%8F-d%C3%A9couvrez-notre-itin%C3%A9raire-au-japon/">🗺️ Découvrez notre itinéraire au Japon !</a>
+            </li>
+            
+            <li>
+              <a href="/fr/posts/presentation-association/">Présentation de l&#39;association BiOdyssée</a>
+            </li>
+            
+          </ul>
+        </div>
+        <hr class="dark:bg-base-content" />
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+
+
+            
+<footer class="flex justify-between items-center gap-2 px-4 py-4">
+
+  <div>
+  
+  <p>© 2025 BiOdyssée</p>
+  
+
+  
+  <p>Tous droits réservés</p>
+  
+</div>
+
+   
+
+</footer>
+
+
+<script>
+  function scrollCategories(direction) {
+    const container = document.getElementById("categoriesScroll");
+    const scrollAmount = 300; 
+    container.scrollBy({
+      left: direction * scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+</script>
+
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid dream-grid-about">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Voilà l&#39;équipe de la mission 2026</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Voilà une brève présentation de l&rsquo;équipe fondatrice de BiOdyssée et qui participera à l&rsquo;expédition 2026 au Japon.</p>
+<p><img src="/images/nous.jpg" alt="photo équipe"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Hugo </div>
+
+        <div class="prose dark:prose-invert">
+          <p>Étudiant en Gestion et ingénierie de l&rsquo;environnement à AgroParisTech, je suis passionné par la paléontologie et l’évolution 🦖🦴🧬. J’aspire à travailler dans le domaine de la gestion des milieux naturels, plus précisément pour la conservation ou la restauration des milieux humides en France 🐸🐟🌿, qui ont perdu une part très importante de leur surface ces derniers siècles. Je me suis ainsi toujours intéressé à l’évolution des espèces et des écosystèmes dans le temps, c’est pourquoi ce projet de césure me motive tant !</p>
+<p><strong>Contact :</strong>
+<a href="mailto:hugo.roger@agroparistech.fr" target="_blank">hugo.roger@agroparistech.fr</a>
+</p>
+<p><img src="/images/hugo.jpg" alt="photo rando"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Lucie </div>
+
+        <div class="prose dark:prose-invert">
+          <p>Étudiante en Gestion et ingénierie de l&rsquo;environnement à AgroParisTech, je suis fascinée par à peu près tout ce qui se rapporte à l’océan 🌊. C’est dans l’optique d’allier travail et passion, que je m’oriente vers la biologie marine. Plus particulièrement, j’aimerais travailler dans la conservation ou la gestion des écosystèmes marins. La faune 🐠🐋🐙, autant que la flore aquatique me passionnent et c’est pour pouvoir l’observer de plus près que je fais de la plongée sous-marine 🤿. Ce projet est pour moi l’opportunité de découvrir de nouveaux milieux aquatiques 🌊🪸🌿 et de comprendre tous les enjeux qui pèsent dessus.</p>
+<p><strong>Contact :</strong>
+<a href="mailto:lucie.lowagie@agroparistech.fr" target="_blank">lucie.lowagie@agroparistech.fr</a>
+</p>
+<p><img src="/images/lucie-plongee.jpg" alt="photo plongée"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Solal</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Étudiant en agronomie et passionné par l’histoire 🧭⌛🏹 et l’éthologie 🐁🧠🧪, j’espère utiliser cette opportunité pour observer le comportement des animaux dans leur milieu naturel. Par la suite, j’aimerais faire de la recherche 👨‍🔬 ou être professeur dans l’enseignement supérieur 🧑‍🏫, et cette césure me permettrait de développer mes capacités de synthèse et d’observation. Le fait de pouvoir allier recherche historique et observation animale — le tout dans le but de ne pas reproduire les erreurs du passé — est la raison pour laquelle ce projet m’intéresse.</p>
+<p><strong>Contact :</strong>
+<a href="mailto:solal.free@agroparistech.fr" target="_blank">solal.free@agroparistech.fr</a>
+</p>
+<p><img src="/images/solal.jpg" alt="photo qui fait peur"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Théophile </div>
+
+        <div class="prose dark:prose-invert">
+          <p>Étudiant en ingénierie de l&rsquo;environnement passionné d’entomologie et en particulier de myrmécologie 🐜, mon objectif est de faire de la recherche en environnement en particulier sur les dynamiques génétiques des populations 🧬🐜 (de fourmis bien évidemment). Je fais partie de l’association naturaliste &ldquo;les &ldquo;Blairoudeurs 🦡&rdquo; avec laquelle je suis parti faire de la prospection et de la sensibilisation en Corse lors de la Mission Isula. Ce projet de césure est une super opportunité de continuer cette expérience mais à une échelle bien plus vaste et exotique tout en continuant de me former sur la connaissance des différents écosystèmes et leurs moyens de gestions dans un autre pays.</p>
+<p><strong>Contact :</strong>
+<a href="mailto:theophie.thomas@agroparistech.fr" target="_blank">theophie.thomas@agroparistech.fr</a>
+</p>
+<p><img src="/images/theophile.jpg" alt="photo stylée"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Réseaux sociaux</div>
+
+        <ul class="menu menu-horizontal flex-wrap w-full px-0 [&_ion-icon]:text-lg">
+  
+
+  
+  <li>
+    <a href="https://www.facebook.com/profile.php?id=61576052068851" target="_blank" title="Facebook">
+      <ion-icon name="logo-facebook"></ion-icon>
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://www.instagram.com/bio_dyssee/" target="_blank" title="Instagram">
+      <ion-icon name="logo-instagram"></ion-icon>
+    </a>
+  </li>
+  
+  <li>
+    <a href="mailto:biodyssee2026@gmail.com" target="_blank" title="Email">
+      <ion-icon name="mail-outline"></ion-icon>
+    </a>
+  </li>
+  
+</ul>
+
+      </div>
+    </article>
+  </div>
+  
+
+  
+</div>
+
+            
+
+            
+<footer class="flex justify-between items-center gap-2 px-4 py-4">
+
+  <div>
+  
+  <p>© 2025 BiOdyssée</p>
+  
+
+  
+  <p>Tous droits réservés</p>
+  
+</div>
+
+   
+
+</footer>
+
+
+<script>
+  function scrollCategories(direction) {
+    const container = document.getElementById("categoriesScroll");
+    const scrollAmount = 300; 
+    container.scrollBy({
+      left: direction * scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+</script>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+     
+
+    
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
+

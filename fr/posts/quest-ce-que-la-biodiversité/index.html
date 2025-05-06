@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="fr"  
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qu&#39;est-ce que la biodiversité ?  | BiOdyssée</title>
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+  
+
+    
+
+<link rel="canonical" href="http://localhost:1313/fr/posts/quest-ce-que-la-biodiversit%C3%A9/" />
+
+
+
+<meta name="author" content="lucie" />
+<meta name="description" content="La biodiversité est un mot que l’on entend souvent, mais que signifie-t-il vraiment ? Pourquoi est-elle si importante pour notre planète et pour nous ?
+" />
+
+
+<meta name="keywords" content="Définitions et concepts">
+
+
+
+<meta name="generator" content="Hugo 0.143.1">
+
+
+<meta property="og:url" content="http://localhost:1313/fr/posts/quest-ce-que-la-biodiversit%C3%A9/">
+  <meta property="og:site_name" content="BiOdyssée">
+  <meta property="og:title" content="Qu&#39;est-ce que la biodiversité ? ">
+  <meta property="og:description" content="La biodiversité est un mot que l’on entend souvent, mais que signifie-t-il vraiment ? Pourquoi est-elle si importante pour notre planète et pour nous ?">
+  <meta property="og:locale" content="fr">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-04-29T14:00:00+01:00">
+    <meta property="article:modified_time" content="2025-04-29T14:00:00+01:00">
+
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Qu&#39;est-ce que la biodiversité ? ">
+  <meta name="twitter:description" content="La biodiversité est un mot que l’on entend souvent, mais que signifie-t-il vraiment ? Pourquoi est-elle si importante pour notre planète et pour nous ?">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+<script src="//unpkg.com/valine@1.5.2/dist/Valine.min.js"></script>
+
+
+
+
+
+
+
+    
+    <link rel="stylesheet" href="/css/custom.css" />
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="py-4"> 
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="Retourne ça !">
+        <div class="h-10 rounded-full">
+          <img src="/images/logo.jpg" alt="BiOdyssée" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="http://localhost:1313/" class="text-lg font-semibold cursor-pointer">
+          BiOdyssée
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm" style="color: #ffffff" >À la (re)découverte du vivant</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="Contact">
+    <ion-icon name="information-circle"></ion-icon>Contact</div>
+</li>
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="Rechercher">
+    <ion-icon name="search"></ion-icon>
+    Rechercher
+  </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="Archives">
+    <ion-icon name="archive"></ion-icon>
+    Archives
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="Toutes les catégories">
+    <ion-icon name="grid"></ion-icon>
+    Toutes les catégories
+  </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0"
+        class="text-sm font-semibold cursor-pointer hover:underline"
+        @click="flip = !flip"
+        title="Contact"
+      >Contact</div>
+      
+      
+
+      
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="Rechercher">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+
+
+
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="Archives">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="Toutes les catégories">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+
+
+
+
+
+      
+
+      
+
+      
+
+
+ 
+<div class="dropdown dropdown-end">
+  <div tabindex="0" role="button" class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" aria-label="Select an option">
+  <ion-icon name="earth-outline"> </ion-icon> 
+  
+  </div>
+  <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-xl">
+    
+      <li>
+        <a href="/fr" class="inline-flex items-center p-2 cursor-pointer" style = "color: #000000">
+          Français
+        </a>
+      </li>
+    
+      <li>
+        <a href="/ja" class="inline-flex items-center p-2 cursor-pointer" style = "color: #000000">
+          日本語
+        </a>
+      </li>
+    
+      <li>
+        <a href="/en" class="inline-flex items-center p-2 cursor-pointer" style = "color: #000000">
+          English
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+    </section>
+  </div>
+</nav>
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+           
+
+          <div class="container">
+            
+<div class="lg:grid lg:grid-cols-4 gap-4 mt-4 px-4">
+  <div class="hidden lg:block">
+    
+  </div>
+
+  <div class="lg:col-span-2">
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="Qu&#39;est-ce que la biodiversité ? ">
+  <meta itemprop="description" content="La biodiversité est un mot que l’on entend souvent, mais que signifie-t-il vraiment ? Pourquoi est-elle si importante pour notre planète et pour nous ?">
+  <meta itemprop="datePublished" content="2025-04-29T14:00:00+01:00">
+  <meta itemprop="dateModified" content="2025-04-29T14:00:00+01:00">
+  <meta itemprop="wordCount" content="1420">
+  <meta itemprop="keywords" content="Définitions et concepts">
+
+      <header>
+        <h1 itemprop="headline">Qu&#39;est-ce que la biodiversité ? </h1>
+        <p class="text-sm">
+          
+            mardi, avr. 29, 2025
+          
+
+          | <span>7 minutes de lecture</span>
+
+          
+        </p>
+
+        
+        <div class="flex justify-between">
+          
+            
+
+
+<div class="flex items-center">
+  
+    <div class="avatar mr-1">
+      <div class="w-8 rounded-full">
+        <img class="my-0" src="/images/authors/avatar_lucie.jpg" alt="Lucie" />
+      </div>
+    </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+    
+      
+        <span itemprop="name">Lucie</span>
+      
+    
+  </span>
+</div>
+
+          
+
+          
+
+<div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=http://localhost:1313/fr/posts/quest-ce-que-la-biodiversit%C3%A9/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="text-gray-500 group-hover:text-white" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=Qu%27est-ce%20que%20la%20biodiversit%c3%a9%20?%20%20http://localhost:1313/fr/posts/quest-ce-que-la-biodiversit%C3%A9/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="text-gray-500 group-hover:text-white" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div> 
+
+        </div>
+      </header>
+
+      <section id="dream-single-post-content" itemprop="articleBody">
+       
+    <img class="w-full z-30" src="/images/biodiversite_cover.jpg" alt="Qu&#39;est-ce que la biodiversité ? " />
+
+
+        <p>La biodiversité est un mot que l’on entend souvent, mais que signifie-t-il vraiment ? Pourquoi est-elle si importante pour notre planète et pour nous ?</p>
+<h2 id="quest-ce-que-la-biodiversité-">Qu’est-ce que la biodiversité ?</h2>
+<p>Le mot <strong>biodiversité</strong> est la contraction des mots « biologique » et « diversité ». Il désigne l’ensemble des formes de vie sur Terre, qu’il s’agisse des hommes, des plantes, des animaux, des champignons, des bactéries ou encore des milieux dans lesquels ils vivent.</p>
+<p>La biodiversité s’exprime à <strong>3 niveaux</strong> :</p>
+<h3 id="la-diversité-intraspécifique">La diversité intraspécifique</h3>
+<p>On a tout d&rsquo;abord la diversité au sein d’une espèce, dite <strong>intraspécifique</strong>. Tous les individus au sein d’une même espèce sont différents.</p>
+<div style="display: flex; align-items: center;">
+  <img src="/images/definition_biodiversite/polymorphisme genetique.png" style="width: 250px; margin-right: 10px;">
+  <p>Sur cette illustration, on peut voir que cette espèce d’escargot existe sous pleins de formes et de couleurs différentes. Pourtant, il s’agit bien de la même espèce.
+Les différences observées sont dues à de petites variations dans les gènes des escargots : certaines version du gène codent pour une coquille jaune, d’autres pour une coquille brune.
+C’est pareil pour la couleur des yeux chez les êtres humains : certains sont bleus, et d’autres sont marrons ou verts.
+</p>
+</div>
+<h3 id="la-diversité-interspécifique">La diversité interspécifique</h3>
+<p>A une plus grande échelle, il y a la diversité entre les espèces, dite <strong>interspécifique</strong>. Il existe de nombreuses espèces sur Terre,  et toutes différentes entre elles.
+En effet, chaque espèce présente des caractéristiques différentes, que ce soit au niveau de la taille, de la forme, de la couleur, du régime alimentaire etc.</p>
+<p>Ce sont ces caractéristiques qui permettent de déterminer si deux individus font partie de la même espèce ou non. Pourtant, on a vu précédemment que des individus peuvent être de la même espèce et ne pas se ressembler. Alors comment défini-t-on une espèce ?</p>
+<p><img src="/images/definition_biodiversite/diversite_specifique.png" alt="composition diversité spécifique"></p>
+<div style="border: 2px solid #81b96e; padding: 1em; border-radius: 8px; background-color: #f5fff3;">
+  <h3 style="margin-top: 0;">Définition d'une espèce :</h3>
+  <p>Du point de vue de la biologie, une espèce est un ensemble d’individus qui peuvent se reproduire entre eux et avoir une descendance viable et féconde. Néanmoins il existe pleins d’autres définitions d’une espèce : 
+</p>
+  <ul>
+    <li>Les espèces morphologiques : ensemble d’individus définis par des caractéristiques communes comme la forme, la taille, la couleur</li>
+    <li>Les espèces phénétiques : ensemble des organismes vivants qui se ressemblent</li>
+    <li>Les espèces écologiques : ensemble d’individus partageant la même niche écologique, c’est-à-dire le même habitat, les mêmes conditions de vie, etc.</li>
+  </ul>
+  <h3 style="margin-top: 0;">Le ligron est-il une espèce ?</h3>
+  <img src="/images/definition_biodiversite/ligron.jpg" style="max-width: 240px; float: right; margin-left: 1em; border-radius: 4px;" />
+  <p> Le ligron est un hybride entre un tigre et un lion, il est issu de la reproduction entre les deux. Mais du coup, puisqu’ils peuvent se reproduire entre eux, est ce que les tigres et les lions font parties de la même espèce ? Et bien, non, car le ligron n’est pas fécond, il ne peut pas avoir de descendants. Il n'est donc pas une espèce à part entière.</p>
+</div>
+<h3 id="la-diversité-écosystémique">La diversité écosystémique</h3>
+<p>Sur Terre, il existe un immense panel d’habitats naturels qui abritent tous des êtres vivants. Pour n’en citer que quelques-uns, on a : les forêts, les rivières, les océans, les déserts, etc.</p>
+<p><img src="/images/definition_biodiversite/diversite_ecosysteme.png" alt="composition diversité écosystème"></p>
+<div style="border: 2px solid #81b96e; padding: 1em; border-radius: 8px; background-color: #f5fff3;">
+  <h3 style="margin-top: 0;">Définition d'un écosytème :</h3>
+  <p>Un écosystème est un ensemble formé par les êtres vivants et le milieu naturel dans lequel ils vivent, ainsi que toutes les interactions qui les relient. Chaque espèce joue un rôle particulier et nécessaire au bon fonctionnement global du milieu.</p>
+  <img src="/images/definition_biodiversite/fonctionnement_ecosysteme.png" />
+</div>
+<h2 id="pourquoi-la-biodiversité-est-elle-si-importante-">Pourquoi la biodiversité est-elle si importante ?</h2>
+<p>La biodiversité est, pour ainsi dire, essentielle à la vie. Parmi les nombreux services qu’elle nous procure on peut citer :</p>
+<ul>
+<li>La production de nourriture, grâce aux sols, à la pollinisation des cultures par les insectes, etc.</li>
+<li>La régulation du climat, du cycle de l’eau, du cycle du carbone, etc.</li>
+<li>Une ressource : la biodiversité fournit des ressources médicales, des matériaux et un support à la vie</li>
+</ul>
+<h2 id="quelles-sont-les-menaces-qui-pèsent-sur-la-biodiversité-">Quelles sont les menaces qui pèsent sur la biodiversité ?</h2>
+<p>La biodiversité est aujourd’hui gravement menacée, et cela est principalement dû aux activités humaines.
+Les scientifiques estiment que nous sommes peut-être en train de vivre une crise biologique majeure, avec un taux d&rsquo;extinction des espèces très elevé.
+Pour trouver des solutions efficaces pour la protéger, ils ont réussi à identifier les principales menaces qui pèsent sur elle, et qui sont à l’origine de son déclin :</p>
+<h3 id="la-destruction-des-habitats-naturels">La destruction des habitats naturels</h3>
+<p><strong>La destruction des habitats naturels</strong> comme la déforestation, l’urbanisation et l’agriculture intensive est une cause majeur du déclin de la biodiversité.</p>
+<p><img src="/images/definition_biodiversite/destruction_habitat.png" alt="composition destruction habitats"></p>
+<p>Sur cette image, on peut apercevoir la déforestation qui est à l’œuvre en forêt amazonienne, considérée comme étant le poumon du monde et qui abritent une diversité d’espèces incomparables. La perte de cet habitat naturel a des conséquence désastreuse non seulement en terme de régulation du climat mais aussi pour toutes les espèces qui y vivent. Selon l&rsquo;IPBES, un organe international qui traite les questions de la biodiversité, la déforestation est responsable de 50% de la destruction des habitats naturels, qui  abritent pourtant plus de 50% de la biodiversité mondiale.</p>
+<p>Sur l&rsquo;image de droite, on peut voir que pour nourir le monde, les agriculeurs ont recours à certaines pratiques, comme l&rsquo;usage de produits chimiques, qui détruisent toutes la biodiversité présente dans le sol. L&rsquo;agriculture est la cause la plus directe du déclin de la biodiversité, elle est responsable de plus de 70% de la déforestation.</p>
+<h3 id="la-pollution">La pollution</h3>
+<p><strong>La pollution</strong>  qu&rsquo;elle soit plastique, ou chimique (médicaments, pesticides, etc.) empoisonne les milieux et les espèces. Elle est responsable d&rsquo;une grande partie de la perte de biodiversité à l&rsquo;échelle mondiale.</p>
+<div style="display: flex; align-items: center;">
+  <img src="/images/definition_biodiversite/pollution_plastique.png" style="width: 250px; margin-right: 10px;">
+  <p>L’océan est un milieu particulièrement touché par la pollution plastique. En effet, les plastiques constituent 90 % des déchets flottants sur les océans et comme exemple majeur, on peut citer le continent de plastique qui se trouve dans l’océan Pacifique Nord. Il est parfois appelé le 6e continent. L'océanographe Charles Moore a mesuré une concentration de plus de 334 000 déchets par km2 (variant de 32 000 à 1 million de pièces par km2).</p>
+</div>
+Cela représente un enjeux majeurs pour toutes les populations dont la survie dépend de l'océan, et plus particulièrement de la pêche.
+<h3 id="la-surexploitation-des-ressources-naturelles">La surexploitation des ressources naturelles</h3>
+<p>Il existe de nombreux cas où les ressources naturelles sont surexploitées. On pense notamment aux gisements de pétrole, dont l’extraction s’accélère tandis que le stock diminue. Mais les énergies fossiles sont loin d’être les seules concernées par un amenuisant du stock, c’est aussi le cas du sable, des matériaux semi-conducteurs ou encore des poissons.</p>
+<p><img src="/images/definition_biodiversite/surexploitation.png" alt="composition surexploitation"></p>
+<p>A l&rsquo;avenir, il sera important de trouver une gestion durable de ces ressources.</p>
+<h3 id="le-changement-climatique">Le changement climatique</h3>
+<p>On ne le présente plus, le changement climatique modifie les conditions abiotiques des écosystèmes, comme la température ou les précipitations. Cela a des conséquences graves sur leur bon fonctionnement.</p>
+<p><img src="/images/definition_biodiversite/changement_climatique.png" alt="composition changement climatique"></p>
+<p>Les phénomènes climatiques extrêmes comme les sécheresses, les inondations ou les cyclones ont vu leur fréquence et leur intensité augmentées ces dernières années. La principale raison à cela est le dérèglement climatique. L’augmentation des températures est aussi indirectement liée à l’augmentation des feux de forêt, qui se font de plus en plus fréquents et de plus en plus tôt dans l’année.</p>
+<h3 id="les-espèces-exotiques-envahissantes">Les espèces exotiques envahissantes</h3>
+<p>Les <strong>espèces exotiques envahissantes (EEE)</strong> sont des espèces animales, végétales, fongiques ou microbiennes introduites volontairement ou accidentellement par l’homme hors de leur aire de répartition naturelle, et qui prolifèrent au détriment des espèces locales, des écosystèmes, voire des activités humaines.</p>
+<div style="border: 2px solid #81b96e; padding: 1em; border-radius: 8px; background-color: #f5fff3;">
+  <h3 style="margin-top: 0;">🔍 Définition d'une espèce exotique envahissante selon l'UICN *  :</h3>
+  <p>« Une espèce exotique envahissante est une espèce dont l’introduction et la propagation menacent la biodiversité et les écosystèmes. » </p>
+  <em> * UICN : Union Internationale pour la Conservation de la Nature </em>
+  </div>
+<p>Les impacts sur la biodiversité sont nombreux :</p>
+<ul>
+<li>Compétition avec les espèces locales pour les ressources</li>
+<li>Prédation directe sur des espèces indigènes parfois non préparées à y faire face.</li>
+<li>Hybridation avec des espèces locales, menaçant la génétique native.</li>
+<li>Modification des habitats</li>
+<li>Transmission de maladies aux espèces indigènes.</li>
+</ul>
+<p>L&rsquo;IPBES considère les EEE comme la 5e cause mondiale de perte de biodiversité, on estime qu&rsquo;elles sont responsables de 37% des extinctions enregistrées. A l&rsquo;heure actuelle, plus de 3 500 EEE ont été recensée dans le monde.</p>
+<h2 id="quelles-sont-les-solutions-pour-préserver-la-biodiversité-">Quelles sont les solutions pour préserver la biodiversité ?</h2>
+<p>Face à ces menaces, de nombreuses actions sont possibles, à toutes les échelles.</p>
+<p><strong>À l’échelle internationale et nationale</strong> :</p>
+<ul>
+<li>Création de réserves naturelles et de parcs protégés.</li>
+<li>Adoption de lois contre la pollution, le braconnage ou l’exploitation illégale.</li>
+<li>Programmes de restauration des habitats dégradés.</li>
+<li>Mise en œuvre d’agricultures plus durables.</li>
+</ul>
+<p><strong>À l’échelle locale et individuelle</strong> :</p>
+<ul>
+<li>Préserver la nature autour de chez soi (jardins, haies, mares…).</li>
+<li>Réduire sa consommation de viande ou de produits transformés.</li>
+<li>Choisir des produits respectueux de l’environnement.</li>
+<li>Limiter l’usage de pesticides.</li>
+<li>Participer à des actions de sensibilisation ou de protection avec des associations.</li>
+</ul>
+<h2 id="a-retenir">A retenir</h2>
+<p><img src="/images/definition_biodiversite/biodiversite_%C3%A0_retenir.png" alt="résumé biodiversité"></p>
+<p><a href="/images/definition_biodiversite/biodiversite_a_retenir.pdf" download>📄 Télécharger le PDF</a></p>
+
+        
+      </section>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <div></div>
+        
+
+        
+        <a class="group btn btn-outline" href="/fr/posts/recherche-partenariat/" title=" ❗Recherche partenariat❗">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">Page suivante</span>
+            <span class="max-w-48 truncate"> ❗Recherche partenariat❗</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+
+      
+      <div class="divider"></div>
+
+      <section class="space-y-4">
+        
+
+
+
+
+<article>
+
+  <div id="vcomments"></div>
+<script src="https://unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+  new Valine({
+    el: '#vcomments',
+    appId: '',
+    appKey: '',
+    placeholder: 'Leave a comment...',
+    lang: 'en',
+    avatar: 'mp',
+    visitor: true,
+    requiredFields: ['nick','mail']
+  });
+</script>
+
+
+</article>
+
+
+
+
+
+
+      </section>
+      
+    </article>
+  </div>
+
+  <div class="hidden lg:flex lg:flex-col lg:items-end">
+    
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#quest-ce-que-la-biodiversité-">Qu’est-ce que la biodiversité ?</a>
+      <ul>
+        <li><a href="#la-diversité-intraspécifique">La diversité intraspécifique</a></li>
+        <li><a href="#la-diversité-interspécifique">La diversité interspécifique</a></li>
+        <li><a href="#la-diversité-écosystémique">La diversité écosystémique</a></li>
+      </ul>
+    </li>
+    <li><a href="#pourquoi-la-biodiversité-est-elle-si-importante-">Pourquoi la biodiversité est-elle si importante ?</a></li>
+    <li><a href="#quelles-sont-les-menaces-qui-pèsent-sur-la-biodiversité-">Quelles sont les menaces qui pèsent sur la biodiversité ?</a>
+      <ul>
+        <li><a href="#la-destruction-des-habitats-naturels">La destruction des habitats naturels</a></li>
+        <li><a href="#la-pollution">La pollution</a></li>
+        <li><a href="#la-surexploitation-des-ressources-naturelles">La surexploitation des ressources naturelles</a></li>
+        <li><a href="#le-changement-climatique">Le changement climatique</a></li>
+        <li><a href="#les-espèces-exotiques-envahissantes">Les espèces exotiques envahissantes</a></li>
+      </ul>
+    </li>
+    <li><a href="#quelles-sont-les-solutions-pour-préserver-la-biodiversité-">Quelles sont les solutions pour préserver la biodiversité ?</a></li>
+    <li><a href="#a-retenir">A retenir</a></li>
+  </ul>
+</nav>
+    
+  </div>
+</div>
+
+
+
+            
+<footer class="flex justify-between items-center gap-2 px-4 py-4">
+
+  <div>
+  
+  <p>© 2025 BiOdyssée</p>
+  
+
+  
+  <p>Tous droits réservés</p>
+  
+</div>
+
+   
+
+</footer>
+
+
+<script>
+  function scrollCategories(direction) {
+    const container = document.getElementById("categoriesScroll");
+    const scrollAmount = 300; 
+    container.scrollBy({
+      left: direction * scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+</script>
+
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid dream-grid-about">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Voilà l&#39;équipe de la mission 2026</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Voilà une brève présentation de l&rsquo;équipe fondatrice de BiOdyssée et qui participera à l&rsquo;expédition 2026 au Japon.</p>
+<p><img src="/images/nous.jpg" alt="photo équipe"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Hugo </div>
+
+        <div class="prose dark:prose-invert">
+          <p>Étudiant en Gestion et ingénierie de l&rsquo;environnement à AgroParisTech, je suis passionné par la paléontologie et l’évolution 🦖🦴🧬. J’aspire à travailler dans le domaine de la gestion des milieux naturels, plus précisément pour la conservation ou la restauration des milieux humides en France 🐸🐟🌿, qui ont perdu une part très importante de leur surface ces derniers siècles. Je me suis ainsi toujours intéressé à l’évolution des espèces et des écosystèmes dans le temps, c’est pourquoi ce projet de césure me motive tant !</p>
+<p><strong>Contact :</strong>
+<a href="mailto:hugo.roger@agroparistech.fr" target="_blank">hugo.roger@agroparistech.fr</a>
+</p>
+<p><img src="/images/hugo.jpg" alt="photo rando"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Lucie </div>
+
+        <div class="prose dark:prose-invert">
+          <p>Étudiante en Gestion et ingénierie de l&rsquo;environnement à AgroParisTech, je suis fascinée par à peu près tout ce qui se rapporte à l’océan 🌊. C’est dans l’optique d’allier travail et passion, que je m’oriente vers la biologie marine. Plus particulièrement, j’aimerais travailler dans la conservation ou la gestion des écosystèmes marins. La faune 🐠🐋🐙, autant que la flore aquatique me passionnent et c’est pour pouvoir l’observer de plus près que je fais de la plongée sous-marine 🤿. Ce projet est pour moi l’opportunité de découvrir de nouveaux milieux aquatiques 🌊🪸🌿 et de comprendre tous les enjeux qui pèsent dessus.</p>
+<p><strong>Contact :</strong>
+<a href="mailto:lucie.lowagie@agroparistech.fr" target="_blank">lucie.lowagie@agroparistech.fr</a>
+</p>
+<p><img src="/images/lucie-plongee.jpg" alt="photo plongée"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Solal</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Étudiant en agronomie et passionné par l’histoire 🧭⌛🏹 et l’éthologie 🐁🧠🧪, j’espère utiliser cette opportunité pour observer le comportement des animaux dans leur milieu naturel. Par la suite, j’aimerais faire de la recherche 👨‍🔬 ou être professeur dans l’enseignement supérieur 🧑‍🏫, et cette césure me permettrait de développer mes capacités de synthèse et d’observation. Le fait de pouvoir allier recherche historique et observation animale — le tout dans le but de ne pas reproduire les erreurs du passé — est la raison pour laquelle ce projet m’intéresse.</p>
+<p><strong>Contact :</strong>
+<a href="mailto:solal.free@agroparistech.fr" target="_blank">solal.free@agroparistech.fr</a>
+</p>
+<p><img src="/images/solal.jpg" alt="photo qui fait peur"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Théophile </div>
+
+        <div class="prose dark:prose-invert">
+          <p>Étudiant en ingénierie de l&rsquo;environnement passionné d’entomologie et en particulier de myrmécologie 🐜, mon objectif est de faire de la recherche en environnement en particulier sur les dynamiques génétiques des populations 🧬🐜 (de fourmis bien évidemment). Je fais partie de l’association naturaliste &ldquo;les &ldquo;Blairoudeurs 🦡&rdquo; avec laquelle je suis parti faire de la prospection et de la sensibilisation en Corse lors de la Mission Isula. Ce projet de césure est une super opportunité de continuer cette expérience mais à une échelle bien plus vaste et exotique tout en continuant de me former sur la connaissance des différents écosystèmes et leurs moyens de gestions dans un autre pays.</p>
+<p><strong>Contact :</strong>
+<a href="mailto:theophie.thomas@agroparistech.fr" target="_blank">theophie.thomas@agroparistech.fr</a>
+</p>
+<p><img src="/images/theophile.jpg" alt="photo stylée"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Réseaux sociaux</div>
+
+        <ul class="menu menu-horizontal flex-wrap w-full px-0 [&_ion-icon]:text-lg">
+  
+
+  
+  <li>
+    <a href="https://www.facebook.com/profile.php?id=61576052068851" target="_blank" title="Facebook">
+      <ion-icon name="logo-facebook"></ion-icon>
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://www.instagram.com/bio_dyssee/" target="_blank" title="Instagram">
+      <ion-icon name="logo-instagram"></ion-icon>
+    </a>
+  </li>
+  
+  <li>
+    <a href="mailto:biodyssee2026@gmail.com" target="_blank" title="Email">
+      <ion-icon name="mail-outline"></ion-icon>
+    </a>
+  </li>
+  
+</ul>
+
+      </div>
+    </article>
+  </div>
+  
+
+  
+</div>
+
+            
+
+            
+<footer class="flex justify-between items-center gap-2 px-4 py-4">
+
+  <div>
+  
+  <p>© 2025 BiOdyssée</p>
+  
+
+  
+  <p>Tous droits réservés</p>
+  
+</div>
+
+   
+
+</footer>
+
+
+<script>
+  function scrollCategories(direction) {
+    const container = document.getElementById("categoriesScroll");
+    const scrollAmount = 300; 
+    container.scrollBy({
+      left: direction * scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+</script>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
+

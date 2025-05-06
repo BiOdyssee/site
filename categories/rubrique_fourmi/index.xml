@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>La rubrique fourmi de Théophile on BiOdyssée</title>
+    <link>http://localhost:1313/categories/rubrique_fourmi/</link>
+    <description>Recent content in La rubrique fourmi de Théophile on BiOdyssée</description>
+    <generator>Hugo</generator>
+    <language>fr</language>
+    <atom:link href="http://localhost:1313/categories/rubrique_fourmi/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

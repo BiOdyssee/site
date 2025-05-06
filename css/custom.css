@@ -1,0 +1,66 @@
+
+/*Modifier la couleur de la barre de navigation de la page d'accueil*/
+nav {
+    background-color: #81b96e !important; /* Remplace par la couleur souhaitée */
+    color : #ffffff
+}
+/*Modifier la couleur de la barre de navigation des pages de posts*/
+nav.py-4 {
+    background-color: #81b96e !important;
+}
+
+/* Pour changer la couleur des icones de partage*/
+.shares-icon {
+  color: gray; /* Remplacez 'gray' par la teinte de gris souhaitée, par exemple '#808080' */
+}
+
+/*Pour le défilement des catégories*/
+
+.categories-scroll-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.categories-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding: 1rem 2rem;
+  scroll-behavior: smooth;
+}
+
+.category-item {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  width: 250px;
+}
+
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  transition: background-color 0.3s;
+}
+
+.scroll-btn:hover {
+  background-color: rgba(200, 200, 200, 0.8);
+}
+
+.scroll-btn.left {
+  left: 0;
+}
+
+.scroll-btn.right {
+  right: 0;
+}
