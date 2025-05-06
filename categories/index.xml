@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Catégories on BiOdyssée</title>
-    <link>http://localhost:1313/categories/</link>
+    <link>https://biodyssee.netlify.app/categories/</link>
     <description>Recent content in Catégories on BiOdyssée</description>
     <generator>Hugo</generator>
     <language>fr</language>
     <lastBuildDate>Tue, 29 Apr 2025 14:00:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://biodyssee.netlify.app/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Définitions et concepts</title>
-      <link>http://localhost:1313/categories/definition/</link>
+      <link>https://biodyssee.netlify.app/categories/definition/</link>
       <pubDate>Tue, 29 Apr 2025 14:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/categories/definition/</guid>
+      <guid>https://biodyssee.netlify.app/categories/definition/</guid>
       <description></description>
     </item>
     <item>
       <title>Acteurs</title>
-      <link>http://localhost:1313/categories/acteurs/</link>
+      <link>https://biodyssee.netlify.app/categories/acteurs/</link>
       <pubDate>Wed, 16 Apr 2025 14:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/categories/acteurs/</guid>
+      <guid>https://biodyssee.netlify.app/categories/acteurs/</guid>
       <description></description>
     </item>
     <item>
       <title>Tout savoir sur l&#39;expédition 2026</title>
-      <link>http://localhost:1313/categories/expedition-2026/</link>
+      <link>https://biodyssee.netlify.app/categories/expedition-2026/</link>
       <pubDate>Wed, 16 Apr 2025 14:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/categories/expedition-2026/</guid>
+      <guid>https://biodyssee.netlify.app/categories/expedition-2026/</guid>
       <description></description>
     </item>
     <item>
       <title>Faune</title>
-      <link>http://localhost:1313/categories/faune/</link>
+      <link>https://biodyssee.netlify.app/categories/faune/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/faune/</guid>
+      <guid>https://biodyssee.netlify.app/categories/faune/</guid>
       <description></description>
     </item>
     <item>
       <title>Flore</title>
-      <link>http://localhost:1313/categories/flore/</link>
+      <link>https://biodyssee.netlify.app/categories/flore/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/flore/</guid>
+      <guid>https://biodyssee.netlify.app/categories/flore/</guid>
       <description></description>
     </item>
     <item>
       <title>La rubrique fourmi de Théophile</title>
-      <link>http://localhost:1313/categories/rubrique_fourmi/</link>
+      <link>https://biodyssee.netlify.app/categories/rubrique_fourmi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/rubrique_fourmi/</guid>
+      <guid>https://biodyssee.netlify.app/categories/rubrique_fourmi/</guid>
       <description></description>
     </item>
   </channel>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Actors on BiOdyssée</title>
-    <link>http://localhost:1313/en/categories/acteurs/</link>
+    <link>https://biodyssee.netlify.app/en/categories/acteurs/</link>
     <description>Recent content in Actors on BiOdyssée</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Wed, 16 Apr 2025 14:00:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/categories/acteurs/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://biodyssee.netlify.app/en/categories/acteurs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title> ❗partnership research❗</title>
-      <link>http://localhost:1313/en/posts/partnership-research/</link>
+      <link>https://biodyssee.netlify.app/en/posts/partnership-research/</link>
       <pubDate>Wed, 16 Apr 2025 14:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/en/posts/partnership-research/</guid>
+      <guid>https://biodyssee.netlify.app/en/posts/partnership-research/</guid>
       <description>&lt;p&gt;🤝 &lt;strong&gt;Looking for partnerships to help our project grow&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Our adventure has only just begun, and to go any further we need your help!&lt;/p&gt;</description>
     </item>
   </channel>

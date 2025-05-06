@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Page d&#39;Accueil on BiOdyssée</title>
-    <link>http://localhost:1313/</link>
+    <link>https://biodyssee.netlify.app/</link>
     <description>Recent content in Page d&#39;Accueil on BiOdyssée</description>
     <generator>Hugo</generator>
     <language>fr</language>
     <lastBuildDate>Tue, 29 Apr 2025 14:00:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://biodyssee.netlify.app/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Qu&#39;est-ce que la biodiversité ? </title>
-      <link>http://localhost:1313/fr/posts/quest-ce-que-la-biodiversit%C3%A9/</link>
+      <link>https://biodyssee.netlify.app/fr/posts/quest-ce-que-la-biodiversit%C3%A9/</link>
       <pubDate>Tue, 29 Apr 2025 14:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/fr/posts/quest-ce-que-la-biodiversit%C3%A9/</guid>
+      <guid>https://biodyssee.netlify.app/fr/posts/quest-ce-que-la-biodiversit%C3%A9/</guid>
       <description>&lt;p&gt;La biodiversité est un mot que l’on entend souvent, mais que signifie-t-il vraiment ? Pourquoi est-elle si importante pour notre planète et pour nous ?&lt;/p&gt;</description>
     </item>
     <item>
       <title> ❗Recherche partenariat❗</title>
-      <link>http://localhost:1313/fr/posts/recherche-partenariat/</link>
+      <link>https://biodyssee.netlify.app/fr/posts/recherche-partenariat/</link>
       <pubDate>Wed, 16 Apr 2025 14:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/fr/posts/recherche-partenariat/</guid>
+      <guid>https://biodyssee.netlify.app/fr/posts/recherche-partenariat/</guid>
       <description>&lt;p&gt;🤝 &lt;strong&gt;En quête de partenariats pour faire grandir notre projet !&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Notre aventure ne fait que commencer, et pour aller plus loin, nous avons besoin de vous !&lt;/p&gt;</description>
     </item>
     <item>
       <title>🗺️ Découvrez notre itinéraire au Japon !</title>
-      <link>http://localhost:1313/fr/posts/%EF%B8%8F-d%C3%A9couvrez-notre-itin%C3%A9raire-au-japon/</link>
+      <link>https://biodyssee.netlify.app/fr/posts/%EF%B8%8F-d%C3%A9couvrez-notre-itin%C3%A9raire-au-japon/</link>
       <pubDate>Mon, 14 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/fr/posts/%EF%B8%8F-d%C3%A9couvrez-notre-itin%C3%A9raire-au-japon/</guid>
+      <guid>https://biodyssee.netlify.app/fr/posts/%EF%B8%8F-d%C3%A9couvrez-notre-itin%C3%A9raire-au-japon/</guid>
       <description>&lt;p&gt;Voici une &lt;strong&gt;carte interactive&lt;/strong&gt; pour suivre notre itinéraire, découvrir chaque étape de notre voyage à travers des photos, des récits et des liens vers les lieux explorés.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Présentation de l&#39;association BiOdyssée</title>
-      <link>http://localhost:1313/fr/posts/presentation-association/</link>
+      <link>https://biodyssee.netlify.app/fr/posts/presentation-association/</link>
       <pubDate>Tue, 08 Apr 2025 14:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/fr/posts/presentation-association/</guid>
+      <guid>https://biodyssee.netlify.app/fr/posts/presentation-association/</guid>
       <description>&lt;p&gt;&lt;strong&gt;BiOdyssée&lt;/strong&gt; est une association dédiée à la protection de la biodiversité.&lt;/p&gt;&#xA;&lt;p&gt;Elle explore les initiatives de conservation à travers le monde pour en comprendre les enjeux, les méthodes et les impacts.&lt;/p&gt;</description>
     </item>
   </channel>

@@ -2,239 +2,239 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://biodyssee.netlify.app/posts/</loc>
     <lastmod>2025-04-29T14:00:00+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="http://localhost:1313/ja/posts/"
+                href="https://biodyssee.netlify.app/ja/posts/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/posts/"
+                href="https://biodyssee.netlify.app/en/posts/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/posts/"
+                href="https://biodyssee.netlify.app/posts/"
                 />
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://biodyssee.netlify.app/categories/</loc>
     <lastmod>2025-04-29T14:00:00+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="http://localhost:1313/ja/categories/"
+                href="https://biodyssee.netlify.app/ja/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/categories/"
+                href="https://biodyssee.netlify.app/en/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/categories/"
+                href="https://biodyssee.netlify.app/categories/"
                 />
   </url><url>
-    <loc>http://localhost:1313/categories/definition/</loc>
+    <loc>https://biodyssee.netlify.app/categories/definition/</loc>
     <lastmod>2025-04-29T14:00:00+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="http://localhost:1313/ja/categories/definition/"
+                href="https://biodyssee.netlify.app/ja/categories/definition/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/categories/definition/"
+                href="https://biodyssee.netlify.app/en/categories/definition/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/categories/definition/"
+                href="https://biodyssee.netlify.app/categories/definition/"
                 />
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://biodyssee.netlify.app/</loc>
     <lastmod>2025-04-29T14:00:00+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="http://localhost:1313/ja/"
+                href="https://biodyssee.netlify.app/ja/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/"
+                href="https://biodyssee.netlify.app/en/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/"
+                href="https://biodyssee.netlify.app/"
                 />
   </url><url>
-    <loc>http://localhost:1313/fr/posts/quest-ce-que-la-biodiversit%C3%A9/</loc>
+    <loc>https://biodyssee.netlify.app/fr/posts/quest-ce-que-la-biodiversit%C3%A9/</loc>
     <lastmod>2025-04-29T14:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/fr/posts/recherche-partenariat/</loc>
+    <loc>https://biodyssee.netlify.app/fr/posts/recherche-partenariat/</loc>
     <lastmod>2025-04-16T14:00:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/acteurs/</loc>
-    <lastmod>2025-04-16T14:00:00+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="http://localhost:1313/ja/categories/acteurs/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/categories/acteurs/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:1313/categories/acteurs/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/categories/expedition-2026/</loc>
+    <loc>https://biodyssee.netlify.app/categories/acteurs/</loc>
     <lastmod>2025-04-16T14:00:00+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="http://localhost:1313/ja/categories/expedition-2026/"
+                href="https://biodyssee.netlify.app/ja/categories/acteurs/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/categories/expedition-2026/"
+                href="https://biodyssee.netlify.app/en/categories/acteurs/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/categories/expedition-2026/"
+                href="https://biodyssee.netlify.app/categories/acteurs/"
                 />
   </url><url>
-    <loc>http://localhost:1313/fr/posts/%EF%B8%8F-d%C3%A9couvrez-notre-itin%C3%A9raire-au-japon/</loc>
+    <loc>https://biodyssee.netlify.app/categories/expedition-2026/</loc>
+    <lastmod>2025-04-16T14:00:00+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://biodyssee.netlify.app/ja/categories/expedition-2026/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://biodyssee.netlify.app/en/categories/expedition-2026/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://biodyssee.netlify.app/categories/expedition-2026/"
+                />
+  </url><url>
+    <loc>https://biodyssee.netlify.app/fr/posts/%EF%B8%8F-d%C3%A9couvrez-notre-itin%C3%A9raire-au-japon/</loc>
     <lastmod>2025-04-14T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="http://localhost:1313/ja/posts/%EF%B8%8F-%E6%97%A5%E6%9C%AC%E3%81%AE%E6%97%85%E3%82%92%E4%B8%80%E7%B7%92%E3%81%AB%E8%BE%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%81%BE%E3%81%97%E3%82%87%E3%81%86/"
+                href="https://biodyssee.netlify.app/ja/posts/%EF%B8%8F-%E6%97%A5%E6%9C%AC%E3%81%AE%E6%97%85%E3%82%92%E4%B8%80%E7%B7%92%E3%81%AB%E8%BE%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%81%BE%E3%81%97%E3%82%87%E3%81%86/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/posts/%EF%B8%8F-discover-our-itinerary-in-japan/"
+                href="https://biodyssee.netlify.app/en/posts/%EF%B8%8F-discover-our-itinerary-in-japan/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/fr/posts/%EF%B8%8F-d%C3%A9couvrez-notre-itin%C3%A9raire-au-japon/"
+                href="https://biodyssee.netlify.app/fr/posts/%EF%B8%8F-d%C3%A9couvrez-notre-itin%C3%A9raire-au-japon/"
                 />
   </url><url>
-    <loc>http://localhost:1313/fr/posts/presentation-association/</loc>
+    <loc>https://biodyssee.netlify.app/fr/posts/presentation-association/</loc>
     <lastmod>2025-04-08T14:00:00+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="http://localhost:1313/ja/posts/presentation-association/"
+                href="https://biodyssee.netlify.app/ja/posts/presentation-association/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/posts/presentation-association/"
+                href="https://biodyssee.netlify.app/en/posts/presentation-association/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/fr/posts/presentation-association/"
+                href="https://biodyssee.netlify.app/fr/posts/presentation-association/"
                 />
   </url><url>
-    <loc>http://localhost:1313/search/</loc>
+    <loc>https://biodyssee.netlify.app/search/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="http://localhost:1313/ja/search/"
+                href="https://biodyssee.netlify.app/ja/search/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/search/"
+                href="https://biodyssee.netlify.app/en/search/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/search/"
+                href="https://biodyssee.netlify.app/search/"
                 />
   </url><url>
-    <loc>http://localhost:1313/categories/faune/</loc>
+    <loc>https://biodyssee.netlify.app/categories/faune/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="http://localhost:1313/ja/categories/faune/"
+                href="https://biodyssee.netlify.app/ja/categories/faune/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/categories/faune/"
+                href="https://biodyssee.netlify.app/en/categories/faune/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/categories/faune/"
+                href="https://biodyssee.netlify.app/categories/faune/"
                 />
   </url><url>
-    <loc>http://localhost:1313/categories/flore/</loc>
+    <loc>https://biodyssee.netlify.app/categories/flore/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="http://localhost:1313/ja/categories/flore/"
+                href="https://biodyssee.netlify.app/ja/categories/flore/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/categories/flore/"
+                href="https://biodyssee.netlify.app/en/categories/flore/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/categories/flore/"
+                href="https://biodyssee.netlify.app/categories/flore/"
                 />
   </url><url>
-    <loc>http://localhost:1313/categories/rubrique_fourmi/</loc>
+    <loc>https://biodyssee.netlify.app/categories/rubrique_fourmi/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="http://localhost:1313/ja/categories/rubrique_fourmi/"
+                href="https://biodyssee.netlify.app/ja/categories/rubrique_fourmi/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/categories/rubrique_fourmi/"
+                href="https://biodyssee.netlify.app/en/categories/rubrique_fourmi/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/categories/rubrique_fourmi/"
+                href="https://biodyssee.netlify.app/categories/rubrique_fourmi/"
                 />
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://biodyssee.netlify.app/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="http://localhost:1313/ja/tags/"
+                href="https://biodyssee.netlify.app/ja/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/tags/"
+                href="https://biodyssee.netlify.app/en/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/tags/"
+                href="https://biodyssee.netlify.app/tags/"
                 />
   </url>
 </urlset>
