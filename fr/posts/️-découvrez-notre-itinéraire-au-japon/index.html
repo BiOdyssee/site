@@ -3,7 +3,7 @@
   x-data
   :class="$store.darkMode.class()"
   :data-theme="$store.darkMode.theme()">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>🗺️ Découvrez notre itinéraire au Japon ! | BiOdyssée</title>
@@ -17,7 +17,7 @@
 
     
 
-<link rel="canonical" href="https://biodyssee.netlify.app/fr/posts/%EF%B8%8F-d%C3%A9couvrez-notre-itin%C3%A9raire-au-japon/" />
+<link rel="canonical" href="http://localhost:1313/fr/posts/%EF%B8%8F-d%C3%A9couvrez-notre-itin%C3%A9raire-au-japon/" />
 
 
 
@@ -33,7 +33,7 @@
 <meta name="generator" content="Hugo 0.143.1">
 
 
-<meta property="og:url" content="https://biodyssee.netlify.app/fr/posts/%EF%B8%8F-d%C3%A9couvrez-notre-itin%C3%A9raire-au-japon/">
+<meta property="og:url" content="http://localhost:1313/fr/posts/%EF%B8%8F-d%C3%A9couvrez-notre-itin%C3%A9raire-au-japon/">
   <meta property="og:site_name" content="BiOdyssée">
   <meta property="og:title" content="🗺️ Découvrez notre itinéraire au Japon !">
   <meta property="og:description" content="Voici une carte interactive pour suivre notre itinéraire, découvrir chaque étape de notre voyage à travers des photos, des récits et des liens vers les lieux explorés.">
@@ -53,9 +53,7 @@
 
 
 
-  
-
-<link rel="stylesheet" href="/css/output.min.css" />
+<link rel="stylesheet" href="/css/output.css" />
 
 
 
@@ -109,7 +107,7 @@
       
       <div>
         
-        <a href="https://biodyssee.netlify.app/" class="text-lg font-semibold cursor-pointer">
+        <a href="http://localhost:1313/" class="text-lg font-semibold cursor-pointer">
           BiOdyssée
         </a>
         
@@ -336,13 +334,13 @@
   
   
     <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
-      href="https://facebook.com/sharer/sharer.php?u=https://biodyssee.netlify.app/fr/posts/%EF%B8%8F-d%C3%A9couvrez-notre-itin%C3%A9raire-au-japon/" target="_blank" rel="noopener noreferrer"
+      href="https://facebook.com/sharer/sharer.php?u=http://localhost:1313/fr/posts/%EF%B8%8F-d%C3%A9couvrez-notre-itin%C3%A9raire-au-japon/" target="_blank" rel="noopener noreferrer"
       title="Share on Facebook">
       <ion-icon class="text-gray-500 group-hover:text-white" name="logo-facebook"></ion-icon>
     </a>
   
     <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
-      href="https://wa.me/?text=%f0%9f%97%ba%ef%b8%8f%20D%c3%a9couvrez%20notre%20itin%c3%a9raire%20au%20Japon%20!%20https://biodyssee.netlify.app/fr/posts/%EF%B8%8F-d%C3%A9couvrez-notre-itin%C3%A9raire-au-japon/" target="_blank" rel="noopener noreferrer"
+      href="https://wa.me/?text=%f0%9f%97%ba%ef%b8%8f%20D%c3%a9couvrez%20notre%20itin%c3%a9raire%20au%20Japon%20!%20http://localhost:1313/fr/posts/%EF%B8%8F-d%C3%A9couvrez-notre-itin%C3%A9raire-au-japon/" target="_blank" rel="noopener noreferrer"
       title="Share on WhatsApp">
       <ion-icon class="text-gray-500 group-hover:text-white" name="logo-whatsapp"></ion-icon>
     </a>
@@ -708,16 +706,12 @@ locations.forEach(loc => {L.marker(loc.coords).addTo(map).bindPopup(loc.text);})
 
   
   
-    
-  
-  <script src="/js/grid.min.js"></script>
+  <script src="/js/grid.js"></script>
 
 
 
 
-  
-
-<script src="/js/main.min.js"></script>
+<script src="/js/main.js"></script>
 
     
 
@@ -735,6 +729,22 @@ locations.forEach(loc => {L.marker(loc.coords).addTo(map).bindPopup(loc.text);})
 
     
 
+    
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-2PHJBK75DX"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-2PHJBK75DX');
+        }
+      </script>
     
 
     <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>

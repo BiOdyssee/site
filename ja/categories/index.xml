@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on BiOdyssée</title>
-    <link>https://biodyssee.netlify.app/ja/categories/</link>
+    <link>http://localhost:1313/ja/categories/</link>
     <description>Recent content in Categories on BiOdyssée</description>
     <generator>Hugo</generator>
     <language>ja</language>
     <lastBuildDate>Wed, 16 Apr 2025 14:00:00 +0100</lastBuildDate>
-    <atom:link href="https://biodyssee.netlify.app/ja/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/ja/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2026年探査のすべて</title>
-      <link>https://biodyssee.netlify.app/ja/categories/expedition-2026/</link>
+      <link>http://localhost:1313/ja/categories/expedition-2026/</link>
       <pubDate>Wed, 16 Apr 2025 14:00:00 +0100</pubDate>
-      <guid>https://biodyssee.netlify.app/ja/categories/expedition-2026/</guid>
+      <guid>http://localhost:1313/ja/categories/expedition-2026/</guid>
       <description></description>
     </item>
     <item>
       <title>関係者</title>
-      <link>https://biodyssee.netlify.app/ja/categories/acteurs/</link>
+      <link>http://localhost:1313/ja/categories/acteurs/</link>
       <pubDate>Wed, 16 Apr 2025 14:00:00 +0100</pubDate>
-      <guid>https://biodyssee.netlify.app/ja/categories/acteurs/</guid>
+      <guid>http://localhost:1313/ja/categories/acteurs/</guid>
       <description></description>
     </item>
     <item>
       <title>Théophile (テオフィル)のアリ特集</title>
-      <link>https://biodyssee.netlify.app/ja/categories/rubrique_fourmi/</link>
+      <link>http://localhost:1313/ja/categories/rubrique_fourmi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://biodyssee.netlify.app/ja/categories/rubrique_fourmi/</guid>
+      <guid>http://localhost:1313/ja/categories/rubrique_fourmi/</guid>
       <description></description>
     </item>
     <item>
       <title>植物</title>
-      <link>https://biodyssee.netlify.app/ja/categories/flore/</link>
+      <link>http://localhost:1313/ja/categories/flore/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://biodyssee.netlify.app/ja/categories/flore/</guid>
+      <guid>http://localhost:1313/ja/categories/flore/</guid>
       <description></description>
     </item>
     <item>
       <title>定義とコンセプト</title>
-      <link>https://biodyssee.netlify.app/ja/categories/definition/</link>
+      <link>http://localhost:1313/ja/categories/definition/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://biodyssee.netlify.app/ja/categories/definition/</guid>
+      <guid>http://localhost:1313/ja/categories/definition/</guid>
       <description></description>
     </item>
     <item>
       <title>動物</title>
-      <link>https://biodyssee.netlify.app/ja/categories/faune/</link>
+      <link>http://localhost:1313/ja/categories/faune/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://biodyssee.netlify.app/ja/categories/faune/</guid>
+      <guid>http://localhost:1313/ja/categories/faune/</guid>
       <description></description>
     </item>
   </channel>

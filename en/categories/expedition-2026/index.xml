@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Everything you need to know about Expedition 2026 on BiOdyssée</title>
-    <link>https://biodyssee.netlify.app/en/categories/expedition-2026/</link>
+    <link>http://localhost:1313/en/categories/expedition-2026/</link>
     <description>Recent content in Everything you need to know about Expedition 2026 on BiOdyssée</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Wed, 16 Apr 2025 14:00:00 +0100</lastBuildDate>
-    <atom:link href="https://biodyssee.netlify.app/en/categories/expedition-2026/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/en/categories/expedition-2026/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title> ❗partnership research❗</title>
-      <link>https://biodyssee.netlify.app/en/posts/partnership-research/</link>
+      <link>http://localhost:1313/en/posts/partnership-research/</link>
       <pubDate>Wed, 16 Apr 2025 14:00:00 +0100</pubDate>
-      <guid>https://biodyssee.netlify.app/en/posts/partnership-research/</guid>
+      <guid>http://localhost:1313/en/posts/partnership-research/</guid>
       <description>&lt;p&gt;🤝 &lt;strong&gt;Looking for partnerships to help our project grow&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Our adventure has only just begun, and to go any further we need your help!&lt;/p&gt;</description>
     </item>
     <item>
       <title>🗺️ Discover our itinerary in Japan </title>
-      <link>https://biodyssee.netlify.app/en/posts/%EF%B8%8F-discover-our-itinerary-in-japan/</link>
+      <link>http://localhost:1313/en/posts/%EF%B8%8F-discover-our-itinerary-in-japan/</link>
       <pubDate>Mon, 14 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://biodyssee.netlify.app/en/posts/%EF%B8%8F-discover-our-itinerary-in-japan/</guid>
+      <guid>http://localhost:1313/en/posts/%EF%B8%8F-discover-our-itinerary-in-japan/</guid>
       <description>&lt;p&gt;Here&amp;rsquo;s an &lt;strong&gt;interactive map&lt;/strong&gt; to follow our itinerary, discovering each step of our journey through photos, stories and links to the places we explored.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Introduction to the BiOdyssée association</title>
-      <link>https://biodyssee.netlify.app/en/posts/presentation-association/</link>
+      <link>http://localhost:1313/en/posts/presentation-association/</link>
       <pubDate>Tue, 08 Apr 2025 14:00:00 +0100</pubDate>
-      <guid>https://biodyssee.netlify.app/en/posts/presentation-association/</guid>
+      <guid>http://localhost:1313/en/posts/presentation-association/</guid>
       <description>&lt;p&gt;&lt;strong&gt;BiOdyssée&lt;/strong&gt; is an association dedicated to the protection of biodiversity.&lt;/p&gt;&#xA;&lt;p&gt;It explores conservation initiatives around the world to understand the issues, methods and impacts.&lt;/p&gt;</description>
     </item>
   </channel>

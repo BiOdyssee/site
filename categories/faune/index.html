@@ -3,7 +3,7 @@
   x-data
   :class="$store.darkMode.class()"
   :data-theme="$store.darkMode.theme()">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Faune | BiOdyssée</title>
@@ -17,7 +17,7 @@
 
     
 
-<link rel="canonical" href="https://biodyssee.netlify.app/categories/faune/" />
+<link rel="canonical" href="http://localhost:1313/categories/faune/" />
 
 
 
@@ -29,7 +29,7 @@
 <meta name="generator" content="Hugo 0.143.1">
 
 
-<meta property="og:url" content="https://biodyssee.netlify.app/categories/faune/">
+<meta property="og:url" content="http://localhost:1313/categories/faune/">
   <meta property="og:site_name" content="BiOdyssée">
   <meta property="og:title" content="Faune">
   <meta property="og:description" content="Découvrez toute la faune  que nous avons rencontré au cours de notre voyage">
@@ -46,9 +46,7 @@
 
 
 
-  
-
-<link rel="stylesheet" href="/css/output.min.css" />
+<link rel="stylesheet" href="/css/output.css" />
 
 
 
@@ -84,7 +82,7 @@
       
       <div>
         
-        <a href="https://biodyssee.netlify.app/" class="text-lg font-semibold cursor-pointer">
+        <a href="http://localhost:1313/" class="text-lg font-semibold cursor-pointer">
           BiOdyssée
         </a>
         
@@ -531,16 +529,12 @@
 
   
   
-    
-  
-  <script src="/js/grid.min.js"></script>
+  <script src="/js/grid.js"></script>
 
 
 
 
-  
-
-<script src="/js/main.min.js"></script>
+<script src="/js/main.js"></script>
 
     
 
@@ -554,6 +548,22 @@
 
     
 
+    
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-2PHJBK75DX"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-2PHJBK75DX');
+        }
+      </script>
     
 
     <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
