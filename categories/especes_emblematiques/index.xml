@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Les espèces emblématiques du Japon on BiOdyssée</title>
+		<link>https://biodyssee.netlify.app/categories/especes_emblematiques/</link>
+		<description>Recent content in Les espèces emblématiques du Japon on BiOdyssée</description>
+		<generator>Hugo</generator>
+		<language>fr</language>
+		
+		
+		
+		
+			<lastBuildDate>Fri, 10 Oct 2025 14:00:00 +0100</lastBuildDate>
+		
+			<atom:link href="https://biodyssee.netlify.app/categories/especes_emblematiques/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Le Macaque Japonais</title>
+				<link>https://biodyssee.netlify.app/fr/posts/le-macaque-japonais/</link>
+				<pubDate>Fri, 10 Oct 2025 14:00:00 +0100</pubDate>
+				<guid>https://biodyssee.netlify.app/fr/posts/le-macaque-japonais/</guid>
+				<description>&lt;p&gt;Le &lt;strong&gt;Macaque japonais&lt;/strong&gt; (&lt;em&gt;Macaca fuscata&lt;/em&gt;) est un primate endémique de l&amp;rsquo;archipel japonais.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Le Cerf sika</title>
+				<link>https://biodyssee.netlify.app/fr/posts/le-cerf-sika/</link>
+				<pubDate>Thu, 14 Aug 2025 14:00:00 +0100</pubDate>
+				<guid>https://biodyssee.netlify.app/fr/posts/le-cerf-sika/</guid>
+				<description>&lt;p&gt;Le &lt;strong&gt;Cerf sika&lt;/strong&gt; (&lt;em&gt;Cervus nippon&lt;/em&gt;) est un cervidé peuplant les forêts tempérées d’Asie orientale largement répandu sur l’archipel japonais.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>La Grue du Japon</title>
+				<link>https://biodyssee.netlify.app/fr/posts/la-grue-du-japon/</link>
+				<pubDate>Thu, 26 Jun 2025 14:00:00 +0100</pubDate>
+				<guid>https://biodyssee.netlify.app/fr/posts/la-grue-du-japon/</guid>
+				<description>&lt;p&gt;La &lt;strong&gt;Grue du Japon&lt;/strong&gt; (&lt;em&gt;Grus japonensis&lt;/em&gt;) est un échassier de la famille des gruidae, dont elle est l’un des plus grands représentants.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

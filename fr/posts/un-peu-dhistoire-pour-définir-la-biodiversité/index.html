@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="fr"  
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Un peu d’histoire pour définir la biodiversité | BiOdyssée</title>
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+  
+
+    
+
+<link rel="canonical" href="https://biodyssee.netlify.app/fr/posts/un-peu-dhistoire-pour-d%C3%A9finir-la-biodiversit%C3%A9/" />
+
+
+
+<meta name="author" content="theophile" />
+<meta name="description" content="Le concept de biodiversité est devenu central dans les débats autour de l&rsquo;environnement et de sa préservation, démontrant l’importance de l&rsquo;évaluation de son état.
+" />
+
+
+<meta name="keywords" content="Définitions et concepts">
+
+
+
+<meta name="generator" content="Hugo 0.163.2">
+
+
+<meta property="og:url" content="https://biodyssee.netlify.app/fr/posts/un-peu-dhistoire-pour-d%C3%A9finir-la-biodiversit%C3%A9/">
+	<meta property="og:site_name" content="BiOdyssée">
+	<meta property="og:title" content="Un peu d’histoire pour définir la biodiversité">
+	<meta property="og:description" content="Le concept de biodiversité est devenu central dans les débats autour de l’environnement et de sa préservation, démontrant l’importance de l’évaluation de son état.">
+	<meta property="og:locale" content="fr">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="posts">
+		<meta property="article:published_time" content="2025-08-06T14:00:00+01:00">
+		<meta property="article:modified_time" content="2025-08-06T14:00:00+01:00">
+
+
+
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="Un peu d’histoire pour définir la biodiversité">
+	<meta name="twitter:description" content="Le concept de biodiversité est devenu central dans les débats autour de l’environnement et de sa préservation, démontrant l’importance de l’évaluation de son état.">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+<script src="//unpkg.com/valine@1.5.2/dist/Valine.min.js"></script>
+
+
+
+
+
+
+
+    
+    <link rel="stylesheet" href="/css/custom.css" />
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="py-4"> 
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="Retourne ça !">
+        <div class="h-10 rounded-full">
+          <img src="/images/logo.jpg" alt="BiOdyssée" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://biodyssee.netlify.app/" class="text-lg font-semibold cursor-pointer">
+          BiOdyssée
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm" style="color: #ffffff" >À la (re)découverte du vivant</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="Contact">
+    <ion-icon name="information-circle"></ion-icon>Contact</div>
+</li>
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="Rechercher">
+    <ion-icon name="search"></ion-icon>
+    Rechercher
+  </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="Archives">
+    <ion-icon name="archive"></ion-icon>
+    Archives
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="Toutes les catégories">
+    <ion-icon name="grid"></ion-icon>
+    Toutes les catégories
+  </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="menu-title px-2 pt-2">Langue</li>
+
+  <li>
+    <a href="/fr" class="inline-flex items-center p-2 text-black hover:underline">
+      Français
+    </a>
+  </li>
+
+  <li>
+    <a href="/ja" class="inline-flex items-center p-2 text-black hover:underline">
+      日本語
+    </a>
+  </li>
+
+  <li>
+    <a href="/en" class="inline-flex items-center p-2 text-black hover:underline">
+      English
+    </a>
+  </li>
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0"
+        class="text-sm font-semibold cursor-pointer hover:underline"
+        @click="flip = !flip"
+        title="Contact"
+      >Contact</div>
+      
+      
+
+      
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="Rechercher">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+
+
+
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="Archives">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="Toutes les catégories">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+
+
+
+
+
+      
+
+      
+
+      
+
+
+ 
+<div class="dropdown dropdown-end">
+  <div tabindex="0" role="button" class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" aria-label="Select an option">
+  <ion-icon name="earth-outline"> </ion-icon> 
+  
+  </div>
+  <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-xl">
+    
+      <li>
+        <a href="/fr" class="inline-flex items-center p-2 cursor-pointer" style = "color: #000000">
+          Français
+        </a>
+      </li>
+    
+      <li>
+        <a href="/ja" class="inline-flex items-center p-2 cursor-pointer" style = "color: #000000">
+          日本語
+        </a>
+      </li>
+    
+      <li>
+        <a href="/en" class="inline-flex items-center p-2 cursor-pointer" style = "color: #000000">
+          English
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+    </section>
+  </div>
+</nav>
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+           
+
+          <div class="container">
+            
+<div class="lg:grid lg:grid-cols-4 gap-4 mt-4 px-4">
+  <div class="hidden lg:block">
+    
+  </div>
+
+  <div class="lg:col-span-2">
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+	<meta itemprop="name" content="Un peu d’histoire pour définir la biodiversité">
+	<meta itemprop="description" content="Le concept de biodiversité est devenu central dans les débats autour de l’environnement et de sa préservation, démontrant l’importance de l’évaluation de son état.">
+	<meta itemprop="datePublished" content="2025-08-06T14:00:00+01:00">
+	<meta itemprop="dateModified" content="2025-08-06T14:00:00+01:00">
+	<meta itemprop="wordCount" content="1350">
+	<meta itemprop="keywords" content="Définitions et concepts">
+
+      <header>
+        <h1 itemprop="headline">Un peu d’histoire pour définir la biodiversité</h1>
+        <p class="text-sm">
+          
+            mercredi, août 6, 2025
+          
+
+          | <span>7 minutes de lecture</span>
+
+          
+          | <span>Mise à jour le
+            
+              mercredi, août 6, 2025
+            </span>
+          
+        </p>
+
+        
+        <div class="flex justify-between">
+          
+            
+
+
+<div class="flex items-center">
+  
+    <div class="avatar mr-1">
+      <div class="w-8 rounded-full">
+        <img class="my-0" src="/images/authors/avatar_theophile.jpg" alt="Théophile" />
+      </div>
+    </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+    
+      
+        <span itemprop="name">Théophile</span>
+      
+    
+  </span>
+</div>
+
+          
+
+          
+
+<div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://biodyssee.netlify.app/fr/posts/un-peu-dhistoire-pour-d%C3%A9finir-la-biodiversit%C3%A9/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="text-gray-500 group-hover:text-white" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=Un%20peu%20d%e2%80%99histoire%20pour%20d%c3%a9finir%20la%20biodiversit%c3%a9%20https://biodyssee.netlify.app/fr/posts/un-peu-dhistoire-pour-d%C3%A9finir-la-biodiversit%C3%A9/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="text-gray-500 group-hover:text-white" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div> 
+
+        </div>
+      </header>
+
+      <section id="dream-single-post-content" itemprop="articleBody">
+       
+    <img class="w-full z-30" src="/images/histoire_biodiversite/histoire_biodiversite.jpg" alt="Un peu d’histoire pour définir la biodiversité" />
+
+
+  <p>Le concept de biodiversité est devenu central dans les débats autour de l&rsquo;environnement et de sa préservation, démontrant l’importance de l&rsquo;évaluation de son état.</p>
+<p>Malgré son importance capitale dans l&rsquo;étude des écosystèmes et des êtres vivants, et bien qu’il s’agisse d’une discipline ancestrale, ce terme n’a même pas 50 ans. En effet, il résulte de plusieurs siècles de découvertes scientifiques dont nous allons faire un court aperçu.</p>
+<p>Dans cet article, nous allons remonter à l&rsquo;origine de l&rsquo;étude des êtres vivants et de leur habitat jusqu&rsquo;à l&rsquo;apparition du terme &ldquo;biodiversité&rdquo;. Pour cela, nous présenterons plusieurs des grands scientifiques qui ont contribué à faire de cette discipline ce qu&rsquo;elle est aujourd&rsquo;hui :</p>
+<ul>
+<li><strong>Linné</strong> et la classification des êtres vivants</li>
+<li><strong>Lamarck</strong> et le concept d&rsquo;évolution dans le transformisme</li>
+<li><strong>Darwin</strong> et la théorie de l&rsquo;évolution</li>
+<li>La 1ère <strong>convention sur le climat</strong></li>
+</ul>
+<h2 id="linné-et-la-classification-des-êtres-vivants">Linné et la classification des êtres vivants</h2>
+<p>Nous sommes au 18ᵉ siècle à Uppsala, en Suède, lorsqu’un naturaliste nommé <strong>Carl von Linné</strong> entreprend pour la première fois de proposer une <strong>classification systématique</strong> des êtres vivants. Son objectif est de discriminer et de regrouper les espèces selon des critères morphologiques, c’est-à-dire basés sur leur apparence et leurs caractéristiques physiques. En 1735, il publie son ouvrage majeur, <em>Systema Naturae</em>, qui pose les bases de la classification moderne.</p>
+<p><img src="/images/histoire_biodiversite/linne.jpg" alt="linne"></p>
+<p>Mais l’ambition de Linné dépasse la simple curiosité scientifique. À cette époque, la théorie dominante est celle du fixisme : toutes les espèces auraient été créées par Dieu, parfaitement adaptées, et aucune n’aurait disparu ni évolué depuis leur origine. Comme l’affirme Linné lui-même : <em>« Nous comptons autant d&rsquo;espèces qu&rsquo;il y a eu au commencement de formes diverses créées »</em>. Ainsi, en classant et organisant les espèces selon une logique ordonnée, Linné espère percer les intentions du créateur.</p>
+<p>On lui doit encore aujourd’hui le système binomial de nomenclature, qui attribue à chaque être vivant un nom composé de deux parties : le nom de genre (en italique et avec une majuscule) et le nom d’espèce (en italique et avec une minuscule). Par exemple, <em>Homo sapiens</em> pour l’être humain, <em>Bos taurus</em> pour la vache, etc.</p>
+<p>Linné introduit ainsi un cadre pour décrire la diversité des formes du vivant et pose les premières bases de ce qu’on appellera bien plus tard la biodiversité. Pourtant, au 18ᵉ siècle, certains commencent déjà à remarquer que le vivant fluctue : des fossiles témoignent de formes disparues, et des espèces menacées attirent l’attention des naturalistes, remettant en question l’idée que la nature est immuable.</p>
+<h2 id="lamarck-et-le-concept-dévolution-dans-le-transformisme">Lamarck et le concept d’évolution dans le transformisme</h2>
+<div style="display: flex; align-items: center;">
+  <img src="/images/histoire_biodiversite/lamarck_1.jpg" style="max-width: 40%; height: auto; margin-right: 10px; float: left;">
+  <p> Il faudra attendre plus d’un demi-siècle après Linné pour qu’un naturaliste remette en cause le fixisme. Le français <strong>Jean-Baptiste de Lamarck</strong>, professeur au Jardin du Roi puis au Muséum d’Histoire naturelle de Paris, propose au début du 19ᵉ siècle une théorie révolutionnaire pour son époque : le <strong>transformisme</strong>.</p>
+</div>
+<p>Selon lui, les espèces ne sont pas fixes, mais se transforment dans le temps sous l’effet de leur environnement. Sa théorie repose sur deux principes majeurs :</p>
+<ol>
+<li>
+<p><strong>L’adaptation des organes aux besoins</strong> : les êtres vivants seraient capables de modifier leurs organes en fonction de l’usage qu’ils en font. Par exemple, une girafe, pour atteindre les feuilles des arbres en hauteur, étirerait son cou au fil de sa vie.</p>
+</li>
+<li>
+<p><strong>L’hérédité des caractères acquis</strong> : ces transformations seraient transmises à la descendance. Ainsi, le cou allongé d’une girafe serait hérité par ses petits, qui l’allongeraient davantage, et ainsi de suite.</p>
+</li>
+</ol>
+<p><img src="/images/histoire_biodiversite/lamarck_2.jpg" alt="lamarck_theorie"></p>
+<p>Bien que cette théorie soit aujourd’hui dépassée, elle introduit deux idées fondamentales :</p>
+<ul>
+<li>Le vivant évolue dans le temps, certaines espèces disparaissent, d’autres apparaissent ou se modifient.</li>
+<li>L’environnement joue un rôle direct dans la formation de cette diversité, en exerçant des pressions qui façonnent les espèces.</li>
+</ul>
+<p>Lamarck pose ainsi les premiers jalons du lien entre diversité des milieux et diversité biologique, une notion centrale dans la définition moderne de la biodiversité, même si son mécanisme de transmission héréditaire était erroné.</p>
+<h2 id="darwin-et-la-théorie-de-lévolution">Darwin et la théorie de l’évolution</h2>
+<p>Quelques décennies après Lamarck, un autre naturaliste britannique bouleverse définitivement notre vision du vivant : <strong>Charles Darwin</strong>. En 1859, après un voyage de 5 ans à bord du HMS Beagle il publie <em>De l’origine des espèces</em>, où il expose la théorie de l’évolution par sélection naturelle.</p>
+<p><img src="/images/histoire_biodiversite/darwin_1.jpg" alt="darwin_exploration"></p>
+<p>Darwin  part d’un constat simple : au sein d’une même espèce, il existe des variations. Ces variations, parfois héréditaires, peuvent avantager certains individus dans leur environnement. Ces derniers auront plus de chances de survivre et de se reproduire, transmettant ainsi leurs caractéristiques avantageuses à leur descendance.
+Mais contrairement à la théorie de Lamarck :</p>
+<ul>
+<li>Ce ne sont pas les besoins des individus qui modifient leur anatomie, mais des variations aléatoires.</li>
+<li>Seules les variations avantageuses sont sélectionnées naturellement car elles favorisent la survie et la reproduction.</li>
+</ul>
+<p>Cette théorie permet pour la première fois de comprendre l’origine de la diversité biologique : elle est le résultat de l’accumulation de variations héréditaires sélectionnées par l’environnement au fil du temps.</p>
+<p>Un exemple classique illustrant la sélection naturelle est celui de la phalène du bouleau (<em>Biston betularia</em>) en Angleterre.</p>
+<p>Avant la révolution industrielle, la forme claire de ce papillon était majoritaire car elle se camouflait mieux sur les troncs des bouleaux recouverts de lichens. Avec la pollution et le noircissement des arbres, les formes sombres, auparavant rares et plus visibles, sont devenues avantagées car elles échappaient mieux aux prédateurs. En quelques décennies, leur fréquence a fortement augmenté. Ce phénomène, appelé mélanisme industriel, illustre parfaitement le mécanisme de sélection naturelle décrit par Darwin : des variations préexistantes dans une population peuvent être favorisées ou éliminées selon les modifications de l’environnement.</p>
+<p><img src="/images/histoire_biodiversite/phalene_bouleau.png" alt="phalene_bouleau"></p>
+<p>C’est un tournant décisif pour la définition de la biodiversité. On comprend désormais qu’elle est le produit d’un processus évolutif continu où les espèces apparaissent, disparaissent et se diversifient en fonction des changements du milieu et des pressions de sélection. La biodiversité n’est donc pas figée, mais un patrimoine dynamique, en perpétuelle transformation.</p>
+<p><img src="/images/histoire_biodiversite/darwin_schema.jpg" alt="schema"></p>
+<p>Il s’agit de l’unique schéma de l’ouvrage majeur de Charles Darwin, <em>De l’origine des espèces</em> (1859).
+Il s’agit du premier arbre phylogénétique dessiné de l’histoire, dans lequel Darwin propose une représentation graphique de la divergence évolutive des espèces au cours du temps. Chaque ligne horizontale représente un intervalle de temps, et les lignes ramifiées illustrent la diversification progressive des espèces à partir d’un ancêtre commun. Ce schéma incarne parfaitement le concept moderne de biodiversité, non comme une simple liste d’espèces actuelles, mais comme le résultat d’une histoire évolutive dynamique et continue.</p>
+<p>La biodiversité se définit aujourd’hui comme la variabilité des organismes vivants de toute origine, incluant la diversité au sein des espèces, entre les espèces et celle des écosystèmes. Ici, Darwin montre que cette diversité est le produit de divergences successives, d’adaptations à des milieux variés et de l’extinction de certaines lignées (celles qui s’arrêtent avant d’atteindre le haut du schéma). Ainsi, la biodiversité actuelle est un instantané d’un processus physique évolutif ininterrompu, et ce schéma en est une très bonne illustration.</p>
+<h2 id="la-première-convention-internationale-sur-le-climat-et-lenvironnement">La première convention internationale sur le climat et l’environnement</h2>
+<p>Alors que la biodiversité a longtemps été étudiée sous l’angle scientifique, il faudra attendre la fin du 20ᵉ siècle pour que sa préservation devienne un enjeu international. En 1992, à Rio de Janeiro, l’ONU organise le premier Sommet de la Terre, qui réunit chefs d’État, scientifiques et ONG pour aborder ensemble les grands défis environnementaux.</p>
+<p><img src="/images/histoire_biodiversite/convention_climat.jpeg" alt="convention_climat"></p>
+<p>De cette conférence naîtront plusieurs textes majeurs, dont la Convention sur la diversité biologique (CDB). C’est la première fois que la biodiversité est reconnue comme un bien commun de l’humanité, indispensable au bon fonctionnement des écosystèmes et à la survie des sociétés humaines.</p>
+<p>Mais qu’est-ce que la biodiversité ?
+Le terme désigne la variété et la variabilité du vivant à toutes les échelles :</p>
+<ul>
+<li>Diversité des écosystèmes : forêts, récifs coralliens, déserts, zones humides…</li>
+<li>Diversité des espèces : le nombre et la variété d’êtres vivants.</li>
+<li>Diversité génétique : les différences au sein d’une même espèce, entre individus et populations.</li>
+</ul>
+<p><a href="/fr/posts/quest-ce-que-la-biodiversit%c3%a9/">Voir l&rsquo;article complet &ldquo;Qu&rsquo;est ce que la biodiversité ?&rdquo;</a>
+</p>
+<p>Cette prise de conscience mondiale marque un tournant : la biodiversité devient un enjeu politique, économique et éthique, indissociable de la lutte contre le réchauffement climatique, la déforestation et l’effondrement des espèces.</p>
+
+        
+      </section>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/fr/posts/le-cerf-sika/" title="Le Cerf sika">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">Page précédente</span>
+            <span class="max-w-48 truncate">Le Cerf sika</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/fr/posts/histoire_paleolitique/" title="Du paléolithique au XVIe siècle, l&#39;émergence de la culture nippone autour de la nature.">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">Page suivante</span>
+            <span class="max-w-48 truncate">Du paléolithique au XVIe siècle, l&#39;émergence de la culture nippone autour de la nature.</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+
+      
+      <div class="divider"></div>
+
+      <section class="space-y-4">
+        
+
+
+
+
+<article>
+
+  <div id="vcomments"></div>
+<script src="https://unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+  new Valine({
+    el: '#vcomments',
+    appId: '',
+    appKey: '',
+    placeholder: 'Leave a comment...',
+    lang: 'en',
+    avatar: 'mp',
+    visitor: true,
+    requiredFields: ['nick','mail']
+  });
+</script>
+
+
+</article>
+
+
+
+
+
+
+      </section>
+      
+    </article>
+  </div>
+
+  <div class="hidden lg:flex lg:flex-col lg:items-end">
+    
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#linné-et-la-classification-des-êtres-vivants">Linné et la classification des êtres vivants</a></li>
+    <li><a href="#lamarck-et-le-concept-dévolution-dans-le-transformisme">Lamarck et le concept d’évolution dans le transformisme</a></li>
+    <li><a href="#darwin-et-la-théorie-de-lévolution">Darwin et la théorie de l’évolution</a></li>
+    <li><a href="#la-première-convention-internationale-sur-le-climat-et-lenvironnement">La première convention internationale sur le climat et l’environnement</a></li>
+  </ul>
+</nav>
+    
+  </div>
+</div>
+
+
+
+            
+<footer class="px-4 py-4">
+
+
+  <div class="w-full flex flex-col gap-4">
+    <style>
+.partners-footer {
+  text-align: center;
+  margin: 15px 0 5px 0;
+}
+
+.partners-footer h3 {
+  margin-bottom: 12px;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.partners-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.partners-logos img {
+  height: 200px;
+  object-fit: contain;
+  transition: transform .2s ease;
+}
+
+.partners-logos img:hover {
+  transform: scale(1.08);
+}
+</style>
+
+
+<div class="partners-footer">
+  <h3>Nos partenaires</h3>
+
+  <div class="partners-logos">
+    <a href="https://www.agroparistech.fr/partenariats-socioeconomiques/nous-soutenir/fondation-agroparistech" target="_blank">
+      <img src="/images/partners/fondation APT.png" alt="Partenaire 1" />
+    </a>
+
+  </div>
+</div>
+
+
+    <div class="flex justify-between items-center gap-2">
+      <div>
+  
+  <p>© 2026 BiOdyssée</p>
+  
+
+  
+  <p>Tous droits réservés</p>
+  
+</div>
+
+       
+
+    </div>
+  </div>
+
+</footer>
+
+
+<script>
+  function scrollCategories(direction) {
+    const container = document.getElementById("categoriesScroll");
+    const scrollAmount = 300; 
+    container.scrollBy({
+      left: direction * scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+</script>
+
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid dream-grid-about">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Voilà l&#39;équipe de la mission 2026</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Voilà une brève présentation des membres de l&rsquo;équipe fondatrice de BiOdyssée et qui participera à l&rsquo;expédition 2026 au Japon.</p>
+<p><img src="/images/equipe_complete.jpeg" alt="photo équipe"></p>
+<p>Et on remercie Brieuc (au centre de la photo) qui est venu nous rejoindre pour quelques jours !</p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Hugo - Co-président</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Étudiant en Gestion et ingénierie de l&rsquo;environnement à AgroParisTech, je suis passionné par la paléontologie et l’évolution 🦖🦴🧬.</p>
+<p>J’aspire à travailler dans le domaine de la gestion des milieux naturels, plus précisément pour la conservation ou la restauration des milieux humides en France 🐸🐟🌿, qui ont perdu une part très importante de leur surface ces derniers siècles. Je me suis ainsi toujours intéressé à l’évolution des espèces et des écosystèmes dans le temps, c’est pourquoi ce projet de césure me motive tant !</p>
+<p><strong>Contact :</strong>
+<a href="mailto:hugo.roger@agroparistech.fr" target="_blank">hugo.roger@agroparistech.fr</a>
+</p>
+<p><img src="/images/hugo.jpeg" alt="photo rando"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Théophile - Co-président</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Étudiant en ingénierie de l&rsquo;environnement passionné d’entomologie et en particulier de myrmécologie 🐜, mon objectif est de faire de la recherche en environnement en particulier sur les dynamiques génétiques des populations 🧬🐜 (de fourmis bien évidemment).</p>
+<p>Je fais partie de l’association naturaliste &ldquo;les &ldquo;Blairoudeurs 🦡&rdquo; avec laquelle je suis parti faire de la prospection et de la sensibilisation en Corse lors de la Mission Isula. Ce projet de césure est une super opportunité de continuer cette expérience mais à une échelle bien plus vaste et exotique tout en continuant de me former sur la connaissance des différents écosystèmes et leurs moyens de gestions dans un autre pays.</p>
+<p><strong>Contact :</strong>
+<a href="mailto:theophie.thomas@agroparistech.fr" target="_blank">theophie.thomas@agroparistech.fr</a>
+</p>
+<p><img src="/images/theophile.jpeg" alt="photo stylée"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Lucie - Responsable communication</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Étudiante en Gestion et ingénierie de l&rsquo;environnement à AgroParisTech, je suis fascinée par à peu près tout ce qui se rapporte à l’océan 🌊.</p>
+<p>C’est dans l’optique d’allier travail et passion, que je m’oriente vers la biologie marine. Plus particulièrement, j’aimerais travailler dans la conservation ou la gestion des écosystèmes marins. La faune 🐠🐋🐙, autant que la flore aquatique me passionnent et c’est pour pouvoir l’observer de plus près que je fais de la plongée sous-marine 🤿.</p>
+<p>Ce projet est pour moi l’opportunité de découvrir de nouveaux milieux aquatiques 🌊🪸🌿 et de comprendre tous les enjeux qui pèsent dessus.</p>
+<p><strong>Contact :</strong>
+<a href="mailto:lucie.lowagie@agroparistech.fr" target="_blank">lucie.lowagie@agroparistech.fr</a>
+</p>
+<p><img src="/images/lucie.jpg" alt="photo"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Solal - Trésorier</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Étudiant en agronomie et passionné par l’histoire 🧭⌛🏹 et l’éthologie 🐁🧠🧪, j’espère utiliser cette opportunité pour observer le comportement des animaux dans leur milieu naturel. Par la suite, j’aimerais faire de la recherche 👨‍🔬 ou être enseignant  dans l’enseignement supérieur 🧑‍🏫, et cette césure me permettrait de développer mes capacités de synthèse et d’observation.</p>
+<p>Le fait de pouvoir allier recherche historique et observation animale — le tout dans le but de ne pas reproduire les erreurs du passé — est la raison pour laquelle ce projet m’intéresse.</p>
+<p><strong>Contact :</strong>
+<a href="mailto:solal.free@agroparistech.fr" target="_blank">solal.free@agroparistech.fr</a>
+</p>
+<p><img src="/images/solal.jpeg" alt="photo qui fait peur"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Réseaux sociaux</div>
+
+        <ul class="menu menu-horizontal flex-wrap w-full px-0 [&_ion-icon]:text-lg">
+  
+
+  
+  <li>
+    <a href="https://www.facebook.com/profile.php?id=61576052068851" target="_blank" title="Facebook">
+      <ion-icon name="logo-facebook"></ion-icon>
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://www.instagram.com/bio_dyssee/" target="_blank" title="Instagram">
+      <ion-icon name="logo-instagram"></ion-icon>
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://www.linkedin.com/company/107400672/admin/dashboard/" target="_blank" title="Linkedin">
+      <ion-icon name="logo-linkedin"></ion-icon>
+    </a>
+  </li>
+  
+  <li>
+    <a href="mailto:biodyssee2026@gmail.com" target="_blank" title="Email">
+      <ion-icon name="mail-outline"></ion-icon>
+    </a>
+  </li>
+  
+</ul>
+
+      </div>
+    </article>
+  </div>
+  
+
+  
+</div>
+
+            
+
+            
+<footer class="px-4 py-4">
+
+
+  <div class="w-full flex flex-col gap-4">
+    <style>
+.partners-footer {
+  text-align: center;
+  margin: 15px 0 5px 0;
+}
+
+.partners-footer h3 {
+  margin-bottom: 12px;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.partners-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.partners-logos img {
+  height: 200px;
+  object-fit: contain;
+  transition: transform .2s ease;
+}
+
+.partners-logos img:hover {
+  transform: scale(1.08);
+}
+</style>
+
+
+<div class="partners-footer">
+  <h3>Nos partenaires</h3>
+
+  <div class="partners-logos">
+    <a href="https://www.agroparistech.fr/partenariats-socioeconomiques/nous-soutenir/fondation-agroparistech" target="_blank">
+      <img src="/images/partners/fondation APT.png" alt="Partenaire 1" />
+    </a>
+
+  </div>
+</div>
+
+
+    <div class="flex justify-between items-center gap-2">
+      <div>
+  
+  <p>© 2026 BiOdyssée</p>
+  
+
+  
+  <p>Tous droits réservés</p>
+  
+</div>
+
+       
+
+    </div>
+  </div>
+
+</footer>
+
+
+<script>
+  function scrollCategories(direction) {
+    const container = document.getElementById("categoriesScroll");
+    const scrollAmount = 300; 
+    container.scrollBy({
+      left: direction * scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+</script>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-2PHJBK75DX"></script>
+      <script>
+        var doNotTrack = false;
+        if ( true ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-2PHJBK75DX');
+        }
+      </script>
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
+

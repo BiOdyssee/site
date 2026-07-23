@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Théophile&#39;s ant newsletter on BiOdyssée</title>
+		<link>https://biodyssee.netlify.app/en/categories/rubrique_fourmi/</link>
+		<description>Recent content in Théophile&#39;s ant newsletter on BiOdyssée</description>
+		<generator>Hugo</generator>
+		<language>en</language>
+		
+		
+		
+		
+			<lastBuildDate>Mon, 22 Dec 2025 14:00:00 +0100</lastBuildDate>
+		
+			<atom:link href="https://biodyssee.netlify.app/en/categories/rubrique_fourmi/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Fungus-growing ants 🐜</title>
+				<link>https://biodyssee.netlify.app/en/posts/fungus-growing-ants/</link>
+				<pubDate>Mon, 22 Dec 2025 14:00:00 +0100</pubDate>
+				<guid>https://biodyssee.netlify.app/en/posts/fungus-growing-ants/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>The place of the ant in the tree of life 🐜</title>
+				<link>https://biodyssee.netlify.app/en/posts/the-place-of-the-ant-in-the-tree-of-life/</link>
+				<pubDate>Wed, 04 Jun 2025 14:00:00 +0100</pubDate>
+				<guid>https://biodyssee.netlify.app/en/posts/the-place-of-the-ant-in-the-tree-of-life/</guid>
+				<description>&lt;p&gt;Here is the first article of the &amp;ldquo;Ant Section&amp;rdquo; by Théophile. Set out to discover ants&amp;hellip;&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

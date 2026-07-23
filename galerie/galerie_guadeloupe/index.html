@@ -1,0 +1,2375 @@
+<!DOCTYPE html>
+<html lang="fr"  
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Au coeur de la Guadeloupe | BiOdyssée</title>
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+  
+
+    
+
+<link rel="canonical" href="https://biodyssee.netlify.app/galerie/galerie_guadeloupe/" />
+
+
+
+<meta name="author" content="" />
+<meta name="description" content="" />
+
+
+
+<meta name="generator" content="Hugo 0.163.2">
+
+
+<meta property="og:url" content="https://biodyssee.netlify.app/galerie/galerie_guadeloupe/">
+	<meta property="og:site_name" content="BiOdyssée">
+	<meta property="og:title" content="Au coeur de la Guadeloupe">
+	<meta property="og:description" content="Voilà une page pour découvrir les images impresionnantes prises par Hugo lors de son périple en Guadeloupe.">
+	<meta property="og:locale" content="fr">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="galerie">
+		<meta property="article:published_time" content="2025-11-09T14:00:00+01:00">
+		<meta property="article:modified_time" content="2025-11-09T14:00:00+01:00">
+
+
+
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="Au coeur de la Guadeloupe">
+	<meta name="twitter:description" content="Voilà une page pour découvrir les images impresionnantes prises par Hugo lors de son périple en Guadeloupe.">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+<script src="//unpkg.com/valine@1.5.2/dist/Valine.min.js"></script>
+
+
+
+
+
+
+
+    
+    <link rel="stylesheet" href="/css/custom.css" />
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="py-4"> 
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="Retourne ça !">
+        <div class="h-10 rounded-full">
+          <img src="/images/logo.jpg" alt="BiOdyssée" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://biodyssee.netlify.app/" class="text-lg font-semibold cursor-pointer">
+          BiOdyssée
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm" style="color: #ffffff" >À la (re)découverte du vivant</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="Contact">
+    <ion-icon name="information-circle"></ion-icon>Contact</div>
+</li>
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="Rechercher">
+    <ion-icon name="search"></ion-icon>
+    Rechercher
+  </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="Archives">
+    <ion-icon name="archive"></ion-icon>
+    Archives
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="Toutes les catégories">
+    <ion-icon name="grid"></ion-icon>
+    Toutes les catégories
+  </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="menu-title px-2 pt-2">Langue</li>
+
+  <li>
+    <a href="/fr" class="inline-flex items-center p-2 text-black hover:underline">
+      Français
+    </a>
+  </li>
+
+  <li>
+    <a href="/ja" class="inline-flex items-center p-2 text-black hover:underline">
+      日本語
+    </a>
+  </li>
+
+  <li>
+    <a href="/en" class="inline-flex items-center p-2 text-black hover:underline">
+      English
+    </a>
+  </li>
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0"
+        class="text-sm font-semibold cursor-pointer hover:underline"
+        @click="flip = !flip"
+        title="Contact"
+      >Contact</div>
+      
+      
+
+      
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="Rechercher">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+
+
+
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="Archives">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="Toutes les catégories">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+
+
+
+
+
+      
+
+      
+
+      
+
+
+ 
+<div class="dropdown dropdown-end">
+  <div tabindex="0" role="button" class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" aria-label="Select an option">
+  <ion-icon name="earth-outline"> </ion-icon> 
+  
+  </div>
+  <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-xl">
+    
+      <li>
+        <a href="/fr" class="inline-flex items-center p-2 cursor-pointer" style = "color: #000000">
+          Français
+        </a>
+      </li>
+    
+      <li>
+        <a href="/ja" class="inline-flex items-center p-2 cursor-pointer" style = "color: #000000">
+          日本語
+        </a>
+      </li>
+    
+      <li>
+        <a href="/en" class="inline-flex items-center p-2 cursor-pointer" style = "color: #000000">
+          English
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+    </section>
+  </div>
+</nav>
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+           
+
+          <div class="container">
+            
+<div class="lg:grid lg:grid-cols-4 gap-4 mt-4 px-4">
+  <div class="hidden lg:block">
+    
+  </div>
+
+  <div class="lg:col-span-2">
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+	<meta itemprop="name" content="Au coeur de la Guadeloupe">
+	<meta itemprop="description" content="Voilà une page pour découvrir les images impresionnantes prises par Hugo lors de son périple en Guadeloupe.">
+	<meta itemprop="datePublished" content="2025-11-09T14:00:00+01:00">
+	<meta itemprop="dateModified" content="2025-11-09T14:00:00+01:00">
+	<meta itemprop="wordCount" content="1107">
+	<meta itemprop="keywords" content="Guadeloupe">
+
+      <header>
+        <h1 itemprop="headline">Au coeur de la Guadeloupe</h1>
+        <p class="text-sm">
+          
+            dimanche, nov. 9, 2025
+          
+
+          | <span>6 minutes de lecture</span>
+
+          
+          | <span>Mise à jour le
+            
+              dimanche, nov. 9, 2025
+            </span>
+          
+        </p>
+
+        
+        <div class="flex justify-between">
+          
+            
+
+
+<div class="flex items-center">
+  
+    <div class="avatar mr-1">
+      <div class="w-8 rounded-full">
+        <img class="my-0" src="/images/authors/avatar_lucie.jpg" alt="Lucie" />
+      </div>
+    </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+    
+      
+        <span itemprop="name">Lucie</span>
+      
+    
+  </span>
+</div>
+
+          
+
+          
+
+<div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://biodyssee.netlify.app/galerie/galerie_guadeloupe/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="text-gray-500 group-hover:text-white" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=Au%20coeur%20de%20la%20Guadeloupe%20https://biodyssee.netlify.app/galerie/galerie_guadeloupe/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="text-gray-500 group-hover:text-white" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div> 
+
+        </div>
+      </header>
+
+      <section id="dream-single-post-content" itemprop="articleBody">
+       
+
+  <p>Voilà une page pour découvrir les images impresionnantes prises par Hugo lors de son périple en Guadeloupe.</p>
+<p>  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    
+      
+    
+    
+  
+    
+    
+    
+      
+    
+    
+  
+    
+    
+    
+      
+    
+    
+  
+  
+  <div class="gallery-item" data-gallery='[{&#34;src&#34;:&#34;/galerie/guadeloupe/pelican_brun/pelican.jpg&#34;,&#34;type&#34;:&#34;image&#34;},{&#34;src&#34;:&#34;/galerie/guadeloupe/pelican_brun/pelican2.jpg&#34;,&#34;type&#34;:&#34;image&#34;},{&#34;src&#34;:&#34;/galerie/guadeloupe/pelican_brun/pelican3.jpg&#34;,&#34;type&#34;:&#34;image&#34;}]' style="display:inline-block;cursor:pointer;">
+    <img src="/galerie/guadeloupe/pelican_brun/pelican.jpg" style="max-width:260px;max-height:300px;object-fit:cover;border-radius:6px;">
+    <div class="gallery-description" style="display:none">
+      <h2 id="le-pélican-brun">Le pélican brun</h2>
+<p>Le pélican brun (<em>Pelecanus occidentalis</em>) est une espèce emblématique des côtes de la mer des Caraïbes 🌊.</p>
+<p>Reconnaissable à son plumage brun et à son long bec caractéristique, il est l’un des oiseaux marins les plus fascinants de la région. Ce pélican se distingue par ses plongeons spectaculaires pour attraper sa nourriture, principalement des poissons 🐟.</p>
+<h3 id="aire-de-répartition--">Aire de répartition 🌍 :</h3>
+<p>L’espèce est présente sur les côtes de la Guadeloupe, mais on la trouve également dans d’autres zones de la mer des Caraïbes, ainsi qu&rsquo;en Amérique centrale et du Sud, depuis le sud des États-Unis jusqu&rsquo;à l’est du Brésil.</p>
+<h3 id="menaces--">Menaces ⚠ :</h3>
+<p>Bien que leurs effectifs soient en hausse, les pélicans bruns font face à plusieurs menaces. La <strong>pollution de l’eau et des plages</strong>, en particulier le plastique ♻, constitue un danger direct pour leur alimentation et leur habitat 🏝. De plus, le dérangement humain, notamment lié au <strong>développement touristique</strong> 🏖 , impacte leur tranquillité, essentielle à leur reproduction.</p>
+<h3 id="mesures-de-conservation--">Mesures de conservation 🌱 :</h3>
+<p>Pour protéger cette espèce, plusieurs initiatives ont été mises en place, tant au niveau local qu&rsquo;international 🌍. La <strong>préservation des sites de nidification</strong> et la réduction de la pollution marine sont des priorités. Dans ce but, des programmes de sensibilisation du public et des mesures pour limiter les dérangements humains dans les zones sensibles sont mis en place pour garantir un avenir à ces magnifiques oiseaux marins. En Guadeloupe, elle fait l’objet d’un <strong>statut particulier de protection</strong>.</p>
+
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <div class="lightbox-content" onclick="event.stopPropagation()">
+      <div class="lightbox-media">
+        <img id="lightbox-img" style="display:none;">
+        <video id="lightbox-video" controls style="display:none;"></video>
+            
+        <div id="lightbox-prev" class="lightbox-arrow" onclick="prevMedia(event)">&#10094;</div>
+        <div id="lightbox-next" class="lightbox-arrow" onclick="nextMedia(event)">&#10095;</div>
+      </div>
+      <div id="lightbox-text" class="lightbox-text"></div>
+    </div>
+  </div>
+  
+  <style>
+
+   
+  .gallery { display:flex; flex-wrap:wrap; gap:5px; align-items:flex-start; }
+  .gallery-item { flex:0 0 auto; margin:0; }
+  .gallery-item img, .gallery-item video { width:260px; height:300px; max-width:260px; max-height:300px; object-fit:cover; cursor:pointer; border-radius:6px; margin:0; margin-top:2px; }
+  html.no-scroll, body.no-scroll { overflow:hidden !important; height:100vh !important; }
+  
+  .lightbox { display:none; position:fixed; inset:0; background:rgba(0,0,0,0.8); justify-content:center; align-items:flex-start; z-index:9999; height:100vh; width:100vw; }
+  
+  .lightbox-content { margin-top:9vh; display:flex; max-width:95%; max-inline-size:85%; background:#000; border-radius:12px; overflow:hidden; height:auto; max-height:85vh;margin: 2.5vh auto; }
+  
+  .lightbox-media { display:flex; align-items:center; justify-content:center; max-width:65%; max-height:100%; flex:1; height:auto; }
+  
+  #lightbox-img, #lightbox-video {
+    height: auto;
+    width: auto;
+    max-width:100%;
+    max-height:90vh;
+    object-fit:contain;
+    display:block;
+  }
+  
+  .lightbox-text { flex:1; min-width:200px; background:#fff; padding:20px; color:#000; font-size:0.9rem; overflow-y:auto; -webkit-overflow-scrolling: touch; scroll-behavior: smooth; }
+  
+  .lightbox-media { position: relative; }  
+  
+  .lightbox-arrow {
+    display: none;              
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    cursor: pointer;
+    color: rgba(255,255,255,0.8);
+    user-select: none;
+    padding: 5px 10px;
+    background: rgba(0,0,0,0.3);
+    border-radius: 50%;
+    z-index: 1000;
+  }
+  
+  #lightbox-prev { left: 5px; }
+  #lightbox-next { right: 5px; }
+  
+  
+   
+  @media (max-width:768px){
+      #lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.9);
+      z-index: 9999;
+      overflow-y: auto;  
+      -webkit-overflow-scrolling: touch;
+      
+    }
+  
+    .lightbox-content {
+      flex-direction: column;  
+      width: 95%;
+      max-width: 600px;
+      max-height: none;
+      margin: 10px auto;
+      background: #000;  
+      border-radius: 12px;
+      overflow: visible;
+      padding-bottom: 100px;  
+    }
+  
+    .lightbox-media {
+      width: 100%;
+      max-width: 100%;
+      max-height: 70vh;  
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    #lightbox-img, #lightbox-video {
+      width: auto;
+      max-width: 100%;
+      height: auto;
+      max-height: 100%;
+      border-radius: 6px;
+      object-fit: contain;
+    }
+  
+    .lightbox-text {
+      width: 100%;
+      min-width: unset;
+      background: #fff;
+      color: #000;
+      padding: 20px;
+      font-size: 0.9rem;
+      padding-bottom: 20px;
+      max-height: none;  
+      overflow: visible;  
+      -webkit-overflow-scrolling: touch;
+      border-radius: 6px;
+    }
+  
+    .lightbox-arrow {
+      display: none;
+    }
+  }
+  
+  </style>
+  
+  <script>
+  let currentGalleryItems = [];
+  let currentIndex = 0;
+  
+  document.addEventListener('DOMContentLoaded', () => {
+  
+    
+  document.querySelectorAll('.gallery-item').forEach(item => {
+    item.addEventListener('click', e => {
+      e.stopPropagation();
+  
+      try {
+        currentGalleryItems = JSON.parse(item.dataset.gallery || "[]");
+      } catch(err) {
+        console.error("Erreur JSON :", err, item.dataset.gallery);
+        currentGalleryItems = [];
+      }
+  
+      currentGalleryItems = currentGalleryItems.map(r => ({
+        src: r.src,
+        type: r.type,
+        text: item.querySelector('.gallery-description')?.innerHTML || ""
+      }));
+  
+      if(currentGalleryItems.length > 0) {
+        currentIndex = 0;
+        showMedia(currentIndex);
+      } else {
+        console.warn("Aucune image trouvée dans ce groupe !");
+      }
+    });
+  });
+  
+    
+    document.getElementById('lightbox').addEventListener('click', closeLightbox);
+  });
+  
+  
+  function showMedia(i){
+    const item = currentGalleryItems[i];
+    if(!item) return;
+    currentIndex = i;
+  
+    const lightbox = document.getElementById('lightbox');
+    const imgEl = document.getElementById('lightbox-img');
+    const videoEl = document.getElementById('lightbox-video');
+    const textEl = document.getElementById('lightbox-text');
+    const prevArrow = document.getElementById('lightbox-prev');
+    const nextArrow = document.getElementById('lightbox-next');
+  
+    
+    imgEl.style.display = 'none';
+    videoEl.style.display = 'none';
+    videoEl.pause();
+    videoEl.src = '';
+    textEl.innerHTML = '';
+  
+    
+    if(item.type === 'image'){
+      imgEl.src = item.src;
+      imgEl.style.display = 'block';
+    } else {
+      videoEl.src = item.src;
+      videoEl.style.display = 'block';
+      videoEl.controls = true;
+      videoEl.play().catch(()=>{});
+    }
+  
+    textEl.innerHTML = item.text;
+  
+    
+    lightbox.style.display = 'flex';
+    document.documentElement.classList.add('no-scroll');
+    document.body.classList.add('no-scroll');
+  
+    
+    if(currentGalleryItems.length > 1){
+      prevArrow.style.display = 'block';
+      nextArrow.style.display = 'block';
+    } else {
+      prevArrow.style.display = 'none';
+      nextArrow.style.display = 'none';
+    }
+  }
+  
+  
+  function closeLightbox(){
+    const lightbox = document.getElementById('lightbox');
+    const videoEl = document.getElementById('lightbox-video');
+    lightbox.style.display = 'none';
+    if(videoEl){ videoEl.pause(); videoEl.src=''; }
+    document.documentElement.classList.remove('no-scroll');
+    document.body.classList.remove('no-scroll');
+  }
+  
+  
+  function nextMedia(e){ 
+    e.stopPropagation(); 
+    currentIndex = (currentIndex + 1) % currentGalleryItems.length; 
+    showMedia(currentIndex);
+  }
+  
+  function prevMedia(e){ 
+    e.stopPropagation(); 
+    currentIndex = (currentIndex - 1 + currentGalleryItems.length) % currentGalleryItems.length; 
+    showMedia(currentIndex);
+  }
+  
+  
+  let startX = 0;
+  addEventListener('touchstart', e => startX = e.changedTouches[0].clientX);
+  addEventListener('touchend', e => {
+    const lb = document.getElementById('lightbox');
+    if(lb.style.display!=='flex') return;
+    const endX = e.changedTouches[0].clientX;
+    if(startX-endX>50) nextMedia(e);
+    if(endX-startX>50) prevMedia(e);
+  });
+  
+  
+  addEventListener('keydown', e => {
+    const lb = document.getElementById('lightbox');
+    if(lb.style.display==='flex'){
+      if(e.key==='ArrowRight') nextMedia(e);
+      if(e.key==='ArrowLeft') prevMedia(e);
+      if(e.key==='Escape') closeLightbox();
+    }
+  });
+  </script>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    
+      
+    
+    
+  
+    
+    
+    
+      
+    
+    
+  
+    
+    
+    
+      
+    
+    
+  
+  
+  <div class="gallery-item" data-gallery='[{&#34;src&#34;:&#34;/galerie/guadeloupe/centruroides_pococki/centruroides_pococki.jpg&#34;,&#34;type&#34;:&#34;image&#34;},{&#34;src&#34;:&#34;/galerie/guadeloupe/centruroides_pococki/centruroides_pococki1.jpg&#34;,&#34;type&#34;:&#34;image&#34;},{&#34;src&#34;:&#34;/galerie/guadeloupe/centruroides_pococki/centruroides_pococki2.jpg&#34;,&#34;type&#34;:&#34;image&#34;}]' style="display:inline-block;cursor:pointer;">
+    <img src="/galerie/guadeloupe/centruroides_pococki/centruroides_pococki.jpg" style="max-width:260px;max-height:300px;object-fit:cover;border-radius:6px;">
+    <div class="gallery-description" style="display:none">
+      <h2 id="centruroides-pococki">Centruroides pococki</h2>
+<p><em>Centruroides pococki</em> est un scorpion endémique des Petites Antilles, notamment observé en Guadeloupe.</p>
+<p>De taille moyenne, il présente un corps élancé, des pédipalpes fins et une coloration brun doré souvent ornée de motifs sombres. Nocturne, il se dissimule la journée sous l’écorce, les pierres ou dans la litière forestière, puis chasse la nuit <strong>insectes et autres petits arthropodes</strong> grâce à ses pinces et à son dard venimeux. Il habite les <strong>forêts sèches</strong>, un écosystème rare et fragile.</p>
+<p>C. pococki possède une propriété fascinante : il brille d’une couleur bleu-vert sous lumière ultraviolette. Ce phénomène appelé <strong>bioluminescence</strong> serait du à des molécules présentes dans sa cuticule, mais cela reste encore mystérieux. Il pourrait jouer un rôle dans la communication, la protection contre les UV, ou encore servir de mécanisme sensoriel pour percevoir l’environnement.</p>
+<p>C. pococki occupe un rôle écologique important en régulant les populations d’insectes. Il est aujourd’hui menacé par la destruction de son habitat — en particulier la dégradation des forêts sèches littorales — ainsi que par l’urbanisation et l’usage de pesticides. La protection des milieux naturels, la réduction des produits chimiques et la sensibilisation à l&rsquo;importance écologique des scorpions sont essentielles pour assurer sa conservation.</p>
+
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <div class="lightbox-content" onclick="event.stopPropagation()">
+      <div class="lightbox-media">
+        <img id="lightbox-img" style="display:none;">
+        <video id="lightbox-video" controls style="display:none;"></video>
+            
+        <div id="lightbox-prev" class="lightbox-arrow" onclick="prevMedia(event)">&#10094;</div>
+        <div id="lightbox-next" class="lightbox-arrow" onclick="nextMedia(event)">&#10095;</div>
+      </div>
+      <div id="lightbox-text" class="lightbox-text"></div>
+    </div>
+  </div>
+  
+  <style>
+
+   
+  .gallery { display:flex; flex-wrap:wrap; gap:5px; align-items:flex-start; }
+  .gallery-item { flex:0 0 auto; margin:0; }
+  .gallery-item img, .gallery-item video { width:260px; height:300px; max-width:260px; max-height:300px; object-fit:cover; cursor:pointer; border-radius:6px; margin:0; margin-top:2px; }
+  html.no-scroll, body.no-scroll { overflow:hidden !important; height:100vh !important; }
+  
+  .lightbox { display:none; position:fixed; inset:0; background:rgba(0,0,0,0.8); justify-content:center; align-items:flex-start; z-index:9999; height:100vh; width:100vw; }
+  
+  .lightbox-content { margin-top:9vh; display:flex; max-width:95%; max-inline-size:85%; background:#000; border-radius:12px; overflow:hidden; height:auto; max-height:85vh;margin: 2.5vh auto; }
+  
+  .lightbox-media { display:flex; align-items:center; justify-content:center; max-width:65%; max-height:100%; flex:1; height:auto; }
+  
+  #lightbox-img, #lightbox-video {
+    height: auto;
+    width: auto;
+    max-width:100%;
+    max-height:90vh;
+    object-fit:contain;
+    display:block;
+  }
+  
+  .lightbox-text { flex:1; min-width:200px; background:#fff; padding:20px; color:#000; font-size:0.9rem; overflow-y:auto; -webkit-overflow-scrolling: touch; scroll-behavior: smooth; }
+  
+  .lightbox-media { position: relative; }  
+  
+  .lightbox-arrow {
+    display: none;              
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    cursor: pointer;
+    color: rgba(255,255,255,0.8);
+    user-select: none;
+    padding: 5px 10px;
+    background: rgba(0,0,0,0.3);
+    border-radius: 50%;
+    z-index: 1000;
+  }
+  
+  #lightbox-prev { left: 5px; }
+  #lightbox-next { right: 5px; }
+  
+  
+   
+  @media (max-width:768px){
+      #lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.9);
+      z-index: 9999;
+      overflow-y: auto;  
+      -webkit-overflow-scrolling: touch;
+      
+    }
+  
+    .lightbox-content {
+      flex-direction: column;  
+      width: 95%;
+      max-width: 600px;
+      max-height: none;
+      margin: 10px auto;
+      background: #000;  
+      border-radius: 12px;
+      overflow: visible;
+      padding-bottom: 100px;  
+    }
+  
+    .lightbox-media {
+      width: 100%;
+      max-width: 100%;
+      max-height: 70vh;  
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    #lightbox-img, #lightbox-video {
+      width: auto;
+      max-width: 100%;
+      height: auto;
+      max-height: 100%;
+      border-radius: 6px;
+      object-fit: contain;
+    }
+  
+    .lightbox-text {
+      width: 100%;
+      min-width: unset;
+      background: #fff;
+      color: #000;
+      padding: 20px;
+      font-size: 0.9rem;
+      padding-bottom: 20px;
+      max-height: none;  
+      overflow: visible;  
+      -webkit-overflow-scrolling: touch;
+      border-radius: 6px;
+    }
+  
+    .lightbox-arrow {
+      display: none;
+    }
+  }
+  
+  </style>
+  
+  <script>
+  let currentGalleryItems = [];
+  let currentIndex = 0;
+  
+  document.addEventListener('DOMContentLoaded', () => {
+  
+    
+  document.querySelectorAll('.gallery-item').forEach(item => {
+    item.addEventListener('click', e => {
+      e.stopPropagation();
+  
+      try {
+        currentGalleryItems = JSON.parse(item.dataset.gallery || "[]");
+      } catch(err) {
+        console.error("Erreur JSON :", err, item.dataset.gallery);
+        currentGalleryItems = [];
+      }
+  
+      currentGalleryItems = currentGalleryItems.map(r => ({
+        src: r.src,
+        type: r.type,
+        text: item.querySelector('.gallery-description')?.innerHTML || ""
+      }));
+  
+      if(currentGalleryItems.length > 0) {
+        currentIndex = 0;
+        showMedia(currentIndex);
+      } else {
+        console.warn("Aucune image trouvée dans ce groupe !");
+      }
+    });
+  });
+  
+    
+    document.getElementById('lightbox').addEventListener('click', closeLightbox);
+  });
+  
+  
+  function showMedia(i){
+    const item = currentGalleryItems[i];
+    if(!item) return;
+    currentIndex = i;
+  
+    const lightbox = document.getElementById('lightbox');
+    const imgEl = document.getElementById('lightbox-img');
+    const videoEl = document.getElementById('lightbox-video');
+    const textEl = document.getElementById('lightbox-text');
+    const prevArrow = document.getElementById('lightbox-prev');
+    const nextArrow = document.getElementById('lightbox-next');
+  
+    
+    imgEl.style.display = 'none';
+    videoEl.style.display = 'none';
+    videoEl.pause();
+    videoEl.src = '';
+    textEl.innerHTML = '';
+  
+    
+    if(item.type === 'image'){
+      imgEl.src = item.src;
+      imgEl.style.display = 'block';
+    } else {
+      videoEl.src = item.src;
+      videoEl.style.display = 'block';
+      videoEl.controls = true;
+      videoEl.play().catch(()=>{});
+    }
+  
+    textEl.innerHTML = item.text;
+  
+    
+    lightbox.style.display = 'flex';
+    document.documentElement.classList.add('no-scroll');
+    document.body.classList.add('no-scroll');
+  
+    
+    if(currentGalleryItems.length > 1){
+      prevArrow.style.display = 'block';
+      nextArrow.style.display = 'block';
+    } else {
+      prevArrow.style.display = 'none';
+      nextArrow.style.display = 'none';
+    }
+  }
+  
+  
+  function closeLightbox(){
+    const lightbox = document.getElementById('lightbox');
+    const videoEl = document.getElementById('lightbox-video');
+    lightbox.style.display = 'none';
+    if(videoEl){ videoEl.pause(); videoEl.src=''; }
+    document.documentElement.classList.remove('no-scroll');
+    document.body.classList.remove('no-scroll');
+  }
+  
+  
+  function nextMedia(e){ 
+    e.stopPropagation(); 
+    currentIndex = (currentIndex + 1) % currentGalleryItems.length; 
+    showMedia(currentIndex);
+  }
+  
+  function prevMedia(e){ 
+    e.stopPropagation(); 
+    currentIndex = (currentIndex - 1 + currentGalleryItems.length) % currentGalleryItems.length; 
+    showMedia(currentIndex);
+  }
+  
+  
+  let startX = 0;
+  addEventListener('touchstart', e => startX = e.changedTouches[0].clientX);
+  addEventListener('touchend', e => {
+    const lb = document.getElementById('lightbox');
+    if(lb.style.display!=='flex') return;
+    const endX = e.changedTouches[0].clientX;
+    if(startX-endX>50) nextMedia(e);
+    if(endX-startX>50) prevMedia(e);
+  });
+  
+  
+  addEventListener('keydown', e => {
+    const lb = document.getElementById('lightbox');
+    if(lb.style.display==='flex'){
+      if(e.key==='ArrowRight') nextMedia(e);
+      if(e.key==='ArrowLeft') prevMedia(e);
+      if(e.key==='Escape') closeLightbox();
+    }
+  });
+  </script>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    
+      
+    
+    
+  
+  
+  <div class="gallery-item" data-gallery='[{&#34;src&#34;:&#34;/galerie/guadeloupe/oiclus_nanus/oiclus_nanus.jpg&#34;,&#34;type&#34;:&#34;image&#34;}]' style="display:inline-block;cursor:pointer;">
+    <img src="/galerie/guadeloupe/oiclus_nanus/oiclus_nanus.jpg" style="max-width:260px;max-height:300px;object-fit:cover;border-radius:6px;">
+    <div class="gallery-description" style="display:none">
+      <h2 id="oiclus-nanus">Oiclus nanus</h2>
+<p><em>Oiclus nanus</em> est un petit scorpion discret des forêts tropicales humides présent dans les forêts de <strong>Grande Terre en Guadeloupe</strong>.</p>
+<p>Il se reconnaît à sa petite taille, son corps trapu et sa coloration brun foncé à ocre. Il vit principalement dans la litière de feuilles, sous les roches et dans les troncs en décomposition, où il contribue à la régulation des petites populations d’arthropodes grâce à une <strong>chasse active</strong>.</p>
+<p>Ce scorpion présente une particularité commune à l’ensemble de son groupe : il <strong>fluoresce sous lumière UV</strong>, prenant une teinte bleu turquoise éclatante. Cette fluorescence, perceptible uniquement sous rayonnement ultraviolet, résulterait de composants chimiques de sa cuticule et intrigue encore les chercheurs. Elle pourrait aider le scorpion à détecter la lumière, à se camoufler ou à communiquer, mais ses fonctions exactes sont toujours à l’étude.</p>
+<p>Espèce associée aux milieux forestiers préservés, O. nanus dépend d’un habitat humide et stable. La déforestation, l’assèchement des sols, les incendies et la fragmentation des habitats constituent ses principales menaces. Sa conservation nécessite la protection des forêts tropicales et de leur sol riche en matière organique, ainsi qu’un effort de recherche pour mieux comprendre cette espèce encore méconnue.</p>
+
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <div class="lightbox-content" onclick="event.stopPropagation()">
+      <div class="lightbox-media">
+        <img id="lightbox-img" style="display:none;">
+        <video id="lightbox-video" controls style="display:none;"></video>
+            
+        <div id="lightbox-prev" class="lightbox-arrow" onclick="prevMedia(event)">&#10094;</div>
+        <div id="lightbox-next" class="lightbox-arrow" onclick="nextMedia(event)">&#10095;</div>
+      </div>
+      <div id="lightbox-text" class="lightbox-text"></div>
+    </div>
+  </div>
+  
+  <style>
+
+   
+  .gallery { display:flex; flex-wrap:wrap; gap:5px; align-items:flex-start; }
+  .gallery-item { flex:0 0 auto; margin:0; }
+  .gallery-item img, .gallery-item video { width:260px; height:300px; max-width:260px; max-height:300px; object-fit:cover; cursor:pointer; border-radius:6px; margin:0; margin-top:2px; }
+  html.no-scroll, body.no-scroll { overflow:hidden !important; height:100vh !important; }
+  
+  .lightbox { display:none; position:fixed; inset:0; background:rgba(0,0,0,0.8); justify-content:center; align-items:flex-start; z-index:9999; height:100vh; width:100vw; }
+  
+  .lightbox-content { margin-top:9vh; display:flex; max-width:95%; max-inline-size:85%; background:#000; border-radius:12px; overflow:hidden; height:auto; max-height:85vh;margin: 2.5vh auto; }
+  
+  .lightbox-media { display:flex; align-items:center; justify-content:center; max-width:65%; max-height:100%; flex:1; height:auto; }
+  
+  #lightbox-img, #lightbox-video {
+    height: auto;
+    width: auto;
+    max-width:100%;
+    max-height:90vh;
+    object-fit:contain;
+    display:block;
+  }
+  
+  .lightbox-text { flex:1; min-width:200px; background:#fff; padding:20px; color:#000; font-size:0.9rem; overflow-y:auto; -webkit-overflow-scrolling: touch; scroll-behavior: smooth; }
+  
+  .lightbox-media { position: relative; }  
+  
+  .lightbox-arrow {
+    display: none;              
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    cursor: pointer;
+    color: rgba(255,255,255,0.8);
+    user-select: none;
+    padding: 5px 10px;
+    background: rgba(0,0,0,0.3);
+    border-radius: 50%;
+    z-index: 1000;
+  }
+  
+  #lightbox-prev { left: 5px; }
+  #lightbox-next { right: 5px; }
+  
+  
+   
+  @media (max-width:768px){
+      #lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.9);
+      z-index: 9999;
+      overflow-y: auto;  
+      -webkit-overflow-scrolling: touch;
+      
+    }
+  
+    .lightbox-content {
+      flex-direction: column;  
+      width: 95%;
+      max-width: 600px;
+      max-height: none;
+      margin: 10px auto;
+      background: #000;  
+      border-radius: 12px;
+      overflow: visible;
+      padding-bottom: 100px;  
+    }
+  
+    .lightbox-media {
+      width: 100%;
+      max-width: 100%;
+      max-height: 70vh;  
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    #lightbox-img, #lightbox-video {
+      width: auto;
+      max-width: 100%;
+      height: auto;
+      max-height: 100%;
+      border-radius: 6px;
+      object-fit: contain;
+    }
+  
+    .lightbox-text {
+      width: 100%;
+      min-width: unset;
+      background: #fff;
+      color: #000;
+      padding: 20px;
+      font-size: 0.9rem;
+      padding-bottom: 20px;
+      max-height: none;  
+      overflow: visible;  
+      -webkit-overflow-scrolling: touch;
+      border-radius: 6px;
+    }
+  
+    .lightbox-arrow {
+      display: none;
+    }
+  }
+  
+  </style>
+  
+  <script>
+  let currentGalleryItems = [];
+  let currentIndex = 0;
+  
+  document.addEventListener('DOMContentLoaded', () => {
+  
+    
+  document.querySelectorAll('.gallery-item').forEach(item => {
+    item.addEventListener('click', e => {
+      e.stopPropagation();
+  
+      try {
+        currentGalleryItems = JSON.parse(item.dataset.gallery || "[]");
+      } catch(err) {
+        console.error("Erreur JSON :", err, item.dataset.gallery);
+        currentGalleryItems = [];
+      }
+  
+      currentGalleryItems = currentGalleryItems.map(r => ({
+        src: r.src,
+        type: r.type,
+        text: item.querySelector('.gallery-description')?.innerHTML || ""
+      }));
+  
+      if(currentGalleryItems.length > 0) {
+        currentIndex = 0;
+        showMedia(currentIndex);
+      } else {
+        console.warn("Aucune image trouvée dans ce groupe !");
+      }
+    });
+  });
+  
+    
+    document.getElementById('lightbox').addEventListener('click', closeLightbox);
+  });
+  
+  
+  function showMedia(i){
+    const item = currentGalleryItems[i];
+    if(!item) return;
+    currentIndex = i;
+  
+    const lightbox = document.getElementById('lightbox');
+    const imgEl = document.getElementById('lightbox-img');
+    const videoEl = document.getElementById('lightbox-video');
+    const textEl = document.getElementById('lightbox-text');
+    const prevArrow = document.getElementById('lightbox-prev');
+    const nextArrow = document.getElementById('lightbox-next');
+  
+    
+    imgEl.style.display = 'none';
+    videoEl.style.display = 'none';
+    videoEl.pause();
+    videoEl.src = '';
+    textEl.innerHTML = '';
+  
+    
+    if(item.type === 'image'){
+      imgEl.src = item.src;
+      imgEl.style.display = 'block';
+    } else {
+      videoEl.src = item.src;
+      videoEl.style.display = 'block';
+      videoEl.controls = true;
+      videoEl.play().catch(()=>{});
+    }
+  
+    textEl.innerHTML = item.text;
+  
+    
+    lightbox.style.display = 'flex';
+    document.documentElement.classList.add('no-scroll');
+    document.body.classList.add('no-scroll');
+  
+    
+    if(currentGalleryItems.length > 1){
+      prevArrow.style.display = 'block';
+      nextArrow.style.display = 'block';
+    } else {
+      prevArrow.style.display = 'none';
+      nextArrow.style.display = 'none';
+    }
+  }
+  
+  
+  function closeLightbox(){
+    const lightbox = document.getElementById('lightbox');
+    const videoEl = document.getElementById('lightbox-video');
+    lightbox.style.display = 'none';
+    if(videoEl){ videoEl.pause(); videoEl.src=''; }
+    document.documentElement.classList.remove('no-scroll');
+    document.body.classList.remove('no-scroll');
+  }
+  
+  
+  function nextMedia(e){ 
+    e.stopPropagation(); 
+    currentIndex = (currentIndex + 1) % currentGalleryItems.length; 
+    showMedia(currentIndex);
+  }
+  
+  function prevMedia(e){ 
+    e.stopPropagation(); 
+    currentIndex = (currentIndex - 1 + currentGalleryItems.length) % currentGalleryItems.length; 
+    showMedia(currentIndex);
+  }
+  
+  
+  let startX = 0;
+  addEventListener('touchstart', e => startX = e.changedTouches[0].clientX);
+  addEventListener('touchend', e => {
+    const lb = document.getElementById('lightbox');
+    if(lb.style.display!=='flex') return;
+    const endX = e.changedTouches[0].clientX;
+    if(startX-endX>50) nextMedia(e);
+    if(endX-startX>50) prevMedia(e);
+  });
+  
+  
+  addEventListener('keydown', e => {
+    const lb = document.getElementById('lightbox');
+    if(lb.style.display==='flex'){
+      if(e.key==='ArrowRight') nextMedia(e);
+      if(e.key==='ArrowLeft') prevMedia(e);
+      if(e.key==='Escape') closeLightbox();
+    }
+  });
+  </script>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    
+      
+    
+    
+  
+    
+    
+    
+      
+    
+    
+  
+  
+  <div class="gallery-item" data-gallery='[{&#34;src&#34;:&#34;/galerie/guadeloupe/colibri-falle-vert/colibri%201.jpg&#34;,&#34;type&#34;:&#34;image&#34;},{&#34;src&#34;:&#34;/galerie/guadeloupe/colibri-falle-vert/colibri%202.JPG&#34;,&#34;type&#34;:&#34;image&#34;}]' style="display:inline-block;cursor:pointer;">
+    <img src="/galerie/guadeloupe/colibri-falle-vert/colibri%201.jpg" style="max-width:260px;max-height:300px;object-fit:cover;border-radius:6px;">
+    <div class="gallery-description" style="display:none">
+      <h3 id="-à-la-rencontre-du-colibri-falle-vert-en-guadeloupe-eulampis-holosericeus-">🟢 À la rencontre du Colibri falle-vert en Guadeloupe (<em>Eulampis holosericeus</em>) ✨</h3>
+<p>Endémique des Petites Antilles, le Colibri falle-vert est l’un des joyaux de la biodiversité guadeloupéenne. Ce petit oiseau, souvent aperçu virevoltant autour des fleurs tropicales, joue un rôle essentiel dans les écosystèmes insulaires en tant que pollinisateur majeur.</p>
+<p>🔍 Reconnaissable à son plumage vert et bleu irisé, il possède un bec long et fin, parfaitement adapté pour atteindre le nectar des fleurs. Son vol stationnaire, rendu possible par des battements d’ailes extrêmement rapides, lui permet de se nourrir en plein air tout en assurant la pollinisation de nombreuses plantes.</p>
+<p>🌿On le retrouve dans une grande diversité de milieux : forêts sèches littorales, forêts mésophiles, jardins, zones urbaines… Il affectionne particulièrement les plantes à fleurs tubulaires, nectarifères, mais se nourrit également de petits insectes, complétant ainsi ses apports protéiques.</p>
+<p>⚠️ Bien que relativement commun en Guadeloupe, l’espèce n’est pas à l’abri :</p>
+<ul>
+<li>Perte d’habitat liée à l’urbanisation</li>
+<li>Utilisation de pesticides diminuant les ressources alimentaires</li>
+<li>Dégradation des milieux naturels et des corridors écologiques</li>
+<li>Événements climatiques extrêmes accentués par le changement global (ouragans, tempêtes&hellip;)</li>
+</ul>
+<p>🛡 Mesures de conservation &amp; actions possibles</p>
+<ul>
+<li>Préserver et restaurer les habitats naturels</li>
+<li>Favoriser les jardins écologiques avec plantes nectarifères locales (hibiscus, héliconias, balisiers…)</li>
+<li>Limiter l’usage de pesticides</li>
+<li>Sensibiliser sur le rôle des pollinisateurs</li>
+</ul>
+<p>✨ Le Colibri falle-vert nous rappelle que même les plus petits acteurs jouent un rôle clé dans la dynamique des écosystèmes tropicaux.</p>
+<p>Photographies : Hugo Roger</p>
+
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <div class="lightbox-content" onclick="event.stopPropagation()">
+      <div class="lightbox-media">
+        <img id="lightbox-img" style="display:none;">
+        <video id="lightbox-video" controls style="display:none;"></video>
+            
+        <div id="lightbox-prev" class="lightbox-arrow" onclick="prevMedia(event)">&#10094;</div>
+        <div id="lightbox-next" class="lightbox-arrow" onclick="nextMedia(event)">&#10095;</div>
+      </div>
+      <div id="lightbox-text" class="lightbox-text"></div>
+    </div>
+  </div>
+  
+  <style>
+
+   
+  .gallery { display:flex; flex-wrap:wrap; gap:5px; align-items:flex-start; }
+  .gallery-item { flex:0 0 auto; margin:0; }
+  .gallery-item img, .gallery-item video { width:260px; height:300px; max-width:260px; max-height:300px; object-fit:cover; cursor:pointer; border-radius:6px; margin:0; margin-top:2px; }
+  html.no-scroll, body.no-scroll { overflow:hidden !important; height:100vh !important; }
+  
+  .lightbox { display:none; position:fixed; inset:0; background:rgba(0,0,0,0.8); justify-content:center; align-items:flex-start; z-index:9999; height:100vh; width:100vw; }
+  
+  .lightbox-content { margin-top:9vh; display:flex; max-width:95%; max-inline-size:85%; background:#000; border-radius:12px; overflow:hidden; height:auto; max-height:85vh;margin: 2.5vh auto; }
+  
+  .lightbox-media { display:flex; align-items:center; justify-content:center; max-width:65%; max-height:100%; flex:1; height:auto; }
+  
+  #lightbox-img, #lightbox-video {
+    height: auto;
+    width: auto;
+    max-width:100%;
+    max-height:90vh;
+    object-fit:contain;
+    display:block;
+  }
+  
+  .lightbox-text { flex:1; min-width:200px; background:#fff; padding:20px; color:#000; font-size:0.9rem; overflow-y:auto; -webkit-overflow-scrolling: touch; scroll-behavior: smooth; }
+  
+  .lightbox-media { position: relative; }  
+  
+  .lightbox-arrow {
+    display: none;              
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    cursor: pointer;
+    color: rgba(255,255,255,0.8);
+    user-select: none;
+    padding: 5px 10px;
+    background: rgba(0,0,0,0.3);
+    border-radius: 50%;
+    z-index: 1000;
+  }
+  
+  #lightbox-prev { left: 5px; }
+  #lightbox-next { right: 5px; }
+  
+  
+   
+  @media (max-width:768px){
+      #lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.9);
+      z-index: 9999;
+      overflow-y: auto;  
+      -webkit-overflow-scrolling: touch;
+      
+    }
+  
+    .lightbox-content {
+      flex-direction: column;  
+      width: 95%;
+      max-width: 600px;
+      max-height: none;
+      margin: 10px auto;
+      background: #000;  
+      border-radius: 12px;
+      overflow: visible;
+      padding-bottom: 100px;  
+    }
+  
+    .lightbox-media {
+      width: 100%;
+      max-width: 100%;
+      max-height: 70vh;  
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    #lightbox-img, #lightbox-video {
+      width: auto;
+      max-width: 100%;
+      height: auto;
+      max-height: 100%;
+      border-radius: 6px;
+      object-fit: contain;
+    }
+  
+    .lightbox-text {
+      width: 100%;
+      min-width: unset;
+      background: #fff;
+      color: #000;
+      padding: 20px;
+      font-size: 0.9rem;
+      padding-bottom: 20px;
+      max-height: none;  
+      overflow: visible;  
+      -webkit-overflow-scrolling: touch;
+      border-radius: 6px;
+    }
+  
+    .lightbox-arrow {
+      display: none;
+    }
+  }
+  
+  </style>
+  
+  <script>
+  let currentGalleryItems = [];
+  let currentIndex = 0;
+  
+  document.addEventListener('DOMContentLoaded', () => {
+  
+    
+  document.querySelectorAll('.gallery-item').forEach(item => {
+    item.addEventListener('click', e => {
+      e.stopPropagation();
+  
+      try {
+        currentGalleryItems = JSON.parse(item.dataset.gallery || "[]");
+      } catch(err) {
+        console.error("Erreur JSON :", err, item.dataset.gallery);
+        currentGalleryItems = [];
+      }
+  
+      currentGalleryItems = currentGalleryItems.map(r => ({
+        src: r.src,
+        type: r.type,
+        text: item.querySelector('.gallery-description')?.innerHTML || ""
+      }));
+  
+      if(currentGalleryItems.length > 0) {
+        currentIndex = 0;
+        showMedia(currentIndex);
+      } else {
+        console.warn("Aucune image trouvée dans ce groupe !");
+      }
+    });
+  });
+  
+    
+    document.getElementById('lightbox').addEventListener('click', closeLightbox);
+  });
+  
+  
+  function showMedia(i){
+    const item = currentGalleryItems[i];
+    if(!item) return;
+    currentIndex = i;
+  
+    const lightbox = document.getElementById('lightbox');
+    const imgEl = document.getElementById('lightbox-img');
+    const videoEl = document.getElementById('lightbox-video');
+    const textEl = document.getElementById('lightbox-text');
+    const prevArrow = document.getElementById('lightbox-prev');
+    const nextArrow = document.getElementById('lightbox-next');
+  
+    
+    imgEl.style.display = 'none';
+    videoEl.style.display = 'none';
+    videoEl.pause();
+    videoEl.src = '';
+    textEl.innerHTML = '';
+  
+    
+    if(item.type === 'image'){
+      imgEl.src = item.src;
+      imgEl.style.display = 'block';
+    } else {
+      videoEl.src = item.src;
+      videoEl.style.display = 'block';
+      videoEl.controls = true;
+      videoEl.play().catch(()=>{});
+    }
+  
+    textEl.innerHTML = item.text;
+  
+    
+    lightbox.style.display = 'flex';
+    document.documentElement.classList.add('no-scroll');
+    document.body.classList.add('no-scroll');
+  
+    
+    if(currentGalleryItems.length > 1){
+      prevArrow.style.display = 'block';
+      nextArrow.style.display = 'block';
+    } else {
+      prevArrow.style.display = 'none';
+      nextArrow.style.display = 'none';
+    }
+  }
+  
+  
+  function closeLightbox(){
+    const lightbox = document.getElementById('lightbox');
+    const videoEl = document.getElementById('lightbox-video');
+    lightbox.style.display = 'none';
+    if(videoEl){ videoEl.pause(); videoEl.src=''; }
+    document.documentElement.classList.remove('no-scroll');
+    document.body.classList.remove('no-scroll');
+  }
+  
+  
+  function nextMedia(e){ 
+    e.stopPropagation(); 
+    currentIndex = (currentIndex + 1) % currentGalleryItems.length; 
+    showMedia(currentIndex);
+  }
+  
+  function prevMedia(e){ 
+    e.stopPropagation(); 
+    currentIndex = (currentIndex - 1 + currentGalleryItems.length) % currentGalleryItems.length; 
+    showMedia(currentIndex);
+  }
+  
+  
+  let startX = 0;
+  addEventListener('touchstart', e => startX = e.changedTouches[0].clientX);
+  addEventListener('touchend', e => {
+    const lb = document.getElementById('lightbox');
+    if(lb.style.display!=='flex') return;
+    const endX = e.changedTouches[0].clientX;
+    if(startX-endX>50) nextMedia(e);
+    if(endX-startX>50) prevMedia(e);
+  });
+  
+  
+  addEventListener('keydown', e => {
+    const lb = document.getElementById('lightbox');
+    if(lb.style.display==='flex'){
+      if(e.key==='ArrowRight') nextMedia(e);
+      if(e.key==='ArrowLeft') prevMedia(e);
+      if(e.key==='Escape') closeLightbox();
+    }
+  });
+  </script>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    
+      
+    
+    
+  
+    
+    
+    
+      
+    
+    
+  
+    
+    
+    
+      
+    
+    
+  
+    
+    
+    
+      
+    
+    
+  
+  
+  <div class="gallery-item" data-gallery='[{&#34;src&#34;:&#34;/galerie/guadeloupe/cactus_tete_anglais/cactus%20t%C3%AAte%20%C3%A0%20l%27anglais%201.jpeg&#34;,&#34;type&#34;:&#34;image&#34;},{&#34;src&#34;:&#34;/galerie/guadeloupe/cactus_tete_anglais/cactus%20t%C3%AAte%20%C3%A0%20l%27anglais%202.jpeg&#34;,&#34;type&#34;:&#34;image&#34;},{&#34;src&#34;:&#34;/galerie/guadeloupe/cactus_tete_anglais/cactus%20t%C3%AAte%20%C3%A0%20l%27anglais%203.jpeg&#34;,&#34;type&#34;:&#34;image&#34;},{&#34;src&#34;:&#34;/galerie/guadeloupe/cactus_tete_anglais/cactus%20t%C3%AAte%20%C3%A0%20l%27anglais%204.jpeg&#34;,&#34;type&#34;:&#34;image&#34;}]' style="display:inline-block;cursor:pointer;">
+    <img src="/galerie/guadeloupe/cactus_tete_anglais/cactus%20t%C3%AAte%20%C3%A0%20l%27anglais%201.jpeg" style="max-width:260px;max-height:300px;object-fit:cover;border-radius:6px;">
+    <div class="gallery-description" style="display:none">
+      <h3 id="-melocactus-intortus-intortus-un-cactus-avec-une-drôle-de-tête--">🌵 <em>Melocactus intortus intortus</em>, un cactus avec une drôle de tête ! 💚</h3>
+<p>Ce cactus est surnommé &ldquo;Tête à l&rsquo;anglais&rdquo; en raison de sa ressemblance avec les anciens couvre-chefs de la garde anglaise 💂 . Il s&rsquo;agit d&rsquo;une espèce endémique des Petites Antilles, retrouvable uniquement à Saint-Martin, Saint-Barthélemy, et en Guadeloupe aux îles de Terre-de-Haut et à la Désirade 🏝️ .</p>
+<p>Son attribut le plus remarquable est le céphalium qui pousse en son sommet, duquel jaillit des fleurs puis des fruits une fois la majorité sexuelle atteinte. Ces inflorescences poussent successivement les unes sur les autres, les individus les plus âgés brandissent ainsi de véritables hauts-de-forme !</p>
+<p>Malheureusement, le Cactus tête à l&rsquo;anglais est gravement menacé dans son habitat naturel. Son aire de répartition se limite aux quelques îles aux climats les plus secs , et le pâturage et les prélèvements illégaux impactent fortement les populations restantes.</p>
+<p>En Guadeloupe, <em>Melocactus intortus intortus</em> est protégé par la loi depuis 1988.</p>
+<p>Des efforts de sauvegarde sont toutefois mis en place. À la Désirade, le travail conjoint du Jardin botanique du Désert et de la Réserve naturelle de la Désirade assure la reproduction et la réintroduction de nombreux individus, pérennisant l&rsquo;avenir de l&rsquo;espèce. 🌵</p>
+
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <div class="lightbox-content" onclick="event.stopPropagation()">
+      <div class="lightbox-media">
+        <img id="lightbox-img" style="display:none;">
+        <video id="lightbox-video" controls style="display:none;"></video>
+            
+        <div id="lightbox-prev" class="lightbox-arrow" onclick="prevMedia(event)">&#10094;</div>
+        <div id="lightbox-next" class="lightbox-arrow" onclick="nextMedia(event)">&#10095;</div>
+      </div>
+      <div id="lightbox-text" class="lightbox-text"></div>
+    </div>
+  </div>
+  
+  <style>
+
+   
+  .gallery { display:flex; flex-wrap:wrap; gap:5px; align-items:flex-start; }
+  .gallery-item { flex:0 0 auto; margin:0; }
+  .gallery-item img, .gallery-item video { width:260px; height:300px; max-width:260px; max-height:300px; object-fit:cover; cursor:pointer; border-radius:6px; margin:0; margin-top:2px; }
+  html.no-scroll, body.no-scroll { overflow:hidden !important; height:100vh !important; }
+  
+  .lightbox { display:none; position:fixed; inset:0; background:rgba(0,0,0,0.8); justify-content:center; align-items:flex-start; z-index:9999; height:100vh; width:100vw; }
+  
+  .lightbox-content { margin-top:9vh; display:flex; max-width:95%; max-inline-size:85%; background:#000; border-radius:12px; overflow:hidden; height:auto; max-height:85vh;margin: 2.5vh auto; }
+  
+  .lightbox-media { display:flex; align-items:center; justify-content:center; max-width:65%; max-height:100%; flex:1; height:auto; }
+  
+  #lightbox-img, #lightbox-video {
+    height: auto;
+    width: auto;
+    max-width:100%;
+    max-height:90vh;
+    object-fit:contain;
+    display:block;
+  }
+  
+  .lightbox-text { flex:1; min-width:200px; background:#fff; padding:20px; color:#000; font-size:0.9rem; overflow-y:auto; -webkit-overflow-scrolling: touch; scroll-behavior: smooth; }
+  
+  .lightbox-media { position: relative; }  
+  
+  .lightbox-arrow {
+    display: none;              
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    cursor: pointer;
+    color: rgba(255,255,255,0.8);
+    user-select: none;
+    padding: 5px 10px;
+    background: rgba(0,0,0,0.3);
+    border-radius: 50%;
+    z-index: 1000;
+  }
+  
+  #lightbox-prev { left: 5px; }
+  #lightbox-next { right: 5px; }
+  
+  
+   
+  @media (max-width:768px){
+      #lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.9);
+      z-index: 9999;
+      overflow-y: auto;  
+      -webkit-overflow-scrolling: touch;
+      
+    }
+  
+    .lightbox-content {
+      flex-direction: column;  
+      width: 95%;
+      max-width: 600px;
+      max-height: none;
+      margin: 10px auto;
+      background: #000;  
+      border-radius: 12px;
+      overflow: visible;
+      padding-bottom: 100px;  
+    }
+  
+    .lightbox-media {
+      width: 100%;
+      max-width: 100%;
+      max-height: 70vh;  
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    #lightbox-img, #lightbox-video {
+      width: auto;
+      max-width: 100%;
+      height: auto;
+      max-height: 100%;
+      border-radius: 6px;
+      object-fit: contain;
+    }
+  
+    .lightbox-text {
+      width: 100%;
+      min-width: unset;
+      background: #fff;
+      color: #000;
+      padding: 20px;
+      font-size: 0.9rem;
+      padding-bottom: 20px;
+      max-height: none;  
+      overflow: visible;  
+      -webkit-overflow-scrolling: touch;
+      border-radius: 6px;
+    }
+  
+    .lightbox-arrow {
+      display: none;
+    }
+  }
+  
+  </style>
+  
+  <script>
+  let currentGalleryItems = [];
+  let currentIndex = 0;
+  
+  document.addEventListener('DOMContentLoaded', () => {
+  
+    
+  document.querySelectorAll('.gallery-item').forEach(item => {
+    item.addEventListener('click', e => {
+      e.stopPropagation();
+  
+      try {
+        currentGalleryItems = JSON.parse(item.dataset.gallery || "[]");
+      } catch(err) {
+        console.error("Erreur JSON :", err, item.dataset.gallery);
+        currentGalleryItems = [];
+      }
+  
+      currentGalleryItems = currentGalleryItems.map(r => ({
+        src: r.src,
+        type: r.type,
+        text: item.querySelector('.gallery-description')?.innerHTML || ""
+      }));
+  
+      if(currentGalleryItems.length > 0) {
+        currentIndex = 0;
+        showMedia(currentIndex);
+      } else {
+        console.warn("Aucune image trouvée dans ce groupe !");
+      }
+    });
+  });
+  
+    
+    document.getElementById('lightbox').addEventListener('click', closeLightbox);
+  });
+  
+  
+  function showMedia(i){
+    const item = currentGalleryItems[i];
+    if(!item) return;
+    currentIndex = i;
+  
+    const lightbox = document.getElementById('lightbox');
+    const imgEl = document.getElementById('lightbox-img');
+    const videoEl = document.getElementById('lightbox-video');
+    const textEl = document.getElementById('lightbox-text');
+    const prevArrow = document.getElementById('lightbox-prev');
+    const nextArrow = document.getElementById('lightbox-next');
+  
+    
+    imgEl.style.display = 'none';
+    videoEl.style.display = 'none';
+    videoEl.pause();
+    videoEl.src = '';
+    textEl.innerHTML = '';
+  
+    
+    if(item.type === 'image'){
+      imgEl.src = item.src;
+      imgEl.style.display = 'block';
+    } else {
+      videoEl.src = item.src;
+      videoEl.style.display = 'block';
+      videoEl.controls = true;
+      videoEl.play().catch(()=>{});
+    }
+  
+    textEl.innerHTML = item.text;
+  
+    
+    lightbox.style.display = 'flex';
+    document.documentElement.classList.add('no-scroll');
+    document.body.classList.add('no-scroll');
+  
+    
+    if(currentGalleryItems.length > 1){
+      prevArrow.style.display = 'block';
+      nextArrow.style.display = 'block';
+    } else {
+      prevArrow.style.display = 'none';
+      nextArrow.style.display = 'none';
+    }
+  }
+  
+  
+  function closeLightbox(){
+    const lightbox = document.getElementById('lightbox');
+    const videoEl = document.getElementById('lightbox-video');
+    lightbox.style.display = 'none';
+    if(videoEl){ videoEl.pause(); videoEl.src=''; }
+    document.documentElement.classList.remove('no-scroll');
+    document.body.classList.remove('no-scroll');
+  }
+  
+  
+  function nextMedia(e){ 
+    e.stopPropagation(); 
+    currentIndex = (currentIndex + 1) % currentGalleryItems.length; 
+    showMedia(currentIndex);
+  }
+  
+  function prevMedia(e){ 
+    e.stopPropagation(); 
+    currentIndex = (currentIndex - 1 + currentGalleryItems.length) % currentGalleryItems.length; 
+    showMedia(currentIndex);
+  }
+  
+  
+  let startX = 0;
+  addEventListener('touchstart', e => startX = e.changedTouches[0].clientX);
+  addEventListener('touchend', e => {
+    const lb = document.getElementById('lightbox');
+    if(lb.style.display!=='flex') return;
+    const endX = e.changedTouches[0].clientX;
+    if(startX-endX>50) nextMedia(e);
+    if(endX-startX>50) prevMedia(e);
+  });
+  
+  
+  addEventListener('keydown', e => {
+    const lb = document.getElementById('lightbox');
+    if(lb.style.display==='flex'){
+      if(e.key==='ArrowRight') nextMedia(e);
+      if(e.key==='ArrowLeft') prevMedia(e);
+      if(e.key==='Escape') closeLightbox();
+    }
+  });
+  </script>
+</p>
+<script src="/js/gallery-lightbox.js"></script>
+
+        
+      </section>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <div></div>
+        
+
+        
+        <a class="group btn btn-outline" href="/galerie/galerie_japon/" title="Au coeur du Japon">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">Page suivante</span>
+            <span class="max-w-48 truncate">Au coeur du Japon</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+
+      
+      <div class="divider"></div>
+
+      <section class="space-y-4">
+        
+
+
+
+
+<article>
+
+  <div id="vcomments"></div>
+<script src="https://unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+  new Valine({
+    el: '#vcomments',
+    appId: '',
+    appKey: '',
+    placeholder: 'Leave a comment...',
+    lang: 'en',
+    avatar: 'mp',
+    visitor: true,
+    requiredFields: ['nick','mail']
+  });
+</script>
+
+
+</article>
+
+
+
+
+
+
+      </section>
+      
+    </article>
+  </div>
+
+  <div class="hidden lg:flex lg:flex-col lg:items-end">
+    
+      <nav id="TableOfContents"></nav>
+    
+  </div>
+</div>
+
+
+
+            
+<footer class="px-4 py-4">
+
+
+  <div class="w-full flex flex-col gap-4">
+    <style>
+.partners-footer {
+  text-align: center;
+  margin: 15px 0 5px 0;
+}
+
+.partners-footer h3 {
+  margin-bottom: 12px;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.partners-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.partners-logos img {
+  height: 200px;
+  object-fit: contain;
+  transition: transform .2s ease;
+}
+
+.partners-logos img:hover {
+  transform: scale(1.08);
+}
+</style>
+
+
+<div class="partners-footer">
+  <h3>Nos partenaires</h3>
+
+  <div class="partners-logos">
+    <a href="https://www.agroparistech.fr/partenariats-socioeconomiques/nous-soutenir/fondation-agroparistech" target="_blank">
+      <img src="/images/partners/fondation APT.png" alt="Partenaire 1" />
+    </a>
+
+  </div>
+</div>
+
+
+    <div class="flex justify-between items-center gap-2">
+      <div>
+  
+  <p>© 2026 BiOdyssée</p>
+  
+
+  
+  <p>Tous droits réservés</p>
+  
+</div>
+
+       
+
+    </div>
+  </div>
+
+</footer>
+
+
+<script>
+  function scrollCategories(direction) {
+    const container = document.getElementById("categoriesScroll");
+    const scrollAmount = 300; 
+    container.scrollBy({
+      left: direction * scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+</script>
+
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid dream-grid-about">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Voilà l&#39;équipe de la mission 2026</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Voilà une brève présentation des membres de l&rsquo;équipe fondatrice de BiOdyssée et qui participera à l&rsquo;expédition 2026 au Japon.</p>
+<p><img src="/images/equipe_complete.jpeg" alt="photo équipe"></p>
+<p>Et on remercie Brieuc (au centre de la photo) qui est venu nous rejoindre pour quelques jours !</p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Hugo - Co-président</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Étudiant en Gestion et ingénierie de l&rsquo;environnement à AgroParisTech, je suis passionné par la paléontologie et l’évolution 🦖🦴🧬.</p>
+<p>J’aspire à travailler dans le domaine de la gestion des milieux naturels, plus précisément pour la conservation ou la restauration des milieux humides en France 🐸🐟🌿, qui ont perdu une part très importante de leur surface ces derniers siècles. Je me suis ainsi toujours intéressé à l’évolution des espèces et des écosystèmes dans le temps, c’est pourquoi ce projet de césure me motive tant !</p>
+<p><strong>Contact :</strong>
+<a href="mailto:hugo.roger@agroparistech.fr" target="_blank">hugo.roger@agroparistech.fr</a>
+</p>
+<p><img src="/images/hugo.jpeg" alt="photo rando"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Théophile - Co-président</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Étudiant en ingénierie de l&rsquo;environnement passionné d’entomologie et en particulier de myrmécologie 🐜, mon objectif est de faire de la recherche en environnement en particulier sur les dynamiques génétiques des populations 🧬🐜 (de fourmis bien évidemment).</p>
+<p>Je fais partie de l’association naturaliste &ldquo;les &ldquo;Blairoudeurs 🦡&rdquo; avec laquelle je suis parti faire de la prospection et de la sensibilisation en Corse lors de la Mission Isula. Ce projet de césure est une super opportunité de continuer cette expérience mais à une échelle bien plus vaste et exotique tout en continuant de me former sur la connaissance des différents écosystèmes et leurs moyens de gestions dans un autre pays.</p>
+<p><strong>Contact :</strong>
+<a href="mailto:theophie.thomas@agroparistech.fr" target="_blank">theophie.thomas@agroparistech.fr</a>
+</p>
+<p><img src="/images/theophile.jpeg" alt="photo stylée"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Lucie - Responsable communication</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Étudiante en Gestion et ingénierie de l&rsquo;environnement à AgroParisTech, je suis fascinée par à peu près tout ce qui se rapporte à l’océan 🌊.</p>
+<p>C’est dans l’optique d’allier travail et passion, que je m’oriente vers la biologie marine. Plus particulièrement, j’aimerais travailler dans la conservation ou la gestion des écosystèmes marins. La faune 🐠🐋🐙, autant que la flore aquatique me passionnent et c’est pour pouvoir l’observer de plus près que je fais de la plongée sous-marine 🤿.</p>
+<p>Ce projet est pour moi l’opportunité de découvrir de nouveaux milieux aquatiques 🌊🪸🌿 et de comprendre tous les enjeux qui pèsent dessus.</p>
+<p><strong>Contact :</strong>
+<a href="mailto:lucie.lowagie@agroparistech.fr" target="_blank">lucie.lowagie@agroparistech.fr</a>
+</p>
+<p><img src="/images/lucie.jpg" alt="photo"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Solal - Trésorier</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Étudiant en agronomie et passionné par l’histoire 🧭⌛🏹 et l’éthologie 🐁🧠🧪, j’espère utiliser cette opportunité pour observer le comportement des animaux dans leur milieu naturel. Par la suite, j’aimerais faire de la recherche 👨‍🔬 ou être enseignant  dans l’enseignement supérieur 🧑‍🏫, et cette césure me permettrait de développer mes capacités de synthèse et d’observation.</p>
+<p>Le fait de pouvoir allier recherche historique et observation animale — le tout dans le but de ne pas reproduire les erreurs du passé — est la raison pour laquelle ce projet m’intéresse.</p>
+<p><strong>Contact :</strong>
+<a href="mailto:solal.free@agroparistech.fr" target="_blank">solal.free@agroparistech.fr</a>
+</p>
+<p><img src="/images/solal.jpeg" alt="photo qui fait peur"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Réseaux sociaux</div>
+
+        <ul class="menu menu-horizontal flex-wrap w-full px-0 [&_ion-icon]:text-lg">
+  
+
+  
+  <li>
+    <a href="https://www.facebook.com/profile.php?id=61576052068851" target="_blank" title="Facebook">
+      <ion-icon name="logo-facebook"></ion-icon>
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://www.instagram.com/bio_dyssee/" target="_blank" title="Instagram">
+      <ion-icon name="logo-instagram"></ion-icon>
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://www.linkedin.com/company/107400672/admin/dashboard/" target="_blank" title="Linkedin">
+      <ion-icon name="logo-linkedin"></ion-icon>
+    </a>
+  </li>
+  
+  <li>
+    <a href="mailto:biodyssee2026@gmail.com" target="_blank" title="Email">
+      <ion-icon name="mail-outline"></ion-icon>
+    </a>
+  </li>
+  
+</ul>
+
+      </div>
+    </article>
+  </div>
+  
+
+  
+</div>
+
+            
+
+            
+<footer class="px-4 py-4">
+
+
+  <div class="w-full flex flex-col gap-4">
+    <style>
+.partners-footer {
+  text-align: center;
+  margin: 15px 0 5px 0;
+}
+
+.partners-footer h3 {
+  margin-bottom: 12px;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.partners-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.partners-logos img {
+  height: 200px;
+  object-fit: contain;
+  transition: transform .2s ease;
+}
+
+.partners-logos img:hover {
+  transform: scale(1.08);
+}
+</style>
+
+
+<div class="partners-footer">
+  <h3>Nos partenaires</h3>
+
+  <div class="partners-logos">
+    <a href="https://www.agroparistech.fr/partenariats-socioeconomiques/nous-soutenir/fondation-agroparistech" target="_blank">
+      <img src="/images/partners/fondation APT.png" alt="Partenaire 1" />
+    </a>
+
+  </div>
+</div>
+
+
+    <div class="flex justify-between items-center gap-2">
+      <div>
+  
+  <p>© 2026 BiOdyssée</p>
+  
+
+  
+  <p>Tous droits réservés</p>
+  
+</div>
+
+       
+
+    </div>
+  </div>
+
+</footer>
+
+
+<script>
+  function scrollCategories(direction) {
+    const container = document.getElementById("categoriesScroll");
+    const scrollAmount = 300; 
+    container.scrollBy({
+      left: direction * scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+</script>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-2PHJBK75DX"></script>
+      <script>
+        var doNotTrack = false;
+        if ( true ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-2PHJBK75DX');
+        }
+      </script>
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
+

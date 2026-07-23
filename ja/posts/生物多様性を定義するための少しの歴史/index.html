@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="ja"  
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>生物多様性を定義するための少しの歴史 | BiOdyssée</title>
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+  
+
+    
+
+<link rel="canonical" href="https://biodyssee.netlify.app/ja/posts/%E7%94%9F%E7%89%A9%E5%A4%9A%E6%A7%98%E6%80%A7%E3%82%92%E5%AE%9A%E7%BE%A9%E3%81%99%E3%82%8B%E3%81%9F%E3%82%81%E3%81%AE%E5%B0%91%E3%81%97%E3%81%AE%E6%AD%B4%E5%8F%B2/" />
+
+
+
+<meta name="author" content="theophile" />
+<meta name="description" content="生物多様性という概念は、環境やその保全をめぐる議論の中で中心的な位置を占めるようになり、その状態を評価する重要性を示しています。
+" />
+
+
+<meta name="keywords" content="定義とコンセプト">
+
+
+
+<meta name="generator" content="Hugo 0.163.2">
+
+
+<meta property="og:url" content="https://biodyssee.netlify.app/ja/posts/%E7%94%9F%E7%89%A9%E5%A4%9A%E6%A7%98%E6%80%A7%E3%82%92%E5%AE%9A%E7%BE%A9%E3%81%99%E3%82%8B%E3%81%9F%E3%82%81%E3%81%AE%E5%B0%91%E3%81%97%E3%81%AE%E6%AD%B4%E5%8F%B2/">
+	<meta property="og:site_name" content="BiOdyssée">
+	<meta property="og:title" content="生物多様性を定義するための少しの歴史">
+	<meta property="og:description" content="生物多様性という概念は、環境やその保全をめぐる議論の中で中心的な位置を占めるようになり、その状態を評価する重要性を示しています。">
+	<meta property="og:locale" content="ja">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="posts">
+		<meta property="article:published_time" content="2025-08-06T14:00:00+01:00">
+		<meta property="article:modified_time" content="2025-08-06T14:00:00+01:00">
+
+
+
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="生物多様性を定義するための少しの歴史">
+	<meta name="twitter:description" content="生物多様性という概念は、環境やその保全をめぐる議論の中で中心的な位置を占めるようになり、その状態を評価する重要性を示しています。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+<script src="//unpkg.com/valine@1.5.2/dist/Valine.min.js"></script>
+
+
+
+
+
+
+
+    
+    <link rel="stylesheet" href="/css/custom.css" />
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="py-4"> 
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="Flip it!">
+        <div class="h-10 rounded-full">
+          <img src="/images/logo.jpg" alt="BiOdyssée" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://biodyssee.netlify.app/" class="text-lg font-semibold cursor-pointer">
+          BiOdyssée
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm" style="color: #ffffff" >À la (re)découverte du vivant</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="About">
+    <ion-icon name="information-circle"></ion-icon>About</div>
+</li>
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/ja/search" title="検索">
+    <ion-icon name="search"></ion-icon>
+    検索
+  </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/ja/posts" title="アーカイブ">
+    <ion-icon name="archive"></ion-icon>
+    アーカイブ
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/ja/categories" title="カテゴリー一覧">
+    <ion-icon name="grid"></ion-icon>
+    カテゴリー一覧
+  </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="menu-title px-2 pt-2">Langue</li>
+
+  <li>
+    <a href="/fr" class="inline-flex items-center p-2 text-black hover:underline">
+      Français
+    </a>
+  </li>
+
+  <li>
+    <a href="/ja" class="inline-flex items-center p-2 text-black hover:underline">
+      日本語
+    </a>
+  </li>
+
+  <li>
+    <a href="/en" class="inline-flex items-center p-2 text-black hover:underline">
+      English
+    </a>
+  </li>
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0"
+        class="text-sm font-semibold cursor-pointer hover:underline"
+        @click="flip = !flip"
+        title="About"
+      >About</div>
+      
+      
+
+      
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/ja/search" title="検索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+
+
+
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/ja/posts" title="アーカイブ">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/ja/categories" title="カテゴリー一覧">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+
+
+
+
+
+      
+
+      
+
+      
+
+
+ 
+<div class="dropdown dropdown-end">
+  <div tabindex="0" role="button" class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" aria-label="Select an option">
+  <ion-icon name="earth-outline"> </ion-icon> 
+  
+  </div>
+  <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-xl">
+    
+      <li>
+        <a href="/fr" class="inline-flex items-center p-2 cursor-pointer" style = "color: #000000">
+          Français
+        </a>
+      </li>
+    
+      <li>
+        <a href="/ja" class="inline-flex items-center p-2 cursor-pointer" style = "color: #000000">
+          日本語
+        </a>
+      </li>
+    
+      <li>
+        <a href="/en" class="inline-flex items-center p-2 cursor-pointer" style = "color: #000000">
+          English
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+    </section>
+  </div>
+</nav>
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+           
+
+          <div class="container">
+            
+<div class="lg:grid lg:grid-cols-4 gap-4 mt-4 px-4">
+  <div class="hidden lg:block">
+    
+  </div>
+
+  <div class="lg:col-span-2">
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+	<meta itemprop="name" content="生物多様性を定義するための少しの歴史">
+	<meta itemprop="description" content="生物多様性という概念は、環境やその保全をめぐる議論の中で中心的な位置を占めるようになり、その状態を評価する重要性を示しています。">
+	<meta itemprop="datePublished" content="2025-08-06T14:00:00+01:00">
+	<meta itemprop="dateModified" content="2025-08-06T14:00:00+01:00">
+	<meta itemprop="wordCount" content="61">
+	<meta itemprop="keywords" content="定義とコンセプト">
+
+      <header>
+        <h1 itemprop="headline">生物多様性を定義するための少しの歴史</h1>
+        <p class="text-sm">
+          
+            水曜日,  6, 2025
+          
+
+          | <span>1分で読めます</span>
+
+          
+          | <span>更新日時
+            
+              水曜日,  6, 2025
+            </span>
+          
+        </p>
+
+        
+        <div class="flex justify-between">
+          
+            
+
+
+<div class="flex items-center">
+  
+    <div class="avatar mr-1">
+      <div class="w-8 rounded-full">
+        <img class="my-0" src="/images/authors/avatar_theophile.jpg" alt="Théophile" />
+      </div>
+    </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+    
+      
+        <span itemprop="name">Théophile</span>
+      
+    
+  </span>
+</div>
+
+          
+
+          
+
+<div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://biodyssee.netlify.app/ja/posts/%E7%94%9F%E7%89%A9%E5%A4%9A%E6%A7%98%E6%80%A7%E3%82%92%E5%AE%9A%E7%BE%A9%E3%81%99%E3%82%8B%E3%81%9F%E3%82%81%E3%81%AE%E5%B0%91%E3%81%97%E3%81%AE%E6%AD%B4%E5%8F%B2/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="text-gray-500 group-hover:text-white" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e7%94%9f%e7%89%a9%e5%a4%9a%e6%a7%98%e6%80%a7%e3%82%92%e5%ae%9a%e7%be%a9%e3%81%99%e3%82%8b%e3%81%9f%e3%82%81%e3%81%ae%e5%b0%91%e3%81%97%e3%81%ae%e6%ad%b4%e5%8f%b2%20https://biodyssee.netlify.app/ja/posts/%E7%94%9F%E7%89%A9%E5%A4%9A%E6%A7%98%E6%80%A7%E3%82%92%E5%AE%9A%E7%BE%A9%E3%81%99%E3%82%8B%E3%81%9F%E3%82%81%E3%81%AE%E5%B0%91%E3%81%97%E3%81%AE%E6%AD%B4%E5%8F%B2/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="text-gray-500 group-hover:text-white" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div> 
+
+        </div>
+      </header>
+
+      <section id="dream-single-post-content" itemprop="articleBody">
+       
+    <img class="w-full z-30" src="/images/histoire_biodiversite/histoire_biodiversite.jpg" alt="生物多様性を定義するための少しの歴史" />
+
+
+  <p>生物多様性という概念は、環境やその保全をめぐる議論の中で中心的な位置を占めるようになり、その状態を評価する重要性を示しています。</p>
+<p>生態系や生物の研究において極めて重要であり、古くから存在する学問分野であるにもかかわらず、この用語自体は50年も経っていません。実際には、何世紀にもわたる科学的発見の積み重ねから生まれたものであり、その概要を簡単に振り返ります。</p>
+<p>この記事では、生物とその生息地の研究の起源から「生物多様性」という言葉の登場までを辿ります。そのために、この分野の発展に大きく貢献した複数の科学者を紹介します。</p>
+<ul>
+<li><strong>リンネ</strong> と生物の分類</li>
+<li><strong>ラマルク</strong> と変形説における進化の概念</li>
+<li><strong>ダーウィン</strong> と進化論</li>
+<li>初の <strong>気候に関する国際会議</strong></li>
+</ul>
+<h2 id="リンネと生物の分類">リンネと生物の分類</h2>
+<p>18世紀、スウェーデンのウプサラにおいて、博物学者 <strong>カール・フォン・リンネ</strong> は初めて生物の<strong>体系的分類</strong>を提案しました。彼の目的は、外見や物理的特徴といった形態的基準に基づき、種を区別し、分類することでした。1735年、彼は代表作 <em>Systema Naturae</em> を発表し、現代的分類の基礎を築きました。</p>
+<p><img src="/images/histoire_biodiversite/linne.jpg" alt="linne"></p>
+<p>しかしリンネの野心は、単なる科学的好奇心を超えるものでした。当時の支配的な理論は<strong>固定説</strong>であり、すべての種は神によって創造され、完全に適応しており、その起源から一度も絶滅や進化をしていないと考えられていました。リンネ自身も次のように述べています。<br>
+<em>「我々は、最初に創造された多様な形の数だけ種を数える」</em>。<br>
+このように、種を秩序立てて分類・整理することで、創造主の意図を明らかにしようとしたのです。</p>
+<p>今日でも私たちは、彼が考案した<strong>二名法命名法</strong>を用いています。これは、各生物に属名（イタリック体かつ先頭を大文字）と種小名（イタリック体かつ小文字）の二つの名を与えるものです。例：ヒトは <em>Homo sapiens</em>、ウシは <em>Bos taurus</em> など。</p>
+<p>リンネは、生物の形態的多様性を記述する枠組みを導入し、後に「生物多様性」と呼ばれる概念の土台を築きました。しかし18世紀にはすでに、化石が消えた種を示し、絶滅の危機にある種が博物学者の関心を引くなど、自然は不変ではないという兆しが現れていました。</p>
+<h2 id="ラマルクと変形説における進化の概念">ラマルクと変形説における進化の概念</h2>
+<div style="display: flex; align-items: center;">
+  <img src="/images/histoire_biodiversite/lamarck_1.jpg" style="max-width: 40%; height: auto; margin-right: 10px; float: left;">
+  <p> リンネから半世紀以上後、固定説に異議を唱える博物学者が現れました。フランスの<strong>ジャン＝バティスト・ド・ラマルク</strong>は、王立植物園やパリ国立自然史博物館の教授として、19世紀初頭に<strong>変形説</strong>という当時としては革新的な理論を提唱しました。</p>
+</div>
+<p>彼によれば、種は固定的なものではなく、環境の影響によって時間とともに変化します。その理論は二つの主要な原則に基づきます。</p>
+<ol>
+<li><strong>器官の適応</strong>：生物は使用頻度に応じて器官を変化させることができる。例えばキリンは高い木の葉を食べるため、一生のうちに首を伸ばす。</li>
+<li><strong>獲得形質の遺伝</strong>：その変化は子孫に受け継がれる。こうして首の長いキリンは、その形質を子に伝え、さらに長くなっていく。</li>
+</ol>
+<p><img src="/images/histoire_biodiversite/lamarck_2.jpg" alt="lamarck_theorie"></p>
+<p>この理論は現代では否定されていますが、二つの重要な考えを導入しました。</p>
+<ul>
+<li>生物は時間とともに進化し、ある種は消え、別の種は現れたり変化したりする。</li>
+<li>環境は、種の形成に直接的な役割を果たし、多様性を形作る。</li>
+</ul>
+<p>ラマルクは、生息環境の多様性と生物多様性の関係という、現代的定義における重要な概念の基礎を築きました。ただし、彼が提案した遺伝の仕組みは誤っていました。</p>
+<h2 id="ダーウィンと進化論">ダーウィンと進化論</h2>
+<p>ラマルクの数十年後、もう一人のイギリス人博物学者が生物観を根底から変えました。<strong>チャールズ・ダーウィン</strong>です。彼は1831年から5年間HMSビーグル号で航海した後、1859年に『種の起源』を出版し、<strong>自然選択</strong>による進化論を発表しました。</p>
+<p><img src="/images/histoire_biodiversite/darwin_1.jpg" alt="darwin_exploration"></p>
+<p>ダーウィンはこう観察しました。1つの種の中にも個体差が存在し、その中には遺伝的なものもある。そして環境に適応した個体は生き残りやすく、子孫を残す確率が高くなり、有利な形質を次世代に伝えるのです。<br>
+ラマルクの理論と異なる点は以下の通りです。</p>
+<ul>
+<li>個体の<strong>必要性</strong>が形態を変えるのではなく、<strong>偶然の変異</strong>によって変わる。</li>
+<li>有利な変異だけが、<strong>自然選択</strong>によって生き残る。</li>
+</ul>
+<p>この理論は、生物多様性の起源を初めて説明しました。それは、環境によって選択された遺伝的変異の蓄積の結果です。</p>
+<p>有名な例として、イギリスのシラガマダラガ（<em>Biston betularia</em>）があります。</p>
+<p>産業革命以前は、明るい色の型が多く、地衣類に覆われた白樺の幹に擬態していました。しかし、汚染によって幹が黒くなると、目立っていた暗色型が有利になり、捕食者から逃れやすくなりました。数十年でその割合が急増しました。これは<strong>工業暗化</strong>と呼ばれ、ダーウィンの自然選択の仕組みを端的に示す事例です。</p>
+<p><img src="/images/histoire_biodiversite/phalene_bouleau.png" alt="phalene_bouleau"></p>
+<p>これは、生物多様性の定義における大きな転換点でした。種は環境変化と選択圧に応じて現れ、消え、多様化するという、絶え間ない進化の産物であることが理解されたのです。生物多様性は固定されたものではなく、絶えず変化する動的な遺産です。</p>
+<p><img src="/images/histoire_biodiversite/darwin_schema.jpg" alt="schema"></p>
+<p>これはダーウィンの代表作『種の起源』（1859年）に掲載された唯一の図です。<br>
+歴史上初めて描かれた系統樹であり、共通祖先から分岐しながら進化する種の様子を図示しています。横線は時間の経過を示し、枝分かれは種の多様化を表します。この図は、生物多様性を単なる現存種のリストではなく、動的で連続的な進化の歴史として捉える現代的概念を見事に表しています。</p>
+<p>現在、生物多様性は「全ての由来を持つ生物の変異性」と定義されます。これは、種内、種間、そして生態系間の多様性を含みます。ダーウィンは、この多様性が連続的な分岐、異なる環境への適応、そして一部の系統の絶滅（図の上に到達する前に途絶える枝）によって形成されることを示しました。したがって、現代の生物多様性は、進化という途切れることのない過程の一瞬を切り取ったものであり、この図はその優れた例です。</p>
+<h2 id="初の気候と環境に関する国際会議">初の気候と環境に関する国際会議</h2>
+<p>生物多様性は長らく科学的な視点から研究されてきましたが、その保全が国際的課題となるのは20世紀末のことです。1992年、リオデジャネイロで国連が<strong>地球サミット</strong>を開催し、各国首脳、科学者、NGOが一堂に会して環境問題を議論しました。</p>
+<p><img src="/images/histoire_biodiversite/convention_climat.jpeg" alt="convention_climat"></p>
+<p>この会議から、**生物多様性条約（CBD）**を含む重要な文書が採択されました。これは、生物多様性が人類共通の財産であり、生態系の正常な機能と人間社会の存続に不可欠であると初めて認められた瞬間です。</p>
+<p>では、生物多様性とは何でしょうか？<br>
+この用語は、あらゆるスケールでの生命の多様性と変異性を指します。</p>
+<ul>
+<li>生態系の多様性：森林、サンゴ礁、砂漠、湿地…</li>
+<li>種の多様性：生物の種類と数</li>
+<li>遺伝的多様性：同一種内の個体や集団間の違い</li>
+</ul>
+<p><a href="/ja/posts/%e7%94%9f%e7%89%a9%e5%a4%9a%e6%a7%98%e6%80%a7%e3%81%a8%e3%81%af%e4%bd%95%e3%81%8b/">完全版の記事を見る「生物多様性とは何か？」</a>
+</p>
+<p>この世界的な認識は大きな転換点となりました。生物多様性は、気候変動、森林破壊、種の減少と切り離せない、政治的・経済的・倫理的な課題となったのです。</p>
+
+        
+      </section>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/ja/posts/%E7%A8%AE%E3%81%AE%E3%83%97%E3%83%AD%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB/" title="種のプロフィール">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">前へ</span>
+            <span class="max-w-48 truncate">種のプロフィール</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/ja/posts/%E3%82%BF%E3%83%B3%E3%83%81%E3%83%A7%E3%82%A6/" title="タンチョウ">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">次へ</span>
+            <span class="max-w-48 truncate">タンチョウ</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+
+      
+      <div class="divider"></div>
+
+      <section class="space-y-4">
+        
+
+
+
+
+<article>
+
+  <div id="vcomments"></div>
+<script src="https://unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+  new Valine({
+    el: '#vcomments',
+    appId: '',
+    appKey: '',
+    placeholder: 'Leave a comment...',
+    lang: 'en',
+    avatar: 'mp',
+    visitor: true,
+    requiredFields: ['nick','mail']
+  });
+</script>
+
+
+</article>
+
+
+
+
+
+
+      </section>
+      
+    </article>
+  </div>
+
+  <div class="hidden lg:flex lg:flex-col lg:items-end">
+    
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#リンネと生物の分類">リンネと生物の分類</a></li>
+    <li><a href="#ラマルクと変形説における進化の概念">ラマルクと変形説における進化の概念</a></li>
+    <li><a href="#ダーウィンと進化論">ダーウィンと進化論</a></li>
+    <li><a href="#初の気候と環境に関する国際会議">初の気候と環境に関する国際会議</a></li>
+  </ul>
+</nav>
+    
+  </div>
+</div>
+
+
+
+            
+<footer class="px-4 py-4">
+
+
+  <div class="w-full flex flex-col gap-4">
+    <style>
+.partners-footer {
+  text-align: center;
+  margin: 15px 0 5px 0;
+}
+
+.partners-footer h3 {
+  margin-bottom: 12px;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.partners-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.partners-logos img {
+  height: 200px;
+  object-fit: contain;
+  transition: transform .2s ease;
+}
+
+.partners-logos img:hover {
+  transform: scale(1.08);
+}
+</style>
+
+
+<div class="partners-footer">
+  <h3>Nos partenaires</h3>
+
+  <div class="partners-logos">
+    <a href="https://www.agroparistech.fr/partenariats-socioeconomiques/nous-soutenir/fondation-agroparistech" target="_blank">
+      <img src="/images/partners/fondation APT.png" alt="Partenaire 1" />
+    </a>
+
+  </div>
+</div>
+
+
+    <div class="flex justify-between items-center gap-2">
+      <div>
+  
+  <p>© 2026 BiOdyssée</p>
+  
+
+  
+  <p>Tous droits réservés</p>
+  
+</div>
+
+       
+
+    </div>
+  </div>
+
+</footer>
+
+
+<script>
+  function scrollCategories(direction) {
+    const container = document.getElementById("categoriesScroll");
+    const scrollAmount = 300; 
+    container.scrollBy({
+      left: direction * scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+</script>
+
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid dream-grid-about">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">こちらが2026年ミッションのメンバーです。</div>
+
+        <div class="prose dark:prose-invert">
+          <p>こちらは、BiOdysséeの創設メンバーであり、2026年の日本遠征に参加するメンバーの簡単な紹介です。</p>
+<p><img src="/images/nous.jpg" alt="photo équipe"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Hugo </div>
+
+        <div class="prose dark:prose-invert">
+          <p>AgroParisTechで環境マネジメントと工学を学んでいる学生で、古生物学と進化に情熱を持っています🦖🦴🧬。
+将来は自然環境の管理、特にフランスにおける湿地の保全や再生に関わる仕事を目指しています🐸🐟🌿。
+これらの湿地は過去数世紀の間に大きく減少してしまいました。
+昔から種や生態系の進化と変遷に興味があり、それがこのギャップイヤー・プロジェクトに強く惹かれる理由でもあります！</p>
+<p><strong>Contact :</strong>
+<a href="mailto:hugo.roger@agroparistech.fr" target="_blank">hugo.roger@agroparistech.fr</a>
+</p>
+<p><img src="/images/hugo.jpg" alt="photo rando"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Lucie </div>
+
+        <div class="prose dark:prose-invert">
+          <p>環境マネジメントと工学を学ぶ学生であり、海に関するあらゆることに魅了されています🌊。
+仕事と情熱を結びつけたいという思いから、海洋生物学の道を目指しています。
+特に、海洋生態系の保全や管理に関わる仕事をしたいと考えています。
+海の動物たち🐠🐋🐙はもちろん、水中の植物にも強く惹かれており、それらをもっと間近で観察したくてスキューバダイビング🤿をしています。
+このプロジェクトは、私にとって新たな水中環境を発見し🌊🪸🌿、それらに関わる課題を深く理解する絶好のチャンスです。</p>
+<p><strong>Contact :</strong>
+<a href="mailto:lucie.lowagie@agroparistech.fr" target="_blank">lucie.lowagie@agroparistech.fr</a>
+</p>
+<p><img src="/images/lucie-plongee.jpg" alt="photo plongée"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Solal</div>
+
+        <div class="prose dark:prose-invert">
+          <p>農学を学んでおり、歴史🧭⌛🏹と動物行動学（エトロジー）🐁🧠🧪に情熱を持っています。
+この機会を活かして、動物たちが自然な環境でどのように振る舞うかを観察したいと考えています。
+将来的には研究👨‍🔬や高等教育機関での教育🧑‍🏫に携わることを目指しており、このギャップイヤーは、観察力や情報整理・分析の力を高める絶好のチャンスです。
+歴史的な視点と動物の観察を結びつけ、「過去の過ちを繰り返さない」という目的のもとに活動できることこそが、このプロジェクトに惹かれる理由です。</p>
+<p><strong>Contact :</strong>
+<a href="mailto:solal.free@agroparistech.fr" target="_blank">solal.free@agroparistech.fr</a>
+</p>
+<p><img src="/images/solal.jpg" alt="photo qui fait peur"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Théophile </div>
+
+        <div class="prose dark:prose-invert">
+          <p>環境工学を学ぶ学生で、昆虫学、特にアリの研究（ミルメコロジー）🐜に強い関心があります。
+私の目標は、環境分野、特にアリの集団遺伝学的ダイナミクス🧬🐜に関する研究に携わることです。
+私は自然観察を行う団体「Blairoudeurs 🦡」のメンバーでもあり、コルシカ島で行われた「Mission Isula」にて、調査や環境教育活動に参加しました。
+このギャップイヤー・プロジェクトは、そうした経験をさらに広く、よりエキゾチックなスケールで継続できる素晴らしい機会であり、他国の生態系やその管理方法について学び続けるチャンスでもあります。</p>
+<p><strong>Contact :</strong>
+<a href="mailto:theophie.thomas@agroparistech.fr" target="_blank">theophie.thomas@agroparistech.fr</a>
+</p>
+<p><img src="/images/theophile.jpg" alt="photo stylée"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">SNS</div>
+
+        <ul class="menu menu-horizontal flex-wrap w-full px-0 [&_ion-icon]:text-lg">
+  
+
+  
+  <li>
+    <a href="https://www.facebook.com/profile.php?id=61576052068851" target="_blank" title="Facebook">
+      <ion-icon name="logo-facebook"></ion-icon>
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://www.instagram.com/bio_dyssee/" target="_blank" title="Instagram">
+      <ion-icon name="logo-instagram"></ion-icon>
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://www.linkedin.com/company/107400672/admin/dashboard/" target="_blank" title="Linkedin">
+      <ion-icon name="logo-linkedin"></ion-icon>
+    </a>
+  </li>
+  
+  <li>
+    <a href="mailto:biodyssee2026@gmail.com" target="_blank" title="Email">
+      <ion-icon name="mail-outline"></ion-icon>
+    </a>
+  </li>
+  
+</ul>
+
+      </div>
+    </article>
+  </div>
+  
+
+  
+</div>
+
+            
+
+            
+<footer class="px-4 py-4">
+
+
+  <div class="w-full flex flex-col gap-4">
+    <style>
+.partners-footer {
+  text-align: center;
+  margin: 15px 0 5px 0;
+}
+
+.partners-footer h3 {
+  margin-bottom: 12px;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.partners-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.partners-logos img {
+  height: 200px;
+  object-fit: contain;
+  transition: transform .2s ease;
+}
+
+.partners-logos img:hover {
+  transform: scale(1.08);
+}
+</style>
+
+
+<div class="partners-footer">
+  <h3>Nos partenaires</h3>
+
+  <div class="partners-logos">
+    <a href="https://www.agroparistech.fr/partenariats-socioeconomiques/nous-soutenir/fondation-agroparistech" target="_blank">
+      <img src="/images/partners/fondation APT.png" alt="Partenaire 1" />
+    </a>
+
+  </div>
+</div>
+
+
+    <div class="flex justify-between items-center gap-2">
+      <div>
+  
+  <p>© 2026 BiOdyssée</p>
+  
+
+  
+  <p>Tous droits réservés</p>
+  
+</div>
+
+       
+
+    </div>
+  </div>
+
+</footer>
+
+
+<script>
+  function scrollCategories(direction) {
+    const container = document.getElementById("categoriesScroll");
+    const scrollAmount = 300; 
+    container.scrollBy({
+      left: direction * scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+</script>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-2PHJBK75DX"></script>
+      <script>
+        var doNotTrack = false;
+        if ( true ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-2PHJBK75DX');
+        }
+      </script>
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
+

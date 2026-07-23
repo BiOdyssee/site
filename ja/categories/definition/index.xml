@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>定義とコンセプト on BiOdyssée</title>
+		<link>https://biodyssee.netlify.app/ja/categories/definition/</link>
+		<description>Recent content in 定義とコンセプト on BiOdyssée</description>
+		<generator>Hugo</generator>
+		<language>ja</language>
+		
+		
+		
+		
+			<lastBuildDate>Thu, 02 Apr 2026 14:00:00 +0100</lastBuildDate>
+		
+			<atom:link href="https://biodyssee.netlify.app/ja/categories/definition/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>里海：人と海が調和して共存する世界</title>
+				<link>https://biodyssee.netlify.app/ja/posts/%E9%87%8C%E6%B5%B7%E4%BA%BA%E3%81%A8%E6%B5%B7%E3%81%8C%E8%AA%BF%E5%92%8C%E3%81%97%E3%81%A6%E5%85%B1%E5%AD%98%E3%81%99%E3%82%8B%E4%B8%96%E7%95%8C/</link>
+				<pubDate>Thu, 02 Apr 2026 14:00:00 +0100</pubDate>
+				<guid>https://biodyssee.netlify.app/ja/posts/%E9%87%8C%E6%B5%B7%E4%BA%BA%E3%81%A8%E6%B5%B7%E3%81%8C%E8%AA%BF%E5%92%8C%E3%81%97%E3%81%A6%E5%85%B1%E5%AD%98%E3%81%99%E3%82%8B%E4%B8%96%E7%95%8C/</guid>
+				<description>&lt;p&gt;里海とは、世界でも独自の概念であり、沿岸の自然環境を持続可能に管理する考え方である&amp;hellip;&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>生物多様性を定義するための少しの歴史</title>
+				<link>https://biodyssee.netlify.app/ja/posts/%E7%94%9F%E7%89%A9%E5%A4%9A%E6%A7%98%E6%80%A7%E3%82%92%E5%AE%9A%E7%BE%A9%E3%81%99%E3%82%8B%E3%81%9F%E3%82%81%E3%81%AE%E5%B0%91%E3%81%97%E3%81%AE%E6%AD%B4%E5%8F%B2/</link>
+				<pubDate>Wed, 06 Aug 2025 14:00:00 +0100</pubDate>
+				<guid>https://biodyssee.netlify.app/ja/posts/%E7%94%9F%E7%89%A9%E5%A4%9A%E6%A7%98%E6%80%A7%E3%82%92%E5%AE%9A%E7%BE%A9%E3%81%99%E3%82%8B%E3%81%9F%E3%82%81%E3%81%AE%E5%B0%91%E3%81%97%E3%81%AE%E6%AD%B4%E5%8F%B2/</guid>
+				<description>&lt;p&gt;生物多様性という概念は、環境やその保全をめぐる議論の中で中心的な位置を占めるようになり、その状態を評価する重要性を示しています。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>生物多様性とは何か？</title>
+				<link>https://biodyssee.netlify.app/ja/posts/%E7%94%9F%E7%89%A9%E5%A4%9A%E6%A7%98%E6%80%A7%E3%81%A8%E3%81%AF%E4%BD%95%E3%81%8B/</link>
+				<pubDate>Tue, 29 Apr 2025 14:00:00 +0100</pubDate>
+				<guid>https://biodyssee.netlify.app/ja/posts/%E7%94%9F%E7%89%A9%E5%A4%9A%E6%A7%98%E6%80%A7%E3%81%A8%E3%81%AF%E4%BD%95%E3%81%8B/</guid>
+				<description>&lt;p&gt;生物多様性はよく耳にする言葉ですが、それは本当は何を意味しているのでしょうか？なぜそれは私たちの地球と私たちにとってそんなに重要なのでしょうか？&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

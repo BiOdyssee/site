@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>グアドループ on BiOdyssée</title>
+		<link>https://biodyssee.netlify.app/ja/categories/guadeloupe/</link>
+		<description>Recent content in グアドループ on BiOdyssée</description>
+		<generator>Hugo</generator>
+		<language>ja</language>
+		
+		
+		
+		
+			<lastBuildDate>Sun, 09 Nov 2025 14:00:00 +0100</lastBuildDate>
+		
+			<atom:link href="https://biodyssee.netlify.app/ja/categories/guadeloupe/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>グアドループの中心への旅</title>
+				<link>https://biodyssee.netlify.app/ja/galerie/galerie_guadeloupe/</link>
+				<pubDate>Sun, 09 Nov 2025 14:00:00 +0100</pubDate>
+				<guid>https://biodyssee.netlify.app/ja/galerie/galerie_guadeloupe/</guid>
+				<description>&lt;p&gt;ここでは、ユーゴがグアドループを旅した際に撮影した印象的な写真をご覧いただけます。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>グアドループの象徴的な種</title>
+				<link>https://biodyssee.netlify.app/ja/posts/%E3%82%B0%E3%82%A2%E3%83%89%E3%83%AB%E3%83%BC%E3%83%97%E3%81%AE%E8%B1%A1%E5%BE%B4%E7%9A%84%E3%81%AA%E7%A8%AE/</link>
+				<pubDate>Thu, 30 Oct 2025 14:00:00 +0100</pubDate>
+				<guid>https://biodyssee.netlify.app/ja/posts/%E3%82%B0%E3%82%A2%E3%83%89%E3%83%AB%E3%83%BC%E3%83%97%E3%81%AE%E8%B1%A1%E5%BE%B4%E7%9A%84%E3%81%AA%E7%A8%AE/</guid>
+				<description></description>
+			</item>
+	</channel>
+</rss>

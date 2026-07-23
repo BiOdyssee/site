@@ -1,0 +1,1563 @@
+<!DOCTYPE html>
+<html lang="fr"  
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>À la découverte des coraux  | BiOdyssée</title>
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+  
+
+    
+
+<link rel="canonical" href="https://biodyssee.netlify.app/fr/posts/%C3%A0-la-d%C3%A9couverte-des-coraux/" />
+
+
+
+<meta name="author" content="lucie" />
+<meta name="description" content="Partez à la découverte des récifs coralliens et des individus qu&rsquo;ils abritent pour comprendre leurs rôles et leur importance pour notre planète.
+" />
+
+
+<meta name="keywords" content="Les récifs coralliens">
+
+
+
+<meta name="generator" content="Hugo 0.163.2">
+
+
+<meta property="og:url" content="https://biodyssee.netlify.app/fr/posts/%C3%A0-la-d%C3%A9couverte-des-coraux/">
+	<meta property="og:site_name" content="BiOdyssée">
+	<meta property="og:title" content="À la découverte des coraux ">
+	<meta property="og:description" content="Partez à la découverte des récifs coralliens et des individus qu’ils abritent pour comprendre leurs rôles et leur importance pour notre planète.">
+	<meta property="og:locale" content="fr">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="posts">
+		<meta property="article:published_time" content="2025-11-10T14:00:00+01:00">
+		<meta property="article:modified_time" content="2025-11-10T14:00:00+01:00">
+
+
+
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="À la découverte des coraux ">
+	<meta name="twitter:description" content="Partez à la découverte des récifs coralliens et des individus qu’ils abritent pour comprendre leurs rôles et leur importance pour notre planète.">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+<script src="//unpkg.com/valine@1.5.2/dist/Valine.min.js"></script>
+
+
+
+
+
+
+
+    
+    <link rel="stylesheet" href="/css/custom.css" />
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="py-4"> 
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="Retourne ça !">
+        <div class="h-10 rounded-full">
+          <img src="/images/logo.jpg" alt="BiOdyssée" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://biodyssee.netlify.app/" class="text-lg font-semibold cursor-pointer">
+          BiOdyssée
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm" style="color: #ffffff" >À la (re)découverte du vivant</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="Contact">
+    <ion-icon name="information-circle"></ion-icon>Contact</div>
+</li>
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="Rechercher">
+    <ion-icon name="search"></ion-icon>
+    Rechercher
+  </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="Archives">
+    <ion-icon name="archive"></ion-icon>
+    Archives
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="Toutes les catégories">
+    <ion-icon name="grid"></ion-icon>
+    Toutes les catégories
+  </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="menu-title px-2 pt-2">Langue</li>
+
+  <li>
+    <a href="/fr" class="inline-flex items-center p-2 text-black hover:underline">
+      Français
+    </a>
+  </li>
+
+  <li>
+    <a href="/ja" class="inline-flex items-center p-2 text-black hover:underline">
+      日本語
+    </a>
+  </li>
+
+  <li>
+    <a href="/en" class="inline-flex items-center p-2 text-black hover:underline">
+      English
+    </a>
+  </li>
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0"
+        class="text-sm font-semibold cursor-pointer hover:underline"
+        @click="flip = !flip"
+        title="Contact"
+      >Contact</div>
+      
+      
+
+      
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="Rechercher">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+
+
+
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="Archives">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="Toutes les catégories">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+
+
+
+
+
+      
+
+      
+
+      
+
+
+ 
+<div class="dropdown dropdown-end">
+  <div tabindex="0" role="button" class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" aria-label="Select an option">
+  <ion-icon name="earth-outline"> </ion-icon> 
+  
+  </div>
+  <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-xl">
+    
+      <li>
+        <a href="/fr" class="inline-flex items-center p-2 cursor-pointer" style = "color: #000000">
+          Français
+        </a>
+      </li>
+    
+      <li>
+        <a href="/ja" class="inline-flex items-center p-2 cursor-pointer" style = "color: #000000">
+          日本語
+        </a>
+      </li>
+    
+      <li>
+        <a href="/en" class="inline-flex items-center p-2 cursor-pointer" style = "color: #000000">
+          English
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+    </section>
+  </div>
+</nav>
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+           
+
+          <div class="container">
+            
+<div class="lg:grid lg:grid-cols-4 gap-4 mt-4 px-4">
+  <div class="hidden lg:block">
+    
+  </div>
+
+  <div class="lg:col-span-2">
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+	<meta itemprop="name" content="À la découverte des coraux ">
+	<meta itemprop="description" content="Partez à la découverte des récifs coralliens et des individus qu’ils abritent pour comprendre leurs rôles et leur importance pour notre planète.">
+	<meta itemprop="datePublished" content="2025-11-10T14:00:00+01:00">
+	<meta itemprop="dateModified" content="2025-11-10T14:00:00+01:00">
+	<meta itemprop="wordCount" content="2267">
+	<meta itemprop="keywords" content="Les récifs coralliens">
+
+      <header>
+        <h1 itemprop="headline">À la découverte des coraux </h1>
+        <p class="text-sm">
+          
+            lundi, nov. 10, 2025
+          
+
+          | <span>11 minutes de lecture</span>
+
+          
+          | <span>Mise à jour le
+            
+              lundi, nov. 10, 2025
+            </span>
+          
+        </p>
+
+        
+        <div class="flex justify-between">
+          
+            
+
+
+<div class="flex items-center">
+  
+    <div class="avatar mr-1">
+      <div class="w-8 rounded-full">
+        <img class="my-0" src="/images/authors/avatar_lucie.jpg" alt="Lucie" />
+      </div>
+    </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+    
+      
+        <span itemprop="name">Lucie</span>
+      
+    
+  </span>
+</div>
+
+          
+
+          
+
+<div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://biodyssee.netlify.app/fr/posts/%C3%A0-la-d%C3%A9couverte-des-coraux/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="text-gray-500 group-hover:text-white" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%c3%80%20la%20d%c3%a9couverte%20des%20coraux%20%20https://biodyssee.netlify.app/fr/posts/%C3%A0-la-d%C3%A9couverte-des-coraux/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="text-gray-500 group-hover:text-white" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div> 
+
+        </div>
+      </header>
+
+      <section id="dream-single-post-content" itemprop="articleBody">
+       
+    <img class="w-full z-30" src="/images/coraux/recifs.jpg" alt="À la découverte des coraux " />
+
+
+  <p>Partez à la découverte des récifs coralliens et des individus qu&rsquo;ils abritent pour comprendre leurs rôles et leur importance pour notre planète.</p>
+<hr>
+<p>Les récifs coralliens sont parmi les écosystèmes marins les plus remarquables de la planète. Constitués par l’accumulation de squelettes calcaires produits par les coraux, ils forment de vastes structures bio minérales qui s’étendent principalement dans les eaux chaudes et claires de la zone intertropicale. Cette architecture vivante abrite une biodiversité d’une richesse exceptionnelle, allant des poissons et invertébrés aux algues et micro-organismes, ce qui en fait l’un des écosystèmes les plus diversifiés au monde.</p>
+<p>Malgré leur importance, les récifs coralliens demeurent fragiles et sensibles aux variations de leur environnement. Leur compréhension, tant sur le plan biologique que socio-écologique, est donc essentielle pour mieux appréhender leur fonctionnement et leur place au sein des océans.</p>
+<h2 id="-les-récifs-coralliens--répartition-formes-et-biodiversité">🐠 Les récifs coralliens : répartition, formes et biodiversité</h2>
+<p>Les récifs coralliens couvrent une surface relativement restreinte des océans, mais ils se concentrent dans la ceinture tropicale, entre 30°N et 30°S. L’Indonésie, l’Australie et les Philippines abritent les plus vastes ensembles coralliens, suivis par la France grâce à ses territoires d’outre-mer, notamment la Nouvelle-Calédonie dont la barrière corallienne s’étend sur plus de 1 600 km. La plus grande structure actuelle demeure la Grande Barrière de Corail en Australie, longue de 2 600 km.</p>
+<!-- Image cliquable pour avoir un plein écran -->
+<a href="/images/coraux/carte_repartition_coraux.png" class="gallery-link">
+  <img src="/images/coraux/carte_repartition_coraux.png" class="gallery-thumb" alt="Calicoderme ">
+</a>
+<!-- Styles -->
+<style>
+/* Miniature */
+.gallery-thumb {
+  width: 100%;
+  max-width: 600px; /* optionnel : limiter la taille */
+  height: auto;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.gallery-thumb:hover {
+  transform: scale(1.02);
+}
+
+/* Modal / lightbox */
+body.modal-open {
+  overflow: hidden;
+}
+
+#lightbox-modal {
+  position: fixed;
+  top:0; left:0;
+  width:100%; height:100%;
+  background: rgba(0,0,0,0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+#lightbox-modal img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 8px;
+}
+</style>
+<!-- Script -->
+<script>
+document.querySelectorAll('.gallery-link').forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault(); // empêche la navigation
+
+    let modal = document.getElementById('lightbox-modal');
+    if(!modal) {
+      modal = document.createElement('div');
+      modal.id = 'lightbox-modal';
+      document.body.appendChild(modal);
+      modal.addEventListener('click', () => {
+        modal.style.display = 'none';
+        document.body.classList.remove('modal-open');
+      });
+    }
+
+    modal.innerHTML = ''; // vider le contenu
+    let img = document.createElement('img');
+    img.src = this.href;
+    img.alt = this.querySelector('img').alt;
+    modal.appendChild(img);
+
+    modal.style.display = 'flex';
+    document.body.classList.add('modal-open');
+  });
+});
+</script>
+<p style="margin-bottom: 1px;">Vus du ciel, les récifs présentent différentes formes géomorphologiques : </p>
+<div style="display: flex; justify-content: center; gap: 10px;">
+  <div style="text-align: center; max-width: 200px;">
+    <img src="/images/coraux/recifs_frangeant.png" alt="Image 1" style="width: 100%; border-radius: 8px;">
+    <p style="font-size: 14px">Les <b>récifs frangeants</b>, bordant directement les côtes ou étant séparées d’elles par un chenal peu profond et étroit.</p>
+  </div>
+  <div style="text-align: center; max-width: 200px;">
+    <img src="/images/coraux/recifs_barriere.png" alt="Image 2" style="width: 100%; border-radius: 8px;">
+    <p style="font-size: 14px">Les <b>récifs barrières</b>, séparés du rivage par un lagon pouvant s’étendre sur plusieurs kilomètres. </p>
+  </div>
+  <div style="text-align: center; max-width: 200px;">
+    <img src="/images/coraux/atoll.png" alt="Image 3" style="width: 100%; border-radius: 8px;">
+    <p style="font-size: 14px">Les <b>atolls</b>, dessinant des anneaux coralliens autour d’un lagon central. Ils sont souvent les vestiges d’anciennes îles volcaniques. </p>
+  </div>
+</div>
+<p>Les récifs barrières sont souvent d&rsquo;anciens récifs frangeants que l&rsquo;élévation du niveau de la mer ou un effondrement de la terre a éloignés du rivage.
+On trouve également des <strong>bancs récifaux</strong>, se développant sur des hauts-fonds en pleine mer.</p>
+<p>Véritables « forêts tropicales des océans », les récifs coralliens figurent parmi les écosystèmes les plus riches et les plus complexes de la planète. Ils abritent environ 30 % de la biodiversité marine connue, incluant près d’un quart des espèces de poissons, et fournissent nourriture, abri et zones de reproduction à d’innombrables organismes.</p>
+<p>Le « triangle de corail », situé entre la Malaisie et les îles Salomon, constitue l’épicentre mondial de cette diversité, concentrant une part majeure des espèces de coraux et de poissons récifaux.
+Au-delà de leur importance écologique, les récifs coralliens jouent un rôle majeur pour les sociétés humaines. Ils protègent naturellement les côtes contre l’érosion et les tempêtes, soutiennent la pêche et le tourisme, et constituent une source d’innovations biomédicales grâce aux molécules produites par certaines espèces. On estime que plus de 500 millions de personnes dépendent directement des services écosystémiques rendus par ces habitats, dont la valeur économique globale se chiffre en dizaines, voire centaines, de milliards de dollars par an.</p>
+<h2 id="-les-coraux--anatomie-et-physiologie">🪸 Les coraux : anatomie et physiologie</h2>
+<h3 id="-place-dans-la-classification-phylogénétique">🧬 Place dans la classification phylogénétique</h3>
+<p>Quand on parle des coraux, on imagine souvent qu’il s’agit d’un seul groupe bien défini dans la classification du vivant. En réalité, le mot &ldquo;coraux&rdquo; est surtout un terme pratique qui rassemble plusieurs organismes proches, mais différents. Ils appartiennent tous à l&rsquo;menbranchement des Cnidaires, un embranchement d’animaux marins qui comprend aussi les anémones et les méduses. La plupart des coraux dits &ldquo;constructeurs&rdquo; ou &ldquo;durs&rdquo; appartiennent à l’ordre des Scléractiniaires, capables de former un squelette calcaire à l’origine des récifs. Mais il existe aussi d’autres organismes appelés coraux, comme les coraux mous (Alcyoniinés) ou les gorgones, qui ne participent pas à la formation de récif mais partagent le mode de vie fixé et la structure en polype. Ainsi, le groupe &ldquo;coraux&rdquo; n’est pas un vrai groupe évolutif reconnu par la phylogénie, mais plutôt un ensemble d’animaux proches qui ont convergé vers un mode de vie semblable. Cela reflète bien la complexité de la classification du vivant. Ce premier article est consacrée essentiellement aux <em>Sclératinaires</em>.</p>
+<!-- Image cliquable pour avoir un plein écran -->
+<a href="/images/coraux/classification.png" class="gallery-link">
+  <img src="/images/coraux/classification.png" class="gallery-thumb" alt="Calicoderme ">
+</a>
+<!-- Styles -->
+<style>
+/* Miniature */
+.gallery-thumb {
+  width: 100%;
+  max-width: 600px; /* optionnel : limiter la taille */
+  height: auto;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.gallery-thumb:hover {
+  transform: scale(1.02);
+}
+
+/* Modal / lightbox */
+body.modal-open {
+  overflow: hidden;
+}
+
+#lightbox-modal {
+  position: fixed;
+  top:0; left:0;
+  width:100%; height:100%;
+  background: rgba(0,0,0,0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+#lightbox-modal img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 8px;
+}
+</style>
+<!-- Script -->
+<script>
+document.querySelectorAll('.gallery-link').forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault(); // empêche la navigation
+
+    let modal = document.getElementById('lightbox-modal');
+    if(!modal) {
+      modal = document.createElement('div');
+      modal.id = 'lightbox-modal';
+      document.body.appendChild(modal);
+      modal.addEventListener('click', () => {
+        modal.style.display = 'none';
+        document.body.classList.remove('modal-open');
+      });
+    }
+
+    modal.innerHTML = ''; // vider le contenu
+    let img = document.createElement('img');
+    img.src = this.href;
+    img.alt = this.querySelector('img').alt;
+    modal.appendChild(img);
+
+    modal.style.display = 'flex';
+    document.body.classList.add('modal-open');
+  });
+});
+</script>
+<div>
+<p style="text-align:center"><i>Classification des coraux (d'après Le Guide d'identification des coraux de Moorea, Bosserelle et al., 2014)</i></p>
+</div>
+<h3 id="-lanatomie-du-corail--un-polype-mou-et-un-squelette-calcaire">🔎 L&rsquo;anatomie du corail : un polype mou et un squelette calcaire</h3>
+<h4 id="les-parties-molles--le-polype-et-ses-zooxanthelles">Les parties molles : le polype et ses zooxanthelles</h4>
+<p>La majorité des coraux scléractiniaires constructeurs de récifs vivent en <strong>colonies</strong>, dont l’unité de base est le <strong>polype</strong>. Un polype est un petit organisme cylindrique, fixé et semi-transparent, qui possède plusieurs structures spécialisées assurant à la fois sa survie individuelle et la cohésion de la colonie :</p>
+<ul>
+<li>
+<p><strong>Le disque basal</strong> : il se situe à la base du polype et joue un rôle d’ancrage. En sécrétant du carbonate de calcium, il permet au polype de s’attacher solidement à un support (rocher, coquille, ou squelette corallien déjà formé). C’est également à partir de cette zone que se construit le squelette rigide du corail.</p>
+</li>
+<li>
+<p><strong>La bouche</strong> : unique ouverture du polype, elle remplit une double fonction : l’absorption de la nourriture et l’expulsion des déchets. Elle conduit directement à la cavité interne.</p>
+</li>
+<li>
+<p><strong>Les tentacules</strong> : disposés en couronne autour de la bouche, ils sont garnis de cnidocytes, des cellules spécialisées qui contiennent des harpons microscopiques urticants. Ces tentacules servent à capturer de petites proies (plancton, larves, etc.), mais aussi à repousser d’éventuels concurrents. Une fois saisie, la proie est dirigée vers la bouche.</p>
+</li>
+<li>
+<p><strong>La cavité gastrovasculaire</strong> : c’est la cavité digestive centrale, où les aliments sont décomposés et assimilés. Elle est subdivisée en compartiments radiaires par des cloisons, appelées mésentères. Ces mésentères hébergent les éléments musculaires permettant la rétraction des tentacules, souvent observée en journée, et constituent également le site de maturation des gamètes.</p>
+</li>
+</ul>
+<div style="display: flex; align-items: top;">
+  <img src="/images/coraux/polype.jpg" style="max-width: 40%; height: auto; margin-right: 10px; float: left;">
+  <p>Voici une photo d'un polype de corail orangé <i>Astrides calycularis</i>. Ici le polype a été isolé mais en réalité, ce n'est pas le cas : tous les individus de la colonie sont reliés entre eux par un tissu commun, le <b>coenenchyme</b>.
+</p>
+</div>
+<p>Ce tissu contient des extensions de la cavité gastrovasculaire, ce qui permet une circulation interne des nutriments et assure une mise en commun des ressources énergétiques entre les polypes.</p>
+<!-- Image cliquable pour avoir un plein écran -->
+<a href="/images/coraux/schema_polype_simple.png" class="gallery-link">
+  <img src="/images/coraux/schema_polype_simple.png" class="gallery-thumb" alt="Calicoderme ">
+</a>
+<!-- Styles -->
+<style>
+/* Miniature */
+.gallery-thumb {
+  width: 100%;
+  max-width: 600px; /* optionnel : limiter la taille */
+  height: auto;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.gallery-thumb:hover {
+  transform: scale(1.02);
+}
+
+/* Modal / lightbox */
+body.modal-open {
+  overflow: hidden;
+}
+
+#lightbox-modal {
+  position: fixed;
+  top:0; left:0;
+  width:100%; height:100%;
+  background: rgba(0,0,0,0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+#lightbox-modal img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 8px;
+}
+</style>
+<!-- Script -->
+<script>
+document.querySelectorAll('.gallery-link').forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault(); // empêche la navigation
+
+    let modal = document.getElementById('lightbox-modal');
+    if(!modal) {
+      modal = document.createElement('div');
+      modal.id = 'lightbox-modal';
+      document.body.appendChild(modal);
+      modal.addEventListener('click', () => {
+        modal.style.display = 'none';
+        document.body.classList.remove('modal-open');
+      });
+    }
+
+    modal.innerHTML = ''; // vider le contenu
+    let img = document.createElement('img');
+    img.src = this.href;
+    img.alt = this.querySelector('img').alt;
+    modal.appendChild(img);
+
+    modal.style.display = 'flex';
+    document.body.classList.add('modal-open');
+  });
+});
+</script>
+<p>La grande majorité des coraux abritent en plus dans leur endoderme des <strong>algues unicellulaires symbiotiques</strong>, appelées <strong>zooxanthelles</strong>, appartenant au genre <em>Symbiodinium</em> (dinoflagellés). Ces algues réalisent la photosynthèse et fournissent une grande partie de l’énergie nécessaire à la croissance et à la calcification du corail, en échange d’un abri et de nutriments produits par le polype.</p>
+<p>Cependant, tous les coraux ne possèdent pas de zooxanthelles. Certaines espèces dites azooxanthellées vivent dépourvues de cette symbiose. Elles forment généralement des colonies plus petites, se développent dans des milieux profonds ou faiblement lumineux, et dépendent uniquement de la capture de proies pour leur nutrition.</p>
+<h4 id="le-squelette--le-polypiérite">Le squelette : le polypiérite</h4>
+<p>Chez les coraux scléractiniaires, l&rsquo;ectoderme de la partie basale contient des cellules spécialisée, appelées <strong>calicoblastes</strong>, qui sécrètent le squelette calcaire de l&rsquo;animal.</p>
+<!-- Image cliquable pour avoir un plein écran -->
+<a href="/images/coraux/schema_calicoderme.png" class="gallery-link">
+  <img src="/images/coraux/schema_calicoderme.png" class="gallery-thumb" alt="Calicoderme ">
+</a>
+<!-- Styles -->
+<style>
+/* Miniature */
+.gallery-thumb {
+  width: 100%;
+  max-width: 600px; /* optionnel : limiter la taille */
+  height: auto;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.gallery-thumb:hover {
+  transform: scale(1.02);
+}
+
+/* Modal / lightbox */
+body.modal-open {
+  overflow: hidden;
+}
+
+#lightbox-modal {
+  position: fixed;
+  top:0; left:0;
+  width:100%; height:100%;
+  background: rgba(0,0,0,0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+#lightbox-modal img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 8px;
+}
+</style>
+<!-- Script -->
+<script>
+document.querySelectorAll('.gallery-link').forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault(); // empêche la navigation
+
+    let modal = document.getElementById('lightbox-modal');
+    if(!modal) {
+      modal = document.createElement('div');
+      modal.id = 'lightbox-modal';
+      document.body.appendChild(modal);
+      modal.addEventListener('click', () => {
+        modal.style.display = 'none';
+        document.body.classList.remove('modal-open');
+      });
+    }
+
+    modal.innerHTML = ''; // vider le contenu
+    let img = document.createElement('img');
+    img.src = this.href;
+    img.alt = this.querySelector('img').alt;
+    modal.appendChild(img);
+
+    modal.style.display = 'flex';
+    document.body.classList.add('modal-open');
+  });
+});
+</script>
+<p>Ansi, chaque polype sécrète son propre squelette calcaire (calcite ou arganoite) en forme de coupe, appelé <strong>polypiérite</strong> ou <strong>corallite</strong>. Il est délimité à la base par le plancher basal, sur lequel repose le polype, et latéralement par la muraille. Chez les Hexacoralliaires, ce squelette présente une organisation interne caractéristique, généralement en multiples de six, qui reflète la symétrie radiaire du polype.</p>
+<p><img src="/images/coraux/schema_squelette.png" alt="schema squelette calcaire">
+Plusieurs éléments le composent :</p>
+<ul>
+<li><strong>Le calice</strong> : cavité en forme de coupe, il correspond à l’espace où repose directement le polype vivant.</li>
+<li><strong>La muraille</strong> : c’est la paroi externe du polypiérite, qui délimite l’espace occupé par le polype</li>
+<li><strong>Les septes</strong> : ce sont des lames radiales disposées à l’intérieur de la loge, selon la symétrie en six. Leur nombre, leur épaisseur et leur agencement varient selon les espèces et sont des critères de détermination importants.</li>
+<li><strong>Les côtes</strong> : ce sont les prolongements externes des septes, visibles à l’extérieur de la muraille. Elles renforcent parfois la cohésion entre loges voisines et donnent au squelette un aspect ornementé. Cependant, elles peuvent être absentes chez certaines espèces, ce qui est également un caractère diagnostique.</li>
+</ul>
+<!--transition-->
+<p style="text-align: justify;">
+Le corail se conçoit donc comme un système à plusieurs niveaux : le <b>polype</b>, organisme vivant abritant une algue photosynthétique (<b>zooxanthelle</b>), et construisant son <b>polypiérite</b>. L’ensemble coordonné de ces unités bâtit la <b>colonie</b>, au fondement même des récifs.
+<p>
+<!-- SCHEMA ORGANISATION CORAIL -->
+<!-- Miniature -->
+<a href="#" id="open-corail-lightbox">
+  <img src="/images/coraux/schema_corail.png" class="gallery-thumb" alt="Schéma corail">
+</a>
+<!-- Styles -->
+<style>
+.gallery-thumb { width:100%; max-width:600px; cursor:zoom-in; border-radius:6px; transition:0.2s; }
+.gallery-thumb:hover { transform:scale(1.02); }
+
+.lightbox { position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.85); display:flex; justify-content:center; align-items:center; z-index:9999; overflow:auto; }
+.lightbox-container { position:relative; max-width:90%; width:100%; }
+
+.clickable-zone {
+  position:absolute;
+  width:50px; height:50px;
+  border:2px solid #81b96e;
+  border-radius:50%;
+  background: rgba(255,255,255,0.2);
+  cursor:pointer;
+  transform:translate(-50%,-50%);
+  transition:0.2s;
+  z-index:2;
+}
+.clickable-zone:hover { background: rgba(60,179,113,0.2); transform:translate(-50%, -50%) scale(1.1); }
+
+.popup-box {
+  display:none;
+  position:absolute;
+  width:90%;
+  max-width:400px;
+  background:white;
+  border:2px solid #ccc;
+  border-radius:10px;
+  padding:10px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.3);
+  z-index:5;
+}
+.popup-box img { max-width:100%; border-radius:4px; }
+.popup-box p { text-align:center; font-style:italic; }
+.closeBtn { position:absolute; top:5px; right:10px; font-size:18px; cursor:pointer; }
+
+@media(max-width:768px){
+  .clickable-zone { width:24px; height:24px; }
+  .popup-box { width:80%; max-width:300px; }
+}
+</style>
+<!-- Script -->
+<script>
+document.getElementById('open-corail-lightbox').addEventListener('click', function(e){
+  e.preventDefault();
+
+  // Crée la lightbox si elle n'existe pas
+  let lightbox = document.getElementById('corail-lightbox');
+  if(!lightbox){
+    lightbox = document.createElement('div');
+    lightbox.id = 'corail-lightbox';
+    lightbox.className = 'lightbox';
+    document.body.appendChild(lightbox);
+
+    // Conteneur relatif
+    const container = document.createElement('div');
+    container.className = 'lightbox-container';
+
+    // Image principale
+    const img = document.createElement('img');
+    img.src = '/images/coraux/schema_corail.png';
+    img.style.width='100%';
+    img.style.height='auto';
+    img.style.borderRadius='8px';
+    container.appendChild(img);
+
+    // Bulles
+    const zones = [
+      {top:'34%', left:'21%', popup:'popup1', img:'/images/coraux/image_polype.jpg', text:'Détail des polypes déployés du corail Montastrea cavernosa (Guadeloupe)'},
+      {top:'70%', left:'21.5%', popup:'popup2', img:'/images/coraux/schema_squelette.png', text:'Organisation du squelette calcaire d\'un corail'},
+      {top:'47%', left:'81%', popup:'popup3', img:'/images/coraux/zooxanthelles.jpg', text:'Les zooxanthelles sont des organismes unicellulaires photosynthétiques, appartenant majoritairement au genre Symbiodinium'}
+    ];
+
+    zones.forEach(z => {
+      const zone = document.createElement('div');
+      zone.className='clickable-zone';
+      zone.style.top=z.top;
+      zone.style.left=z.left;
+      zone.addEventListener('click', function(ev){
+        ev.stopPropagation();
+        togglePopup(z.popup, z.img, z.text, container);
+      });
+      container.appendChild(zone);
+
+      // Popup
+      const popup = document.createElement('div');
+      popup.id=z.popup;
+      popup.className='popup-box';
+      container.appendChild(popup);
+    });
+
+    // Bouton fermer lightbox
+    const closeBtn = document.createElement('span');
+    closeBtn.innerText='✖';
+    closeBtn.style.position='absolute';
+    closeBtn.style.top='10px';
+    closeBtn.style.right='20px';
+    closeBtn.style.fontSize='28px';
+    closeBtn.style.color='white';
+    closeBtn.style.cursor='pointer';
+    closeBtn.style.zIndex='10';
+    closeBtn.addEventListener('click', closeCorailLightbox);
+    container.appendChild(closeBtn);
+
+    lightbox.appendChild(container);
+
+    // Fermer lightbox si on clique en dehors
+    lightbox.addEventListener('click', closeCorailLightbox);
+  }
+
+  lightbox.style.display='flex';
+  document.body.style.overflow='hidden';
+});
+
+function closeCorailLightbox(){
+  const lightbox = document.getElementById('corail-lightbox');
+  if(lightbox) lightbox.style.display='none';
+  document.body.style.overflow='auto';
+}
+
+function togglePopup(id, imgSrc, text, container, event){
+  if(event) event.stopPropagation(); // empêche la fermeture de la lightbox
+  let popup = document.getElementById(id);
+  if(!popup) return;
+
+  if(popup.style.display==='block'){
+    popup.style.display='none';
+    popup.innerHTML='';
+  } else {
+    popup.style.display='block';
+    popup.innerHTML = `
+      <img src="${imgSrc}" alt="">
+      <p>${text}</p>
+      <span class="closeBtn">✖</span>
+    `;
+    popup.style.top='20%';
+    popup.style.left='30%';
+
+    // Ajouter le click sur le X dynamiquement
+    const closeBtn = popup.querySelector('.closeBtn');
+    closeBtn.addEventListener('click', function(ev){
+      ev.stopPropagation(); // stoppe la propagation
+      popup.style.display='none';
+      popup.innerHTML='';
+    });
+  }
+}
+</script>
+<!-- FIN SCHEMA ORGANISATION CORAIL -->
+<div>
+<p style="text-align:center"><i>Schéma bilan d'un polype et d'un polypiérite. </i></p>
+</div>
+<h2 id="-biologie-et-cycle-de-vie-des-coraux">🪸 Biologie et cycle de vie des coraux</h2>
+<h3 id="-croissance-du-corail">📏 Croissance du corail</h3>
+<p>La croissance des coraux repose sur un équilibre étroit entre l’activité biologique du polype et la formation progressive de son squelette calcaire. Chez les scléractiniaires, chaque polype sécrète à sa base du <strong>carbonate de calcium (CaCO₃</strong>), sous forme d’aragonite, qui constitue son polypiérite. Cette calcification s’effectue au niveau de l&rsquo;ectoderme basal, où les ions calcium et carbonate, prélevés dans l’eau de mer, sont concentrés et précipités grâce à l’action d’enzymes et au contrôle du pH local.</p>
+<p>La <strong>croissance verticale</strong> du squelette correspond à la production successive de <strong>fines lames de calcite sous le disque basal</strong>, tandis que la <strong>croissance radiale</strong> s’effectue par allongement des septa et épaississement des parois du polypiérite. Ces deux axes de développement varient selon les espèces et les conditions environnementales (lumière, température, disponibilité en ions, etc.), ce qui explique la diversité des formes coralliennes : massives, ramifiées, tabulaires ou foliacées.</p>
+<p>Le tissu vivant du polype se déplace continuellement vers la surface supérieure du squelette, laissant derrière lui une structure minéralisée. Dans les colonies, les polypes sont interconnectés par le coenenchyme, qui assure la croissance collective : l’expansion du tissu vivant permet la <strong>formation de nouveaux polypes par bourgeonnement</strong>, contribuant à l’extension latérale du corail.</p>
+<p>La croissance est fortement <strong>influencée par la photosynthèse</strong> des zooxanthelles, qui fournissent l’énergie nécessaire à la calcification. En journée, la production de CO₂ par les algues augmente la disponibilité en ions bicarbonates, favorisant le dépôt d’aragonite. Les coraux symbiotiques présentent ainsi des taux de croissance bien supérieurs à ceux des coraux &ldquo;azooxanthellés&rdquo;.</p>
+<h3 id="-nutrition-du-corail">🐙 Nutrition du corail</h3>
+<p>Les Scléractiniaires sont des organismes opportunistes capables de mobiliser plusieurs modes d’alimentation pour assurer leurs besoins énergétiques.</p>
+<ol>
+<li>
+<p>Ils peuvent d’abord <strong>absorber directement des composés organiques dissous</strong> présents dans l’eau de mer, tels que des acides aminés ou des sucres simples, qu’ils assimilent à travers leur épithélium. Ce mode d’alimentation passive leur permet de tirer parti des ressources disponibles dans leur environnement immédiat.</p>
+</li>
+<li>
+<p>Leur principale source d’énergie provient toutefois de la <strong>symbiose</strong> qu’ils entretiennent avec les zooxanthelles. Grâce à la <strong>photosynthèse</strong>, ces algues produisent des composés organiques (glucides, acides gras, acides aminés) dont environ 80 % sont transférés au polype hôte. En retour, celui-ci fournit aux zooxanthelles les sels minéraux et les produits d’excrétion azotés (notamment l’ammonium) nécessaires à leur activité photosynthétique. Ce partenariat étroit permet aux coraux de prospérer dans des eaux chaudes mais pauvres en nutriments, où la photosynthèse compense la rareté de la matière organique.</p>
+</li>
+</ol>
+<!-- Image cliquable pour avoir un plein écran -->
+<a href="/images/coraux/nutrition_coraux.png" class="gallery-link">
+  <img src="/images/coraux/nutrition_coraux.png" class="gallery-thumb" alt="Calicoderme ">
+</a>
+<!-- Styles -->
+<style>
+/* Miniature */
+.gallery-thumb {
+  width: 100%;
+  max-width: 600px; /* optionnel : limiter la taille */
+  height: auto;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.gallery-thumb:hover {
+  transform: scale(1.02);
+}
+
+/* Modal / lightbox */
+body.modal-open {
+  overflow: hidden;
+}
+
+#lightbox-modal {
+  position: fixed;
+  top:0; left:0;
+  width:100%; height:100%;
+  background: rgba(0,0,0,0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+#lightbox-modal img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 8px;
+}
+</style>
+<!-- Script -->
+<script>
+document.querySelectorAll('.gallery-link').forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault(); // empêche la navigation
+
+    let modal = document.getElementById('lightbox-modal');
+    if(!modal) {
+      modal = document.createElement('div');
+      modal.id = 'lightbox-modal';
+      document.body.appendChild(modal);
+      modal.addEventListener('click', () => {
+        modal.style.display = 'none';
+        document.body.classList.remove('modal-open');
+      });
+    }
+
+    modal.innerHTML = ''; // vider le contenu
+    let img = document.createElement('img');
+    img.src = this.href;
+    img.alt = this.querySelector('img').alt;
+    modal.appendChild(img);
+
+    modal.style.display = 'flex';
+    document.body.classList.add('modal-open');
+  });
+});
+</script>
+<ol start="3">
+<li>Les coraux sont également des <strong>carnivores spécialisés</strong>. Leurs tentacules sont munis de nématocystes, cellules urticantes capables de harponner, paralyser et capturer de petites proies planctoniques (zooplancton, larves, petits crustacés). Les proies sont ensuite dirigées vers la cavité gastrovasculaire grâce à des courants ciliaires ou à des mouvements tentaculaires, où elles sont digérées enzymatiquement. Les nutriments ainsi libérés complètent l’apport énergétique fourni par la symbiose.</li>
+</ol>
+<h3 id="-la-reproduction-sexuée-et-asexuée-chez-le-corail">🔄 La reproduction sexuée et asexuée chez le corail</h3>
+<p>Les coraux se reproduisent à la fois de manière <strong>asexuée</strong> et <strong>sexuée</strong>, deux modes complémentaires qui assurent la croissance, la régénération et la dispersion des colonies.</p>
+<p>La <strong>reproduction asexuée</strong> est essentielle à l’expansion locale du corail. Elle se fait principalement par <strong>bourgeonnement</strong>, processus au cours duquel un nouveau polype se forme à partir d’un polype existant, tout en restant relié à lui. Ce mécanisme permet la multiplication des polypes identiques génétiquement et la croissance progressive de la colonie. Par ailleurs, d’autres formes de reproduction asexuée existent, notamment la <strong>fragmentation</strong>. Celle-ci se produit naturellement lors d’événements physiques intenses (comme les cyclones, les tempêtes ou la casse mécanique d’une colonie) : un fragment de squelette portant quelques polypes se détache, puis peut se fixer sur un nouveau substrat et donner naissance à une colonie indépendante. Ce même principe est exploité par l’humain à travers le bouturage, technique utilisée dans les programmes de restauration récifale pour favoriser la régénération et la repopulation des zones dégradées.</p>
+<p>La <strong>reproduction sexuée</strong> permet quant à elle le brassage génétique et la colonisation de nouveaux espaces. La plupart des coraux sont <strong>hermaphrodites</strong>, produisant à la fois des ovules et des spermatozoïdes au sein de bundles, mais certaines espèces sont gonochoriques (mâles ou femelles distincts). On distingue deux stratégies principales :</p>
+<ul>
+<li>les <strong>coraux émetteurs</strong> (<em>dits broadcast spawners</em>), qui libèrent simultanément leurs gamètes dans la colonne d’eau où se déroule la fécondation externe</li>
+<li>les <strong>coraux couveurs</strong> (<em>dits brooders</em>), chez qui la fécondation est interne et la larve est incubée dans le polype avant d’être relâchée.</li>
+</ul>
+<p>La larve ainsi formée, appelée <strong>planula</strong>, représente la phase pélagique du cycle de vie : elle dérive librement dans la colonne d’eau, parfois pendant plusieurs jours, avant de trouver un substrat favorable. Une fois fixée, elle entre dans la phase benthique : la planula se métamorphose en <strong>premier polype</strong>, ou <strong>recrue</strong>, qui sécrète son squelette calcaire et commence à se reproduire asexuellement par bourgeonnement. De proche en proche, cette croissance aboutit à la formation d’une colonie adulte.</p>
+<!-- Image cliquable pour avoir un plein écran -->
+<a href="/images/coraux/cycle_de_vie.png" class="gallery-link">
+  <img src="/images/coraux/cycle_de_vie.png" class="gallery-thumb" alt="Calicoderme ">
+</a>
+<!-- Styles -->
+<style>
+/* Miniature */
+.gallery-thumb {
+  width: 100%;
+  max-width: 600px; /* optionnel : limiter la taille */
+  height: auto;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.gallery-thumb:hover {
+  transform: scale(1.02);
+}
+
+/* Modal / lightbox */
+body.modal-open {
+  overflow: hidden;
+}
+
+#lightbox-modal {
+  position: fixed;
+  top:0; left:0;
+  width:100%; height:100%;
+  background: rgba(0,0,0,0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+#lightbox-modal img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 8px;
+}
+</style>
+<!-- Script -->
+<script>
+document.querySelectorAll('.gallery-link').forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault(); // empêche la navigation
+
+    let modal = document.getElementById('lightbox-modal');
+    if(!modal) {
+      modal = document.createElement('div');
+      modal.id = 'lightbox-modal';
+      document.body.appendChild(modal);
+      modal.addEventListener('click', () => {
+        modal.style.display = 'none';
+        document.body.classList.remove('modal-open');
+      });
+    }
+
+    modal.innerHTML = ''; // vider le contenu
+    let img = document.createElement('img');
+    img.src = this.href;
+    img.alt = this.querySelector('img').alt;
+    modal.appendChild(img);
+
+    modal.style.display = 'flex';
+    document.body.classList.add('modal-open');
+  });
+});
+</script>
+<p>L’alternance entre reproduction sexuée et asexuée, ainsi que la succession des phases pélagique et benthique, assurent à la fois la <strong>dispersion</strong>, la <strong>diversité génétique</strong> et la <strong>résilience écologique</strong> des coraux.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Les coraux sont donc des organismes tripartites constitués d&rsquo;un animal (le polype), d&rsquo;une algue unicellulaire symbiotique (les zooxanthelles) et d&rsquo;un squelette minéral (le polypiérite). Chaque élément constitutif assure différentes fonctions écologiques et l&rsquo;ensemble coopère pour permettre la survie de l&rsquo;organisme. Néanmoins, ces organismes sont sensibles aux perturbations de leurs milieux, et les différentes menaces qui pèsent aujourd&rsquo;hui sur son habitat mettent en péril la survie des récifs.</p>
+
+        
+      </section>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/fr/posts/les-fourmis-champignonnistes/" title="Les fourmis champignonnistes 🐜">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">Page précédente</span>
+            <span class="max-w-48 truncate">Les fourmis champignonnistes 🐜</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/fr/posts/fiches-sur-les-esp%C3%A8ces-de-guadeloupe/" title="Fiches sur les espèces de Guadeloupe ">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">Page suivante</span>
+            <span class="max-w-48 truncate">Fiches sur les espèces de Guadeloupe </span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+
+      
+      <div class="divider"></div>
+
+      <section class="space-y-4">
+        
+
+
+
+
+<article>
+
+  <div id="vcomments"></div>
+<script src="https://unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+  new Valine({
+    el: '#vcomments',
+    appId: '',
+    appKey: '',
+    placeholder: 'Leave a comment...',
+    lang: 'en',
+    avatar: 'mp',
+    visitor: true,
+    requiredFields: ['nick','mail']
+  });
+</script>
+
+
+</article>
+
+
+
+
+
+
+      </section>
+      
+    </article>
+  </div>
+
+  <div class="hidden lg:flex lg:flex-col lg:items-end">
+    
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#-les-récifs-coralliens--répartition-formes-et-biodiversité">🐠 Les récifs coralliens : répartition, formes et biodiversité</a></li>
+    <li><a href="#-les-coraux--anatomie-et-physiologie">🪸 Les coraux : anatomie et physiologie</a>
+      <ul>
+        <li><a href="#-place-dans-la-classification-phylogénétique">🧬 Place dans la classification phylogénétique</a></li>
+        <li><a href="#-lanatomie-du-corail--un-polype-mou-et-un-squelette-calcaire">🔎 L&rsquo;anatomie du corail : un polype mou et un squelette calcaire</a></li>
+      </ul>
+    </li>
+    <li><a href="#-biologie-et-cycle-de-vie-des-coraux">🪸 Biologie et cycle de vie des coraux</a>
+      <ul>
+        <li><a href="#-croissance-du-corail">📏 Croissance du corail</a></li>
+        <li><a href="#-nutrition-du-corail">🐙 Nutrition du corail</a></li>
+        <li><a href="#-la-reproduction-sexuée-et-asexuée-chez-le-corail">🔄 La reproduction sexuée et asexuée chez le corail</a></li>
+      </ul>
+    </li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+    
+  </div>
+</div>
+
+
+
+            
+<footer class="px-4 py-4">
+
+
+  <div class="w-full flex flex-col gap-4">
+    <style>
+.partners-footer {
+  text-align: center;
+  margin: 15px 0 5px 0;
+}
+
+.partners-footer h3 {
+  margin-bottom: 12px;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.partners-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.partners-logos img {
+  height: 200px;
+  object-fit: contain;
+  transition: transform .2s ease;
+}
+
+.partners-logos img:hover {
+  transform: scale(1.08);
+}
+</style>
+
+
+<div class="partners-footer">
+  <h3>Nos partenaires</h3>
+
+  <div class="partners-logos">
+    <a href="https://www.agroparistech.fr/partenariats-socioeconomiques/nous-soutenir/fondation-agroparistech" target="_blank">
+      <img src="/images/partners/fondation APT.png" alt="Partenaire 1" />
+    </a>
+
+  </div>
+</div>
+
+
+    <div class="flex justify-between items-center gap-2">
+      <div>
+  
+  <p>© 2026 BiOdyssée</p>
+  
+
+  
+  <p>Tous droits réservés</p>
+  
+</div>
+
+       
+
+    </div>
+  </div>
+
+</footer>
+
+
+<script>
+  function scrollCategories(direction) {
+    const container = document.getElementById("categoriesScroll");
+    const scrollAmount = 300; 
+    container.scrollBy({
+      left: direction * scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+</script>
+
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid dream-grid-about">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Voilà l&#39;équipe de la mission 2026</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Voilà une brève présentation des membres de l&rsquo;équipe fondatrice de BiOdyssée et qui participera à l&rsquo;expédition 2026 au Japon.</p>
+<p><img src="/images/equipe_complete.jpeg" alt="photo équipe"></p>
+<p>Et on remercie Brieuc (au centre de la photo) qui est venu nous rejoindre pour quelques jours !</p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Hugo - Co-président</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Étudiant en Gestion et ingénierie de l&rsquo;environnement à AgroParisTech, je suis passionné par la paléontologie et l’évolution 🦖🦴🧬.</p>
+<p>J’aspire à travailler dans le domaine de la gestion des milieux naturels, plus précisément pour la conservation ou la restauration des milieux humides en France 🐸🐟🌿, qui ont perdu une part très importante de leur surface ces derniers siècles. Je me suis ainsi toujours intéressé à l’évolution des espèces et des écosystèmes dans le temps, c’est pourquoi ce projet de césure me motive tant !</p>
+<p><strong>Contact :</strong>
+<a href="mailto:hugo.roger@agroparistech.fr" target="_blank">hugo.roger@agroparistech.fr</a>
+</p>
+<p><img src="/images/hugo.jpeg" alt="photo rando"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Théophile - Co-président</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Étudiant en ingénierie de l&rsquo;environnement passionné d’entomologie et en particulier de myrmécologie 🐜, mon objectif est de faire de la recherche en environnement en particulier sur les dynamiques génétiques des populations 🧬🐜 (de fourmis bien évidemment).</p>
+<p>Je fais partie de l’association naturaliste &ldquo;les &ldquo;Blairoudeurs 🦡&rdquo; avec laquelle je suis parti faire de la prospection et de la sensibilisation en Corse lors de la Mission Isula. Ce projet de césure est une super opportunité de continuer cette expérience mais à une échelle bien plus vaste et exotique tout en continuant de me former sur la connaissance des différents écosystèmes et leurs moyens de gestions dans un autre pays.</p>
+<p><strong>Contact :</strong>
+<a href="mailto:theophie.thomas@agroparistech.fr" target="_blank">theophie.thomas@agroparistech.fr</a>
+</p>
+<p><img src="/images/theophile.jpeg" alt="photo stylée"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Lucie - Responsable communication</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Étudiante en Gestion et ingénierie de l&rsquo;environnement à AgroParisTech, je suis fascinée par à peu près tout ce qui se rapporte à l’océan 🌊.</p>
+<p>C’est dans l’optique d’allier travail et passion, que je m’oriente vers la biologie marine. Plus particulièrement, j’aimerais travailler dans la conservation ou la gestion des écosystèmes marins. La faune 🐠🐋🐙, autant que la flore aquatique me passionnent et c’est pour pouvoir l’observer de plus près que je fais de la plongée sous-marine 🤿.</p>
+<p>Ce projet est pour moi l’opportunité de découvrir de nouveaux milieux aquatiques 🌊🪸🌿 et de comprendre tous les enjeux qui pèsent dessus.</p>
+<p><strong>Contact :</strong>
+<a href="mailto:lucie.lowagie@agroparistech.fr" target="_blank">lucie.lowagie@agroparistech.fr</a>
+</p>
+<p><img src="/images/lucie.jpg" alt="photo"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Solal - Trésorier</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Étudiant en agronomie et passionné par l’histoire 🧭⌛🏹 et l’éthologie 🐁🧠🧪, j’espère utiliser cette opportunité pour observer le comportement des animaux dans leur milieu naturel. Par la suite, j’aimerais faire de la recherche 👨‍🔬 ou être enseignant  dans l’enseignement supérieur 🧑‍🏫, et cette césure me permettrait de développer mes capacités de synthèse et d’observation.</p>
+<p>Le fait de pouvoir allier recherche historique et observation animale — le tout dans le but de ne pas reproduire les erreurs du passé — est la raison pour laquelle ce projet m’intéresse.</p>
+<p><strong>Contact :</strong>
+<a href="mailto:solal.free@agroparistech.fr" target="_blank">solal.free@agroparistech.fr</a>
+</p>
+<p><img src="/images/solal.jpeg" alt="photo qui fait peur"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Réseaux sociaux</div>
+
+        <ul class="menu menu-horizontal flex-wrap w-full px-0 [&_ion-icon]:text-lg">
+  
+
+  
+  <li>
+    <a href="https://www.facebook.com/profile.php?id=61576052068851" target="_blank" title="Facebook">
+      <ion-icon name="logo-facebook"></ion-icon>
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://www.instagram.com/bio_dyssee/" target="_blank" title="Instagram">
+      <ion-icon name="logo-instagram"></ion-icon>
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://www.linkedin.com/company/107400672/admin/dashboard/" target="_blank" title="Linkedin">
+      <ion-icon name="logo-linkedin"></ion-icon>
+    </a>
+  </li>
+  
+  <li>
+    <a href="mailto:biodyssee2026@gmail.com" target="_blank" title="Email">
+      <ion-icon name="mail-outline"></ion-icon>
+    </a>
+  </li>
+  
+</ul>
+
+      </div>
+    </article>
+  </div>
+  
+
+  
+</div>
+
+            
+
+            
+<footer class="px-4 py-4">
+
+
+  <div class="w-full flex flex-col gap-4">
+    <style>
+.partners-footer {
+  text-align: center;
+  margin: 15px 0 5px 0;
+}
+
+.partners-footer h3 {
+  margin-bottom: 12px;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.partners-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.partners-logos img {
+  height: 200px;
+  object-fit: contain;
+  transition: transform .2s ease;
+}
+
+.partners-logos img:hover {
+  transform: scale(1.08);
+}
+</style>
+
+
+<div class="partners-footer">
+  <h3>Nos partenaires</h3>
+
+  <div class="partners-logos">
+    <a href="https://www.agroparistech.fr/partenariats-socioeconomiques/nous-soutenir/fondation-agroparistech" target="_blank">
+      <img src="/images/partners/fondation APT.png" alt="Partenaire 1" />
+    </a>
+
+  </div>
+</div>
+
+
+    <div class="flex justify-between items-center gap-2">
+      <div>
+  
+  <p>© 2026 BiOdyssée</p>
+  
+
+  
+  <p>Tous droits réservés</p>
+  
+</div>
+
+       
+
+    </div>
+  </div>
+
+</footer>
+
+
+<script>
+  function scrollCategories(direction) {
+    const container = document.getElementById("categoriesScroll");
+    const scrollAmount = 300; 
+    container.scrollBy({
+      left: direction * scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+</script>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-2PHJBK75DX"></script>
+      <script>
+        var doNotTrack = false;
+        if ( true ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-2PHJBK75DX');
+        }
+      </script>
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
+

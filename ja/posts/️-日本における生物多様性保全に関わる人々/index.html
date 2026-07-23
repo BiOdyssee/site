@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="ja"  
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>🗺️ 日本における生物多様性保全に関わる人々！ | BiOdyssée</title>
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+  
+
+    
+
+<link rel="canonical" href="https://biodyssee.netlify.app/ja/posts/%EF%B8%8F-%E6%97%A5%E6%9C%AC%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E7%94%9F%E7%89%A9%E5%A4%9A%E6%A7%98%E6%80%A7%E4%BF%9D%E5%85%A8%E3%81%AB%E9%96%A2%E3%82%8F%E3%82%8B%E4%BA%BA%E3%80%85/" />
+
+
+
+<meta name="author" content="" />
+<meta name="description" content="こちらは、私たちが出会った関係者を通して旅のルートをたどることができるインタラクティブマップです。
+" />
+
+
+<meta name="keywords" content="2026年探査のすべて">
+
+
+
+<meta name="generator" content="Hugo 0.163.2">
+
+
+<meta property="og:url" content="https://biodyssee.netlify.app/ja/posts/%EF%B8%8F-%E6%97%A5%E6%9C%AC%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E7%94%9F%E7%89%A9%E5%A4%9A%E6%A7%98%E6%80%A7%E4%BF%9D%E5%85%A8%E3%81%AB%E9%96%A2%E3%82%8F%E3%82%8B%E4%BA%BA%E3%80%85/">
+	<meta property="og:site_name" content="BiOdyssée">
+	<meta property="og:title" content="🗺️ 日本における生物多様性保全に関わる人々！">
+	<meta property="og:description" content="こちらは、私たちが出会った関係者を通して旅のルートをたどることができるインタラクティブマップです。">
+	<meta property="og:locale" content="ja">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="posts">
+		<meta property="article:published_time" content="2026-05-15T14:00:00+01:00">
+		<meta property="article:modified_time" content="2026-05-15T14:00:00+01:00">
+
+
+
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="🗺️ 日本における生物多様性保全に関わる人々！">
+	<meta name="twitter:description" content="こちらは、私たちが出会った関係者を通して旅のルートをたどることができるインタラクティブマップです。">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+<script src="//unpkg.com/valine@1.5.2/dist/Valine.min.js"></script>
+
+
+
+
+
+
+
+    
+    <link rel="stylesheet" href="/css/custom.css" />
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="py-4"> 
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="Flip it!">
+        <div class="h-10 rounded-full">
+          <img src="/images/logo.jpg" alt="BiOdyssée" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://biodyssee.netlify.app/" class="text-lg font-semibold cursor-pointer">
+          BiOdyssée
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm" style="color: #ffffff" >À la (re)découverte du vivant</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="About">
+    <ion-icon name="information-circle"></ion-icon>About</div>
+</li>
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/ja/search" title="検索">
+    <ion-icon name="search"></ion-icon>
+    検索
+  </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/ja/posts" title="アーカイブ">
+    <ion-icon name="archive"></ion-icon>
+    アーカイブ
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/ja/categories" title="カテゴリー一覧">
+    <ion-icon name="grid"></ion-icon>
+    カテゴリー一覧
+  </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="menu-title px-2 pt-2">Langue</li>
+
+  <li>
+    <a href="/fr" class="inline-flex items-center p-2 text-black hover:underline">
+      Français
+    </a>
+  </li>
+
+  <li>
+    <a href="/ja" class="inline-flex items-center p-2 text-black hover:underline">
+      日本語
+    </a>
+  </li>
+
+  <li>
+    <a href="/en" class="inline-flex items-center p-2 text-black hover:underline">
+      English
+    </a>
+  </li>
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0"
+        class="text-sm font-semibold cursor-pointer hover:underline"
+        @click="flip = !flip"
+        title="About"
+      >About</div>
+      
+      
+
+      
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/ja/search" title="検索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+
+
+
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/ja/posts" title="アーカイブ">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/ja/categories" title="カテゴリー一覧">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+
+
+
+
+
+      
+
+      
+
+      
+
+
+ 
+<div class="dropdown dropdown-end">
+  <div tabindex="0" role="button" class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" aria-label="Select an option">
+  <ion-icon name="earth-outline"> </ion-icon> 
+  
+  </div>
+  <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-xl">
+    
+      <li>
+        <a href="/fr" class="inline-flex items-center p-2 cursor-pointer" style = "color: #000000">
+          Français
+        </a>
+      </li>
+    
+      <li>
+        <a href="/ja" class="inline-flex items-center p-2 cursor-pointer" style = "color: #000000">
+          日本語
+        </a>
+      </li>
+    
+      <li>
+        <a href="/en" class="inline-flex items-center p-2 cursor-pointer" style = "color: #000000">
+          English
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+    </section>
+  </div>
+</nav>
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+           
+
+          <div class="container">
+            
+<div class="lg:grid lg:grid-cols-4 gap-4 mt-4 px-4">
+  <div class="hidden lg:block">
+    
+  </div>
+
+  <div class="lg:col-span-2">
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+	<meta itemprop="name" content="🗺️ 日本における生物多様性保全に関わる人々！">
+	<meta itemprop="description" content="こちらは、私たちが出会った関係者を通して旅のルートをたどることができるインタラクティブマップです。">
+	<meta itemprop="datePublished" content="2026-05-15T14:00:00+01:00">
+	<meta itemprop="dateModified" content="2026-05-15T14:00:00+01:00">
+	<meta itemprop="wordCount" content="2">
+	<meta itemprop="keywords" content="2026年探査のすべて">
+
+      <header>
+        <h1 itemprop="headline">🗺️ 日本における生物多様性保全に関わる人々！</h1>
+        <p class="text-sm">
+          
+            金曜日,  15, 2026
+          
+
+          | <span>1分で読めます</span>
+
+          
+          | <span>更新日時
+            
+              金曜日,  15, 2026
+            </span>
+          
+        </p>
+
+        
+        <div class="flex justify-between">
+          
+
+          
+
+<div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://biodyssee.netlify.app/ja/posts/%EF%B8%8F-%E6%97%A5%E6%9C%AC%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E7%94%9F%E7%89%A9%E5%A4%9A%E6%A7%98%E6%80%A7%E4%BF%9D%E5%85%A8%E3%81%AB%E9%96%A2%E3%82%8F%E3%82%8B%E4%BA%BA%E3%80%85/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="text-gray-500 group-hover:text-white" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%f0%9f%97%ba%ef%b8%8f%20%e6%97%a5%e6%9c%ac%e3%81%ab%e3%81%8a%e3%81%91%e3%82%8b%e7%94%9f%e7%89%a9%e5%a4%9a%e6%a7%98%e6%80%a7%e4%bf%9d%e5%85%a8%e3%81%ab%e9%96%a2%e3%82%8f%e3%82%8b%e4%ba%ba%e3%80%85%ef%bc%81%20https://biodyssee.netlify.app/ja/posts/%EF%B8%8F-%E6%97%A5%E6%9C%AC%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E7%94%9F%E7%89%A9%E5%A4%9A%E6%A7%98%E6%80%A7%E4%BF%9D%E5%85%A8%E3%81%AB%E9%96%A2%E3%82%8F%E3%82%8B%E4%BA%BA%E3%80%85/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="text-gray-500 group-hover:text-white" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div> 
+
+        </div>
+      </header>
+
+      <section id="dream-single-post-content" itemprop="articleBody">
+       
+
+  <p>こちらは、私たちが出会った関係者を通して旅のルートをたどることができる<strong>インタラクティブマップ</strong>です。</p>
+<p>このインタラクティブマップでは、私たちに情熱を共有してくれたすべての関係者について詳しく知ることができます。彼らはそれぞれの立場で生物多様性の保全に取り組んでいます。</p>
+<!-- Leaflet（地図背景）の読み込み -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<!-- 地図コンテナの作成 -->
+<div id="map" style="width: 100%; height: 500px;"></div>
+<script>
+  // Leaflet が正しく読み込まれているか確認
+  console.log("Leaflet loaded ?", typeof L !== "undefined");
+
+  // 日本を中心とした地図の作成
+  var map = L.map('map').setView([36, 137], 5);
+
+  // タイルレイヤー（OpenStreetMap）の追加
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; OpenStreetMap contributors'
+  }).addTo(map);
+  
+<!-- 画像付き地点の追加-->
+ var locations = [
+
+{ coords: [43.14368227169267, 144.1494785925543], 
+  text: "<b>Miyuki Kawase - Akan International Crane Center</b><br>タンチョウの個体数調査、環境教育、生息地の再生などを通じて、日本のツルの保全と研究を行うセンターのディレクター。<br><img src='/images/acteurs/crane-center.jpeg' width='300px'>" },
+
+{ coords: [43.06641298574298, 144.2976857669315], 
+  text: "<b>Keisuke Saito - Institure for Raptor Biomedicine Japan</b><br>日本で負傷した猛禽類の研究、治療、保全を専門とする組織で働く獣医師。<br><img src='/images/acteurs/IRBJ.jpeg' width='300px'>" },
+
+{ coords: [40.309088633022256, 140.28658647169277], 
+  text: "<b>Shirakami Sanchi World Heritage Conservation Center</b><br>ユネスコ世界遺産に登録されている白神山地の原生林を保護し、生態学的モニタリングを行うセンター。<br><img src='/images/acteurs/shirakami-sanchi.jpeg' width='300px'>" },
+
+{ coords: [38.76916831883147, 140.30387731020716], 
+  text: "<b>Mountain vegetables farmer</b><br>伝統的な山菜の採取を専門とする農家。持続可能で地域に根ざした農業を実践している。<br><img src='/images/acteurs/shinjo.jpeg' width='300px'>" },
+
+{ coords: [38.73013194057505, 140.29988836770602], 
+  text: "<b>Tatsuhiro Okhubo - Tohoku Professional University of Agriculture</b><br>里山とその発展について研究している研究者・教授。<br>" },
+
+{ coords: [35.61748418674169, 139.37756359576747], 
+  text: "<b>Adam Cronin - Tokyo Metropolitan University</b><br>東京の大学の教授で、社会性昆虫とその相互作用を研究している。<br><img src='/images/acteurs/adam-cronin.jpeg' width='300px'>" },
+
+{ coords: [35.6870800695373, 139.77921192275156], 
+  text: "<b>Umito Partners</b><br>海洋保全プロジェクトや沿岸生態系の持続可能な管理に取り組む団体。特に漁業関係者と協力し、より持続可能な漁業を推進している。<br><img src='/images/acteurs/umito.jpeg' width='300px'>" },
+
+{ coords: [35.673099087160665, 139.75661216724905], 
+  text: "<b>Simba Chan</b><br>国際的な鳥類保全を専門とする研究者。東南アジア各地の団体と協力し、鳥類保護に取り組んでいる。<br><img src='/images/acteurs/simba-chan.jpeg' width='300px'>" },
+
+{ coords: [35.619326584426496, 139.8477539728367], 
+  text: "<b>Japan Butterfly Conservation Society</b><br>日本におけるチョウ類とその自然生息地の研究および保護を行う団体。<br><img src='/images/acteurs/JBCS.jpeg' width='300px'>" },
+
+{ coords: [35.76822956365618, 139.23703748630456], 
+  text: "<b>Takumi association</b><br>日本全国の約30大学が参加する学生団体。生息地再生や里海の保全活動を通じて絶滅危惧種の保護に取り組んでいる。<br><img src='/images/acteurs/takumi.jpeg' width='300px'>" },
+
+{ coords: [35.6895, 139.6917], 
+  text: "<b>Wild Bird Society of Japan</b><br>鳥類保護、科学的モニタリング、環境教育に取り組む日本の大規模な鳥類保護団体。<br><img src='/images/acteurs/WBSJ.jpeg' width='300px'>" },
+
+{ coords: [35.673453318642814, 139.75349192460348], 
+  text: "<b>Teruhisa Komatsu - SFJO</b><br>海洋科学および海洋学分野における日仏間の学術交流を促進する日仏海洋学会の代表。<br><img src='/images/acteurs/MOE.jpeg' width='300px'>" },
+
+{ coords: [35.673453318642814, 139.75349192460348], 
+  text: "<b>Tatsuya Sato - Ministry of the Environment</b><br>環境政策および生物多様性保全を担当する日本の省庁。<br><img src='/images/acteurs/MOE.jpeg' width='300px'>" },
+
+{ coords: [35.699065220622494, 139.4486037013232], 
+  text: "<b>Japan Bird Research Association</b><br>日本における鳥類個体群の科学研究とモニタリングを専門とする団体。<br><img src='/images/acteurs/NPO.jpeg' width='300px'>" },
+
+{ coords: [35.649806445822975, 139.4036324669315], 
+  text: "<b>Kaori Itou - Center for Wildlife Conservation </b><br>絶滅危惧種の保護と飼育下繁殖に取り組む研究・保全センターのディレクター。<br><img src='/images/acteurs/Tama-zoo.jpeg' width='300px'>" },
+  
+{ coords: [35.58402073136055, 139.7607259246035], 
+  text: "<b>Tokyo Port Wild Bird Park</b><br>東京湾内で渡り鳥や湿地を保護する都市型自然保護区。<br>" },
+  
+{ coords: [35.544799120034845, 134.8200604310101],
+  text:"<b> Mina Iza - Toyooka City Hall</b><br>コウノトリ再導入のための湿地再生活動に積極的に取り組む豊岡市役所の職員。<br><img src='/images/acteurs/toyooka.jpeg' width='300px'>" },
+  
+{ coords: [35.5531151412778, 134.85334773767514],
+  text:"<b>Tomohiro Deguchi - Citizens’ Institute for Oriental White Stork</b><br>日本におけるコウノトリ再導入に関する研究および保全活動を行う教授。<br><img src='/images/acteurs/deguchi.jpeg' width='300px'>" },
+
+{ coords: [35.163540379719784, 133.30623047512503],
+  text:"<b><M. Ida - Nichinan-cho City Hall</b><br>日南町役場の文化財保護課で働く職員。15年以上にわたりオオサンショウウオの保護を担当している。<br><img src='/images/acteurs/ida.jpeg' width='300px'>" },
+
+{ coords: [35.112245776274136, 133.31404740121474],
+  text:"<b>Pr. Okada - Hanzaki Institute</b><br>オオサンショウウオ研究の第一人者であり、すべてのサンショウウオを調査・記録している。また河川保護と再生活動も統括している。<br><img src='/images/acteurs/okada.jpeg' width='300px'>" },
+
+{ coords: [34.87018048821949, 132.574466221314],
+  text:"<b>Pr. Taguchi - Hanzake Nature Museum of Mizuho</b><br>広島動物園で約20年間にわたりサンショウウオの繁殖研究を行った後、現在は地域でオオサンショウウオの保全活動に取り組んでいる。<br><img src='/images/acteurs/taguchi.jpeg' width='300px'>" },
+
+{ coords: [35.51257052694739, 133.49475577967524],
+  text:"<b>Ako Sato</b><br>元ドキュメンタリー監督であり、現在はオオサンショウウオ保全に積極的に取り組んでいる。啓発活動と市民参加を中心に活動している。<br><img src='/images/acteurs/.jpeg' width='300px'>" },
+
+{ coords: [34.70288788310352, 134.28128212037097],
+  text:"<b>M. Matsuda - Satoumi Research Institute</b><br>里海研究所の所長であり広島大学名誉教授。日本における里海の創出や沿岸生態系再生プロジェクトに取り組んでいる。<br><img src='/images/acteurs/matsuda.jpeg' width='300px'>" },
+  
+{ coords: [34.70288788310352, 134.28128212037097],
+  text:"<b>M. Tanaka - Satoumi Research Institute</b><br>里海研究所のディレクターであり、35年以上にわたり日生湾のアマモ場再生活動に取り組んでいる。また全国で里海モデル事業の推進にも関わっている。<br><img src='/images/acteurs/matsuda.jpeg' width='300px'>" },
+  
+{ coords: [33.48212370462423, 130.7228664724727],
+  text:"<b>Hironori Hayashi</b><br>九州大学の教授であり、九州の流域管理や河川再生に取り組んでいる。<br><img src='/images/acteurs/hayashi.jpeg' width='300px'>" },
+  
+{ coords: [32.80318212444404, 130.70339536131985],
+  text:"<b>Akane Tokorodani - Team SPOON</b><br>クロツラヘラサギ保護のため、日本・中国・韓国間の国際協力を推進する団体。交流イベントや議論の場を企画している。<br><img src='/images/acteurs/team-spoon.jpeg' width='300px'>" },
+  
+];
+
+<!-- ポップアップの追加--> 
+locations.forEach(loc => {L.marker(loc.coords).addTo(map).bindPopup(loc.text);});
+
+</script>
+<!-- 投稿へのリンクを追加する場合 : <a href='/ja/posts/premier-article/'>東京の記事を見る</a --> 
+<!-- 新しい地点を追加する場合 :
+{ coords: [],
+  text:"<b></b><br><br><img src='/images/acteurs/.jpeg' width='300px'>" }, -->
+
+        
+      </section>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/ja/posts/%E6%97%A5%E6%9C%AC%E3%81%AE%E3%82%BF%E3%83%B3%E3%83%81%E3%83%A7%E3%82%A6%E7%B5%B6%E6%BB%85%E3%81%8B%E3%82%89%E6%95%91%E3%82%8F%E3%82%8C%E3%81%9F%E7%A8%AE%E3%81%AE%E7%89%A9%E8%AA%9E/" title="日本のタンチョウ：絶滅から救われた種の物語">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">前へ</span>
+            <span class="max-w-48 truncate">日本のタンチョウ：絶滅から救われた種の物語</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/ja/posts/%E9%87%8C%E6%B5%B7%E4%BA%BA%E3%81%A8%E6%B5%B7%E3%81%8C%E8%AA%BF%E5%92%8C%E3%81%97%E3%81%A6%E5%85%B1%E5%AD%98%E3%81%99%E3%82%8B%E4%B8%96%E7%95%8C/" title="里海：人と海が調和して共存する世界">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">次へ</span>
+            <span class="max-w-48 truncate">里海：人と海が調和して共存する世界</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+
+      
+      <div class="divider"></div>
+
+      <section class="space-y-4">
+        
+
+
+
+
+<article>
+
+  <div id="vcomments"></div>
+<script src="https://unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+  new Valine({
+    el: '#vcomments',
+    appId: '',
+    appKey: '',
+    placeholder: 'Leave a comment...',
+    lang: 'en',
+    avatar: 'mp',
+    visitor: true,
+    requiredFields: ['nick','mail']
+  });
+</script>
+
+
+</article>
+
+
+
+
+
+
+      </section>
+      
+    </article>
+  </div>
+
+  <div class="hidden lg:flex lg:flex-col lg:items-end">
+    
+      <nav id="TableOfContents"></nav>
+    
+  </div>
+</div>
+
+
+
+            
+<footer class="px-4 py-4">
+
+
+  <div class="w-full flex flex-col gap-4">
+    <style>
+.partners-footer {
+  text-align: center;
+  margin: 15px 0 5px 0;
+}
+
+.partners-footer h3 {
+  margin-bottom: 12px;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.partners-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.partners-logos img {
+  height: 200px;
+  object-fit: contain;
+  transition: transform .2s ease;
+}
+
+.partners-logos img:hover {
+  transform: scale(1.08);
+}
+</style>
+
+
+<div class="partners-footer">
+  <h3>Nos partenaires</h3>
+
+  <div class="partners-logos">
+    <a href="https://www.agroparistech.fr/partenariats-socioeconomiques/nous-soutenir/fondation-agroparistech" target="_blank">
+      <img src="/images/partners/fondation APT.png" alt="Partenaire 1" />
+    </a>
+
+  </div>
+</div>
+
+
+    <div class="flex justify-between items-center gap-2">
+      <div>
+  
+  <p>© 2026 BiOdyssée</p>
+  
+
+  
+  <p>Tous droits réservés</p>
+  
+</div>
+
+       
+
+    </div>
+  </div>
+
+</footer>
+
+
+<script>
+  function scrollCategories(direction) {
+    const container = document.getElementById("categoriesScroll");
+    const scrollAmount = 300; 
+    container.scrollBy({
+      left: direction * scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+</script>
+
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid dream-grid-about">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">こちらが2026年ミッションのメンバーです。</div>
+
+        <div class="prose dark:prose-invert">
+          <p>こちらは、BiOdysséeの創設メンバーであり、2026年の日本遠征に参加するメンバーの簡単な紹介です。</p>
+<p><img src="/images/nous.jpg" alt="photo équipe"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Hugo </div>
+
+        <div class="prose dark:prose-invert">
+          <p>AgroParisTechで環境マネジメントと工学を学んでいる学生で、古生物学と進化に情熱を持っています🦖🦴🧬。
+将来は自然環境の管理、特にフランスにおける湿地の保全や再生に関わる仕事を目指しています🐸🐟🌿。
+これらの湿地は過去数世紀の間に大きく減少してしまいました。
+昔から種や生態系の進化と変遷に興味があり、それがこのギャップイヤー・プロジェクトに強く惹かれる理由でもあります！</p>
+<p><strong>Contact :</strong>
+<a href="mailto:hugo.roger@agroparistech.fr" target="_blank">hugo.roger@agroparistech.fr</a>
+</p>
+<p><img src="/images/hugo.jpg" alt="photo rando"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Lucie </div>
+
+        <div class="prose dark:prose-invert">
+          <p>環境マネジメントと工学を学ぶ学生であり、海に関するあらゆることに魅了されています🌊。
+仕事と情熱を結びつけたいという思いから、海洋生物学の道を目指しています。
+特に、海洋生態系の保全や管理に関わる仕事をしたいと考えています。
+海の動物たち🐠🐋🐙はもちろん、水中の植物にも強く惹かれており、それらをもっと間近で観察したくてスキューバダイビング🤿をしています。
+このプロジェクトは、私にとって新たな水中環境を発見し🌊🪸🌿、それらに関わる課題を深く理解する絶好のチャンスです。</p>
+<p><strong>Contact :</strong>
+<a href="mailto:lucie.lowagie@agroparistech.fr" target="_blank">lucie.lowagie@agroparistech.fr</a>
+</p>
+<p><img src="/images/lucie-plongee.jpg" alt="photo plongée"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Solal</div>
+
+        <div class="prose dark:prose-invert">
+          <p>農学を学んでおり、歴史🧭⌛🏹と動物行動学（エトロジー）🐁🧠🧪に情熱を持っています。
+この機会を活かして、動物たちが自然な環境でどのように振る舞うかを観察したいと考えています。
+将来的には研究👨‍🔬や高等教育機関での教育🧑‍🏫に携わることを目指しており、このギャップイヤーは、観察力や情報整理・分析の力を高める絶好のチャンスです。
+歴史的な視点と動物の観察を結びつけ、「過去の過ちを繰り返さない」という目的のもとに活動できることこそが、このプロジェクトに惹かれる理由です。</p>
+<p><strong>Contact :</strong>
+<a href="mailto:solal.free@agroparistech.fr" target="_blank">solal.free@agroparistech.fr</a>
+</p>
+<p><img src="/images/solal.jpg" alt="photo qui fait peur"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Théophile </div>
+
+        <div class="prose dark:prose-invert">
+          <p>環境工学を学ぶ学生で、昆虫学、特にアリの研究（ミルメコロジー）🐜に強い関心があります。
+私の目標は、環境分野、特にアリの集団遺伝学的ダイナミクス🧬🐜に関する研究に携わることです。
+私は自然観察を行う団体「Blairoudeurs 🦡」のメンバーでもあり、コルシカ島で行われた「Mission Isula」にて、調査や環境教育活動に参加しました。
+このギャップイヤー・プロジェクトは、そうした経験をさらに広く、よりエキゾチックなスケールで継続できる素晴らしい機会であり、他国の生態系やその管理方法について学び続けるチャンスでもあります。</p>
+<p><strong>Contact :</strong>
+<a href="mailto:theophie.thomas@agroparistech.fr" target="_blank">theophie.thomas@agroparistech.fr</a>
+</p>
+<p><img src="/images/theophile.jpg" alt="photo stylée"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">SNS</div>
+
+        <ul class="menu menu-horizontal flex-wrap w-full px-0 [&_ion-icon]:text-lg">
+  
+
+  
+  <li>
+    <a href="https://www.facebook.com/profile.php?id=61576052068851" target="_blank" title="Facebook">
+      <ion-icon name="logo-facebook"></ion-icon>
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://www.instagram.com/bio_dyssee/" target="_blank" title="Instagram">
+      <ion-icon name="logo-instagram"></ion-icon>
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://www.linkedin.com/company/107400672/admin/dashboard/" target="_blank" title="Linkedin">
+      <ion-icon name="logo-linkedin"></ion-icon>
+    </a>
+  </li>
+  
+  <li>
+    <a href="mailto:biodyssee2026@gmail.com" target="_blank" title="Email">
+      <ion-icon name="mail-outline"></ion-icon>
+    </a>
+  </li>
+  
+</ul>
+
+      </div>
+    </article>
+  </div>
+  
+
+  
+</div>
+
+            
+
+            
+<footer class="px-4 py-4">
+
+
+  <div class="w-full flex flex-col gap-4">
+    <style>
+.partners-footer {
+  text-align: center;
+  margin: 15px 0 5px 0;
+}
+
+.partners-footer h3 {
+  margin-bottom: 12px;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.partners-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.partners-logos img {
+  height: 200px;
+  object-fit: contain;
+  transition: transform .2s ease;
+}
+
+.partners-logos img:hover {
+  transform: scale(1.08);
+}
+</style>
+
+
+<div class="partners-footer">
+  <h3>Nos partenaires</h3>
+
+  <div class="partners-logos">
+    <a href="https://www.agroparistech.fr/partenariats-socioeconomiques/nous-soutenir/fondation-agroparistech" target="_blank">
+      <img src="/images/partners/fondation APT.png" alt="Partenaire 1" />
+    </a>
+
+  </div>
+</div>
+
+
+    <div class="flex justify-between items-center gap-2">
+      <div>
+  
+  <p>© 2026 BiOdyssée</p>
+  
+
+  
+  <p>Tous droits réservés</p>
+  
+</div>
+
+       
+
+    </div>
+  </div>
+
+</footer>
+
+
+<script>
+  function scrollCategories(direction) {
+    const container = document.getElementById("categoriesScroll");
+    const scrollAmount = 300; 
+    container.scrollBy({
+      left: direction * scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+</script>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-2PHJBK75DX"></script>
+      <script>
+        var doNotTrack = false;
+        if ( true ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-2PHJBK75DX');
+        }
+      </script>
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
+

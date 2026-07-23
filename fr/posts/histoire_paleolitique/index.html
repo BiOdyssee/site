@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="fr"  
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Du paléolithique au XVIe siècle, l&#39;émergence de la culture nippone autour de la nature. | BiOdyssée</title>
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+  
+
+    
+
+<link rel="canonical" href="https://biodyssee.netlify.app/fr/posts/histoire_paleolitique/" />
+
+
+
+<meta name="author" content="solal" />
+<meta name="description" content="A travers cette nouvelle série, découvrez comment le Japon s&rsquo;est développé au fil des âges et quelles conséquences cela a eu sur la nature japonaise.
+" />
+
+
+<meta name="keywords" content="Culture et histoire du Japon">
+
+
+
+<meta name="generator" content="Hugo 0.163.2">
+
+
+<meta property="og:url" content="https://biodyssee.netlify.app/fr/posts/histoire_paleolitique/">
+	<meta property="og:site_name" content="BiOdyssée">
+	<meta property="og:title" content="Du paléolithique au XVIe siècle, l&#39;émergence de la culture nippone autour de la nature.">
+	<meta property="og:description" content="A travers cette nouvelle série, découvrez comment le Japon s’est développé au fil des âges et quelles conséquences cela a eu sur la nature japonaise.">
+	<meta property="og:locale" content="fr">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="posts">
+		<meta property="article:published_time" content="2025-07-08T14:00:00+01:00">
+		<meta property="article:modified_time" content="2025-07-08T14:00:00+01:00">
+
+
+
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="Du paléolithique au XVIe siècle, l&#39;émergence de la culture nippone autour de la nature.">
+	<meta name="twitter:description" content="A travers cette nouvelle série, découvrez comment le Japon s’est développé au fil des âges et quelles conséquences cela a eu sur la nature japonaise.">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+<script src="//unpkg.com/valine@1.5.2/dist/Valine.min.js"></script>
+
+
+
+
+
+
+
+    
+    <link rel="stylesheet" href="/css/custom.css" />
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="py-4"> 
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="Retourne ça !">
+        <div class="h-10 rounded-full">
+          <img src="/images/logo.jpg" alt="BiOdyssée" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://biodyssee.netlify.app/" class="text-lg font-semibold cursor-pointer">
+          BiOdyssée
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm" style="color: #ffffff" >À la (re)découverte du vivant</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="Contact">
+    <ion-icon name="information-circle"></ion-icon>Contact</div>
+</li>
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="Rechercher">
+    <ion-icon name="search"></ion-icon>
+    Rechercher
+  </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="Archives">
+    <ion-icon name="archive"></ion-icon>
+    Archives
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="Toutes les catégories">
+    <ion-icon name="grid"></ion-icon>
+    Toutes les catégories
+  </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="menu-title px-2 pt-2">Langue</li>
+
+  <li>
+    <a href="/fr" class="inline-flex items-center p-2 text-black hover:underline">
+      Français
+    </a>
+  </li>
+
+  <li>
+    <a href="/ja" class="inline-flex items-center p-2 text-black hover:underline">
+      日本語
+    </a>
+  </li>
+
+  <li>
+    <a href="/en" class="inline-flex items-center p-2 text-black hover:underline">
+      English
+    </a>
+  </li>
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0"
+        class="text-sm font-semibold cursor-pointer hover:underline"
+        @click="flip = !flip"
+        title="Contact"
+      >Contact</div>
+      
+      
+
+      
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="Rechercher">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+
+
+
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="Archives">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="Toutes les catégories">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+
+
+
+
+
+      
+
+      
+
+      
+
+
+ 
+<div class="dropdown dropdown-end">
+  <div tabindex="0" role="button" class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" aria-label="Select an option">
+  <ion-icon name="earth-outline"> </ion-icon> 
+  
+  </div>
+  <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-xl">
+    
+      <li>
+        <a href="/fr" class="inline-flex items-center p-2 cursor-pointer" style = "color: #000000">
+          Français
+        </a>
+      </li>
+    
+      <li>
+        <a href="/ja" class="inline-flex items-center p-2 cursor-pointer" style = "color: #000000">
+          日本語
+        </a>
+      </li>
+    
+      <li>
+        <a href="/en" class="inline-flex items-center p-2 cursor-pointer" style = "color: #000000">
+          English
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+    </section>
+  </div>
+</nav>
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+           
+
+          <div class="container">
+            
+<div class="lg:grid lg:grid-cols-4 gap-4 mt-4 px-4">
+  <div class="hidden lg:block">
+    
+  </div>
+
+  <div class="lg:col-span-2">
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+	<meta itemprop="name" content="Du paléolithique au XVIe siècle, l&#39;émergence de la culture nippone autour de la nature.">
+	<meta itemprop="description" content="A travers cette nouvelle série, découvrez comment le Japon s’est développé au fil des âges et quelles conséquences cela a eu sur la nature japonaise.">
+	<meta itemprop="datePublished" content="2025-07-08T14:00:00+01:00">
+	<meta itemprop="dateModified" content="2025-07-08T14:00:00+01:00">
+	<meta itemprop="wordCount" content="2228">
+	<meta itemprop="keywords" content="Culture et histoire du Japon">
+
+      <header>
+        <h1 itemprop="headline">Du paléolithique au XVIe siècle, l&#39;émergence de la culture nippone autour de la nature.</h1>
+        <p class="text-sm">
+          
+            mardi, juil. 8, 2025
+          
+
+          | <span>11 minutes de lecture</span>
+
+          
+          | <span>Mise à jour le
+            
+              mardi, juil. 8, 2025
+            </span>
+          
+        </p>
+
+        
+        <div class="flex justify-between">
+          
+            
+
+
+<div class="flex items-center">
+  
+    <div class="avatar mr-1">
+      <div class="w-8 rounded-full">
+        <img class="my-0" src="/images/authors/avatar_solal.jpg" alt="Solal" />
+      </div>
+    </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+    
+      
+        <span itemprop="name">Solal</span>
+      
+    
+  </span>
+</div>
+
+          
+
+          
+
+<div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://biodyssee.netlify.app/fr/posts/histoire_paleolitique/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="text-gray-500 group-hover:text-white" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=Du%20pal%c3%a9olithique%20au%20XVIe%20si%c3%a8cle,%20l%27%c3%a9mergence%20de%20la%20culture%20nippone%20autour%20de%20la%20nature.%20https://biodyssee.netlify.app/fr/posts/histoire_paleolitique/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="text-gray-500 group-hover:text-white" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div> 
+
+        </div>
+      </header>
+
+      <section id="dream-single-post-content" itemprop="articleBody">
+       
+    <img class="w-full z-30" src="/images/culture_histoire/empereur.jpg" alt="Du paléolithique au XVIe siècle, l&#39;émergence de la culture nippone autour de la nature." />
+
+
+  <p>A travers cette nouvelle série, découvrez comment le Japon s&rsquo;est développé au fil des âges et quelles conséquences cela a eu sur la nature japonaise.</p>
+<p>Le Japon est un pays qui fascine partout à travers le monde, que ce soit pour sa culture, son histoire ou sa nature. Environ 200 000 visiteurs français s&rsquo;y rendent chaque année, et la Nature japonaise joue un rôle déterminant dans le tourisme. Un point particulièrement intéressant réside dans la diversité des paysages mise en avant : «Du Nord au Sud, le panel de couleurs est extraordinaire. Vous pourrez profiter d’une nature exceptionnelle …», «Le moins qu&rsquo;on puisse dire, c&rsquo;est que la nature au Japon est très contrastée […] Rivières, cascades, lacs, marais et vallées nous invitent à sortir des grandes métropoles japonaises pour plonger au cœur de la nature.»</p>
+<p>Cependant, cette Nature riche et diversifiée est-elle véritablement naturelle ? Quelle a été l’influence de la diversité des écosystèmes sur le développement de la culture japonaise dans l’histoire ? Comment la vision de la Nature au Japon a-t-elle évolué à travers les âges ?</p>
+<p>Dans cette série d’articles, nous répondrons à ces questions en explorant l’histoire du pays. Nous suivrons le plan suivant :</p>
+<ul>
+<li>Du paléolithique au XVIème siècle, l&rsquo;apparition du Japon.</li>
+<li>La période Edo et l&rsquo;arrivée des naturalistes Européens.</li>
+<li>Les enjeux de conservation depuis le XXème siècle.</li>
+</ul>
+<p>Dans ce premier article, nous expliquerons comment le Japon s&rsquo;est développé au fil du temps, depuis le paléolithique jusqu&rsquo;au XVIème siècle.</p>
+<h2 id="-les-débuts-de-loccupation-humaine--adaptation-à-un-archipel-volcanique--38-000">🌋 Les débuts de l’occupation humaine : adaptation à un archipel volcanique (-38 000)</h2>
+<p>Les premiers humains sont arrivés sur l’archipel japonais il y a environ 40 000 ans. Bien qu’un passage terrestre fût empruntable entre l’Asie continentale et le Japon durant cette période glaciaire, les historiens pensent que ces pionniers seraient passés par bateau via l’île de Kōzu pour rejoindre Honshū, l’île principale de l’archipel japonais.</p>
+<p><img src="/images/culture_histoire/ere_glaciaire_japon.jpg" alt="ere_glaciaire"></p>
+<p>Accompagnés d’outils en obsidienne, ces groupes humains s’installent dans un environnement au volcanisme très actif. Les sols volcaniques, par leurs propriétés, constituent un environnement propice à la culture de végétaux sauvages ou domestiques. Néanmoins, ce volcanisme important fait de l’archipel une zone aux risques naturels violents (cf. Caldeira d&rsquo;Aira).
+L’activité volcanique permet toutefois une datation précise des vestiges par les scientifiques modernes.</p>
+<h2 id="--vers--16-000--sédentarisation-sans-agriculture-la-période-jomon--16000-à--900">🏕  Vers -16 000 : sédentarisation sans agriculture, la période Jomon (-16000 à -900)</h2>
+<p>À partir de -16 000, les communautés japonaises amorcent une sédentarisation précoce (contre -12 500 à -9 000 dans le croissant fertile). Elles maîtrisent déjà la poterie et vivent dans des villages permanents, tout en pratiquant la chasse, la pêche et la cueillette.</p>
+<p><img src="/images/culture_histoire/jomon_moyen.jpg" alt="image_jomon"></p>
+<p>Cette économie de subsistance est rendue possible par le réchauffement climatique de la fin de l’ère glaciaire, qui transforme profondément les écosystèmes japonais. Les forêts s’étoffent, la faune se diversifie (cerfs, sangliers, et poissons abondent), favorisant une cohabitation relativement équilibrée entre humains et animaux. Malgré une augmentation de la population humaine sur l’archipel, l’exploitation des ressources dans le respect des cycles naturels permet à l’impact écologique de rester faible. D’autant plus que l’apprivoisement des premières espèces végétales et animales mettra plus 15 millénaires à se développer.</p>
+<h2 id="-la-révolution-agraire--période-yayoi--900-à-250">🌾 La révolution agraire : période Yayoi (-900 à 250)</h2>
+<p>La véritable transformation de l’environnement japonais commence avec la période Yayoi, dès le IXème siècle av. J.-C. localement, et à l’échelle de tout l’archipel vers le IIIème siècle av. J.-C.</p>
+<p>Des groupes venus de Corée introduisent des connaissances techniques et agricoles majeures : le travail du bronze et du fer, la culture du blé, du soja, de l’orge, et notamment la culture inondée du riz. Depuis 2023, on pense également que la domestication du poulet aurait débuté à cette période, des os de poulets juvéniles ayant été retrouvés en quantité sur différents sites archéologiques à partir de cette période.</p>
+<p>Ces innovations surtout agricoles entraînent des transformations profondes : les villages s’agrandissent, les outils agricoles se diffusent et les premiers réseaux d’échanges apparaissent. On observe l’apparition de chefferies, entités politiques et administratives locales dominées par une famille dont sont issus les chefs, où certains groupes dominent les meilleures terres et les principaux points d’échange.</p>
+<p><img src="/images/culture_histoire/yayoi.jpg" alt="images yayoi"></p>
+<p>Des sources témoignent de l’implantation profonde de ce système politique à l’époque. Un texte chinois datant de l’an 297 (texte de Wei Zhi) mentionne une centaine de confédérations tribales sur l’archipel. Cette information est cependant à prendre avec du recul, puisque lors de la rédaction de ce texte, la Chine sortait à peine de la période mouvementée des 3 royaumes (grande guerre civile qui a plongé le sous-continent dans le chaos de 220 à 280 durant notre ère). Il est donc possible que le Japon soit montré comme une puissance tribale pour promouvoir la Chine comme modèle de modernité.</p>
+<p>Cette époque voit aussi la naissance du Shintoïsme primitif dont les croyances affirment que toute chose (montagne, fleuve, animal et végétal) possède un esprit propre, appelé “kami (神)”. L’harmonie entre tous ces éléments devient alors un principe fondamental de la culture japonaise.</p>
+<p><img src="/images/culture_histoire/yayoi_2.jpg" alt="images yayoi"></p>
+<p>Malheureusement, le début de domestication qui accompagne cette sédentarisation signe aussi le début des pressions sur les espèces sauvages, notamment les oiseaux et poissons d’eau douce. La chasse reste importante, mais les écosystèmes commencent à être modifiés structurellement par l’agriculture.</p>
+<h2 id="-lère-kofun-250-à-538--domination-impériale-et-maîtrise-de-lenvironnement">⚱️ L’ère Kofun (250 à 538) : domination impériale et maîtrise de l’environnement</h2>
+<p>L’ère Kofun approfondit les transformations de l’ère Yayoi. Les élites se structurent autour de la famille Yamato, qui unifie progressivement Honshū et Kyūshū. Cette élite débute la construction de kofun, tertres funéraires souvent gigantesques en forme de trou de serrure censés représenter l’importance de la personne enterrée en son sein. Les kofun sont d’abord creusés dans des collines naturelles, puis on observe la création de collines entièrement artificielles avec la démocratisation de la tradition.
+Au final, ces monuments se sont tellement démocratisés qu’on en retrouve aujourd’hui organisés en nécropoles, pouvant regrouper des centaines de kofun. C’est notamment le cas dans la nécropole de Hiraoyama-senzuka, à Osaka.</p>
+<p><img src="/images/culture_histoire/kofun_daisen.jpg" alt="images kofun"></p>
+<p>L’ère Kofun apporte aussi son lot de technologies avec l’amélioration des faucilles, le perfectionnement des outils agricoles et la généralisation des systèmes d’irrigation. Les scientifiques ont établi avec certitude la présence de chevaux et de poulets domestiqués à cette époque. Ces modifications majeures ont permis le développement de l’agriculture, qui s’est accompagné d&rsquo;une transformation profonde des paysages, avec notamment une déforestation partielle, une canalisation des cours d’eau et des constructions massives.</p>
+<p><img src="/images/culture_histoire/kofun_cheval.jpg" alt="images kofun"></p>
+<p>C’est également durant cette période que le Shintoïsme devient la religion principale du Japon.
+Le Shintoïsme passe d’une religion naissante à une religion structurée et organisée par des rites et traditions officiels, ainsi que par un clergé représenté par les Shinshoku (intermédiaires entre les hommes et les kamis). Comme toute religion, le Shintoïsme apporte bon nombre de règles de vie à suivre, avec notamment comme doctrine que la nature est sacrée, dogme qu’elle partage avec les autres religions animistes. Néanmoins, la nature se doit d&rsquo;être au service du pouvoir impérial.</p>
+<h2 id="-la-chine-comme-exemple--asuka-538710-et-nara-710794">🕊️ La Chine comme exemple : Asuka (538–710) et Nara (710–794)</h2>
+<p>Durant toute son histoire, le Japon a considéré la Chine comme un exemple de modernité. Cela est notamment vrai durant la période Asuka, qui est l&rsquo;une des périodes de l&rsquo;histoire japonaise la plus emprunte de la culture chinoise. On y voit notamment l’introduction du Bouddhisme et des modèles politiques chinois, avec par exemple, la mise en place d’un système de castes avec à son sommet les castes lettrés constituées de lignages déjà anciens. Le Japon adopte également une écriture officielle, le chinois, et se dote de structures centralisées inspirées par la Chine des Tang. Il s’agit d’un empire contrôlant le sous-continent chinois en 618, qui est par ailleurs le premier empire stable depuis l’épisode des 3 royaumes.</p>
+<p>Un rapport de force se développe entre les Shintoïstes et les Bouddhistes, et c’est à force de guerres et de problèmes de succession chez les empereurs Shintoïstes que le Bouddhisme deviendra la religion d’état.</p>
+<p><img src="/images/culture_histoire/teibi_no_ran.jpg" alt="image teibi no ran"></p>
+<p>La conversion des empereurs au Bouddhisme change légèrement le regard porté sur la nature. Elle reste sacrée, mais devient aussi le reflet de l’impermanence, un concept-clé du Bouddhisme. Malheureusement, peu d’archives agricoles ont été conservées, laissant peu de traces concernant la gestion des écosystèmes agricoles.</p>
+<h2 id="-lépoque-heian-794-à-1185--stabilité-culture-et-féodalité-émergente">🎴 L’époque Heian (794 à 1185) : stabilité, culture et féodalité émergente</h2>
+<p>Durant cette période l’empire est sous l’influence de la famille Fujiwara, qui contrôle le trône suite à une stratégie matrimoniale pouvant faire penser en certains points à celle des Habsbourg d’Autriche. En effet, les deux familles ont gagné en influence en mariant leurs nombreux enfants aux empereurs et autres personnalités puissantes de leur époque.</p>
+<p>En plus de la famille Fujiwara, 3 autres clans se disputent le pouvoir. Ce sont les clans Tachibana, Minamoto et Taira.</p>
+<p><img src="/images/culture_histoire/clan_heian.jpg" alt="clan heian"></p>
+<p>L’époque Heian représente l’âge d’or du Japon classique. Kyoto devient capitale pour diminuer l’influence des écoles Bouddhistes sur la cour, alors que le syncrétisme entre Shintoïsme et bouddhisme s’accélère. La littérature, la peinture et la poésie s’épanouissent, témoignant d’une certaine prospérité. Les kana (alphabets syllabiques tirés des idéogrammes Chinois) apparaissent, signe d’une volonté d’indépendance culturelle par rapport à la Chine, bien que ses institutions restent un modèle pour le Japon.</p>
+<p>En dehors des grandes villes, la structure féodale commence à émerger. Les daimyo (grands seigneurs) prennent racine, contrôlant des terres toujours plus vastes, et la population rurale se développe d’ailleurs beaucoup grâce à ces derniers.</p>
+<p>La pression agricole induite se fait ressentir sur la faune, et plus particulièrement sur les renards et les cerfs, qui voient leur population diminuer. La perception de la faune évolue et certains animaux deviennent considéré comme des nuisibles, premier acte de ce qui conduira à leur extinction. Cela concerne principalement les grands carnivores comme le loup du Japon, qui fera l’objet d’un article à part entière ultérieurement.
+Enfin, la nature est idéalisée à l’extrême : elle est sublimée dans les arts (cerisiers en fleurs, montagnes, jardins…), mais elle est en réalité de plus en plus exploitée et transformée pour ressembler à cet idéal.</p>
+<p><img src="/images/culture_histoire/heian_nature.jpg" alt="heian"></p>
+<h2 id="-kamakura-1185-à-1333--féodalité-et-réforme-agraire">️⚔️ Kamakura (1185 à 1333) : féodalité et réforme agraire</h2>
+<p>A la fin de l’ère précédente, les empereurs ne règnent plus complétement. Le pouvoir est plutôt aux mains de dictateurs militaires (Shôgun) qui contrôlent les castes guerrières de l’empire. Ce mode de fonctionnement est instauré par le clan Minamoto, qui prend le pouvoir en tant que Shôgun. Le Japon entre alors pleinement dans son ère féodale.</p>
+<p><img src="/images/culture_histoire/organigramme.png" alt="organigramme"></p>
+<p>Cet organigramme montre l&rsquo;organisation du pouvoir féodal au Japon.</p>
+<p>D&rsquo;autre part,l’agriculture progresse nettement durant cette période, poussée par une population majoritairement rurale. Les premiers engrais sont introduits (fumier, compost) et les premières guildes marchandes sont créées. Des réformes légales sont elles aussi instaurées avec la possibilité pour les femmes d’hériter des terres, ce qui limite la perte de terres dans les familles, et les villages commencent à former un tissu rural coopératif ou ils gèrent collectivement les ressources. Du point de vue de la faune, les activités humaines repoussent encore plus les grands prédateurs comme les loups et les ours, et les forêts voient leur surface diminuer. Ces changements brusques modifient fortement les écosystèmes et amenuisent les habitats de la faune sauvage, qui a de plus en plus de mal à prospérer.</p>
+<p><img src="/images/culture_histoire/ouvrier_temple.jpg" alt="construction temple"></p>
+<p>Avec le temps, les shoguns finissent par être manipulés par les régents du clan Hojo jusqu’à la prise du pouvoir par les Ashikaga, une branche cadette des Minamoto, en 1338.</p>
+<h2 id="-muromachi-1336-à-1573--villages-châteaux-et-premiers-européens">🏯 Muromachi (1336 à 1573) : villages, châteaux et premiers Européens</h2>
+<p>Sous les Ashikaga, l’agriculture reste florissante. Les villages paysans (sō) s’autogèrent, et on y trouve une entraide accrue pour cultiver plus efficacement. L’irrigation, les engrais, et l’urbanisation transforment durablement le paysage rural. Les conflits entre daimyo mènent à la construction massive de châteaux et places fortes, parfois entourés de villes entières, ce qui était une chose rare au Japon jusqu’à présent.</p>
+<p><img src="/images/culture_histoire/carte_daimyo.jpg" alt="carte daimyo"></p>
+<p>Plus étonnant encore, les premiers Européens (des Portugais) mettent les pieds sur le territoire japonais pour la première fois en 1543, à Kyūshū. Le Japon entre alors en contact avec d’autres visions du monde, mais reste prudent sur leur influence. Le christianisme ne commencera à se propager que 50 ans plus tard.</p>
+<p>D’un autre côté, la chasse intensive, la destruction des forêts et la fragmentation des habitats créent des déséquilibres écologiques profonds. Certains animaux prolifèrent en l’absence de prédateurs (début de la croissance de populations de Cerf sika) tandis que d’autres disparaissent (Martin-chasseur de Miyako). Malgré cela, les forêts sacrées (chinju no mori) autour des sanctuaires sont préservées, illustrant la possibilité d’une coexistence entre exploitation et spiritualité.</p>
+<p><img src="/images/culture_histoire/sanctuaire.jpg" alt="sanctuaire"></p>
+<p>A force de vouloir faire la guerre pour utiliser les samouraïs, les daimyos, précipitèrent la chute du Shogunat. C’est en 1588 que Oda Nobunaga finit par prendre le pouvoir par la force et conduit le Japon vers une nouvelle ère.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Depuis l’arrivée des premiers humains jusqu’à l’époque moderne, le Japon a vu son environnement profondément transformé :</p>
+<ul>
+<li>Le climat et les volcans ont façonné les modes de vie préhistoriques.</li>
+<li>L’agriculture yayoi a marqué le début de la domination humaine sur la nature.</li>
+<li>Le Shintoïsme et le Bouddhisme ont permis de sacraliser la nature, même lorsqu’elle était exploitée.</li>
+<li>Les périodes de paix ont encouragé les arts et une vision idéalisée de la nature, tandis que les périodes de guerre ont intensifié la pression sur les ressources.</li>
+<li>Les espèces animales ont peu à peu disparu, déplacées ou domestiquées, au gré de l’expansion des activités humaines.</li>
+</ul>
+<p>L’époque Edo, qui commence en 1603, marquera un tournant dans la gestion raisonnée de l’environnement japonais, mais ce sujet sera développé dans un prochain article.</p>
+<p><img src="/images/culture_histoire/histoire_creation_japon.jpg" alt="carte récap"></p>
+
+        
+      </section>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/fr/posts/un-peu-dhistoire-pour-d%C3%A9finir-la-biodiversit%C3%A9/" title="Un peu d’histoire pour définir la biodiversité">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">Page précédente</span>
+            <span class="max-w-48 truncate">Un peu d’histoire pour définir la biodiversité</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/fr/posts/la-grue-du-japon/" title="La Grue du Japon">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">Page suivante</span>
+            <span class="max-w-48 truncate">La Grue du Japon</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+
+      
+      <div class="divider"></div>
+
+      <section class="space-y-4">
+        
+
+
+
+
+<article>
+
+  <div id="vcomments"></div>
+<script src="https://unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+  new Valine({
+    el: '#vcomments',
+    appId: '',
+    appKey: '',
+    placeholder: 'Leave a comment...',
+    lang: 'en',
+    avatar: 'mp',
+    visitor: true,
+    requiredFields: ['nick','mail']
+  });
+</script>
+
+
+</article>
+
+
+
+
+
+
+      </section>
+      
+    </article>
+  </div>
+
+  <div class="hidden lg:flex lg:flex-col lg:items-end">
+    
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#-les-débuts-de-loccupation-humaine--adaptation-à-un-archipel-volcanique--38-000">🌋 Les débuts de l’occupation humaine : adaptation à un archipel volcanique (-38 000)</a></li>
+    <li><a href="#--vers--16-000--sédentarisation-sans-agriculture-la-période-jomon--16000-à--900">🏕  Vers -16 000 : sédentarisation sans agriculture, la période Jomon (-16000 à -900)</a></li>
+    <li><a href="#-la-révolution-agraire--période-yayoi--900-à-250">🌾 La révolution agraire : période Yayoi (-900 à 250)</a></li>
+    <li><a href="#-lère-kofun-250-à-538--domination-impériale-et-maîtrise-de-lenvironnement">⚱️ L’ère Kofun (250 à 538) : domination impériale et maîtrise de l’environnement</a></li>
+    <li><a href="#-la-chine-comme-exemple--asuka-538710-et-nara-710794">🕊️ La Chine comme exemple : Asuka (538–710) et Nara (710–794)</a></li>
+    <li><a href="#-lépoque-heian-794-à-1185--stabilité-culture-et-féodalité-émergente">🎴 L’époque Heian (794 à 1185) : stabilité, culture et féodalité émergente</a></li>
+    <li><a href="#-kamakura-1185-à-1333--féodalité-et-réforme-agraire">️⚔️ Kamakura (1185 à 1333) : féodalité et réforme agraire</a></li>
+    <li><a href="#-muromachi-1336-à-1573--villages-châteaux-et-premiers-européens">🏯 Muromachi (1336 à 1573) : villages, châteaux et premiers Européens</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+    
+  </div>
+</div>
+
+
+
+            
+<footer class="px-4 py-4">
+
+
+  <div class="w-full flex flex-col gap-4">
+    <style>
+.partners-footer {
+  text-align: center;
+  margin: 15px 0 5px 0;
+}
+
+.partners-footer h3 {
+  margin-bottom: 12px;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.partners-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.partners-logos img {
+  height: 200px;
+  object-fit: contain;
+  transition: transform .2s ease;
+}
+
+.partners-logos img:hover {
+  transform: scale(1.08);
+}
+</style>
+
+
+<div class="partners-footer">
+  <h3>Nos partenaires</h3>
+
+  <div class="partners-logos">
+    <a href="https://www.agroparistech.fr/partenariats-socioeconomiques/nous-soutenir/fondation-agroparistech" target="_blank">
+      <img src="/images/partners/fondation APT.png" alt="Partenaire 1" />
+    </a>
+
+  </div>
+</div>
+
+
+    <div class="flex justify-between items-center gap-2">
+      <div>
+  
+  <p>© 2026 BiOdyssée</p>
+  
+
+  
+  <p>Tous droits réservés</p>
+  
+</div>
+
+       
+
+    </div>
+  </div>
+
+</footer>
+
+
+<script>
+  function scrollCategories(direction) {
+    const container = document.getElementById("categoriesScroll");
+    const scrollAmount = 300; 
+    container.scrollBy({
+      left: direction * scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+</script>
+
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid dream-grid-about">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Voilà l&#39;équipe de la mission 2026</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Voilà une brève présentation des membres de l&rsquo;équipe fondatrice de BiOdyssée et qui participera à l&rsquo;expédition 2026 au Japon.</p>
+<p><img src="/images/equipe_complete.jpeg" alt="photo équipe"></p>
+<p>Et on remercie Brieuc (au centre de la photo) qui est venu nous rejoindre pour quelques jours !</p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Hugo - Co-président</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Étudiant en Gestion et ingénierie de l&rsquo;environnement à AgroParisTech, je suis passionné par la paléontologie et l’évolution 🦖🦴🧬.</p>
+<p>J’aspire à travailler dans le domaine de la gestion des milieux naturels, plus précisément pour la conservation ou la restauration des milieux humides en France 🐸🐟🌿, qui ont perdu une part très importante de leur surface ces derniers siècles. Je me suis ainsi toujours intéressé à l’évolution des espèces et des écosystèmes dans le temps, c’est pourquoi ce projet de césure me motive tant !</p>
+<p><strong>Contact :</strong>
+<a href="mailto:hugo.roger@agroparistech.fr" target="_blank">hugo.roger@agroparistech.fr</a>
+</p>
+<p><img src="/images/hugo.jpeg" alt="photo rando"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Théophile - Co-président</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Étudiant en ingénierie de l&rsquo;environnement passionné d’entomologie et en particulier de myrmécologie 🐜, mon objectif est de faire de la recherche en environnement en particulier sur les dynamiques génétiques des populations 🧬🐜 (de fourmis bien évidemment).</p>
+<p>Je fais partie de l’association naturaliste &ldquo;les &ldquo;Blairoudeurs 🦡&rdquo; avec laquelle je suis parti faire de la prospection et de la sensibilisation en Corse lors de la Mission Isula. Ce projet de césure est une super opportunité de continuer cette expérience mais à une échelle bien plus vaste et exotique tout en continuant de me former sur la connaissance des différents écosystèmes et leurs moyens de gestions dans un autre pays.</p>
+<p><strong>Contact :</strong>
+<a href="mailto:theophie.thomas@agroparistech.fr" target="_blank">theophie.thomas@agroparistech.fr</a>
+</p>
+<p><img src="/images/theophile.jpeg" alt="photo stylée"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Lucie - Responsable communication</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Étudiante en Gestion et ingénierie de l&rsquo;environnement à AgroParisTech, je suis fascinée par à peu près tout ce qui se rapporte à l’océan 🌊.</p>
+<p>C’est dans l’optique d’allier travail et passion, que je m’oriente vers la biologie marine. Plus particulièrement, j’aimerais travailler dans la conservation ou la gestion des écosystèmes marins. La faune 🐠🐋🐙, autant que la flore aquatique me passionnent et c’est pour pouvoir l’observer de plus près que je fais de la plongée sous-marine 🤿.</p>
+<p>Ce projet est pour moi l’opportunité de découvrir de nouveaux milieux aquatiques 🌊🪸🌿 et de comprendre tous les enjeux qui pèsent dessus.</p>
+<p><strong>Contact :</strong>
+<a href="mailto:lucie.lowagie@agroparistech.fr" target="_blank">lucie.lowagie@agroparistech.fr</a>
+</p>
+<p><img src="/images/lucie.jpg" alt="photo"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Solal - Trésorier</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Étudiant en agronomie et passionné par l’histoire 🧭⌛🏹 et l’éthologie 🐁🧠🧪, j’espère utiliser cette opportunité pour observer le comportement des animaux dans leur milieu naturel. Par la suite, j’aimerais faire de la recherche 👨‍🔬 ou être enseignant  dans l’enseignement supérieur 🧑‍🏫, et cette césure me permettrait de développer mes capacités de synthèse et d’observation.</p>
+<p>Le fait de pouvoir allier recherche historique et observation animale — le tout dans le but de ne pas reproduire les erreurs du passé — est la raison pour laquelle ce projet m’intéresse.</p>
+<p><strong>Contact :</strong>
+<a href="mailto:solal.free@agroparistech.fr" target="_blank">solal.free@agroparistech.fr</a>
+</p>
+<p><img src="/images/solal.jpeg" alt="photo qui fait peur"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Réseaux sociaux</div>
+
+        <ul class="menu menu-horizontal flex-wrap w-full px-0 [&_ion-icon]:text-lg">
+  
+
+  
+  <li>
+    <a href="https://www.facebook.com/profile.php?id=61576052068851" target="_blank" title="Facebook">
+      <ion-icon name="logo-facebook"></ion-icon>
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://www.instagram.com/bio_dyssee/" target="_blank" title="Instagram">
+      <ion-icon name="logo-instagram"></ion-icon>
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://www.linkedin.com/company/107400672/admin/dashboard/" target="_blank" title="Linkedin">
+      <ion-icon name="logo-linkedin"></ion-icon>
+    </a>
+  </li>
+  
+  <li>
+    <a href="mailto:biodyssee2026@gmail.com" target="_blank" title="Email">
+      <ion-icon name="mail-outline"></ion-icon>
+    </a>
+  </li>
+  
+</ul>
+
+      </div>
+    </article>
+  </div>
+  
+
+  
+</div>
+
+            
+
+            
+<footer class="px-4 py-4">
+
+
+  <div class="w-full flex flex-col gap-4">
+    <style>
+.partners-footer {
+  text-align: center;
+  margin: 15px 0 5px 0;
+}
+
+.partners-footer h3 {
+  margin-bottom: 12px;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.partners-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.partners-logos img {
+  height: 200px;
+  object-fit: contain;
+  transition: transform .2s ease;
+}
+
+.partners-logos img:hover {
+  transform: scale(1.08);
+}
+</style>
+
+
+<div class="partners-footer">
+  <h3>Nos partenaires</h3>
+
+  <div class="partners-logos">
+    <a href="https://www.agroparistech.fr/partenariats-socioeconomiques/nous-soutenir/fondation-agroparistech" target="_blank">
+      <img src="/images/partners/fondation APT.png" alt="Partenaire 1" />
+    </a>
+
+  </div>
+</div>
+
+
+    <div class="flex justify-between items-center gap-2">
+      <div>
+  
+  <p>© 2026 BiOdyssée</p>
+  
+
+  
+  <p>Tous droits réservés</p>
+  
+</div>
+
+       
+
+    </div>
+  </div>
+
+</footer>
+
+
+<script>
+  function scrollCategories(direction) {
+    const container = document.getElementById("categoriesScroll");
+    const scrollAmount = 300; 
+    container.scrollBy({
+      left: direction * scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+</script>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-2PHJBK75DX"></script>
+      <script>
+        var doNotTrack = false;
+        if ( true ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-2PHJBK75DX');
+        }
+      </script>
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
+

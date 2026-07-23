@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Acteurs on BiOdyssée</title>
+		<link>https://biodyssee.netlify.app/categories/acteurs/</link>
+		<description>Recent content in Acteurs on BiOdyssée</description>
+		<generator>Hugo</generator>
+		<language>fr</language>
+		
+		
+		
+		
+			<lastBuildDate>Wed, 16 Apr 2025 14:00:00 +0100</lastBuildDate>
+		
+			<atom:link href="https://biodyssee.netlify.app/categories/acteurs/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title> ❗Recherche partenariat❗</title>
+				<link>https://biodyssee.netlify.app/fr/posts/recherche-partenariat/</link>
+				<pubDate>Wed, 16 Apr 2025 14:00:00 +0100</pubDate>
+				<guid>https://biodyssee.netlify.app/fr/posts/recherche-partenariat/</guid>
+				<description>&lt;p&gt;🤝 &lt;strong&gt;En quête de partenariats pour faire grandir notre projet !&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Notre aventure ne fait que commencer, et pour aller plus loin, nous avons besoin de vous !&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

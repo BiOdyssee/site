@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="ja"  
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>菌栽培アリ 🐜 | BiOdyssée</title>
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+  
+
+    
+
+<link rel="canonical" href="https://biodyssee.netlify.app/ja/posts/%E8%8F%8C%E6%A0%BD%E5%9F%B9%E3%82%A2%E3%83%AA/" />
+
+
+
+<meta name="author" content="theophile" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="Théophile (テオフィル)のアリ特集">
+
+
+
+<meta name="generator" content="Hugo 0.163.2">
+
+
+<meta property="og:url" content="https://biodyssee.netlify.app/ja/posts/%E8%8F%8C%E6%A0%BD%E5%9F%B9%E3%82%A2%E3%83%AA/">
+	<meta property="og:site_name" content="BiOdyssée">
+	<meta property="og:title" content="菌栽培アリ 🐜">
+	<meta property="og:locale" content="ja">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="posts">
+		<meta property="article:published_time" content="2025-12-22T14:00:00+01:00">
+		<meta property="article:modified_time" content="2025-12-22T14:00:00+01:00">
+
+
+
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="菌栽培アリ 🐜">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+<script src="//unpkg.com/valine@1.5.2/dist/Valine.min.js"></script>
+
+
+
+
+
+
+
+    
+    <link rel="stylesheet" href="/css/custom.css" />
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="py-4"> 
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="Flip it!">
+        <div class="h-10 rounded-full">
+          <img src="/images/logo.jpg" alt="BiOdyssée" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://biodyssee.netlify.app/" class="text-lg font-semibold cursor-pointer">
+          BiOdyssée
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm" style="color: #ffffff" >À la (re)découverte du vivant</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="About">
+    <ion-icon name="information-circle"></ion-icon>About</div>
+</li>
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/ja/search" title="検索">
+    <ion-icon name="search"></ion-icon>
+    検索
+  </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/ja/posts" title="アーカイブ">
+    <ion-icon name="archive"></ion-icon>
+    アーカイブ
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/ja/categories" title="カテゴリー一覧">
+    <ion-icon name="grid"></ion-icon>
+    カテゴリー一覧
+  </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="menu-title px-2 pt-2">Langue</li>
+
+  <li>
+    <a href="/fr" class="inline-flex items-center p-2 text-black hover:underline">
+      Français
+    </a>
+  </li>
+
+  <li>
+    <a href="/ja" class="inline-flex items-center p-2 text-black hover:underline">
+      日本語
+    </a>
+  </li>
+
+  <li>
+    <a href="/en" class="inline-flex items-center p-2 text-black hover:underline">
+      English
+    </a>
+  </li>
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0"
+        class="text-sm font-semibold cursor-pointer hover:underline"
+        @click="flip = !flip"
+        title="About"
+      >About</div>
+      
+      
+
+      
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/ja/search" title="検索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+
+
+
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/ja/posts" title="アーカイブ">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/ja/categories" title="カテゴリー一覧">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+
+
+
+
+
+      
+
+      
+
+      
+
+
+ 
+<div class="dropdown dropdown-end">
+  <div tabindex="0" role="button" class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" aria-label="Select an option">
+  <ion-icon name="earth-outline"> </ion-icon> 
+  
+  </div>
+  <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-xl">
+    
+      <li>
+        <a href="/fr" class="inline-flex items-center p-2 cursor-pointer" style = "color: #000000">
+          Français
+        </a>
+      </li>
+    
+      <li>
+        <a href="/ja" class="inline-flex items-center p-2 cursor-pointer" style = "color: #000000">
+          日本語
+        </a>
+      </li>
+    
+      <li>
+        <a href="/en" class="inline-flex items-center p-2 cursor-pointer" style = "color: #000000">
+          English
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+    </section>
+  </div>
+</nav>
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+           
+
+          <div class="container">
+            
+<div class="lg:grid lg:grid-cols-4 gap-4 mt-4 px-4">
+  <div class="hidden lg:block">
+    
+  </div>
+
+  <div class="lg:col-span-2">
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+	<meta itemprop="name" content="菌栽培アリ 🐜">
+	<meta itemprop="datePublished" content="2025-12-22T14:00:00+01:00">
+	<meta itemprop="dateModified" content="2025-12-22T14:00:00+01:00">
+	<meta itemprop="wordCount" content="200">
+	<meta itemprop="keywords" content="Théophile (テオフィル)のアリ特集">
+
+      <header>
+        <h1 itemprop="headline">菌栽培アリ 🐜</h1>
+        <p class="text-sm">
+          
+            月曜日,  22, 2025
+          
+
+          | <span>1分で読めます</span>
+
+          
+          | <span>更新日時
+            
+              月曜日,  22, 2025
+            </span>
+          
+        </p>
+
+        
+        <div class="flex justify-between">
+          
+            
+
+
+<div class="flex items-center">
+  
+    <div class="avatar mr-1">
+      <div class="w-8 rounded-full">
+        <img class="my-0" src="/images/authors/avatar_theophile.jpg" alt="Théophile" />
+      </div>
+    </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+    
+      
+        <span itemprop="name">Théophile</span>
+      
+    
+  </span>
+</div>
+
+          
+
+          
+
+<div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://biodyssee.netlify.app/ja/posts/%E8%8F%8C%E6%A0%BD%E5%9F%B9%E3%82%A2%E3%83%AA/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="text-gray-500 group-hover:text-white" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e8%8f%8c%e6%a0%bd%e5%9f%b9%e3%82%a2%e3%83%aa%20%f0%9f%90%9c%20https://biodyssee.netlify.app/ja/posts/%E8%8F%8C%E6%A0%BD%E5%9F%B9%E3%82%A2%E3%83%AA/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="text-gray-500 group-hover:text-white" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div> 
+
+        </div>
+      </header>
+
+      <section id="dream-single-post-content" itemprop="articleBody">
+       
+    <img class="w-full z-30" src="/images/fourmi/fourmi_atta.jpg" alt="菌栽培アリ 🐜" />
+
+
+  <p>動画などで一度は見たことがあるでしょう。どこまでも続く長い行列で、葉をせっせと運び続けるあの有名なアリたち。一般的に「ハキリアリ」と呼ばれるこれらのアリは、実は <strong>菌類栽培アリ</strong> なのです！<br>
+運んできた葉を直接食べるわけではありません。葉を噛み砕き、それを <strong>栽培しているキノコの培地</strong> として利用します。アリたちはそのキノコを大切に収穫し、これが主な栄養源になっています。</p>
+<!-- アリの行列動画を入れるか検討 -->
+<p>この仕組みは、<strong>非ヒトによる農業</strong> の中でも非常に稀な例であり、昆虫と菌類の高度な共進化の結果です。その社会構造は、巨大な庭園、精巧な換気システム、生きた高速道路で構成された「地下文明」と表現されることもあります。</p>
+<h2 id="属と分布">属と分布</h2>
+<p>菌栽培アリは <strong><em>Atta</em></strong>（アッタ）属と <strong><em>Acromyrmex</em></strong>（アクロミルメックス）属の2属によって構成されます。どちらも <strong>ミルミシナエ（Myrmicinae）</strong> 亜科、<strong>アッティニ（Attini）</strong> 族に属します。<br>
+このアッティニ族には、いわゆる“ハキリアリ”だけでなく、たとえば地中海沿岸に多い <strong><em>Pheidole</em></strong> 属のアリや、世界中で侵略的外来種として問題になっている <strong><em>Wasmannia auropunctata</em></strong> なども含まれます。</p>
+<p>同じ系統に属しながら、<em>Atta</em> と <em>Acromyrmex</em> は形態や行動に明確な違いがあります。</p>
+<p>例えば、<strong>Atta の働きアリは 2 対の棘</strong> を持ち、<strong>Acromyrmex は 3〜4 対</strong> を持ちます。</p>
+<p><img src="/images/fourmi/atta_acromyrmex.png" alt="atta_acromyrmex">
+<em>双眼実体顕微鏡で撮影した Acromyrmex（上）と Atta（下）の働きアリ</em></p>
+<p>どちらの属も葉や花びらなどの有機物をキノコに与えて栽培しますが、<strong>Acromyrmex は落ち葉や地面の有機物を拾うことが多く、Atta のように新鮮な葉を切り取ることは少ない</strong> 傾向があります。巣も小さく、個体数も少なめです。どちらも <strong><em>Leucoagaricus</em></strong> 属のキノコを栽培しますが、<strong>Atta の農業はより大規模で集約的</strong> です。</p>
+<p>実際、Atta はアリ界でも最大級のコロニーを形成し、地上部の面積は数十平方メートル、地下は数メートルの深さに及びます。<br>
+コロニーには <strong>数百万匹</strong> のアリが暮らし、周囲の環境を大きく変えてしまいます。</p>
+<p>次の章で詳しく見ていきますが、Atta では <strong>極端な職分分化</strong> が見られ、Acromyrmex はそこまで明確ではありません。</p>
+<p>両属とも南米〜中米の熱帯林からアメリカ南部まで分布します。Acromyrmex の方が寒冷または乾燥した地域にも進出でき、アンデス高地にも生息します。</p>
+<p>菌栽培アリは農業地帯では<strong>深刻な害虫</strong>ともなります。若芽や果樹の葉、農作物を大量に集めるため、南米やカリブ海地域では甚大な被害が報告されています。<br>
+例えばグアドループでは、導入外来種 <strong>“マニオクアリ” (<em>Acromyrmex octospinosus</em>)</strong> が農作物を急速に丸裸にしてしまい、農家は常に対策を迫られています。19 世紀半ばに accidental に持ち込まれ、広く定着しました。</p>
+<p>以下では特に <strong><em>Atta</em></strong> 属に焦点を当てます。</p>
+<h2 id="組織構造と形態">組織構造と形態</h2>
+<p>巨大なキノコを栽培するには多くの手が必要です……働きアリたちは階級（カースト）によって役割が異なります。</p>
+<p><img src="/images/fourmi/atta.jpg" alt="atta"></p>
+<p><em>左から minor、media、major、そして女王アリ（Atta 属）</em></p>
+<p><strong>マイナー（2〜5 mm）</strong> はキノコそのものの管理を担い、小さな体でキノコ内部の細かな隙間に入り込みます。幼虫の世話や巣内の清掃も担当します。</p>
+<p>Atta には特有の行動があり、マイナーが <strong>メディア（中型働きアリ）が運ぶ葉に乗り、寄生菌の胞子を取り除く</strong> ことがあります。まるで「生きた警備員」です。</p>
+<p><strong>メディア（5〜10 mm）</strong> は、葉の切り出し、運搬、巣の建設・修繕など、より力のいる仕事を担当します。</p>
+<p><strong>メジャー（大型働きアリ）</strong> は兵隊のような存在で、巨大な頭部と強力な大顎をもち、巣や「アリの高速道路」の警護を行います。</p>
+<p>これほど高度な社会性を持ちながら、役割分担は完全固定ではありません。マイナーが巣作りを手伝ったり、メディアがキノコを世話することもあります。<br>
+しかし、職分分化は非常に顕著で、<strong>6 段階以上のサイズ差</strong> が見られる種もあり、粉砕係・収集係・重量運搬係・掃除係・庭師・防衛係など役割が細かく分かれています。</p>
+<p><img src="/images/fourmi/polymorphisme.png" alt="polymorphism">
+<em>Atta cephalotes のメジャー</em></p>
+<p>女王アリは <strong>アリ界でも最大級（2 cm 超）</strong> の大きさを誇ります。</p>
+<p><img src="/images/fourmi/reine.png" alt="queen"></p>
+<p>この組織構造は、女王と看護アリによる幼虫への <strong>栄養調整</strong> によって決まります。与える餌によって微小マイナーにも巨大メジャーにもなりますが、<strong>卵の段階では全て同じ</strong> です。</p>
+<h2 id="キノコの歴史と伝播">キノコの歴史と伝播</h2>
+<p>栽培されるキノコは <strong><em>Leucoagaricus</em></strong> 属で、野生ではもはや見られません。<br>
+このキノコは進化の過程で <strong>ゴンギリディア（gongylidia）</strong> と呼ばれる糖・脂質を豊富に含む房状の栄養構造を発達させ、アリに食べられるために特化しています。これは野生のキノコには存在しません。</p>
+<p>人間の農作物が人間の管理なしに生き残れないのと同様に、このキノコも<strong>アリなしでは生きられません</strong>。<br>
+高湿度・高温が必要で、さらにキノコが多量の CO₂ を発生させるため、巣の換気構造が非常に重要です。</p>
+<p>この共生関係にはさらに第3のパートナー、<strong>ストレプトマイセス属の抗菌性細菌</strong> が関わっています。アリが巣内で培養し、キノコを病原体から守ります。</p>
+<p>庭師役のアリは非常に高感度な触角でキノコを常に検査し、微小な化学変化を察知します。わずかな匂いの違いで寄生菌やストレスを認識します。</p>
+<p>新女王が巣を飛び立つとき、<strong>母巣のキノコの断片を“口器下嚢（infrabuccal pocket）”に入れて持ち運びます</strong>。<br>
+これが成功すれば、新しいコロニーの食糧基盤となります。つまり、<strong>キノコの系統はアリの系統と同じように受け継がれます</strong>。</p>
+<p><img src="/images/fourmi/champignon.png" alt="fungus"></p>
+<p>この関係はまさに <strong>キノコの家畜化</strong> と言えます。<br>
+遺伝学的研究では、ハキリアリ（Atta・Acromyrmex）とそのキノコの共生は <strong>1,500 万年以上</strong> 続いていると示唆されています。</p>
+<h2 id="生態的文化的経済的な重要性">生態的・文化的・経済的な重要性</h2>
+<p>菌栽培アリは生態系で大きな役割を果たします。成熟した Atta のコロニーは <strong>熱帯林の年間葉生産量の最大 15%</strong> を切り取ることがあります。</p>
+<p>しかし森林を破壊するわけではなく、この大量の再循環によって植生の成長が促され、土壌が耕され、有機物が蓄積されます。<br>
+彼らは <strong>“エコシステム・エンジニア”</strong> と見なされています。</p>
+<p>巨大な巣は土壌の水循環にも影響を与え、無数のトンネルが浸透性を高め、侵食を防ぎます。<em>Atta</em> の巣周辺の土壌でのみよく育つ植物もあります。</p>
+<p>文化的には、アマゾン地域の一部ではハキリアリが伝統文化に組み込まれており、大型の女王アリが食用として焼かれたり、薬として利用されることもあります。</p>
+<p><img src="/images/fourmi/t%C3%AAte_reine.png" alt="food">
+<em>塩水に浸した後に焼かれた Atta laevigata の女王アリ</em></p>
+<p>経済的には、Atta は農業害虫として非常に厄介です。<br>
+オレンジ、カカオ、マンゴー、バナナなど多くの作物を襲い、農場によっては <strong>生産の 20%</strong> が失われることもあります。組織力と集団行動の強さから、対策は非常に困難です。</p>
+<h2 id="超有機的な農業者--人類より先に農業を始めた生物">超有機的な農業者 ― 人類より先に農業を始めた生物？</h2>
+<p>菌栽培アリは、知られている中で最も発達した <strong>非ヒト農業システム</strong> です。</p>
+<h4 id="生産">生産</h4>
+<p>基質を集め、加工し、品質を管理し、持続的に生産を維持します。</p>
+<h4 id="選抜">選抜</h4>
+<p>生産性の低い菌株や感染個体を排除し、最適化された系統を維持します。</p>
+<h4 id="健康と衛生">健康と衛生</h4>
+<p>ストレプトマイセスは天然の抗生物質を産生する“内なる薬局”です。</p>
+<h4 id="世代継承">世代継承</h4>
+<p>キノコの「種子系統」は <strong>母から娘へ</strong> 受け継がれます。</p>
+<h4 id="アグロインダストリー建築">“アグロインダストリー”建築</h4>
+<p>Atta の巣は、栽培室、育児室、廃棄物室、換気トンネル、仕分け室などの機能区画を持ち、まるでミニチュアの食料生産工場です。</p>
+<h4 id="行動的遺伝的適応">行動的・遺伝的適応</h4>
+<p>キノコは栄養器官を発達させ、アリは栽培に特化したカーストを発達させました。</p>
+<h2 id="結論">結論</h2>
+<p>菌栽培アリの歴史は、農業が私たちの想像よりはるかに古いことを示しています。<br>
+人類が最初の種をまく <strong>1 万年以上前</strong>、これらのアリはすでに高度な農業を行っていました。</p>
+<p>系統解析によれば、Attini の共通祖先は <strong>5,000〜6,000 万年前</strong> にキノコ栽培を始め、集約農業型の Atta・Acromyrmex 系統は <strong>1,500〜2,000 万年前</strong> に出現しました。</p>
+<p>比較として、人類の農業は <strong>1 万〜1.2 万年前</strong>。<br>
+つまりアリは、人間が小麦や米、トウモロコシを栽培するより <strong>5,000 倍</strong> 長く農業を続けてきたことになります。</p>
+<p>進化的距離は極めて大きいにも関わらず、両者の農業システムには驚くべき類似点があります。</p>
+<p>Atta のコロニーを観察すると、微小な庭師から巨大な兵隊まで、全ての個体が連携し、精密に調整された農業システムを支えているのがわかります。<br>
+生命に完全に組み込まれた農業であり、各個体の専門化が全体の仕組みを支えています。</p>
+<p>菌栽培アリがこれほど魅力的なのは、<strong>農業は人類の発明ではなく、生物が共有する原理</strong> であり、私たちはその最も新しい実践者にすぎない、ということを示しているからなのかもしれません。</p>
+
+        
+      </section>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/ja/posts/%E6%B5%B7%E6%B4%8B%E7%94%9F%E7%89%A9%E7%A8%AE%E3%81%AE%E4%BF%9D%E5%85%A8%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E8%B3%87%E6%96%99/" title="海洋生物種の保全に関する資料">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">前へ</span>
+            <span class="max-w-48 truncate">海洋生物種の保全に関する資料</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/ja/posts/%E3%82%B0%E3%82%A2%E3%83%89%E3%83%AB%E3%83%BC%E3%83%97%E3%81%AE%E8%B1%A1%E5%BE%B4%E7%9A%84%E3%81%AA%E7%A8%AE/" title="グアドループの象徴的な種">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">次へ</span>
+            <span class="max-w-48 truncate">グアドループの象徴的な種</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+
+      
+      <div class="divider"></div>
+
+      <section class="space-y-4">
+        
+
+
+
+
+<article>
+
+  <div id="vcomments"></div>
+<script src="https://unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+  new Valine({
+    el: '#vcomments',
+    appId: '',
+    appKey: '',
+    placeholder: 'Leave a comment...',
+    lang: 'en',
+    avatar: 'mp',
+    visitor: true,
+    requiredFields: ['nick','mail']
+  });
+</script>
+
+
+</article>
+
+
+
+
+
+
+      </section>
+      
+    </article>
+  </div>
+
+  <div class="hidden lg:flex lg:flex-col lg:items-end">
+    
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#属と分布">属と分布</a></li>
+    <li><a href="#組織構造と形態">組織構造と形態</a></li>
+    <li><a href="#キノコの歴史と伝播">キノコの歴史と伝播</a></li>
+    <li><a href="#生態的文化的経済的な重要性">生態的・文化的・経済的な重要性</a></li>
+    <li><a href="#超有機的な農業者--人類より先に農業を始めた生物">超有機的な農業者 ― 人類より先に農業を始めた生物？</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#結論">結論</a></li>
+  </ul>
+</nav>
+    
+  </div>
+</div>
+
+
+
+            
+<footer class="px-4 py-4">
+
+
+  <div class="w-full flex flex-col gap-4">
+    <style>
+.partners-footer {
+  text-align: center;
+  margin: 15px 0 5px 0;
+}
+
+.partners-footer h3 {
+  margin-bottom: 12px;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.partners-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.partners-logos img {
+  height: 200px;
+  object-fit: contain;
+  transition: transform .2s ease;
+}
+
+.partners-logos img:hover {
+  transform: scale(1.08);
+}
+</style>
+
+
+<div class="partners-footer">
+  <h3>Nos partenaires</h3>
+
+  <div class="partners-logos">
+    <a href="https://www.agroparistech.fr/partenariats-socioeconomiques/nous-soutenir/fondation-agroparistech" target="_blank">
+      <img src="/images/partners/fondation APT.png" alt="Partenaire 1" />
+    </a>
+
+  </div>
+</div>
+
+
+    <div class="flex justify-between items-center gap-2">
+      <div>
+  
+  <p>© 2026 BiOdyssée</p>
+  
+
+  
+  <p>Tous droits réservés</p>
+  
+</div>
+
+       
+
+    </div>
+  </div>
+
+</footer>
+
+
+<script>
+  function scrollCategories(direction) {
+    const container = document.getElementById("categoriesScroll");
+    const scrollAmount = 300; 
+    container.scrollBy({
+      left: direction * scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+</script>
+
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid dream-grid-about">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">こちらが2026年ミッションのメンバーです。</div>
+
+        <div class="prose dark:prose-invert">
+          <p>こちらは、BiOdysséeの創設メンバーであり、2026年の日本遠征に参加するメンバーの簡単な紹介です。</p>
+<p><img src="/images/nous.jpg" alt="photo équipe"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Hugo </div>
+
+        <div class="prose dark:prose-invert">
+          <p>AgroParisTechで環境マネジメントと工学を学んでいる学生で、古生物学と進化に情熱を持っています🦖🦴🧬。
+将来は自然環境の管理、特にフランスにおける湿地の保全や再生に関わる仕事を目指しています🐸🐟🌿。
+これらの湿地は過去数世紀の間に大きく減少してしまいました。
+昔から種や生態系の進化と変遷に興味があり、それがこのギャップイヤー・プロジェクトに強く惹かれる理由でもあります！</p>
+<p><strong>Contact :</strong>
+<a href="mailto:hugo.roger@agroparistech.fr" target="_blank">hugo.roger@agroparistech.fr</a>
+</p>
+<p><img src="/images/hugo.jpg" alt="photo rando"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Lucie </div>
+
+        <div class="prose dark:prose-invert">
+          <p>環境マネジメントと工学を学ぶ学生であり、海に関するあらゆることに魅了されています🌊。
+仕事と情熱を結びつけたいという思いから、海洋生物学の道を目指しています。
+特に、海洋生態系の保全や管理に関わる仕事をしたいと考えています。
+海の動物たち🐠🐋🐙はもちろん、水中の植物にも強く惹かれており、それらをもっと間近で観察したくてスキューバダイビング🤿をしています。
+このプロジェクトは、私にとって新たな水中環境を発見し🌊🪸🌿、それらに関わる課題を深く理解する絶好のチャンスです。</p>
+<p><strong>Contact :</strong>
+<a href="mailto:lucie.lowagie@agroparistech.fr" target="_blank">lucie.lowagie@agroparistech.fr</a>
+</p>
+<p><img src="/images/lucie-plongee.jpg" alt="photo plongée"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Solal</div>
+
+        <div class="prose dark:prose-invert">
+          <p>農学を学んでおり、歴史🧭⌛🏹と動物行動学（エトロジー）🐁🧠🧪に情熱を持っています。
+この機会を活かして、動物たちが自然な環境でどのように振る舞うかを観察したいと考えています。
+将来的には研究👨‍🔬や高等教育機関での教育🧑‍🏫に携わることを目指しており、このギャップイヤーは、観察力や情報整理・分析の力を高める絶好のチャンスです。
+歴史的な視点と動物の観察を結びつけ、「過去の過ちを繰り返さない」という目的のもとに活動できることこそが、このプロジェクトに惹かれる理由です。</p>
+<p><strong>Contact :</strong>
+<a href="mailto:solal.free@agroparistech.fr" target="_blank">solal.free@agroparistech.fr</a>
+</p>
+<p><img src="/images/solal.jpg" alt="photo qui fait peur"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Théophile </div>
+
+        <div class="prose dark:prose-invert">
+          <p>環境工学を学ぶ学生で、昆虫学、特にアリの研究（ミルメコロジー）🐜に強い関心があります。
+私の目標は、環境分野、特にアリの集団遺伝学的ダイナミクス🧬🐜に関する研究に携わることです。
+私は自然観察を行う団体「Blairoudeurs 🦡」のメンバーでもあり、コルシカ島で行われた「Mission Isula」にて、調査や環境教育活動に参加しました。
+このギャップイヤー・プロジェクトは、そうした経験をさらに広く、よりエキゾチックなスケールで継続できる素晴らしい機会であり、他国の生態系やその管理方法について学び続けるチャンスでもあります。</p>
+<p><strong>Contact :</strong>
+<a href="mailto:theophie.thomas@agroparistech.fr" target="_blank">theophie.thomas@agroparistech.fr</a>
+</p>
+<p><img src="/images/theophile.jpg" alt="photo stylée"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">SNS</div>
+
+        <ul class="menu menu-horizontal flex-wrap w-full px-0 [&_ion-icon]:text-lg">
+  
+
+  
+  <li>
+    <a href="https://www.facebook.com/profile.php?id=61576052068851" target="_blank" title="Facebook">
+      <ion-icon name="logo-facebook"></ion-icon>
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://www.instagram.com/bio_dyssee/" target="_blank" title="Instagram">
+      <ion-icon name="logo-instagram"></ion-icon>
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://www.linkedin.com/company/107400672/admin/dashboard/" target="_blank" title="Linkedin">
+      <ion-icon name="logo-linkedin"></ion-icon>
+    </a>
+  </li>
+  
+  <li>
+    <a href="mailto:biodyssee2026@gmail.com" target="_blank" title="Email">
+      <ion-icon name="mail-outline"></ion-icon>
+    </a>
+  </li>
+  
+</ul>
+
+      </div>
+    </article>
+  </div>
+  
+
+  
+</div>
+
+            
+
+            
+<footer class="px-4 py-4">
+
+
+  <div class="w-full flex flex-col gap-4">
+    <style>
+.partners-footer {
+  text-align: center;
+  margin: 15px 0 5px 0;
+}
+
+.partners-footer h3 {
+  margin-bottom: 12px;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.partners-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.partners-logos img {
+  height: 200px;
+  object-fit: contain;
+  transition: transform .2s ease;
+}
+
+.partners-logos img:hover {
+  transform: scale(1.08);
+}
+</style>
+
+
+<div class="partners-footer">
+  <h3>Nos partenaires</h3>
+
+  <div class="partners-logos">
+    <a href="https://www.agroparistech.fr/partenariats-socioeconomiques/nous-soutenir/fondation-agroparistech" target="_blank">
+      <img src="/images/partners/fondation APT.png" alt="Partenaire 1" />
+    </a>
+
+  </div>
+</div>
+
+
+    <div class="flex justify-between items-center gap-2">
+      <div>
+  
+  <p>© 2026 BiOdyssée</p>
+  
+
+  
+  <p>Tous droits réservés</p>
+  
+</div>
+
+       
+
+    </div>
+  </div>
+
+</footer>
+
+
+<script>
+  function scrollCategories(direction) {
+    const container = document.getElementById("categoriesScroll");
+    const scrollAmount = 300; 
+    container.scrollBy({
+      left: direction * scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+</script>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-2PHJBK75DX"></script>
+      <script>
+        var doNotTrack = false;
+        if ( true ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-2PHJBK75DX');
+        }
+      </script>
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
+

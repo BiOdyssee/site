@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Catégories on BiOdyssée</title>
+		<link>https://biodyssee.netlify.app/en/categories/</link>
+		<description>Recent content in Catégories on BiOdyssée</description>
+		<generator>Hugo</generator>
+		<language>en</language>
+		
+		
+		
+		
+			<lastBuildDate>Wed, 22 Jul 2026 14:00:00 +0100</lastBuildDate>
+		
+			<atom:link href="https://biodyssee.netlify.app/en/categories/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Everything you need to know about Expedition 2026</title>
+				<link>https://biodyssee.netlify.app/en/categories/expedition-2026/</link>
+				<pubDate>Wed, 22 Jul 2026 14:00:00 +0100</pubDate>
+				<guid>https://biodyssee.netlify.app/en/categories/expedition-2026/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Definitions and concept</title>
+				<link>https://biodyssee.netlify.app/en/categories/definition/</link>
+				<pubDate>Thu, 02 Apr 2026 14:00:00 +0100</pubDate>
+				<guid>https://biodyssee.netlify.app/en/categories/definition/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Species Profile</title>
+				<link>https://biodyssee.netlify.app/en/categories/galerie/</link>
+				<pubDate>Mon, 26 Jan 2026 14:00:00 +0100</pubDate>
+				<guid>https://biodyssee.netlify.app/en/categories/galerie/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Théophile&#39;s ant newsletter</title>
+				<link>https://biodyssee.netlify.app/en/categories/rubrique_fourmi/</link>
+				<pubDate>Mon, 22 Dec 2025 14:00:00 +0100</pubDate>
+				<guid>https://biodyssee.netlify.app/en/categories/rubrique_fourmi/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Guadeloupe</title>
+				<link>https://biodyssee.netlify.app/en/categories/guadeloupe/</link>
+				<pubDate>Sun, 09 Nov 2025 14:00:00 +0100</pubDate>
+				<guid>https://biodyssee.netlify.app/en/categories/guadeloupe/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Japan&#39;s Iconic Species</title>
+				<link>https://biodyssee.netlify.app/en/categories/especes_emblematiques/</link>
+				<pubDate>Fri, 10 Oct 2025 14:00:00 +0100</pubDate>
+				<guid>https://biodyssee.netlify.app/en/categories/especes_emblematiques/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Actors</title>
+				<link>https://biodyssee.netlify.app/en/categories/acteurs/</link>
+				<pubDate>Wed, 16 Apr 2025 14:00:00 +0100</pubDate>
+				<guid>https://biodyssee.netlify.app/en/categories/acteurs/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Coral reefs</title>
+				<link>https://biodyssee.netlify.app/en/categories/coraux/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://biodyssee.netlify.app/en/categories/coraux/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Culture and History of Japan</title>
+				<link>https://biodyssee.netlify.app/en/categories/histoire/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://biodyssee.netlify.app/en/categories/histoire/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Flora</title>
+				<link>https://biodyssee.netlify.app/en/categories/flore/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://biodyssee.netlify.app/en/categories/flore/</guid>
+				<description></description>
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en"  
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Satoumi: When Humans and the Sea Coexist in Harmony | BiOdyssée</title>
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+  
+
+    
+
+<link rel="canonical" href="https://biodyssee.netlify.app/en/posts/satoumi-when-humans-and-the-sea-coexist-in-harmony/" />
+
+
+
+<meta name="author" content="lucie" />
+<meta name="description" content="Satoumi is a unique concept in the world, promoting the sustainable management of coastal natural environments&hellip;
+" />
+
+
+<meta name="keywords" content="Everything you need to know about Expedition 2026,Definitions and concept">
+
+
+
+<meta name="generator" content="Hugo 0.163.2">
+
+
+<meta property="og:url" content="https://biodyssee.netlify.app/en/posts/satoumi-when-humans-and-the-sea-coexist-in-harmony/">
+	<meta property="og:site_name" content="BiOdyssée">
+	<meta property="og:title" content="Satoumi: When Humans and the Sea Coexist in Harmony">
+	<meta property="og:description" content="Satoumi is a unique concept in the world, promoting the sustainable management of coastal natural environments…">
+	<meta property="og:locale" content="en">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="posts">
+		<meta property="article:published_time" content="2026-04-02T14:00:00+01:00">
+		<meta property="article:modified_time" content="2026-04-02T14:00:00+01:00">
+
+
+
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="Satoumi: When Humans and the Sea Coexist in Harmony">
+	<meta name="twitter:description" content="Satoumi is a unique concept in the world, promoting the sustainable management of coastal natural environments…">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+<script src="//unpkg.com/valine@1.5.2/dist/Valine.min.js"></script>
+
+
+
+
+
+
+
+    
+    <link rel="stylesheet" href="/css/custom.css" />
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="py-4"> 
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="Flip it!">
+        <div class="h-10 rounded-full">
+          <img src="/images/logo.jpg" alt="BiOdyssée" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://biodyssee.netlify.app/" class="text-lg font-semibold cursor-pointer">
+          BiOdyssée
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm" style="color: #ffffff" >À la (re)découverte du vivant</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="About">
+    <ion-icon name="information-circle"></ion-icon>About</div>
+</li>
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/en/search" title="Search">
+    <ion-icon name="search"></ion-icon>
+    Search
+  </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/en/posts" title="Archives">
+    <ion-icon name="archive"></ion-icon>
+    Archives
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/en/categories" title="All Categories">
+    <ion-icon name="grid"></ion-icon>
+    All Categories
+  </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="menu-title px-2 pt-2">Langue</li>
+
+  <li>
+    <a href="/fr" class="inline-flex items-center p-2 text-black hover:underline">
+      Français
+    </a>
+  </li>
+
+  <li>
+    <a href="/ja" class="inline-flex items-center p-2 text-black hover:underline">
+      日本語
+    </a>
+  </li>
+
+  <li>
+    <a href="/en" class="inline-flex items-center p-2 text-black hover:underline">
+      English
+    </a>
+  </li>
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0"
+        class="text-sm font-semibold cursor-pointer hover:underline"
+        @click="flip = !flip"
+        title="About"
+      >About</div>
+      
+      
+
+      
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/en/search" title="Search">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+
+
+
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/en/posts" title="Archives">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/en/categories" title="All Categories">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+
+
+
+
+
+      
+
+      
+
+      
+
+
+ 
+<div class="dropdown dropdown-end">
+  <div tabindex="0" role="button" class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" aria-label="Select an option">
+  <ion-icon name="earth-outline"> </ion-icon> 
+  
+  </div>
+  <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-xl">
+    
+      <li>
+        <a href="/fr" class="inline-flex items-center p-2 cursor-pointer" style = "color: #000000">
+          Français
+        </a>
+      </li>
+    
+      <li>
+        <a href="/ja" class="inline-flex items-center p-2 cursor-pointer" style = "color: #000000">
+          日本語
+        </a>
+      </li>
+    
+      <li>
+        <a href="/en" class="inline-flex items-center p-2 cursor-pointer" style = "color: #000000">
+          English
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+    </section>
+  </div>
+</nav>
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+           
+
+          <div class="container">
+            
+<div class="lg:grid lg:grid-cols-4 gap-4 mt-4 px-4">
+  <div class="hidden lg:block">
+    
+  </div>
+
+  <div class="lg:col-span-2">
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+	<meta itemprop="name" content="Satoumi: When Humans and the Sea Coexist in Harmony">
+	<meta itemprop="description" content="Satoumi is a unique concept in the world, promoting the sustainable management of coastal natural environments…">
+	<meta itemprop="datePublished" content="2026-04-02T14:00:00+01:00">
+	<meta itemprop="dateModified" content="2026-04-02T14:00:00+01:00">
+	<meta itemprop="wordCount" content="998">
+	<meta itemprop="keywords" content="Everything you need to know about Expedition 2026,Definitions and concept">
+
+      <header>
+        <h1 itemprop="headline">Satoumi: When Humans and the Sea Coexist in Harmony</h1>
+        <p class="text-sm">
+          
+            Thursday, Apr 2, 2026
+          
+
+          | <span>5 minute read</span>
+
+          
+          | <span>Updated at
+            
+              Thursday, Apr 2, 2026
+            </span>
+          
+        </p>
+
+        
+        <div class="flex justify-between">
+          
+            
+
+
+<div class="flex items-center">
+  
+    <div class="avatar mr-1">
+      <div class="w-8 rounded-full">
+        <img class="my-0" src="/images/authors/avatar_lucie.jpg" alt="Lucie" />
+      </div>
+    </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+    
+      
+        <span itemprop="name">Lucie</span>
+      
+    
+  </span>
+</div>
+
+          
+
+          
+
+<div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://biodyssee.netlify.app/en/posts/satoumi-when-humans-and-the-sea-coexist-in-harmony/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="text-gray-500 group-hover:text-white" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=Satoumi:%20When%20Humans%20and%20the%20Sea%20Coexist%20in%20Harmony%20https://biodyssee.netlify.app/en/posts/satoumi-when-humans-and-the-sea-coexist-in-harmony/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="text-gray-500 group-hover:text-white" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div> 
+
+        </div>
+      </header>
+
+      <section id="dream-single-post-content" itemprop="articleBody">
+       
+    <img class="w-full z-30" src="/images/satoumi.jpg" alt="Satoumi: When Humans and the Sea Coexist in Harmony" />
+
+
+  <p>Satoumi is a unique concept in the world, promoting the sustainable management of coastal natural environments&hellip;</p>
+<h3 id="introduction">Introduction</h3>
+<p>In coastal areas around the world, human activities such as industrial fishing, urbanization, and pollution are damaging some of the richest and most fragile ecosystems on the planet. Seas and coastlines often become zones of conflict between economic development and environmental preservation. Faced with this tension, a fundamental question arises: <strong>can we live with the sea without destroying it?</strong> Japan, an archipelago deeply connected to the ocean through its history, culture, and economy, offers an original answer through a concept rooted in its traditions: <strong>Satoumi</strong>.</p>
+<p>Far from being just a word, Satoumi embodies a <strong>philosophy of coexistence</strong> between human societies and coastal marine environments. It refers to coastal areas where human intervention does not reduce biodiversity but instead <strong>enhances it</strong>, provided that such intervention is guided by collective management and a long-term vision.</p>
+<p>Born from empirical observations and practices passed down through generations in Japanese fishing villages, Satoumi was redefined and promoted by scientific research at the end of the 20th century. Today, it represents a <strong>model of sustainable management</strong> that increasingly attracts researchers, marine protected area managers, and coastal communities worldwide.</p>
+<p>This model challenges the widespread idea that humans must distance themselves from nature to protect it. On the contrary, Satoumi proposes a path of <strong>active involvement, locally rooted in production systems</strong>, where conservation is achieved through human participation rather than withdrawal.</p>
+<p>In this article, we will explore what the concept of Satoumi encompasses, how it works, its historical and cultural roots, and why it is now a source of inspiration for rethinking our relationship with seas and coastlines.</p>
+<h3 id="what-is-satoumi">What is Satoumi?</h3>
+<p>The term Satoumi (里海) comes from two Japanese words: sato (里), meaning &ldquo;village&rdquo; or &ldquo;inhabited place,&rdquo; and umi (海), meaning &ldquo;sea.&rdquo; Literally, &ldquo;Satoumi&rdquo; refers to a coastal sea shaped by human presence—but in a positive way. Contrary to the common belief that human activity degrades the environment, Satoumi is based on the principle that human intervention, when respectful and well-managed, can enrich biodiversity and ecological functions compared to conventional exploitation systems.</p>
+<h3 id="origins-of-the-concept">Origins of the concept</h3>
+<p>The term was formalized in 1998 by Professor Yanagi, but the associated practices are much older. They stem from traditional fishing and coastal management practices observed for centuries in Japanese villages. Coastal communities lived in close relationship with their environment, engaging in activities such as:</p>
+<ul>
+<li>Seaweed and shellfish farming,</li>
+<li>Collective management of fisheries,</li>
+<li>Maintenance of upstream forests (called satoyama), which influence coastal water quality.</li>
+</ul>
+<p>Satoumi is therefore both a cultural heritage and a modern reinvention of ecological management.</p>
+<h3 id="structure-and-functioning">Structure and functioning</h3>
+<p>A Satoumi is not a &ldquo;wild&rdquo; natural area but an anthropogenic ecosystem, meaning it is influenced by human activity. It is characterized by:</p>
+<ul>
+<li>A close interaction between sea and land: forests, rivers, wetlands, and bays form an inseparable whole.</li>
+<li>Community-based management of natural resources: fishers, farmers, residents, scientists, and authorities cooperate to maintain ecological balance.</li>
+<li>Increased biological and functional diversity: studies have shown that some Satoumi areas have higher biodiversity than strictly protected environments, thanks to habitat maintenance and invasive species control.</li>
+</ul>
+<p><img src="/images/satoumi_schema.png" alt="Satoumi diagram"></p>
+<center><i>Organization and functioning of a Satoumi (by the Japanese Ministry of the Environment)</i></center>
+<p><strong>A typical example of Satoumi</strong></p>
+<p>Obama Bay, in Fukui Prefecture, is often cited as a model. There, the restoration of upstream forests has improved seawater quality, encouraging the return of marine species that had previously disappeared. Fishing cooperatives apply traditional rules for sustainable resource use.</p>
+<h3 id="evolution-and-international-recognition">Evolution and international recognition</h3>
+<p>Since the 2000s, Satoumi has gained increasing international attention, particularly through the Japan Satoumi Policy initiative launched in 2006 and its recognition by the Convention on Biological Diversity (CBD).</p>
+<p>Satoumi has been integrated into the Satoyama Initiative, supported by the United Nations, which aims to promote sustainable landscapes worldwide. It now serves as a model for other coastal regions, particularly in Southeast Asia and West Africa.</p>
+<p>Long considered a simple rural heritage, Satoumi is now being re-evaluated as a living ecological and cultural asset. It embodies a philosophy of coexistence between humans and nature, quite different from Western approaches of &ldquo;preservation at a distance.&rdquo;</p>
+<h3 id="current-challenges-and-future">Current challenges and future</h3>
+<p>Satoumi is not fixed in the past. Today, it faces several challenges:</p>
+<ul>
+<li>Aging rural populations and the loss of traditional knowledge,</li>
+<li>Marine pollution from plastics and chemicals,</li>
+<li>Climate change, which alters ecological balances and current patterns.</li>
+</ul>
+<p>In response to these threats, Satoumi is evolving: researchers and citizens are developing digital ecological monitoring tools, educational programs, ecological restoration projects, and partnerships with other integrated management models.</p>
+<h3 id="conclusion">Conclusion</h3>
+<p>At a time when environmental crises are multiplying, Satoumi offers a <strong>valuable lesson in balance between humans and nature</strong>. Far from the logic of separating &ldquo;natural&rdquo; and &ldquo;humanized&rdquo; spaces, it invites us to <strong>rethink our way of inhabiting the world</strong>: not as intruders in ecosystems, but as <strong>responsible actors capable of caring for them</strong>.</p>
+<p>Satoumi is not limited to a coastal management model; it represents a <strong>philosophy of connection</strong>, rooted in the daily lives of communities living by the sea. It emphasizes the transmission of local knowledge, cooperation between residents, scientists, and authorities, and the awareness that <strong>the health of the sea often begins on land</strong>—in forests, rivers, and villages.</p>
+<p>This concept also reminds us that biodiversity is not only the result of &ldquo;wild&rdquo; nature, but also of <strong>sustainable interactions between humans and their environment</strong>. In this sense, Satoumi transcends Japan’s borders and resonates with other traditional approaches worldwide, such as Indigenous &ldquo;territories of life,&rdquo; agro-silvo-pastoral systems, and historical forms of local resource governance.</p>
+<p>Today, as technical solutions to the ecological crisis struggle to take root locally, Satoumi shows that it is possible to act differently: <strong>through observation, collective participation, and mutual respect</strong>. This model is not frozen in the past; it continues to evolve with innovations, climate challenges, and new generations engaging with it.</p>
+<p>Inspired by Satoumi, we could imagine new futures for our coastlines—<strong>living, shared, and resilient spaces</strong>, where we learn to inhabit the world in solidarity with other forms of life.</p>
+
+        
+      </section>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/en/posts/%EF%B8%8F-the-stakeholders-involved-in-biodiversity-conservation-in-japan/" title="🗺️ The stakeholders involved in biodiversity conservation in Japan!">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">Previous page</span>
+            <span class="max-w-48 truncate">🗺️ The stakeholders involved in biodiversity conservation in Japan!</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/en/posts/marine-emblematic-species-profile/" title="Marine Emblematic species profile">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">Next page</span>
+            <span class="max-w-48 truncate">Marine Emblematic species profile</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+
+      
+      <div class="divider"></div>
+
+      <section class="space-y-4">
+        
+
+
+
+
+<article>
+
+  <div id="vcomments"></div>
+<script src="https://unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+  new Valine({
+    el: '#vcomments',
+    appId: '',
+    appKey: '',
+    placeholder: 'Leave a comment...',
+    lang: 'en',
+    avatar: 'mp',
+    visitor: true,
+    requiredFields: ['nick','mail']
+  });
+</script>
+
+
+</article>
+
+
+
+
+
+
+      </section>
+      
+    </article>
+  </div>
+
+  <div class="hidden lg:flex lg:flex-col lg:items-end">
+    
+      <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#what-is-satoumi">What is Satoumi?</a></li>
+        <li><a href="#origins-of-the-concept">Origins of the concept</a></li>
+        <li><a href="#structure-and-functioning">Structure and functioning</a></li>
+        <li><a href="#evolution-and-international-recognition">Evolution and international recognition</a></li>
+        <li><a href="#current-challenges-and-future">Current challenges and future</a></li>
+        <li><a href="#conclusion">Conclusion</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    
+  </div>
+</div>
+
+
+
+            
+<footer class="px-4 py-4">
+
+
+  <div class="w-full flex flex-col gap-4">
+    <style>
+.partners-footer {
+  text-align: center;
+  margin: 15px 0 5px 0;
+}
+
+.partners-footer h3 {
+  margin-bottom: 12px;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.partners-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.partners-logos img {
+  height: 200px;
+  object-fit: contain;
+  transition: transform .2s ease;
+}
+
+.partners-logos img:hover {
+  transform: scale(1.08);
+}
+</style>
+
+
+<div class="partners-footer">
+  <h3>Nos partenaires</h3>
+
+  <div class="partners-logos">
+    <a href="https://www.agroparistech.fr/partenariats-socioeconomiques/nous-soutenir/fondation-agroparistech" target="_blank">
+      <img src="/images/partners/fondation APT.png" alt="Partenaire 1" />
+    </a>
+
+  </div>
+</div>
+
+
+    <div class="flex justify-between items-center gap-2">
+      <div>
+  
+  <p>© 2026 BiOdyssée</p>
+  
+
+  
+  <p>Tous droits réservés</p>
+  
+</div>
+
+       
+
+    </div>
+  </div>
+
+</footer>
+
+
+<script>
+  function scrollCategories(direction) {
+    const container = document.getElementById("categoriesScroll");
+    const scrollAmount = 300; 
+    container.scrollBy({
+      left: direction * scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+</script>
+
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid dream-grid-about">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Meet the Mission 2026 team</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Here&rsquo;s a brief introduction to the founding team of BiOdyssée, who will be taking part in the 2026 expedition to Japan.</p>
+<p><img src="/images/nous.jpg" alt="photo équipe"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Hugo </div>
+
+        <div class="prose dark:prose-invert">
+          <p>As a student in Environmental Management and Engineering at AgroParisTech, I’m passionate about paleontology and evolution 🦖🦴🧬. I aspire to work in the field of natural area management, specifically in the conservation or restoration of wetlands in France 🐸🐟🌿, which have lost a significant portion of their surface area over the past centuries. I’ve always been fascinated by the evolution of species and ecosystems over time, which is why this gap year project is such a strong source of motivation for me!</p>
+<p><strong>Contact :</strong>
+<a href="mailto:hugo.roger@agroparistech.fr" target="_blank">hugo.roger@agroparistech.fr</a>
+</p>
+<p><img src="/images/hugo.jpg" alt="photo rando"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Lucie </div>
+
+        <div class="prose dark:prose-invert">
+          <p>Student in Environmental Management and Engineering, I’m fascinated by just about everything related to the ocean 🌊. Wanting to combine work and passion, I’m pursuing a path in marine biology. More specifically, I’d like to work in marine ecosystem conservation or management. I’m deeply passionate about marine wildlife 🐠🐋🐙 as well as aquatic flora, and it’s to get a closer look at it all that I practice scuba diving 🤿. This project is an opportunity for me to explore new aquatic environments 🌊🪸🌿 and better understand the challenges they face.</p>
+<p><strong>Contact :</strong>
+<a href="mailto:lucie.lowagie@agroparistech.fr" target="_blank">lucie.lowagie@agroparistech.fr</a>
+</p>
+<p><img src="/images/lucie-plongee.jpg" alt="photo plongée"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Solal</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Student in agronomy and passionate about history 🧭⌛🏹 and ethology 🐁🧠🧪, I hope to use this opportunity to observe animal behavior in their natural environment. Later on, I would like to pursue a career in research 👨‍🔬 or teach in higher education 🧑‍🏫, and this gap year would allow me to develop my analytical and observational skills. The possibility of combining historical research with animal observation — all with the goal of avoiding the mistakes of the past — is what makes this project so meaningful to me.</p>
+<p><strong>Contact :</strong>
+<a href="mailto:solal.free@agroparistech.fr" target="_blank">solal.free@agroparistech.fr</a>
+</p>
+<p><img src="/images/solal.jpg" alt="photo qui fait peur"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Théophile </div>
+
+        <div class="prose dark:prose-invert">
+          <p>As an environmental engineering student with a passion for entomology and myrmecology in particular 🐜, my aim is to do environmental research, particularly into the genetic dynamics of 🧬🐜 populations (of ants of course). I&rsquo;m part of the naturalist association ‘les “Blairoudeurs 🦡”’ with which I went out to do some prospecting and awareness-raising in Corsica during the Isula Mission. This gap year project is a great opportunity to continue this experience, but on a much larger and more exotic scale, while continuing to learn about different ecosystems and how they are managed in another country.</p>
+<p><strong>Contact :</strong>
+<a href="mailto:theophie.thomas@agroparistech.fr" target="_blank">theophie.thomas@agroparistech.fr</a>
+</p>
+<p><img src="/images/theophile.jpg" alt="photo stylée"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Social Links</div>
+
+        <ul class="menu menu-horizontal flex-wrap w-full px-0 [&_ion-icon]:text-lg">
+  
+
+  
+  <li>
+    <a href="https://www.facebook.com/profile.php?id=61576052068851" target="_blank" title="Facebook">
+      <ion-icon name="logo-facebook"></ion-icon>
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://www.instagram.com/bio_dyssee/" target="_blank" title="Instagram">
+      <ion-icon name="logo-instagram"></ion-icon>
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://www.linkedin.com/company/107400672/admin/dashboard/" target="_blank" title="Linkedin">
+      <ion-icon name="logo-linkedin"></ion-icon>
+    </a>
+  </li>
+  
+  <li>
+    <a href="mailto:biodyssee2026@gmail.com" target="_blank" title="Email">
+      <ion-icon name="mail-outline"></ion-icon>
+    </a>
+  </li>
+  
+</ul>
+
+      </div>
+    </article>
+  </div>
+  
+
+  
+</div>
+
+            
+
+            
+<footer class="px-4 py-4">
+
+
+  <div class="w-full flex flex-col gap-4">
+    <style>
+.partners-footer {
+  text-align: center;
+  margin: 15px 0 5px 0;
+}
+
+.partners-footer h3 {
+  margin-bottom: 12px;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.partners-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.partners-logos img {
+  height: 200px;
+  object-fit: contain;
+  transition: transform .2s ease;
+}
+
+.partners-logos img:hover {
+  transform: scale(1.08);
+}
+</style>
+
+
+<div class="partners-footer">
+  <h3>Nos partenaires</h3>
+
+  <div class="partners-logos">
+    <a href="https://www.agroparistech.fr/partenariats-socioeconomiques/nous-soutenir/fondation-agroparistech" target="_blank">
+      <img src="/images/partners/fondation APT.png" alt="Partenaire 1" />
+    </a>
+
+  </div>
+</div>
+
+
+    <div class="flex justify-between items-center gap-2">
+      <div>
+  
+  <p>© 2026 BiOdyssée</p>
+  
+
+  
+  <p>Tous droits réservés</p>
+  
+</div>
+
+       
+
+    </div>
+  </div>
+
+</footer>
+
+
+<script>
+  function scrollCategories(direction) {
+    const container = document.getElementById("categoriesScroll");
+    const scrollAmount = 300; 
+    container.scrollBy({
+      left: direction * scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+</script>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-2PHJBK75DX"></script>
+      <script>
+        var doNotTrack = false;
+        if ( true ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-2PHJBK75DX');
+        }
+      </script>
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
+

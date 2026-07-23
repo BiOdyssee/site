@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Japan&#39;s Iconic Species on BiOdyssée</title>
+		<link>https://biodyssee.netlify.app/en/categories/especes_emblematiques/</link>
+		<description>Recent content in Japan&#39;s Iconic Species on BiOdyssée</description>
+		<generator>Hugo</generator>
+		<language>en</language>
+		
+		
+		
+		
+			<lastBuildDate>Fri, 10 Oct 2025 14:00:00 +0100</lastBuildDate>
+		
+			<atom:link href="https://biodyssee.netlify.app/en/categories/especes_emblematiques/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>The Japanese macaque</title>
+				<link>https://biodyssee.netlify.app/en/posts/the-japanese-macaque/</link>
+				<pubDate>Fri, 10 Oct 2025 14:00:00 +0100</pubDate>
+				<guid>https://biodyssee.netlify.app/en/posts/the-japanese-macaque/</guid>
+				<description>&lt;p&gt;The &lt;strong&gt;Japanese macaque&lt;/strong&gt; (&lt;em&gt;Macaca fuscata&lt;/em&gt;) is a primate endemic to the Japanese archipelago.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>The Sika deer</title>
+				<link>https://biodyssee.netlify.app/en/posts/the-sika-deer/</link>
+				<pubDate>Thu, 14 Aug 2025 14:00:00 +0100</pubDate>
+				<guid>https://biodyssee.netlify.app/en/posts/the-sika-deer/</guid>
+				<description>&lt;p&gt;The &lt;strong&gt;Sika deer&lt;/strong&gt; (&lt;em&gt;Cervus nippon&lt;/em&gt;) is a deer species that inhabits the temperate forests of East Asia and is widespread throughout the Japanese archipelago.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>The Red-crowned Crane</title>
+				<link>https://biodyssee.netlify.app/en/posts/the-red-crowned-crane/</link>
+				<pubDate>Thu, 26 Jun 2025 14:00:00 +0100</pubDate>
+				<guid>https://biodyssee.netlify.app/en/posts/the-red-crowned-crane/</guid>
+				<description>&lt;p&gt;The &lt;strong&gt;Red-crowned Crane&lt;/strong&gt; (&lt;em&gt;Grus japonensis&lt;/em&gt;) is a wading bird from the Gruidae family, and one of its largest representatives.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Galeries on BiOdyssée</title>
+		<link>https://biodyssee.netlify.app/en/galerie/</link>
+		<description>Recent content in Galeries on BiOdyssée</description>
+		<generator>Hugo</generator>
+		<language>en</language>
+		
+		
+		
+		
+			<lastBuildDate>Sat, 22 Nov 2025 14:00:00 +0100</lastBuildDate>
+		
+			<atom:link href="https://biodyssee.netlify.app/en/galerie/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Oiclus nanus</title>
+				<link>https://biodyssee.netlify.app/en/galerie/guadeloupe/oiclus_nanus/oiclus_nanus/</link>
+				<pubDate>Sat, 22 Nov 2025 14:00:00 +0100</pubDate>
+				<guid>https://biodyssee.netlify.app/en/galerie/guadeloupe/oiclus_nanus/oiclus_nanus/</guid>
+				<description>&lt;h2 id=&#34;oiclus-nanus&#34;&gt;Oiclus nanus&lt;/h2&gt;&#xA;&lt;p&gt;&lt;em&gt;Oiclus nanus&lt;/em&gt; is a small, discreet scorpion living in the humid tropical forests of &lt;strong&gt;Grande Terre in Guadeloupe&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;It is recognizable by its small size, stocky body, and dark brown to ochre coloration. It mainly inhabits leaf litter, under rocks, and inside decaying logs, where it helps regulate small arthropod populations through &lt;strong&gt;active hunting&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;This scorpion displays a particular trait common to its entire group: it &lt;strong&gt;fluoresces under UV light&lt;/strong&gt;, turning a bright turquoise blue. This fluorescence, visible only under ultraviolet radiation, is believed to result from chemical components in its cuticle and continues to intrigue researchers. It may help the scorpion detect light, camouflage itself, or communicate, but its exact functions are still under study.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Discovering Japan</title>
+				<link>https://biodyssee.netlify.app/en/galerie/galerie_japon/</link>
+				<pubDate>Sun, 09 Nov 2025 14:00:00 +0100</pubDate>
+				<guid>https://biodyssee.netlify.app/en/galerie/galerie_japon/</guid>
+				<description>&lt;p&gt;Check out some of the photos we took during the 2026 expedition.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Journey to the heart of Guadeloupe</title>
+				<link>https://biodyssee.netlify.app/en/galerie/galerie_guadeloupe/</link>
+				<pubDate>Sun, 09 Nov 2025 14:00:00 +0100</pubDate>
+				<guid>https://biodyssee.netlify.app/en/galerie/galerie_guadeloupe/</guid>
+				<description>&lt;p&gt;This is a page to discover the impressive images taken by Hugo during his trip to Guadeloupe.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

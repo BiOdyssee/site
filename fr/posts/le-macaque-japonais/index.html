@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="fr"  
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Le Macaque Japonais | BiOdyssée</title>
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+  
+
+    
+
+<link rel="canonical" href="https://biodyssee.netlify.app/fr/posts/le-macaque-japonais/" />
+
+
+
+<meta name="author" content="hugo" />
+<meta name="description" content="Le Macaque japonais (Macaca fuscata) est un primate endémique de l&rsquo;archipel japonais.
+" />
+
+
+<meta name="keywords" content="Les espèces emblématiques du Japon">
+
+
+
+<meta name="generator" content="Hugo 0.163.2">
+
+
+<meta property="og:url" content="https://biodyssee.netlify.app/fr/posts/le-macaque-japonais/">
+	<meta property="og:site_name" content="BiOdyssée">
+	<meta property="og:title" content="Le Macaque Japonais">
+	<meta property="og:description" content="Le Macaque japonais (Macaca fuscata) est un primate endémique de l’archipel japonais.">
+	<meta property="og:locale" content="fr">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="posts">
+		<meta property="article:published_time" content="2025-10-10T14:00:00+01:00">
+		<meta property="article:modified_time" content="2025-10-10T14:00:00+01:00">
+
+
+
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="Le Macaque Japonais">
+	<meta name="twitter:description" content="Le Macaque japonais (Macaca fuscata) est un primate endémique de l’archipel japonais.">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+<script src="//unpkg.com/valine@1.5.2/dist/Valine.min.js"></script>
+
+
+
+
+
+
+
+    
+    <link rel="stylesheet" href="/css/custom.css" />
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="py-4"> 
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="Retourne ça !">
+        <div class="h-10 rounded-full">
+          <img src="/images/logo.jpg" alt="BiOdyssée" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://biodyssee.netlify.app/" class="text-lg font-semibold cursor-pointer">
+          BiOdyssée
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm" style="color: #ffffff" >À la (re)découverte du vivant</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="Contact">
+    <ion-icon name="information-circle"></ion-icon>Contact</div>
+</li>
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="Rechercher">
+    <ion-icon name="search"></ion-icon>
+    Rechercher
+  </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="Archives">
+    <ion-icon name="archive"></ion-icon>
+    Archives
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="Toutes les catégories">
+    <ion-icon name="grid"></ion-icon>
+    Toutes les catégories
+  </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="menu-title px-2 pt-2">Langue</li>
+
+  <li>
+    <a href="/fr" class="inline-flex items-center p-2 text-black hover:underline">
+      Français
+    </a>
+  </li>
+
+  <li>
+    <a href="/ja" class="inline-flex items-center p-2 text-black hover:underline">
+      日本語
+    </a>
+  </li>
+
+  <li>
+    <a href="/en" class="inline-flex items-center p-2 text-black hover:underline">
+      English
+    </a>
+  </li>
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0"
+        class="text-sm font-semibold cursor-pointer hover:underline"
+        @click="flip = !flip"
+        title="Contact"
+      >Contact</div>
+      
+      
+
+      
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="Rechercher">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+
+
+
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="Archives">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="Toutes les catégories">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+
+
+
+
+
+      
+
+      
+
+      
+
+
+ 
+<div class="dropdown dropdown-end">
+  <div tabindex="0" role="button" class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" aria-label="Select an option">
+  <ion-icon name="earth-outline"> </ion-icon> 
+  
+  </div>
+  <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-xl">
+    
+      <li>
+        <a href="/fr" class="inline-flex items-center p-2 cursor-pointer" style = "color: #000000">
+          Français
+        </a>
+      </li>
+    
+      <li>
+        <a href="/ja" class="inline-flex items-center p-2 cursor-pointer" style = "color: #000000">
+          日本語
+        </a>
+      </li>
+    
+      <li>
+        <a href="/en" class="inline-flex items-center p-2 cursor-pointer" style = "color: #000000">
+          English
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+    </section>
+  </div>
+</nav>
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+           
+
+          <div class="container">
+            
+<div class="lg:grid lg:grid-cols-4 gap-4 mt-4 px-4">
+  <div class="hidden lg:block">
+    
+  </div>
+
+  <div class="lg:col-span-2">
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+	<meta itemprop="name" content="Le Macaque Japonais">
+	<meta itemprop="description" content="Le Macaque japonais (Macaca fuscata) est un primate endémique de l’archipel japonais.">
+	<meta itemprop="datePublished" content="2025-10-10T14:00:00+01:00">
+	<meta itemprop="dateModified" content="2025-10-10T14:00:00+01:00">
+	<meta itemprop="wordCount" content="1125">
+	<meta itemprop="keywords" content="Les espèces emblématiques du Japon">
+
+      <header>
+        <h1 itemprop="headline">Le Macaque Japonais</h1>
+        <p class="text-sm">
+          
+            vendredi, oct. 10, 2025
+          
+
+          | <span>6 minutes de lecture</span>
+
+          
+          | <span>Mise à jour le
+            
+              vendredi, oct. 10, 2025
+            </span>
+          
+        </p>
+
+        
+        <div class="flex justify-between">
+          
+            
+
+
+<div class="flex items-center">
+  
+    <div class="avatar mr-1">
+      <div class="w-8 rounded-full">
+        <img class="my-0" src="/images/authors/avatar_hugo.jpg" alt="Hugo" />
+      </div>
+    </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+    
+      
+        <span itemprop="name">Hugo</span>
+      
+    
+  </span>
+</div>
+
+          
+
+          
+
+<div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://biodyssee.netlify.app/fr/posts/le-macaque-japonais/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="text-gray-500 group-hover:text-white" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=Le%20Macaque%20Japonais%20https://biodyssee.netlify.app/fr/posts/le-macaque-japonais/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="text-gray-500 group-hover:text-white" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div> 
+
+        </div>
+      </header>
+
+      <section id="dream-single-post-content" itemprop="articleBody">
+       
+    <img class="w-full z-30" src="/images/especes_emblematiques/macaque_1.jpg" alt="Le Macaque Japonais" />
+
+
+  <p>Le <strong>Macaque japonais</strong> (<em>Macaca fuscata</em>) est un primate endémique de l&rsquo;archipel japonais.</p>
+<p>Il est largement réparti sur le territoire, étant présent du Nord d’Honshū jusqu’à Kyūshū. Il existe une unique sous-espèce, <em>Macaca fuscata yakui</em>, retrouvable à Yakushima, à l&rsquo;extrême Sud de son aire de répartition. Il s’agit du primate à l&rsquo;habitat naturel le plus septentrional et le plus froid, ce qui lui vaut le surnom de « Singe des neiges ».</p>
+<!-- CARTE INTERACTIVE -->
+<!-- Image principale avec zones cliquables -->
+<div style="position: relative; width: 100%; display: block;">
+  <img src="/images/especes_emblematiques/repartition_macaque.png"
+       alt="Image principale"
+       style="width: 100%; height: auto; display: block;">
+  <!-- Zone 1 -->
+  <div id="zone1" onclick="togglePopup('popup1')" 
+       class="clickable-zone" 
+       style="top: 91.7%; left: 19.8%;">
+  </div>
+  <div id="popup1" class="popup-box" style="top: 90%; left: 20%;">
+    <span class="closeBtn" onclick="togglePopup('popup1')">✖</span>
+    <img src="/images/especes_emblematiques/carte_1.png" alt="Zoom 1" style="max-width:100%; border-radius:2px;">
+    <p style="text-align: center;">Yakushima, unique lieu de résidence de la sous-espèce <i> Macaca fuscata yakui</i>.</p>
+  </div>  
+<!-- Zone 2 -->
+  <div id="zone2" onclick="togglePopup('popup2')"
+       class="clickable-zone" 
+       style="top: 18.6%; left: 70.8%;">
+  </div>
+  <div id="popup2" class="popup-box" style="top: 20%; left: 70%;">
+    <span class="closeBtn" onclick="togglePopup('popup2')">✖</span>
+    <img src="/images/especes_emblematiques/carte_2.png" alt="Zoom 2" style="max-width:100%; border-radius:2px;">
+    <p style="text-align: center;">Péninsule de Shimokita, où la population de singes a été désignée “Monument naturel” pour constituer le groupe de primates à l’habitat le plus nordique au monde.</p>
+  </div>
+<!-- Zone 3 -->
+  <div id="zone3" onclick="togglePopup('popup3')"
+       class="clickable-zone" 
+       style="top: 72.2%; left: 24%;">
+  </div>
+  <div id="popup3" class="popup-box" style="top: 70%; left: 30%;">
+    <span class="closeBtn" onclick="togglePopup('popup3')">✖</span>
+    <p style="text-align: center;">Takasakiyama, où la population de singes a été désignée “Monument naturel”</p>
+  </div>
+<!-- Zone 4 -->
+  <div id="zone4" onclick="togglePopup('popup4')"
+       class="clickable-zone" 
+       style="top: 58.8%; left: 66.8%;">
+  </div>
+  <div id="popup4" class="popup-box" style="top: 60%; left: 70%;">
+    <span class="closeBtn" onclick="togglePopup('popup4')">✖</span>
+    <p style="text-align: center;">Takato, où la population de singes a été désignée “Monument naturel”</p>
+  </div>
+<!-- Zone 5 -->
+  <div id="zone5" onclick="togglePopup('popup5')"
+       class="clickable-zone" 
+       style="top: 61.5%; left: 43.8%;">
+  </div>
+  <div id="popup5" class="popup-box" style="top: 60%; left: 40%;">
+    <span class="closeBtn" onclick="togglePopup('popup5')">✖</span>
+    <p style="text-align: center;">Mont Minoh, où la population de singes a été désignée “Monument naturel”</p>
+  </div>
+<!-- Zone 6 -->
+  <div id="zone6" onclick="togglePopup('popup6')"
+       class="clickable-zone" 
+       style="top: 61.5%; left: 33.8%;">
+  </div>
+  <div id="popup6" class="popup-box" style="top: 60%; left: 30%;">
+    <span class="closeBtn" onclick="togglePopup('popup6')">✖</span>
+    <p style="text-align: center;">Mont Gagyu, où la population de singes a été désignée “Monument naturel”</p>
+  </div>
+<!-- Zone 7 -->
+  <div id="zone7" onclick="togglePopup('popup7')"
+       class="clickable-zone" 
+       style="top: 84%; left: 23.8%;">
+  </div>
+  <div id="popup7" class="popup-box" style="top: 80%; left: 20%;">
+    <span class="closeBtn" onclick="togglePopup('popup7')">✖</span>
+    <p style="text-align: center;">Koshima, où la population de singes a été désignée “Monument naturel”</p>
+  </div>
+<!-- Zone 8 -->
+  <div id="zone8" onclick="togglePopup('popup8')"
+       class="clickable-zone" 
+       style="top: 49%; left: 57.8%;">
+  </div>
+  <div id="popup8" class="popup-box" style="top: 50%; left: 60%;">
+    <span class="closeBtn" onclick="togglePopup('popup8')">✖</span>
+    <img src="/images/especes_emblematiques/carte_8.png" alt="Zoom 2" style="max-width:100%; border-radius:2px;">
+    <p style="text-align: center;">Parc aux singes de Jigokudani, aux sources chaudes visitées par les singes</p>
+  </div>
+<!-- Zone 9 -->
+  <div id="zone9" onclick="togglePopup('popup9')"
+       class="clickable-zone" 
+       style="top: 29.6%; left: 72.4%;">
+  </div>
+  <div id="popup9" class="popup-box" style="top: 30%; left: 70%;">
+    <span class="closeBtn" onclick="togglePopup('popup9')">✖</span>
+    <img src="/images/especes_emblematiques/carte_9.png" alt="Zoom 2" style="max-width:100%; border-radius:2px;">
+    <p style="text-align: center;">Préfecture d’Iwate, où la chasse intensive a réduit les populations à une poignée de groupes isolés aux sommets des massifs montagneux.</p>
+  </div>
+<!-- Zone 10 -->
+  <div id="zone10" onclick="togglePopup('popup10')"
+       class="clickable-zone" 
+       style="top: 90%; left: 22%;">
+  </div>
+  <div id="popup10" class="popup-box" style="top: 80%; left: 20%;">
+    <span class="closeBtn" onclick="togglePopup('popup10')">✖</span>
+    <p style="text-align: center;">Tanegashima, où l’espèce est régionalement éteinte.</p>
+  </div>
+<!-- Zone 11 -->
+  <div id="zone11" onclick="togglePopup('popup11')"
+       class="clickable-zone" 
+       style="top: 52%; left: 68%;">
+  </div>
+  <div id="popup11" class="popup-box" style="top: 80%; left: 20%;">
+    <span class="closeBtn" onclick="togglePopup('popup11')">✖</span>
+    <p style="text-align: center;">Préfecture d’Ibaraki, où l’espèce est régionalement éteinte.</p>
+  </div>
+</div>
+<!-- Styles -->
+<style>
+  /* Style des zones cliquables */
+  .clickable-zone {
+    position: absolute;
+    width: 10px; height: 10px;
+    border: 1px solid #000000; /* Couleur du contour */
+    border-radius: 50%;        /* Cercle */
+    background: rgba(38, 211, 255, 1); /* Couleur du cercle */
+    cursor: pointer;
+    transform: translate(-50%, -50%); /* Centrer sur les coordonnées */
+    transition: transform 0.2s ease, background 0.2s ease;
+    z-index: 2;
+  }
+  .clickable-zone:hover {
+    background: rgba(38, 153, 255, 0.91);
+    transform: translate(-50%, -50%) scale(1.1); /* petit zoom au survol */
+  }
+
+  /* Bulles locales */
+  .popup-box {
+    display: none;
+    position: absolute;
+    width: 400px;
+    background: white;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    z-index: 5;
+  }
+
+  .closeBtn {
+    position: absolute;
+    top: 5px; right: 10px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+ /* Effet de surbrillance quand on clique depuis le texte */
+  .highlight {
+    box-shadow: 0 0 15px 5px rgba(129,185,110,0.6);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  /* Numéro à côté du cercle */
+  .zone-num {
+    position: absolute;
+    top: 100%;
+    left: 130%;              /* éloigne le numéro du cercle */
+    transform: translateY(-50%);
+    font-family: Arial, sans-serif;  /* police Arial */
+    font-weight: bold;
+    font-size: 13px;         /* plus petit */
+    color: black;            /* couleur noire */
+    pointer-events: none;    /* clics ignorés */
+  }
+
+  /* Style pour les numéros cliquables dans le texte */
+  .carte-link {
+    color: #11BEEE;
+    font-weight: normal;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .carte-link:hover {
+    text-decoration: underline;
+  }
+</style>
+<!-- Script -->
+<script>
+  function togglePopup(id) {
+    const popup = document.getElementById(id);
+    popup.style.display = (popup.style.display === "block") ? "none" : "block";
+  }
+</script>
+<!-- FIN CARTE INTERACTIVE -->
+<p>Le Macaque japonais est un primate de taille moyenne, avec une hauteur de 50 à 60 cm pour un poids de moyen de 10 kg. Sa fourrure est particulièrement épaisse, ce qui lui permet de supporter des températures inférieures à −20 °C. Seuls les mains, le visage et le postérieur sont dépourvus de poils et laissent apparaître une peau rougeâtre. Leur morphologie est toutefois variable selon les populations. Les individus vivant dans les parties les plus montagneuses et les plus froides sont généralement plus grands, plus lourds, et présentent une fourrure plus fournie que ceux vivant dans les régions les plus chaudes.</p>
+<p>On retrouve les Macaques japonais dans les milieux forestiers. Ils occupent aussi bien les forêts subarctiques au feuillage caduque de la partie Nord du Japon, que les forêts subtropicales au feuillage persistant du Sud. Ce sont des primates diurnes au mode de vie semi-terrestre. Certains groupes sont connus pour visiter les sources chaudes en hiver pour se réchauffer, comme c’est le cas dans le parc aux singes de Jigokudani.</p>
+<p><img src="/images/especes_emblematiques/macaque_2.png" alt="macaque_2"></p>
+<p>Le Macaque japonais est un primate au régime végétarien et frugivore, consommant aussi régulièrement des insectes. Il présente une espérance de vie de 25 à 30 ans, ce qui est supérieur à ce que l&rsquo;on observe chez ses plus proches cousins. Cette espérance de vie élevée est en partie due à un faible nombre de prédateurs naturels, avec comme seul représentant l’Aigle montagnard (<em>Nisaetus nipalensis</em>) depuis l’extinction du Loup du Japon (<em>Canis lupus hodophilax</em>).</p>
+<p>Ces primates forment des groupes mixtes de plusieurs dizaines d’individus à la structure sociale complexe. Les Macaques japonais passent la majeure partie de leur temps à épouiller leurs congénères, c’est-à-dire à les débarrasser des parasites de leur fourrure. Cette pratique renforce les liens sociaux au sein du groupe, et elle est observée plus fréquemment chez les individus aux rangs les plus élevés dans la hiérarchie. De nombreuses études ont également été menées sur la communication entre les individus, qui est complexe et basée sur des vocalises aux tonalités différentes selon la situation.</p>
+<p><img src="/images/especes_emblematiques/macaque_3.png" alt="macaque_3"></p>
+<p>Dans la culture japonaise, les Macaques ont longtemps été considérés comme des “kamis (神)”, des esprits vénérés dans la religion shintoïste. En raison de leur apparence humanoïde et de leur comportement atypique, les primates représentaient aussi bien la dangerosité du monde sauvage que des messagers des dieux habitant les montagnes.</p>
+<p>Sous l’influence des cultures hindouistes et bouddhistes, la perception des Macaques japonais a évolué pour devenir celle d’esprits protecteurs des maux et des maladies. Les populations rurales de l’époque avaient pour coutume de nourrir ces animaux, apportant protection à leur communauté et à leurs cultures.</p>
+<p><img src="/images/especes_emblematiques/macaque_9.jpg" alt="macaque_9"></p>
+<p>Depuis l’arrivée des humains sur l’archipel japonais il y a 38 000 ans, les Macaques japonais ont été menacés par la chasse et la destruction de leur habitat. On constate toutefois une diminution de ces menaces après la Seconde Guerre mondiale. Avec la disparition du Loup du Japon en 1905, le ralentissement de l’exploitation intensive des forêts et l’interdiction de sa chasse en 1947, les populations de ne cessent de croître.</p>
+<p>Cependant, l’augmentation des populations de Macaques et l’urbanisation croissante induisent une proximité plus forte entre ces animaux et les activités humaines. Ils sont aujourd’hui connus pour causer des dégâts considérables aux cultures de toutes sortes. En 2019, les dégâts causés par l’espèce ont été estimés à 900 millions de yens, soit l’équivalent de plus de 7 millions d’euros. Ceci en fait la troisième espèce occasionnant le plus de dégâts aux cultures sur le plan financier, après le Cerf sika (<em>Cervus nippon</em>) et le Sanglier du Japon (<em>Sus scrofa leucomystax</em>).</p>
+<p><img src="/images/especes_emblematiques/macaque_6.png" alt="macaque_6"></p>
+<p>Les populations se portent bien à l’échelle nationale, avec une estimation totale de 150 000 individus en 2011. L’espèce apparaît sur la Liste rouge de l’UICN dans la catégorie “Préoccupation mineure”, mais la situation est en réalité très variable selon les régions. Dans les massifs montagneux de la préfecture d’Iwate, la chasse intensive a réduit les populations à une poignée de groupes isolés aux sommets des massifs. L’espèce est régionalement éteinte à Tanegashima, île voisine de Yakushima, ainsi que dans la préfecture d&rsquo;Ibaraki.</p>
+<p>De nouvelles menaces ont vu le jour et mettent en péril le devenir de l’espèce. Les forêts de cèdres et de pins se multiplient face à la demande sylvicole, mais ne correspondent pas aux exigences des habitats des Macaques. À cela s&rsquo;ajoutent les dégâts occasionnés par le Cerf sika dans les sous-bois, particulièrement importants à Yakushima. D’autre part, les cas d’hybridation se multiplient avec le Macaque rhésus (<em>Macaca mulatta</em>) et le Macaque de Formose (<em>Macaca cyclopis</em>), respectivement importés d’Asie centrale et de Taïwan.</p>
+<p><img src="/images/especes_emblematiques/macaque_7.png" alt="macaque_7"></p>
+<p>Depuis la moitié du XXème siècle, de multiples mesures de conservation du Macaque japonais ont été instaurées. Les parcs naturels nationaux et préfectoraux assurent la protection de nombreux individus sur tout le territoire. De plus, six populations en particulier détiennent le titre de “Monument naturel”, en l’honneur de leur caractère écologique et culturel remarquable. Aujourd’hui, les efforts de conservation se concentrent sur la lutte contre les espèces exotiques susceptibles de s’hybrider avec le Macaque japonais.</p>
+<p>La problématique de gestion du Macaque japonais est complexe. Le retour de l’espèce est souhaité dans certaines régions, tandis que des effectifs abondants sont sources de dégâts dans les régions voisines. Cette situation illustre l’importance de la prise en compte des dynamiques locales, à la fois écologiques et sociales, pour mener à bien des mesures de conservation adaptées garantissant la pérennité de l’espèce et son équilibre avec les communautés humaines.</p>
+<p><img src="/images/especes_emblematiques/macaque_8.png" alt="macaque_8"></p>
+
+        
+      </section>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/fr/posts/fiches-sur-les-esp%C3%A8ces-de-guadeloupe/" title="Fiches sur les espèces de Guadeloupe ">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">Page précédente</span>
+            <span class="max-w-48 truncate">Fiches sur les espèces de Guadeloupe </span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/fr/posts/fiches-sur-la-conservation-des-esp%C3%A8ces-du-japon/" title="Fiches sur la conservation des espèces du Japon ">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">Page suivante</span>
+            <span class="max-w-48 truncate">Fiches sur la conservation des espèces du Japon </span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+
+      
+      <div class="divider"></div>
+
+      <section class="space-y-4">
+        
+
+
+
+
+<article>
+
+  <div id="vcomments"></div>
+<script src="https://unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+  new Valine({
+    el: '#vcomments',
+    appId: '',
+    appKey: '',
+    placeholder: 'Leave a comment...',
+    lang: 'en',
+    avatar: 'mp',
+    visitor: true,
+    requiredFields: ['nick','mail']
+  });
+</script>
+
+
+</article>
+
+
+
+
+
+
+      </section>
+      
+    </article>
+  </div>
+
+  <div class="hidden lg:flex lg:flex-col lg:items-end">
+    
+      <nav id="TableOfContents"></nav>
+    
+  </div>
+</div>
+
+
+
+            
+<footer class="px-4 py-4">
+
+
+  <div class="w-full flex flex-col gap-4">
+    <style>
+.partners-footer {
+  text-align: center;
+  margin: 15px 0 5px 0;
+}
+
+.partners-footer h3 {
+  margin-bottom: 12px;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.partners-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.partners-logos img {
+  height: 200px;
+  object-fit: contain;
+  transition: transform .2s ease;
+}
+
+.partners-logos img:hover {
+  transform: scale(1.08);
+}
+</style>
+
+
+<div class="partners-footer">
+  <h3>Nos partenaires</h3>
+
+  <div class="partners-logos">
+    <a href="https://www.agroparistech.fr/partenariats-socioeconomiques/nous-soutenir/fondation-agroparistech" target="_blank">
+      <img src="/images/partners/fondation APT.png" alt="Partenaire 1" />
+    </a>
+
+  </div>
+</div>
+
+
+    <div class="flex justify-between items-center gap-2">
+      <div>
+  
+  <p>© 2026 BiOdyssée</p>
+  
+
+  
+  <p>Tous droits réservés</p>
+  
+</div>
+
+       
+
+    </div>
+  </div>
+
+</footer>
+
+
+<script>
+  function scrollCategories(direction) {
+    const container = document.getElementById("categoriesScroll");
+    const scrollAmount = 300; 
+    container.scrollBy({
+      left: direction * scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+</script>
+
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid dream-grid-about">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Voilà l&#39;équipe de la mission 2026</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Voilà une brève présentation des membres de l&rsquo;équipe fondatrice de BiOdyssée et qui participera à l&rsquo;expédition 2026 au Japon.</p>
+<p><img src="/images/equipe_complete.jpeg" alt="photo équipe"></p>
+<p>Et on remercie Brieuc (au centre de la photo) qui est venu nous rejoindre pour quelques jours !</p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Hugo - Co-président</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Étudiant en Gestion et ingénierie de l&rsquo;environnement à AgroParisTech, je suis passionné par la paléontologie et l’évolution 🦖🦴🧬.</p>
+<p>J’aspire à travailler dans le domaine de la gestion des milieux naturels, plus précisément pour la conservation ou la restauration des milieux humides en France 🐸🐟🌿, qui ont perdu une part très importante de leur surface ces derniers siècles. Je me suis ainsi toujours intéressé à l’évolution des espèces et des écosystèmes dans le temps, c’est pourquoi ce projet de césure me motive tant !</p>
+<p><strong>Contact :</strong>
+<a href="mailto:hugo.roger@agroparistech.fr" target="_blank">hugo.roger@agroparistech.fr</a>
+</p>
+<p><img src="/images/hugo.jpeg" alt="photo rando"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Théophile - Co-président</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Étudiant en ingénierie de l&rsquo;environnement passionné d’entomologie et en particulier de myrmécologie 🐜, mon objectif est de faire de la recherche en environnement en particulier sur les dynamiques génétiques des populations 🧬🐜 (de fourmis bien évidemment).</p>
+<p>Je fais partie de l’association naturaliste &ldquo;les &ldquo;Blairoudeurs 🦡&rdquo; avec laquelle je suis parti faire de la prospection et de la sensibilisation en Corse lors de la Mission Isula. Ce projet de césure est une super opportunité de continuer cette expérience mais à une échelle bien plus vaste et exotique tout en continuant de me former sur la connaissance des différents écosystèmes et leurs moyens de gestions dans un autre pays.</p>
+<p><strong>Contact :</strong>
+<a href="mailto:theophie.thomas@agroparistech.fr" target="_blank">theophie.thomas@agroparistech.fr</a>
+</p>
+<p><img src="/images/theophile.jpeg" alt="photo stylée"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Lucie - Responsable communication</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Étudiante en Gestion et ingénierie de l&rsquo;environnement à AgroParisTech, je suis fascinée par à peu près tout ce qui se rapporte à l’océan 🌊.</p>
+<p>C’est dans l’optique d’allier travail et passion, que je m’oriente vers la biologie marine. Plus particulièrement, j’aimerais travailler dans la conservation ou la gestion des écosystèmes marins. La faune 🐠🐋🐙, autant que la flore aquatique me passionnent et c’est pour pouvoir l’observer de plus près que je fais de la plongée sous-marine 🤿.</p>
+<p>Ce projet est pour moi l’opportunité de découvrir de nouveaux milieux aquatiques 🌊🪸🌿 et de comprendre tous les enjeux qui pèsent dessus.</p>
+<p><strong>Contact :</strong>
+<a href="mailto:lucie.lowagie@agroparistech.fr" target="_blank">lucie.lowagie@agroparistech.fr</a>
+</p>
+<p><img src="/images/lucie.jpg" alt="photo"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Solal - Trésorier</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Étudiant en agronomie et passionné par l’histoire 🧭⌛🏹 et l’éthologie 🐁🧠🧪, j’espère utiliser cette opportunité pour observer le comportement des animaux dans leur milieu naturel. Par la suite, j’aimerais faire de la recherche 👨‍🔬 ou être enseignant  dans l’enseignement supérieur 🧑‍🏫, et cette césure me permettrait de développer mes capacités de synthèse et d’observation.</p>
+<p>Le fait de pouvoir allier recherche historique et observation animale — le tout dans le but de ne pas reproduire les erreurs du passé — est la raison pour laquelle ce projet m’intéresse.</p>
+<p><strong>Contact :</strong>
+<a href="mailto:solal.free@agroparistech.fr" target="_blank">solal.free@agroparistech.fr</a>
+</p>
+<p><img src="/images/solal.jpeg" alt="photo qui fait peur"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Réseaux sociaux</div>
+
+        <ul class="menu menu-horizontal flex-wrap w-full px-0 [&_ion-icon]:text-lg">
+  
+
+  
+  <li>
+    <a href="https://www.facebook.com/profile.php?id=61576052068851" target="_blank" title="Facebook">
+      <ion-icon name="logo-facebook"></ion-icon>
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://www.instagram.com/bio_dyssee/" target="_blank" title="Instagram">
+      <ion-icon name="logo-instagram"></ion-icon>
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://www.linkedin.com/company/107400672/admin/dashboard/" target="_blank" title="Linkedin">
+      <ion-icon name="logo-linkedin"></ion-icon>
+    </a>
+  </li>
+  
+  <li>
+    <a href="mailto:biodyssee2026@gmail.com" target="_blank" title="Email">
+      <ion-icon name="mail-outline"></ion-icon>
+    </a>
+  </li>
+  
+</ul>
+
+      </div>
+    </article>
+  </div>
+  
+
+  
+</div>
+
+            
+
+            
+<footer class="px-4 py-4">
+
+
+  <div class="w-full flex flex-col gap-4">
+    <style>
+.partners-footer {
+  text-align: center;
+  margin: 15px 0 5px 0;
+}
+
+.partners-footer h3 {
+  margin-bottom: 12px;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.partners-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.partners-logos img {
+  height: 200px;
+  object-fit: contain;
+  transition: transform .2s ease;
+}
+
+.partners-logos img:hover {
+  transform: scale(1.08);
+}
+</style>
+
+
+<div class="partners-footer">
+  <h3>Nos partenaires</h3>
+
+  <div class="partners-logos">
+    <a href="https://www.agroparistech.fr/partenariats-socioeconomiques/nous-soutenir/fondation-agroparistech" target="_blank">
+      <img src="/images/partners/fondation APT.png" alt="Partenaire 1" />
+    </a>
+
+  </div>
+</div>
+
+
+    <div class="flex justify-between items-center gap-2">
+      <div>
+  
+  <p>© 2026 BiOdyssée</p>
+  
+
+  
+  <p>Tous droits réservés</p>
+  
+</div>
+
+       
+
+    </div>
+  </div>
+
+</footer>
+
+
+<script>
+  function scrollCategories(direction) {
+    const container = document.getElementById("categoriesScroll");
+    const scrollAmount = 300; 
+    container.scrollBy({
+      left: direction * scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+</script>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-2PHJBK75DX"></script>
+      <script>
+        var doNotTrack = false;
+        if ( true ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-2PHJBK75DX');
+        }
+      </script>
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
+

@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en"  
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fungus-growing ants 🐜 | BiOdyssée</title>
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+  
+
+    
+
+<link rel="canonical" href="https://biodyssee.netlify.app/en/posts/fungus-growing-ants/" />
+
+
+
+<meta name="author" content="theophile" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="Théophile&#39;s ant newsletter">
+
+
+
+<meta name="generator" content="Hugo 0.163.2">
+
+
+<meta property="og:url" content="https://biodyssee.netlify.app/en/posts/fungus-growing-ants/">
+	<meta property="og:site_name" content="BiOdyssée">
+	<meta property="og:title" content="Fungus-growing ants 🐜">
+	<meta property="og:locale" content="en">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="posts">
+		<meta property="article:published_time" content="2025-12-22T14:00:00+01:00">
+		<meta property="article:modified_time" content="2025-12-22T14:00:00+01:00">
+
+
+
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="Fungus-growing ants 🐜">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+<script src="//unpkg.com/valine@1.5.2/dist/Valine.min.js"></script>
+
+
+
+
+
+
+
+    
+    <link rel="stylesheet" href="/css/custom.css" />
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="py-4"> 
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="Flip it!">
+        <div class="h-10 rounded-full">
+          <img src="/images/logo.jpg" alt="BiOdyssée" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="https://biodyssee.netlify.app/" class="text-lg font-semibold cursor-pointer">
+          BiOdyssée
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm" style="color: #ffffff" >À la (re)découverte du vivant</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="About">
+    <ion-icon name="information-circle"></ion-icon>About</div>
+</li>
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/en/search" title="Search">
+    <ion-icon name="search"></ion-icon>
+    Search
+  </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/en/posts" title="Archives">
+    <ion-icon name="archive"></ion-icon>
+    Archives
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/en/categories" title="All Categories">
+    <ion-icon name="grid"></ion-icon>
+    All Categories
+  </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="menu-title px-2 pt-2">Langue</li>
+
+  <li>
+    <a href="/fr" class="inline-flex items-center p-2 text-black hover:underline">
+      Français
+    </a>
+  </li>
+
+  <li>
+    <a href="/ja" class="inline-flex items-center p-2 text-black hover:underline">
+      日本語
+    </a>
+  </li>
+
+  <li>
+    <a href="/en" class="inline-flex items-center p-2 text-black hover:underline">
+      English
+    </a>
+  </li>
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0"
+        class="text-sm font-semibold cursor-pointer hover:underline"
+        @click="flip = !flip"
+        title="About"
+      >About</div>
+      
+      
+
+      
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/en/search" title="Search">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+
+
+
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/en/posts" title="Archives">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/en/categories" title="All Categories">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+
+
+
+
+
+      
+
+      
+
+      
+
+
+ 
+<div class="dropdown dropdown-end">
+  <div tabindex="0" role="button" class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" aria-label="Select an option">
+  <ion-icon name="earth-outline"> </ion-icon> 
+  
+  </div>
+  <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-xl">
+    
+      <li>
+        <a href="/fr" class="inline-flex items-center p-2 cursor-pointer" style = "color: #000000">
+          Français
+        </a>
+      </li>
+    
+      <li>
+        <a href="/ja" class="inline-flex items-center p-2 cursor-pointer" style = "color: #000000">
+          日本語
+        </a>
+      </li>
+    
+      <li>
+        <a href="/en" class="inline-flex items-center p-2 cursor-pointer" style = "color: #000000">
+          English
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+    </section>
+  </div>
+</nav>
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+           
+
+          <div class="container">
+            
+<div class="lg:grid lg:grid-cols-4 gap-4 mt-4 px-4">
+  <div class="hidden lg:block">
+    
+  </div>
+
+  <div class="lg:col-span-2">
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+	<meta itemprop="name" content="Fungus-growing ants 🐜">
+	<meta itemprop="datePublished" content="2025-12-22T14:00:00+01:00">
+	<meta itemprop="dateModified" content="2025-12-22T14:00:00+01:00">
+	<meta itemprop="wordCount" content="1573">
+	<meta itemprop="keywords" content="Théophile&#39;s ant newsletter">
+
+      <header>
+        <h1 itemprop="headline">Fungus-growing ants 🐜</h1>
+        <p class="text-sm">
+          
+            Monday, Dec 22, 2025
+          
+
+          | <span>8 minute read</span>
+
+          
+          | <span>Updated at
+            
+              Monday, Dec 22, 2025
+            </span>
+          
+        </p>
+
+        
+        <div class="flex justify-between">
+          
+            
+
+
+<div class="flex items-center">
+  
+    <div class="avatar mr-1">
+      <div class="w-8 rounded-full">
+        <img class="my-0" src="/images/authors/avatar_theophile.jpg" alt="Théophile" />
+      </div>
+    </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+    
+      
+        <span itemprop="name">Théophile</span>
+      
+    
+  </span>
+</div>
+
+          
+
+          
+
+<div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://biodyssee.netlify.app/en/posts/fungus-growing-ants/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="text-gray-500 group-hover:text-white" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=Fungus-growing%20ants%20%f0%9f%90%9c%20https://biodyssee.netlify.app/en/posts/fungus-growing-ants/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="text-gray-500 group-hover:text-white" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div> 
+
+        </div>
+      </header>
+
+      <section id="dream-single-post-content" itemprop="articleBody">
+       
+    <img class="w-full z-30" src="/images/fourmi/fourmi_atta.jpg" alt="Fungus-growing ants 🐜" />
+
+
+  <p>You’ve probably already seen — at least in a video — those iconic endless lines of ants tirelessly carrying leaves to some mysterious destination. These ants, commonly known as “leaf-cutters,” are in fact <strong>fungus-growing ants</strong>! They do not eat the leaves they tirelessly bring back to their nests. Instead, they chew them and use the pulp as a <strong>substrate for a cultivated fungus</strong>, which they harvest sparingly because it is their main source of food.</p>
+<!-- maybe include a video of a line of ants -->
+<p>This system is one of the rare examples of <strong>non-human agriculture</strong>, a mutualism so advanced that it has led to a remarkable co-evolution between insects and fungi. Their societies are often compared to an “underground civilization,” structured around gigantic gardens, sophisticated ventilation, and living highways.</p>
+<h2 id="genus-and-distribution">Genus and distribution</h2>
+<p>Fungus-growing ants are represented by two genera: <em><em>Atta</em></em> and <em><em>Acromyrmex</em></em>. Both belong to the family <em>Myrmicinae</em> and the tribe <em>Attini</em>. This tribe includes all the so-called “leaf-cutting” ants — but not only! It also includes widespread genera such as <em><em>Pheidole</em></em> (e.g., <em>Pheidole pallidula</em>, common in the Mediterranean region) and <em><em>Wasmannia</em></em> (e.g., <em>Wasmannia auropunctata</em>, an invasive exotic species in many countries, including France for the past three years).</p>
+<p>Despite their close phylogenetic relationship, <em>Atta</em> and <em>Acromyrmex</em> show clear morphological and behavioral differences.</p>
+<p>For example, <em>Atta</em> workers have <strong>two pairs of spines</strong>, whereas <em>Acromyrmex</em> have <strong>three or four</strong>.</p>
+<p><img src="/images/fourmi/atta_acromyrmex.png" alt="atta_acromyrmex">
+<em>Binocular-microscope image of an Acromyrmex worker (top) and an Atta worker (bottom).</em></p>
+<p>Both genera cultivate a fungus by adding organic matter — usually leaves or petals — but <em>Acromyrmex</em> workers tend to pick up debris from the ground rather than cut fresh leaves like <em>Atta</em>. Their nests are smaller and less populous. Both cultivate fungi of the genus <em><em>Leucoagaricus</em></em>, though cultivation is far more intensive in <em>Atta</em>.</p>
+<p>Indeed, the genus <em>Atta</em> forms some of the <strong>largest colonies in the ant world</strong>, with nest surfaces spanning several dozen square meters and underground networks extending several meters deep. Each colony mobilizes <strong>millions of individuals</strong> that drastically reshape their environment.</p>
+<p>As we will see in the next chapter, <em>Atta</em> exhibit extreme worker specialization with pronounced social polymorphism. In <em>Acromyrmex</em>, caste distinctions are subtler.</p>
+<p>Both genera are found in tropical forests of South and Central America up to the southern United States. They thrive where organic matter is abundant. <em>Acromyrmex</em>, however, has a wider distribution and can occupy more “austere” habitats — arid or colder regions, pampas, and even Andean environments with large thermal fluctuations, where <em>Atta</em> becomes rare.</p>
+<p>These ants can also become <strong>serious agricultural pests</strong>. Their massive, voracious colonies harvest impressive quantities of plant matter: young shoots, fruit-tree leaves, food crops… In parts of South America or the Caribbean, they cause significant economic losses.<br>
+In Guadeloupe, for instance, the “manioc ant” (<em>Acromyrmex octospinosus</em>) is notorious for rapidly defoliating cassava, citrus, and banana crops, forcing farmers to implement constant control measures. It is one of the rare invasive leaf-cutting ants, introduced accidentally in the mid-19th century. Their success stems from their social organization, extensive nest networks, and rapid reproduction, making them difficult to control without harming the environment.</p>
+<p>In the following sections, we will focus primarily on <em><em>Atta</em></em>.</p>
+<h2 id="organization-and-morphology">Organization and morphology</h2>
+<p>Growing a fungus at this scale is no small task… Workers contribute according to their caste.</p>
+<p><img src="/images/fourmi/atta.jpg" alt="atta"></p>
+<p><em>Photo showing different castes of Atta ants, from left to right: minor, media, major, and queen.</em></p>
+<p>In <em>Atta</em>, <strong>minor workers (2–5 mm)</strong> tend the fungus directly. Their small size allows them to move through the tiny cavities of the fungal mass. They also care for the brood and maintain nest hygiene.</p>
+<p><em>Atta</em> display a unique behavior: minors sometimes <strong>ride on leaves</strong> carried by media workers to remove parasitic fungal spores on the spot — they act as <strong>living sentinels</strong>.</p>
+<p><strong>Media workers (5–10 mm)</strong> handle tasks requiring more strength: harvesting, gathering leaves, nest construction, and repairs.</p>
+<p><strong>Major workers</strong>, the “soldiers,” defend the nest and the living highways formed by the ants. They are easily identified by their massive heads, which house powerful mandibular muscles. They are often seen guarding the periphery of the leaf-transport lines.</p>
+<p>Although these ants show one of the most advanced forms of social organization, it is not as rigid as human societies. Minors may help with nest building, media may tend the fungus, etc. However, social polymorphism remains extremely pronounced, with workers varying massively in size (sometimes <strong>six distinct worker sizes</strong>), each fulfilling a specific role: grinders, harvesters, heavy carriers, cleaners, gardeners, and defenders.</p>
+<p><img src="/images/fourmi/polymorphisme.png" alt="polymorphism">
+<em>Photo of a major <em>Atta cephalotes</em></em></p>
+<p>And the queens are among the <strong>largest ants in the world</strong>, reaching over 2 cm in length.</p>
+<p><img src="/images/fourmi/reine.png" alt="queen"></p>
+<p>This organization stems from precise control by the queen and nurse workers over larval nutrition. Depending on the nutrients provided, a larva may become a tiny minor or a gigantic major. Yet <strong>all workers are identical at the egg stage</strong>.</p>
+<h2 id="history-and-dispersal-of-the-fungus">History and dispersal of the fungus</h2>
+<p>As mentioned earlier, the cultivated fungi belong to the genus <em><em>Leucoagaricus</em></em>. These strains are no longer found in the wild. The cultivated fungus has evolved to produce <strong>gongylidia</strong>, small grape-like nutrient-rich structures full of lipids and sugars, specially designed to feed the ants. These structures do not exist in any wild fungus.</p>
+<p>Like human crops bred for high yield but dependent on cultivation, these fungi <strong>cannot survive without the ants</strong>. They require extremely high humidity and constant high temperatures. Ant nest architecture maintains these conditions — especially important because the fungus emits large amounts of CO₂. Without proper ventilation, the ants would suffocate.</p>
+<p>There is also a <strong>third major partner</strong> in this mutualism: an antiparasitic bacterium of the genus *<em>Streptomyces</em>**, cultivated by the ants. It protects their fragile fungal gardens from pathogens. Gardeners constantly inspect the fungus with their highly sensitive antennae, capable of detecting minute chemical changes. A slight odor shift is enough to signal a parasite or physiological stress.</p>
+<p>When a future queen leaves the nest to start a new colony, she carries a <strong>fragment of her mother colony’s fungus</strong> in a special pouch beneath her mouth: the <strong>infrabuccal pocket</strong>, a remarkable anatomical adaptation.</p>
+<p>If she succeeds, this fungal “cutting” becomes the nutritional foundation of her future colony. Thus, <strong>fungal lineages mirror ant lineages</strong>. If the fungus fails, the queen — and her entire future colony — are doomed.</p>
+<p><img src="/images/fourmi/champignon.png" alt="fungus"></p>
+<p>This is true <strong>domestication</strong> of a fungus by ants. Genetic studies suggest that leaf-cutting ants and their cultivated fungi have been associated for <strong>over 15 million years</strong>, forming an evolutionary bond comparable to ancient human agriculture.</p>
+<h2 id="ecological-cultural-and-economic-importance">Ecological, cultural, and economic importance</h2>
+<p>Fungus-growing ants play a major ecological role. A mature <em>Atta</em> colony can harvest <strong>up to 15% of a tropical forest’s annual leaf production</strong>.</p>
+<p>Far from destroying the forest, this constant recycling stimulates vegetation growth, aerates the soil, and locally enriches it with organic matter. They are considered <strong>ecosystem engineers</strong>, modifying their environment in ways that can benefit or harm other species.</p>
+<p>Their massive nests alter soil hydrology: the thousands of tunnels improve water infiltration and reduce erosion. Some plants even grow preferentially in <em>Atta</em>-modified soils.</p>
+<p>Culturally, leaf-cutting ants play a role in the traditions of several Indigenous Amazonian peoples. Some species are consumed grilled (especially the large queens) or used in traditional medicine.</p>
+<p><img src="/images/fourmi/t%C3%AAte_reine.png" alt="food">
+<em>Roasted queens of <em>Atta laevigata</em> after immersion in salted water.</em></p>
+<p>Economically, <em>Atta</em> species can be devastating agricultural pests. They target a wide range of crops: citrus, cocoa, mango, banana… Some South American farms lose up to <strong>20% of production</strong> due to nearby colonies. Their organization and collective strength make control extremely difficult.</p>
+<h2 id="a-super-organism-farmer--agriculture-before-humans">A super-organism farmer — agriculture before humans?</h2>
+<p>Fungus-growing ants represent the <strong>most advanced form of non-human agriculture</strong> known. Several features make it a complete agricultural system:</p>
+<h4 id="production">Production</h4>
+<p>They collect substrate, transform it, regulate its quality, and maintain continuous production.</p>
+<h4 id="selection">Selection</h4>
+<p>Colonies eliminate fungal strains that are unproductive or infected, preserving an optimized lineage.</p>
+<h4 id="health-and-hygiene">Health and hygiene</h4>
+<p>Their cultivated <em>Streptomyces</em> act as an internal pharmacy, producing natural antibiotics.</p>
+<h4 id="generational-transmission">Generational transmission</h4>
+<p>The fungal “seed line” is passed <strong>from mother to daughter</strong>: the queen carries a cutting from her natal colony.</p>
+<h4 id="agro-industrial-architecture">“Agro-industrial” architecture</h4>
+<p><em>Atta</em> nests include dedicated chambers: cultivation rooms, brood chambers, waste disposal sites, ventilation tunnels, sorting areas… A miniature agro-industrial complex.</p>
+<h4 id="behavioral-and-genetic-adaptation">Behavioral and genetic adaptation</h4>
+<p>Mutualism has shaped both the fungus and the ants: the fungus produces specialized nutritional organs, and the ants evolved highly specialized castes to cultivate it.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>The history of fungus-growing ants shows that agriculture is <strong>far older</strong> than we usually imagine. Long before the first humans planted seeds, these insects had already invented a sophisticated form of farming.</p>
+<p>Phylogenetic analyses indicate that the ancestor of attine ants (the group including <em>Atta</em> and <em>Acromyrmex</em>) began cultivating fungi <strong>50–60 million years ago</strong>. Intensive farming lineages, including <em>Atta</em> and <em>Acromyrmex</em>, emerged <strong>15–20 million years ago</strong>.</p>
+<p>For comparison, human agriculture appeared only <strong>10,000–12,000 years ago</strong>. This means ants have been farming their fungi <strong>5,000 times longer</strong> than humans have cultivated wheat, rice, or maize.</p>
+<p>Despite the vast evolutionary distance between us, there are remarkable convergences between our agricultural systems.</p>
+<p>Watching an <em>Atta</em> colony at work feels like observing a miniature version of our own agriculture, where each worker — from tiny gardener to colossal major — contributes to a meticulously coordinated system. It is a form of agriculture fully integrated into the living world, where individual specialization supports every step of the process.</p>
+<p>Perhaps that is what makes fungus-growing ants so captivating: they show that <strong>agriculture was not invented by humans</strong>, but is a biological principle of which we happen to be among the most recent practitioners.</p>
+
+        
+      </section>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <a class="group btn btn-outline" href="/en/posts/marine-emblematic-species-profile/" title="Marine Emblematic species profile">
+          <ion-icon name="chevron-back"></ion-icon>
+          <div class="inline-flex flex-col items-start">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">Previous page</span>
+            <span class="max-w-48 truncate">Marine Emblematic species profile</span>
+          </div>
+        </a>
+        
+
+        
+        <a class="group btn btn-outline" href="/en/posts/guadeloupes-emblematic-species/" title="Guadeloupe&#39;s emblematic species">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">Next page</span>
+            <span class="max-w-48 truncate">Guadeloupe&#39;s emblematic species</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+
+      
+      <div class="divider"></div>
+
+      <section class="space-y-4">
+        
+
+
+
+
+<article>
+
+  <div id="vcomments"></div>
+<script src="https://unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+  new Valine({
+    el: '#vcomments',
+    appId: '',
+    appKey: '',
+    placeholder: 'Leave a comment...',
+    lang: 'en',
+    avatar: 'mp',
+    visitor: true,
+    requiredFields: ['nick','mail']
+  });
+</script>
+
+
+</article>
+
+
+
+
+
+
+      </section>
+      
+    </article>
+  </div>
+
+  <div class="hidden lg:flex lg:flex-col lg:items-end">
+    
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#genus-and-distribution">Genus and distribution</a></li>
+    <li><a href="#organization-and-morphology">Organization and morphology</a></li>
+    <li><a href="#history-and-dispersal-of-the-fungus">History and dispersal of the fungus</a></li>
+    <li><a href="#ecological-cultural-and-economic-importance">Ecological, cultural, and economic importance</a></li>
+    <li><a href="#a-super-organism-farmer--agriculture-before-humans">A super-organism farmer — agriculture before humans?</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+    
+  </div>
+</div>
+
+
+
+            
+<footer class="px-4 py-4">
+
+
+  <div class="w-full flex flex-col gap-4">
+    <style>
+.partners-footer {
+  text-align: center;
+  margin: 15px 0 5px 0;
+}
+
+.partners-footer h3 {
+  margin-bottom: 12px;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.partners-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.partners-logos img {
+  height: 200px;
+  object-fit: contain;
+  transition: transform .2s ease;
+}
+
+.partners-logos img:hover {
+  transform: scale(1.08);
+}
+</style>
+
+
+<div class="partners-footer">
+  <h3>Nos partenaires</h3>
+
+  <div class="partners-logos">
+    <a href="https://www.agroparistech.fr/partenariats-socioeconomiques/nous-soutenir/fondation-agroparistech" target="_blank">
+      <img src="/images/partners/fondation APT.png" alt="Partenaire 1" />
+    </a>
+
+  </div>
+</div>
+
+
+    <div class="flex justify-between items-center gap-2">
+      <div>
+  
+  <p>© 2026 BiOdyssée</p>
+  
+
+  
+  <p>Tous droits réservés</p>
+  
+</div>
+
+       
+
+    </div>
+  </div>
+
+</footer>
+
+
+<script>
+  function scrollCategories(direction) {
+    const container = document.getElementById("categoriesScroll");
+    const scrollAmount = 300; 
+    container.scrollBy({
+      left: direction * scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+</script>
+
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid dream-grid-about">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Meet the Mission 2026 team</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Here&rsquo;s a brief introduction to the founding team of BiOdyssée, who will be taking part in the 2026 expedition to Japan.</p>
+<p><img src="/images/nous.jpg" alt="photo équipe"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Hugo </div>
+
+        <div class="prose dark:prose-invert">
+          <p>As a student in Environmental Management and Engineering at AgroParisTech, I’m passionate about paleontology and evolution 🦖🦴🧬. I aspire to work in the field of natural area management, specifically in the conservation or restoration of wetlands in France 🐸🐟🌿, which have lost a significant portion of their surface area over the past centuries. I’ve always been fascinated by the evolution of species and ecosystems over time, which is why this gap year project is such a strong source of motivation for me!</p>
+<p><strong>Contact :</strong>
+<a href="mailto:hugo.roger@agroparistech.fr" target="_blank">hugo.roger@agroparistech.fr</a>
+</p>
+<p><img src="/images/hugo.jpg" alt="photo rando"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Lucie </div>
+
+        <div class="prose dark:prose-invert">
+          <p>Student in Environmental Management and Engineering, I’m fascinated by just about everything related to the ocean 🌊. Wanting to combine work and passion, I’m pursuing a path in marine biology. More specifically, I’d like to work in marine ecosystem conservation or management. I’m deeply passionate about marine wildlife 🐠🐋🐙 as well as aquatic flora, and it’s to get a closer look at it all that I practice scuba diving 🤿. This project is an opportunity for me to explore new aquatic environments 🌊🪸🌿 and better understand the challenges they face.</p>
+<p><strong>Contact :</strong>
+<a href="mailto:lucie.lowagie@agroparistech.fr" target="_blank">lucie.lowagie@agroparistech.fr</a>
+</p>
+<p><img src="/images/lucie-plongee.jpg" alt="photo plongée"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Solal</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Student in agronomy and passionate about history 🧭⌛🏹 and ethology 🐁🧠🧪, I hope to use this opportunity to observe animal behavior in their natural environment. Later on, I would like to pursue a career in research 👨‍🔬 or teach in higher education 🧑‍🏫, and this gap year would allow me to develop my analytical and observational skills. The possibility of combining historical research with animal observation — all with the goal of avoiding the mistakes of the past — is what makes this project so meaningful to me.</p>
+<p><strong>Contact :</strong>
+<a href="mailto:solal.free@agroparistech.fr" target="_blank">solal.free@agroparistech.fr</a>
+</p>
+<p><img src="/images/solal.jpg" alt="photo qui fait peur"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Théophile </div>
+
+        <div class="prose dark:prose-invert">
+          <p>As an environmental engineering student with a passion for entomology and myrmecology in particular 🐜, my aim is to do environmental research, particularly into the genetic dynamics of 🧬🐜 populations (of ants of course). I&rsquo;m part of the naturalist association ‘les “Blairoudeurs 🦡”’ with which I went out to do some prospecting and awareness-raising in Corsica during the Isula Mission. This gap year project is a great opportunity to continue this experience, but on a much larger and more exotic scale, while continuing to learn about different ecosystems and how they are managed in another country.</p>
+<p><strong>Contact :</strong>
+<a href="mailto:theophie.thomas@agroparistech.fr" target="_blank">theophie.thomas@agroparistech.fr</a>
+</p>
+<p><img src="/images/theophile.jpg" alt="photo stylée"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Social Links</div>
+
+        <ul class="menu menu-horizontal flex-wrap w-full px-0 [&_ion-icon]:text-lg">
+  
+
+  
+  <li>
+    <a href="https://www.facebook.com/profile.php?id=61576052068851" target="_blank" title="Facebook">
+      <ion-icon name="logo-facebook"></ion-icon>
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://www.instagram.com/bio_dyssee/" target="_blank" title="Instagram">
+      <ion-icon name="logo-instagram"></ion-icon>
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://www.linkedin.com/company/107400672/admin/dashboard/" target="_blank" title="Linkedin">
+      <ion-icon name="logo-linkedin"></ion-icon>
+    </a>
+  </li>
+  
+  <li>
+    <a href="mailto:biodyssee2026@gmail.com" target="_blank" title="Email">
+      <ion-icon name="mail-outline"></ion-icon>
+    </a>
+  </li>
+  
+</ul>
+
+      </div>
+    </article>
+  </div>
+  
+
+  
+</div>
+
+            
+
+            
+<footer class="px-4 py-4">
+
+
+  <div class="w-full flex flex-col gap-4">
+    <style>
+.partners-footer {
+  text-align: center;
+  margin: 15px 0 5px 0;
+}
+
+.partners-footer h3 {
+  margin-bottom: 12px;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.partners-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.partners-logos img {
+  height: 200px;
+  object-fit: contain;
+  transition: transform .2s ease;
+}
+
+.partners-logos img:hover {
+  transform: scale(1.08);
+}
+</style>
+
+
+<div class="partners-footer">
+  <h3>Nos partenaires</h3>
+
+  <div class="partners-logos">
+    <a href="https://www.agroparistech.fr/partenariats-socioeconomiques/nous-soutenir/fondation-agroparistech" target="_blank">
+      <img src="/images/partners/fondation APT.png" alt="Partenaire 1" />
+    </a>
+
+  </div>
+</div>
+
+
+    <div class="flex justify-between items-center gap-2">
+      <div>
+  
+  <p>© 2026 BiOdyssée</p>
+  
+
+  
+  <p>Tous droits réservés</p>
+  
+</div>
+
+       
+
+    </div>
+  </div>
+
+</footer>
+
+
+<script>
+  function scrollCategories(direction) {
+    const container = document.getElementById("categoriesScroll");
+    const scrollAmount = 300; 
+    container.scrollBy({
+      left: direction * scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+</script>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-2PHJBK75DX"></script>
+      <script>
+        var doNotTrack = false;
+        if ( true ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-2PHJBK75DX');
+        }
+      </script>
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
+

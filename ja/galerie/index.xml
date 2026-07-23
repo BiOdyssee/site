@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Galeries on BiOdyssée</title>
+		<link>https://biodyssee.netlify.app/ja/galerie/</link>
+		<description>Recent content in Galeries on BiOdyssée</description>
+		<generator>Hugo</generator>
+		<language>ja</language>
+		
+		
+		
+		
+			<lastBuildDate>Sun, 09 Nov 2025 14:00:00 +0100</lastBuildDate>
+		
+			<atom:link href="https://biodyssee.netlify.app/ja/galerie/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>グアドループの中心への旅</title>
+				<link>https://biodyssee.netlify.app/ja/galerie/galerie_guadeloupe/</link>
+				<pubDate>Sun, 09 Nov 2025 14:00:00 +0100</pubDate>
+				<guid>https://biodyssee.netlify.app/ja/galerie/galerie_guadeloupe/</guid>
+				<description>&lt;p&gt;ここでは、ユーゴがグアドループを旅した際に撮影した印象的な写真をご覧いただけます。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>日本の中心</title>
+				<link>https://biodyssee.netlify.app/ja/galerie/galerie_japon/</link>
+				<pubDate>Sun, 09 Nov 2025 14:00:00 +0100</pubDate>
+				<guid>https://biodyssee.netlify.app/ja/galerie/galerie_japon/</guid>
+				<description>&lt;p&gt;2026年の探検旅行中に撮影した写真の一部をご覧ください&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

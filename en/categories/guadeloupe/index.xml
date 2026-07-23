@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Guadeloupe on BiOdyssée</title>
+		<link>https://biodyssee.netlify.app/en/categories/guadeloupe/</link>
+		<description>Recent content in Guadeloupe on BiOdyssée</description>
+		<generator>Hugo</generator>
+		<language>en</language>
+		
+		
+		
+		
+			<lastBuildDate>Sun, 09 Nov 2025 14:00:00 +0100</lastBuildDate>
+		
+			<atom:link href="https://biodyssee.netlify.app/en/categories/guadeloupe/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Journey to the heart of Guadeloupe</title>
+				<link>https://biodyssee.netlify.app/en/galerie/galerie_guadeloupe/</link>
+				<pubDate>Sun, 09 Nov 2025 14:00:00 +0100</pubDate>
+				<guid>https://biodyssee.netlify.app/en/galerie/galerie_guadeloupe/</guid>
+				<description>&lt;p&gt;This is a page to discover the impressive images taken by Hugo during his trip to Guadeloupe.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Guadeloupe&#39;s emblematic species</title>
+				<link>https://biodyssee.netlify.app/en/posts/guadeloupes-emblematic-species/</link>
+				<pubDate>Thu, 30 Oct 2025 14:00:00 +0100</pubDate>
+				<guid>https://biodyssee.netlify.app/en/posts/guadeloupes-emblematic-species/</guid>
+				<description></description>
+			</item>
+	</channel>
+</rss>

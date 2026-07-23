@@ -1,0 +1,94 @@
+
+/*Modifier la couleur de la barre de navigation de la page d'accueil*/
+nav {
+    background-color: #81b96e !important; /* Remplace par la couleur souhaitée */
+    color : #ffffff
+}
+/*Modifier la couleur de la barre de navigation des pages de posts*/
+nav.py-4 {
+    background-color: #81b96e !important;
+}
+
+/* Pour changer la couleur des icones de partage*/
+.shares-icon {
+  color: gray; /* Remplacez 'gray' par la teinte de gris souhaitée, par exemple '#808080' */
+}
+
+/*Pour le défilement des catégories*/
+
+.categories-scroll-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.categories-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding: 1rem 2rem;
+  scroll-behavior: smooth;
+}
+
+.category-item {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  width: 250px;
+}
+
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  transition: background-color 0.3s;
+}
+
+.scroll-btn:hover {
+  background-color: rgba(200, 200, 200, 0.8);
+}
+
+.scroll-btn.left {
+  left: 0;
+}
+
+.scroll-btn.right {
+  right: 0;
+}
+
+/* Corrige la couleur du texte dans le menu mobile */
+.dropdown-content a,
+.dropdown-content .menu-title {
+  color: #000 !important;
+}
+
+/* S'assurer que le fond du menu est bien blanc (et pas transparent ou hérité du dark mode) */
+.dropdown-content {
+  background-color: #ffffff !important;
+}
+
+
+/* Contenu des posts avec largeur fluide */
+#dream-single-post-main.prose {
+  width: min(90%, 900px); /* largeur = 90% de l’écran, max 900px */
+  margin-left: auto;      /* centre le contenu horizontalement */
+  margin-right: auto;
+  padding-left: 10px;     /* évite que le texte touche les bords */
+  padding-right: 10px;
+}
+
+/* Plus large sur grands écrans */
+@media (min-width: 1500px) {
+  #dream-single-post-main.prose {
+    width: min(80%, 1700px); /* largeur = 80% de l’écran, max 1500px */
+  }
+}

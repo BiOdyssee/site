@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Categories on BiOdyssée</title>
+		<link>https://biodyssee.netlify.app/ja/categories/</link>
+		<description>Recent content in Categories on BiOdyssée</description>
+		<generator>Hugo</generator>
+		<language>ja</language>
+		
+		
+		
+		
+			<lastBuildDate>Wed, 22 Jul 2026 14:00:00 +0100</lastBuildDate>
+		
+			<atom:link href="https://biodyssee.netlify.app/ja/categories/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>2026年探査のすべて</title>
+				<link>https://biodyssee.netlify.app/ja/categories/expedition-2026/</link>
+				<pubDate>Wed, 22 Jul 2026 14:00:00 +0100</pubDate>
+				<guid>https://biodyssee.netlify.app/ja/categories/expedition-2026/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>定義とコンセプト</title>
+				<link>https://biodyssee.netlify.app/ja/categories/definition/</link>
+				<pubDate>Thu, 02 Apr 2026 14:00:00 +0100</pubDate>
+				<guid>https://biodyssee.netlify.app/ja/categories/definition/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>種のプロフィール</title>
+				<link>https://biodyssee.netlify.app/ja/categories/galerie/</link>
+				<pubDate>Mon, 26 Jan 2026 14:00:00 +0100</pubDate>
+				<guid>https://biodyssee.netlify.app/ja/categories/galerie/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Théophile (テオフィル)のアリ特集</title>
+				<link>https://biodyssee.netlify.app/ja/categories/rubrique_fourmi/</link>
+				<pubDate>Mon, 22 Dec 2025 14:00:00 +0100</pubDate>
+				<guid>https://biodyssee.netlify.app/ja/categories/rubrique_fourmi/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>グアドループ</title>
+				<link>https://biodyssee.netlify.app/ja/categories/guadeloupe/</link>
+				<pubDate>Sun, 09 Nov 2025 14:00:00 +0100</pubDate>
+				<guid>https://biodyssee.netlify.app/ja/categories/guadeloupe/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>日本の象徴的な生き物たち</title>
+				<link>https://biodyssee.netlify.app/ja/categories/especes_emblematiques/</link>
+				<pubDate>Sat, 11 Oct 2025 14:00:00 +0100</pubDate>
+				<guid>https://biodyssee.netlify.app/ja/categories/especes_emblematiques/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>関係者</title>
+				<link>https://biodyssee.netlify.app/ja/categories/acteurs/</link>
+				<pubDate>Wed, 16 Apr 2025 14:00:00 +0100</pubDate>
+				<guid>https://biodyssee.netlify.app/ja/categories/acteurs/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>植物</title>
+				<link>https://biodyssee.netlify.app/ja/categories/flore/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://biodyssee.netlify.app/ja/categories/flore/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>動物</title>
+				<link>https://biodyssee.netlify.app/ja/categories/coraux/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://biodyssee.netlify.app/ja/categories/coraux/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>日本の文化と歴史</title>
+				<link>https://biodyssee.netlify.app/ja/categories/histoire/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://biodyssee.netlify.app/ja/categories/histoire/</guid>
+				<description></description>
+			</item>
+	</channel>
+</rss>
