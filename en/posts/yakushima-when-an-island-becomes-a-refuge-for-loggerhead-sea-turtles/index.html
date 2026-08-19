@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en"  
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=4321&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yakushima: When an Island Becomes a Refuge for Loggerhead Sea Turtles | BiOdyssée</title>
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+  
+
+    
+
+<link rel="canonical" href="http://localhost:4321/en/posts/yakushima-when-an-island-becomes-a-refuge-for-loggerhead-sea-turtles/" />
+
+
+
+<meta name="author" content="lucie" />
+<meta name="description" content="This article explores the conservation challenges facing loggerhead sea turtles in Yakushima, a major Japanese nesting site, by examining the threats facing the species and the actions needed to ensure the long-term protection of its nesting beaches.
+" />
+
+
+<meta name="keywords" content="Everything you need to know about Expedition 2026">
+
+
+
+<meta name="generator" content="Hugo 0.163.2">
+
+
+<meta property="og:url" content="http://localhost:4321/en/posts/yakushima-when-an-island-becomes-a-refuge-for-loggerhead-sea-turtles/">
+	<meta property="og:site_name" content="BiOdyssée">
+	<meta property="og:title" content="Yakushima: When an Island Becomes a Refuge for Loggerhead Sea Turtles">
+	<meta property="og:description" content="This article explores the conservation challenges facing loggerhead sea turtles in Yakushima, a major Japanese nesting site, by examining the threats facing the species and the actions needed to ensure the long-term protection of its nesting beaches.">
+	<meta property="og:locale" content="en">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="posts">
+		<meta property="article:published_time" content="2026-08-19T14:00:00+01:00">
+		<meta property="article:modified_time" content="2026-08-19T14:00:00+01:00">
+
+
+
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="Yakushima: When an Island Becomes a Refuge for Loggerhead Sea Turtles">
+	<meta name="twitter:description" content="This article explores the conservation challenges facing loggerhead sea turtles in Yakushima, a major Japanese nesting site, by examining the threats facing the species and the actions needed to ensure the long-term protection of its nesting beaches.">
+
+
+
+
+<link rel="stylesheet" href="/css/output.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+<script src="//unpkg.com/valine@1.5.2/dist/Valine.min.js"></script>
+
+
+
+
+
+
+
+    
+    <link rel="stylesheet" href="/css/custom.css" />
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="py-4"> 
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="Flip it!">
+        <div class="h-10 rounded-full">
+          <img src="/images/logo.jpg" alt="BiOdyssée" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="http://localhost:4321/" class="text-lg font-semibold cursor-pointer">
+          BiOdyssée
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm" style="color: #ffffff" >À la (re)découverte du vivant</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="About">
+    <ion-icon name="information-circle"></ion-icon>About</div>
+</li>
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/en/search" title="Search">
+    <ion-icon name="search"></ion-icon>
+    Search
+  </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/en/posts" title="Archives">
+    <ion-icon name="archive"></ion-icon>
+    Archives
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/en/categories" title="All Categories">
+    <ion-icon name="grid"></ion-icon>
+    All Categories
+  </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="menu-title px-2 pt-2">Langue</li>
+
+  <li>
+    <a href="/fr" class="inline-flex items-center p-2 text-black hover:underline">
+      Français
+    </a>
+  </li>
+
+  <li>
+    <a href="/ja" class="inline-flex items-center p-2 text-black hover:underline">
+      日本語
+    </a>
+  </li>
+
+  <li>
+    <a href="/en" class="inline-flex items-center p-2 text-black hover:underline">
+      English
+    </a>
+  </li>
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0"
+        class="text-sm font-semibold cursor-pointer hover:underline"
+        @click="flip = !flip"
+        title="About"
+      >About</div>
+      
+      
+
+      
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/en/search" title="Search">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+
+
+
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/en/posts" title="Archives">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/en/categories" title="All Categories">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+
+
+
+
+
+      
+
+      
+
+      
+
+
+ 
+<div class="dropdown dropdown-end">
+  <div tabindex="0" role="button" class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" aria-label="Select an option">
+  <ion-icon name="earth-outline"> </ion-icon> 
+  
+  </div>
+  <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-xl">
+    
+      <li>
+        <a href="/fr" class="inline-flex items-center p-2 cursor-pointer" style = "color: #000000">
+          Français
+        </a>
+      </li>
+    
+      <li>
+        <a href="/ja" class="inline-flex items-center p-2 cursor-pointer" style = "color: #000000">
+          日本語
+        </a>
+      </li>
+    
+      <li>
+        <a href="/en" class="inline-flex items-center p-2 cursor-pointer" style = "color: #000000">
+          English
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+    </section>
+  </div>
+</nav>
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+           
+
+          <div class="container">
+            
+<div class="lg:grid lg:grid-cols-4 gap-4 mt-4 px-4">
+  <div class="hidden lg:block">
+    
+  </div>
+
+  <div class="lg:col-span-2">
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+	<meta itemprop="name" content="Yakushima: When an Island Becomes a Refuge for Loggerhead Sea Turtles">
+	<meta itemprop="description" content="This article explores the conservation challenges facing loggerhead sea turtles in Yakushima, a major Japanese nesting site, by examining the threats facing the species and the actions needed to ensure the long-term protection of its nesting beaches.">
+	<meta itemprop="datePublished" content="2026-08-19T14:00:00+01:00">
+	<meta itemprop="dateModified" content="2026-08-19T14:00:00+01:00">
+	<meta itemprop="wordCount" content="1515">
+	<meta itemprop="keywords" content="Everything you need to know about Expedition 2026">
+
+      <header>
+        <h1 itemprop="headline">Yakushima: When an Island Becomes a Refuge for Loggerhead Sea Turtles</h1>
+        <p class="text-sm">
+          
+            Wednesday, Aug 19, 2026
+          
+
+          | <span>8 minute read</span>
+
+          
+          | <span>Updated at
+            
+              Wednesday, Aug 19, 2026
+            </span>
+          
+        </p>
+
+        
+        <div class="flex justify-between">
+          
+            
+
+
+<div class="flex items-center">
+  
+    <div class="avatar mr-1">
+      <div class="w-8 rounded-full">
+        <img class="my-0" src="/images/authors/avatar_lucie.jpg" alt="Lucie" />
+      </div>
+    </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+    
+      
+        <span itemprop="name">Lucie</span>
+      
+    
+  </span>
+</div>
+
+          
+
+          
+
+<div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=http://localhost:4321/en/posts/yakushima-when-an-island-becomes-a-refuge-for-loggerhead-sea-turtles/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="text-gray-500 group-hover:text-white" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=Yakushima:%20When%20an%20Island%20Becomes%20a%20Refuge%20for%20Loggerhead%20Sea%20Turtles%20http://localhost:4321/en/posts/yakushima-when-an-island-becomes-a-refuge-for-loggerhead-sea-turtles/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="text-gray-500 group-hover:text-white" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div> 
+
+        </div>
+      </header>
+
+      <section id="dream-single-post-content" itemprop="articleBody">
+       
+    <img class="w-full z-30" src="/images/article/tortue_caouanne/DSC05295.jpg" alt="Yakushima: When an Island Becomes a Refuge for Loggerhead Sea Turtles" />
+
+
+  <p>This article explores the conservation challenges facing loggerhead sea turtles in Yakushima, a major Japanese nesting site, by examining the threats facing the species and the actions needed to ensure the long-term protection of its nesting beaches.</p>
+<p>Every year, loggerhead sea turtles (<em>Caretta caretta</em>) travel thousands of kilometres across the oceans before returning, sometimes several decades later, to the beach where they were born. This behaviour, known as <strong>philopatry</strong>, makes certain beaches irreplaceable breeding sites. Among them, the Japanese island of <strong>Yakushima</strong> holds an exceptional position. A true sanctuary for the species in the Northwest Pacific, it welcomes thousands of females every spring and summer as they come ashore to lay their eggs.</p>
+<p>Yet despite their wide distribution, loggerhead sea turtles continue to face numerous threats to their survival. Their conservation depends not only on protecting individual turtles, but also on protecting the coastal habitats on which they depend and on the involvement of local communities.</p>
+<h2 id="an-emblematic-species-in-danger">An emblematic species in danger</h2>
+<p>The loggerhead sea turtle is one of the seven species of sea turtles found around the world. It occurs in the Atlantic, Indian and Pacific Oceans, as well as in the Mediterranean Sea. Females can travel thousands of kilometres between their feeding grounds and nesting beaches, where they return to lay their eggs every two to three years.</p>
+<p><img src="/images/article/tortue_caouanne/DSC05271.jpg" alt="loggerhead sea turtle">
+<em>Photographs of a loggerhead sea turtle</em></p>
+<p>Although widely distributed, the species is declining in many regions of the world. According to the International Union for Conservation of Nature (IUCN), the loggerhead sea turtle is classified as &ldquo;Vulnerable&rdquo; at the global level, while several regional populations are considered &ldquo;Endangered&rdquo; or &ldquo;Critically Endangered&rdquo;, notably due to declining reproductive success and adult mortality.</p>
+<p>This situation is particularly concerning because sea turtles have a very slow life cycle. A female does not reach sexual maturity until she is twenty to thirty years old, or sometimes even older. Of the hundreds of eggs she lays throughout her lifetime, only a tiny proportion of hatchlings will survive to adulthood. The survival of reproductive females is therefore essential to maintaining populations.</p>
+<h2 id="threats-on-a-global-scale">Threats on a global scale</h2>
+<p>Loggerhead sea turtles face numerous pressures, many of them human-induced.</p>
+<p>The first is <strong>bycatch in fisheries</strong>. Nets, trawlers and fishing vessels capture thousands of turtles every year, many of which drown or suffer severe injuries.</p>
+<p><strong>Plastic pollution</strong> is another major threat. Turtles can mistake plastic bags for jellyfish, leading to intestinal blockages, malnutrition or death. Microplastics are now found in many individuals.</p>
+<p><strong>Coastal development</strong> is also a major concern. Urbanisation, the construction of seawalls, rock armouring and artificial lighting alter nesting beaches and disrupt the orientation of both females and hatchlings. Coastal development often leads to unsuccessful nesting attempts: females may expend too much energy trying to make their way through plant debris and plastic waste towards a suitable nesting site and ultimately fail to lay their eggs.</p>
+<p><strong>Tourism and interactions with hatchlings</strong> also constitute a threat, even when they stem from good intentions. On some beaches, visitors attempt to &ldquo;help&rdquo; young turtles reach the sea by carrying them directly to the water. This intervention disrupts an essential natural process: by making their own way to the sea, hatchlings are exposed to their surroundings and may acquire information that contributes to their future orientation. This phase may in particular play a role in <strong>philopatry</strong>, the tendency of turtles to return, once they reach adulthood, to their region of origin to reproduce. Human handling can therefore disrupt their natural behaviour and, more broadly, alter the conditions necessary for the successful completion of their life cycle. The best thing to do is therefore often <strong>not to intervene</strong> and to allow hatchlings to reach the sea on their own.</p>
+<p><strong>Climate change</strong> further exacerbates these difficulties. Rising sea levels lead to beach erosion, while increasing sand temperatures directly influence the sex of embryos: higher temperatures produce more females, which could unbalance populations in the long term.</p>
+<p>Finally, turtles still face local threats such as the poaching of eggs and adults, collisions with boats, and various forms of chemical pollution.</p>
+<h2 id="yakushima-a-major-nesting-site-for-loggerhead-sea-turtles">Yakushima: a major nesting site for loggerhead sea turtles</h2>
+<p>Located south of Kyūshū Island, in southwestern Japan, Yakushima is best known for its ancient forests, which are listed as a UNESCO World Heritage Site. Yet its beaches also play an essential role in marine biodiversity.</p>
+<p><img src="/images/article/tortue_caouanne/DSC04946_edit2.jpg" alt="Yakushima forest">
+<em>Yakusugi Forest, home to thousand-year-old trees and an iconic feature of Yakushima</em></p>
+<p>Every year, between May and August, several thousand females come ashore to lay their eggs on the island&rsquo;s sandy beaches, making Yakushima <strong>one of the most important loggerhead sea turtle nesting sites in the Northwest Pacific</strong>. Inakahama Beach is particularly remarkable and alone accounts for a significant proportion of the nesting activity recorded in Japan.</p>
+<p>After approximately two months of incubation, young turtles emerge from the sand, mainly at night, and make their way towards the ocean by orienting themselves using the natural light of the marine horizon.</p>
+<p>The importance of Yakushima extends far beyond Japan&rsquo;s borders. Turtles born on these beaches subsequently migrate throughout the North Pacific, frequenting the waters of Japan, Taiwan, China and even the central Pacific. Protecting Yakushima&rsquo;s beaches therefore directly contributes to maintaining this entire regional population.</p>
+<h2 id="an-island-facing-numerous-challenges">An island facing numerous challenges</h2>
+<p>Despite its status as an exceptional natural site, Yakushima currently faces several threats.</p>
+<p><strong>Shoreline retreat</strong> is gradually altering some nesting beaches. Natural erosion is sometimes exacerbated by coastal structures built to protect human infrastructure, reducing the space available for nesting.</p>
+<p><img src="/images/article/tortue_caouanne/DSC04868.jpg" alt="coastal development">
+<em>Structure installed on a turtle nesting site</em></p>
+<p><strong>Tourism development</strong> is also an increasing challenge. While tourism is an important economic resource for the island, excessive visitor numbers can lead to trampling of nests, disturbance of females during nesting, nocturnal light pollution and an accumulation of waste on the beaches.</p>
+<p>Scientific monitoring also shows that the number of nesting events varies greatly from one year to another. These fluctuations are partly natural, but they also highlight the need for long-term monitoring in order to better understand population trends in the context of climate change.</p>
+<p>Other, sometimes more indirect, environmental pressures must also be taken into account. On Yakushima, the health of coastal ecosystems can be affected by certain organisms introduced or favoured by human activities. One example is <strong>Monochamus alternatus</strong>, a longhorn beetle that acts as a vector for the pinewood nematode <em><strong>Bursaphelenchus xylophilus</strong></em>. This parasitic nematode colonises pine tissues and can cause rapid tree decline, eventually leading to the death of infected trees.</p>
+<p>The decline and disappearance of pine trees can gradually alter coastal vegetation. Vegetation plays an important role in the stability and structure of nesting beaches: roots help retain sand, while certain plants contribute to dune formation, protecting areas further inland. Changes in this vegetation can therefore increase erosion or alter the characteristics of sites used by loggerhead sea turtles for nesting.</p>
+<p>More broadly, changes in coastal vegetation and extreme weather events can alter beach structure, affect temperatures, or cause erosion and the burial of certain nesting areas. These changes can therefore reduce the quality of available nesting sites and indirectly affect egg survival and hatching success.</p>
+<h2 id="local-communities-taking-action">Local communities taking action</h2>
+<p>In response to these challenges, Yakushima is now a remarkable example of conservation based on collaboration between scientists, associations, local residents and authorities.</p>
+<p>The <strong>Yakushima Umigame-kan</strong> (Yakushima Sea Turtle Museum) plays a central role in this approach. Working at this research centre, <strong>Professor Ueda</strong> raises public awareness about sea turtle biology, contributes to various scientific programmes and monitors breeding populations. He plays a major role in the conservation of the species.</p>
+<p><img src="/images/article/tortue_caouanne/C1194.jpg" alt="Pr. UEDA">
+<em>Prof. Ueda explaining the role of temperature in sex determination in turtles at the Yakushima Umigame-kan</em></p>
+<p>During each nesting season, teams of researchers and volunteers carry out extensive fieldwork. The beaches are surveyed daily to record nesting females, locate nests, monitor hatching and estimate reproductive success. These data, collected over several decades, make it possible to assess population trends and adapt management measures.</p>
+<p><img src="/images/article/tortue_caouanne/C1199.jpg" alt="loggerhead nesting survey">
+<em>Survey of tracks left by turtles coming ashore to nest</em></p>
+<p>Local associations also maintain a regular presence on the beaches during nesting and hatching periods. They inform visitors, supervise nighttime observations, minimise disturbance to nesting females and raise awareness about appropriate practices.</p>
+<p>Actions are also carried out to preserve habitat quality, including limiting artificial lighting, cleaning beaches and protecting sensitive areas.</p>
+<p>This local involvement demonstrates that effective conservation relies as much on scientific knowledge as on the commitment of those who live alongside this exceptional biodiversity.</p>
+<h2 id="protecting-a-beach-means-protecting-an-ocean">Protecting a beach means protecting an ocean</h2>
+<p>The conservation of loggerhead sea turtles is not simply about protecting an emblematic species. It involves preserving beaches, dunes, seagrass meadows, feeding grounds and all the ecosystems on which they depend throughout their lives.</p>
+<p>Yakushima perfectly illustrates this approach. Behind every protected nest lies a long-term effort combining scientific research, natural area management, public awareness and citizen engagement.</p>
+<p>At a time when pressures on coastal environments continue to increase, this small Japanese island reminds us that long-term conservation is possible when science, local authorities and communities join forces around a common goal: allowing future generations to see turtles return every summer to the beaches where their story began.</p>
+<p><img src="/images/article/tortue_caouanne/DSC05269.jpg" alt="loggerhead sea turtle"></p>
+
+        
+      </section>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <div></div>
+        
+
+        
+        <a class="group btn btn-outline" href="/en/posts/the-japanese-crane-the-story-of-a-species-saved-from-extinction/" title="The Japanese Crane: The Story of a Species Saved from Extinction">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">Next page</span>
+            <span class="max-w-48 truncate">The Japanese Crane: The Story of a Species Saved from Extinction</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+
+      
+      <div class="divider"></div>
+
+      <section class="space-y-4">
+        
+
+
+
+
+<article>
+
+  <div id="vcomments"></div>
+<script src="https://unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+  new Valine({
+    el: '#vcomments',
+    appId: '',
+    appKey: '',
+    placeholder: 'Leave a comment...',
+    lang: 'en',
+    avatar: 'mp',
+    visitor: true,
+    requiredFields: ['nick','mail']
+  });
+</script>
+
+
+</article>
+
+
+
+
+
+
+      </section>
+      
+    </article>
+  </div>
+
+  <div class="hidden lg:flex lg:flex-col lg:items-end">
+    
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#an-emblematic-species-in-danger">An emblematic species in danger</a></li>
+    <li><a href="#threats-on-a-global-scale">Threats on a global scale</a></li>
+    <li><a href="#yakushima-a-major-nesting-site-for-loggerhead-sea-turtles">Yakushima: a major nesting site for loggerhead sea turtles</a></li>
+    <li><a href="#an-island-facing-numerous-challenges">An island facing numerous challenges</a></li>
+    <li><a href="#local-communities-taking-action">Local communities taking action</a></li>
+    <li><a href="#protecting-a-beach-means-protecting-an-ocean">Protecting a beach means protecting an ocean</a></li>
+  </ul>
+</nav>
+    
+  </div>
+</div>
+
+
+
+            
+<footer class="px-4 py-4">
+
+
+  <div class="w-full flex flex-col gap-4">
+    <style>
+.partners-footer {
+  text-align: center;
+  margin: 15px 0 5px 0;
+}
+
+.partners-footer h3 {
+  margin-bottom: 12px;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.partners-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.partners-logos img {
+  height: 200px;
+  object-fit: contain;
+  transition: transform .2s ease;
+}
+
+.partners-logos img:hover {
+  transform: scale(1.08);
+}
+</style>
+
+
+<div class="partners-footer">
+  <h3>Nos partenaires</h3>
+
+  <div class="partners-logos">
+    <a href="https://www.agroparistech.fr/partenariats-socioeconomiques/nous-soutenir/fondation-agroparistech" target="_blank">
+      <img src="/images/partners/fondation APT.png" alt="Partenaire 1" />
+    </a>
+
+  </div>
+</div>
+
+
+    <div class="flex justify-between items-center gap-2">
+      <div>
+  
+  <p>© 2026 BiOdyssée</p>
+  
+
+  
+  <p>Tous droits réservés</p>
+  
+</div>
+
+       
+
+    </div>
+  </div>
+
+</footer>
+
+
+<script>
+  function scrollCategories(direction) {
+    const container = document.getElementById("categoriesScroll");
+    const scrollAmount = 300; 
+    container.scrollBy({
+      left: direction * scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+</script>
+
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid dream-grid-about">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Meet the Mission 2026 team</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Here&rsquo;s a brief introduction to the founding team of BiOdyssée, who will be taking part in the 2026 expedition to Japan.</p>
+<p><img src="/images/nous.jpg" alt="photo équipe"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Hugo </div>
+
+        <div class="prose dark:prose-invert">
+          <p>As a student in Environmental Management and Engineering at AgroParisTech, I’m passionate about paleontology and evolution 🦖🦴🧬. I aspire to work in the field of natural area management, specifically in the conservation or restoration of wetlands in France 🐸🐟🌿, which have lost a significant portion of their surface area over the past centuries. I’ve always been fascinated by the evolution of species and ecosystems over time, which is why this gap year project is such a strong source of motivation for me!</p>
+<p><strong>Contact :</strong>
+<a href="mailto:hugo.roger@agroparistech.fr" target="_blank">hugo.roger@agroparistech.fr</a>
+</p>
+<p><img src="/images/hugo.jpg" alt="photo rando"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Lucie </div>
+
+        <div class="prose dark:prose-invert">
+          <p>Student in Environmental Management and Engineering, I’m fascinated by just about everything related to the ocean 🌊. Wanting to combine work and passion, I’m pursuing a path in marine biology. More specifically, I’d like to work in marine ecosystem conservation or management. I’m deeply passionate about marine wildlife 🐠🐋🐙 as well as aquatic flora, and it’s to get a closer look at it all that I practice scuba diving 🤿. This project is an opportunity for me to explore new aquatic environments 🌊🪸🌿 and better understand the challenges they face.</p>
+<p><strong>Contact :</strong>
+<a href="mailto:lucie.lowagie@agroparistech.fr" target="_blank">lucie.lowagie@agroparistech.fr</a>
+</p>
+<p><img src="/images/lucie-plongee.jpg" alt="photo plongée"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Solal</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Student in agronomy and passionate about history 🧭⌛🏹 and ethology 🐁🧠🧪, I hope to use this opportunity to observe animal behavior in their natural environment. Later on, I would like to pursue a career in research 👨‍🔬 or teach in higher education 🧑‍🏫, and this gap year would allow me to develop my analytical and observational skills. The possibility of combining historical research with animal observation — all with the goal of avoiding the mistakes of the past — is what makes this project so meaningful to me.</p>
+<p><strong>Contact :</strong>
+<a href="mailto:solal.free@agroparistech.fr" target="_blank">solal.free@agroparistech.fr</a>
+</p>
+<p><img src="/images/solal.jpg" alt="photo qui fait peur"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Théophile </div>
+
+        <div class="prose dark:prose-invert">
+          <p>As an environmental engineering student with a passion for entomology and myrmecology in particular 🐜, my aim is to do environmental research, particularly into the genetic dynamics of 🧬🐜 populations (of ants of course). I&rsquo;m part of the naturalist association ‘les “Blairoudeurs 🦡”’ with which I went out to do some prospecting and awareness-raising in Corsica during the Isula Mission. This gap year project is a great opportunity to continue this experience, but on a much larger and more exotic scale, while continuing to learn about different ecosystems and how they are managed in another country.</p>
+<p><strong>Contact :</strong>
+<a href="mailto:theophie.thomas@agroparistech.fr" target="_blank">theophie.thomas@agroparistech.fr</a>
+</p>
+<p><img src="/images/theophile.jpg" alt="photo stylée"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Social Links</div>
+
+        <ul class="menu menu-horizontal flex-wrap w-full px-0 [&_ion-icon]:text-lg">
+  
+
+  
+  <li>
+    <a href="https://www.facebook.com/profile.php?id=61576052068851" target="_blank" title="Facebook">
+      <ion-icon name="logo-facebook"></ion-icon>
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://www.instagram.com/bio_dyssee/" target="_blank" title="Instagram">
+      <ion-icon name="logo-instagram"></ion-icon>
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://www.linkedin.com/company/107400672/admin/dashboard/" target="_blank" title="Linkedin">
+      <ion-icon name="logo-linkedin"></ion-icon>
+    </a>
+  </li>
+  
+  <li>
+    <a href="mailto:biodyssee2026@gmail.com" target="_blank" title="Email">
+      <ion-icon name="mail-outline"></ion-icon>
+    </a>
+  </li>
+  
+</ul>
+
+      </div>
+    </article>
+  </div>
+  
+
+  
+</div>
+
+            
+
+            
+<footer class="px-4 py-4">
+
+
+  <div class="w-full flex flex-col gap-4">
+    <style>
+.partners-footer {
+  text-align: center;
+  margin: 15px 0 5px 0;
+}
+
+.partners-footer h3 {
+  margin-bottom: 12px;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.partners-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.partners-logos img {
+  height: 200px;
+  object-fit: contain;
+  transition: transform .2s ease;
+}
+
+.partners-logos img:hover {
+  transform: scale(1.08);
+}
+</style>
+
+
+<div class="partners-footer">
+  <h3>Nos partenaires</h3>
+
+  <div class="partners-logos">
+    <a href="https://www.agroparistech.fr/partenariats-socioeconomiques/nous-soutenir/fondation-agroparistech" target="_blank">
+      <img src="/images/partners/fondation APT.png" alt="Partenaire 1" />
+    </a>
+
+  </div>
+</div>
+
+
+    <div class="flex justify-between items-center gap-2">
+      <div>
+  
+  <p>© 2026 BiOdyssée</p>
+  
+
+  
+  <p>Tous droits réservés</p>
+  
+</div>
+
+       
+
+    </div>
+  </div>
+
+</footer>
+
+
+<script>
+  function scrollCategories(direction) {
+    const container = document.getElementById("categoriesScroll");
+    const scrollAmount = 300; 
+    container.scrollBy({
+      left: direction * scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+</script>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+  <script src="/js/grid.js"></script>
+
+
+
+
+<script src="/js/main.js"></script>
+
+    
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-2PHJBK75DX"></script>
+      <script>
+        var doNotTrack = false;
+        if ( true ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-2PHJBK75DX');
+        }
+      </script>
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
+
