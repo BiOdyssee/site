@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://biodyssee.netlify.app/ja/categories/expedition-2026/</loc>
-    <lastmod>2026-07-22T14:00:00+01:00</lastmod>
+    <lastmod>2026-08-18T14:00:00+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -21,7 +21,7 @@
                 />
   </url><url>
     <loc>https://biodyssee.netlify.app/ja/posts/</loc>
-    <lastmod>2026-07-22T14:00:00+01:00</lastmod>
+    <lastmod>2026-08-18T14:00:00+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -39,7 +39,7 @@
                 />
   </url><url>
     <loc>https://biodyssee.netlify.app/ja/categories/</loc>
-    <lastmod>2026-07-22T14:00:00+01:00</lastmod>
+    <lastmod>2026-08-18T14:00:00+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -54,6 +54,24 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://biodyssee.netlify.app/en/categories/"
+                />
+  </url><url>
+    <loc>https://biodyssee.netlify.app/ja/posts/%E5%B1%8B%E4%B9%85%E5%B3%B6%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%9F%E3%82%AC%E3%83%A1%E3%81%AE%E9%81%BF%E9%9B%A3%E5%A0%B4%E6%89%80%E3%81%A8%E3%81%AA%E3%81%A3%E3%81%9F%E5%B3%B6/</loc>
+    <lastmod>2026-08-18T14:00:00+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://biodyssee.netlify.app/fr/posts/yakushima-quand-une-%C3%AEle-devient-un-refuge-pour-les-tortues-caouannes/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://biodyssee.netlify.app/ja/posts/%E5%B1%8B%E4%B9%85%E5%B3%B6%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%9F%E3%82%AC%E3%83%A1%E3%81%AE%E9%81%BF%E9%9B%A3%E5%A0%B4%E6%89%80%E3%81%A8%E3%81%AA%E3%81%A3%E3%81%9F%E5%B3%B6/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://biodyssee.netlify.app/en/posts/yakushima-when-an-island-becomes-a-refuge-for-loggerhead-sea-turtles/"
                 />
   </url><url>
     <loc>https://biodyssee.netlify.app/ja/posts/%E6%97%A5%E6%9C%AC%E3%81%AE%E3%82%BF%E3%83%B3%E3%83%81%E3%83%A7%E3%82%A6%E7%B5%B6%E6%BB%85%E3%81%8B%E3%82%89%E6%95%91%E3%82%8F%E3%82%8C%E3%81%9F%E7%A8%AE%E3%81%AE%E7%89%A9%E8%AA%9E/</loc>
