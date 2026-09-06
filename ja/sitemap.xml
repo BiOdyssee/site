@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://biodyssee.netlify.app/ja/categories/expedition-2026/</loc>
-    <lastmod>2026-08-25T14:00:00+01:00</lastmod>
+    <lastmod>2026-09-05T14:00:00+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -21,7 +21,7 @@
                 />
   </url><url>
     <loc>https://biodyssee.netlify.app/ja/posts/</loc>
-    <lastmod>2026-08-25T14:00:00+01:00</lastmod>
+    <lastmod>2026-09-05T14:00:00+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -39,7 +39,7 @@
                 />
   </url><url>
     <loc>https://biodyssee.netlify.app/ja/categories/</loc>
-    <lastmod>2026-08-25T14:00:00+01:00</lastmod>
+    <lastmod>2026-09-05T14:00:00+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -54,6 +54,19 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://biodyssee.netlify.app/en/categories/"
+                />
+  </url><url>
+    <loc>https://biodyssee.netlify.app/ja/posts/%E7%99%BD%E7%A5%9E%E5%B1%B1%E5%9C%B0-%E7%89%B9%E5%88%A5%E3%81%AA%E5%8E%9F%E7%94%9F%E6%9E%97/</loc>
+    <lastmod>2026-09-05T14:00:00+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://biodyssee.netlify.app/ja/posts/%E7%99%BD%E7%A5%9E%E5%B1%B1%E5%9C%B0-%E7%89%B9%E5%88%A5%E3%81%AA%E5%8E%9F%E7%94%9F%E6%9E%97/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://biodyssee.netlify.app/en/posts/the-exceptional-forest-of-shirakami-sanchi/"
                 />
   </url><url>
     <loc>https://biodyssee.netlify.app/ja/posts/%E3%82%B3%E3%82%A6%E3%83%8E%E3%83%88%E3%83%AA%E8%B1%8A%E5%B2%A1%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E7%94%9F%E6%85%8B%E7%B3%BB%E5%86%8D%E7%94%9F%E3%81%AE%E3%82%B7%E3%83%B3%E3%83%9C%E3%83%AB/</loc>

@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://biodyssee.netlify.app/en/posts/</loc>
-    <lastmod>2026-08-25T14:00:00+01:00</lastmod>
+    <lastmod>2026-09-05T14:00:00+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -21,7 +21,7 @@
                 />
   </url><url>
     <loc>https://biodyssee.netlify.app/en/categories/</loc>
-    <lastmod>2026-08-25T14:00:00+01:00</lastmod>
+    <lastmod>2026-09-05T14:00:00+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -39,7 +39,7 @@
                 />
   </url><url>
     <loc>https://biodyssee.netlify.app/en/categories/expedition-2026/</loc>
-    <lastmod>2026-08-25T14:00:00+01:00</lastmod>
+    <lastmod>2026-09-05T14:00:00+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -57,7 +57,7 @@
                 />
   </url><url>
     <loc>https://biodyssee.netlify.app/en/</loc>
-    <lastmod>2026-08-25T14:00:00+01:00</lastmod>
+    <lastmod>2026-09-05T14:00:00+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -72,6 +72,19 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://biodyssee.netlify.app/en/"
+                />
+  </url><url>
+    <loc>https://biodyssee.netlify.app/en/posts/the-exceptional-forest-of-shirakami-sanchi/</loc>
+    <lastmod>2026-09-05T14:00:00+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://biodyssee.netlify.app/ja/posts/%E7%99%BD%E7%A5%9E%E5%B1%B1%E5%9C%B0-%E7%89%B9%E5%88%A5%E3%81%AA%E5%8E%9F%E7%94%9F%E6%9E%97/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://biodyssee.netlify.app/en/posts/the-exceptional-forest-of-shirakami-sanchi/"
                 />
   </url><url>
     <loc>https://biodyssee.netlify.app/en/posts/the-oriental-stork-a-symbol-of-ecological-restoration-in-toyooka/</loc>

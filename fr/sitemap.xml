@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://biodyssee.netlify.app/posts/</loc>
-    <lastmod>2026-08-25T14:00:00+01:00</lastmod>
+    <lastmod>2026-09-05T14:00:00+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -21,7 +21,7 @@
                 />
   </url><url>
     <loc>https://biodyssee.netlify.app/categories/</loc>
-    <lastmod>2026-08-25T14:00:00+01:00</lastmod>
+    <lastmod>2026-09-05T14:00:00+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -36,6 +36,45 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://biodyssee.netlify.app/en/categories/"
+                />
+  </url><url>
+    <loc>https://biodyssee.netlify.app/fr/posts/la-for%C3%AAt-dexception-de-shirakami-sanchi/</loc>
+    <lastmod>2026-09-05T14:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://biodyssee.netlify.app/</loc>
+    <lastmod>2026-09-05T14:00:00+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://biodyssee.netlify.app/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://biodyssee.netlify.app/ja/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://biodyssee.netlify.app/en/"
+                />
+  </url><url>
+    <loc>https://biodyssee.netlify.app/categories/expedition-2026/</loc>
+    <lastmod>2026-09-05T14:00:00+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://biodyssee.netlify.app/categories/expedition-2026/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://biodyssee.netlify.app/ja/categories/expedition-2026/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://biodyssee.netlify.app/en/categories/expedition-2026/"
                 />
   </url><url>
     <loc>https://biodyssee.netlify.app/fr/posts/la-cigogne-orientale-symbole-de-la-restauration-%C3%A9cologique-%C3%A0-toyooka/</loc>
@@ -54,42 +93,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://biodyssee.netlify.app/en/posts/the-oriental-stork-a-symbol-of-ecological-restoration-in-toyooka/"
-                />
-  </url><url>
-    <loc>https://biodyssee.netlify.app/</loc>
-    <lastmod>2026-08-25T14:00:00+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://biodyssee.netlify.app/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://biodyssee.netlify.app/ja/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://biodyssee.netlify.app/en/"
-                />
-  </url><url>
-    <loc>https://biodyssee.netlify.app/categories/expedition-2026/</loc>
-    <lastmod>2026-08-25T14:00:00+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://biodyssee.netlify.app/categories/expedition-2026/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://biodyssee.netlify.app/ja/categories/expedition-2026/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://biodyssee.netlify.app/en/categories/expedition-2026/"
                 />
   </url><url>
     <loc>https://biodyssee.netlify.app/fr/posts/yakushima-quand-une-%C3%AEle-devient-un-refuge-pour-les-tortues-caouannes/</loc>
