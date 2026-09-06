@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="ja"  
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=6879&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>白神山地 ― 特別な原生林 | BiOdyssée</title>
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+  
+
+    
+
+<link rel="canonical" href="http://localhost:6879/ja/posts/%E7%99%BD%E7%A5%9E%E5%B1%B1%E5%9C%B0-%E7%89%B9%E5%88%A5%E3%81%AA%E5%8E%9F%E7%94%9F%E6%9E%97/" />
+
+
+
+<meta name="author" content="hugo" />
+<meta name="description" content=" 日本列島最大の島、本州の北部。
+" />
+
+
+<meta name="keywords" content="2026年探査のすべて">
+
+
+
+<meta name="generator" content="Hugo 0.163.2">
+
+
+<meta property="og:url" content="http://localhost:6879/ja/posts/%E7%99%BD%E7%A5%9E%E5%B1%B1%E5%9C%B0-%E7%89%B9%E5%88%A5%E3%81%AA%E5%8E%9F%E7%94%9F%E6%9E%97/">
+	<meta property="og:site_name" content="BiOdyssée">
+	<meta property="og:title" content="白神山地 ― 特別な原生林">
+	<meta property="og:description" content="日本列島最大の島、本州の北部。">
+	<meta property="og:locale" content="ja">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="posts">
+		<meta property="article:published_time" content="2026-09-06T14:00:00+01:00">
+		<meta property="article:modified_time" content="2026-09-06T14:00:00+01:00">
+
+
+
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="白神山地 ― 特別な原生林">
+	<meta name="twitter:description" content="日本列島最大の島、本州の北部。">
+
+
+
+
+<link rel="stylesheet" href="/css/output.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+<script src="//unpkg.com/valine@1.5.2/dist/Valine.min.js"></script>
+
+
+
+
+
+
+
+    
+    <link rel="stylesheet" href="/css/custom.css" />
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="py-4"> 
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="Flip it!">
+        <div class="h-10 rounded-full">
+          <img src="/images/logo.jpg" alt="BiOdyssée" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="http://localhost:6879/" class="text-lg font-semibold cursor-pointer">
+          BiOdyssée
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm" style="color: #ffffff" >À la (re)découverte du vivant</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="About">
+    <ion-icon name="information-circle"></ion-icon>About</div>
+</li>
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/ja/search" title="検索">
+    <ion-icon name="search"></ion-icon>
+    検索
+  </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/ja/posts" title="アーカイブ">
+    <ion-icon name="archive"></ion-icon>
+    アーカイブ
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/ja/categories" title="カテゴリー一覧">
+    <ion-icon name="grid"></ion-icon>
+    カテゴリー一覧
+  </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="menu-title px-2 pt-2">Langue</li>
+
+  <li>
+    <a href="/fr" class="inline-flex items-center p-2 text-black hover:underline">
+      Français
+    </a>
+  </li>
+
+  <li>
+    <a href="/ja" class="inline-flex items-center p-2 text-black hover:underline">
+      日本語
+    </a>
+  </li>
+
+  <li>
+    <a href="/en" class="inline-flex items-center p-2 text-black hover:underline">
+      English
+    </a>
+  </li>
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0"
+        class="text-sm font-semibold cursor-pointer hover:underline"
+        @click="flip = !flip"
+        title="About"
+      >About</div>
+      
+      
+
+      
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/ja/search" title="検索">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+
+
+
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/ja/posts" title="アーカイブ">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/ja/categories" title="カテゴリー一覧">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+
+
+
+
+
+      
+
+      
+
+      
+
+
+ 
+<div class="dropdown dropdown-end">
+  <div tabindex="0" role="button" class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" aria-label="Select an option">
+  <ion-icon name="earth-outline"> </ion-icon> 
+  
+  </div>
+  <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-xl">
+    
+      <li>
+        <a href="/fr" class="inline-flex items-center p-2 cursor-pointer" style = "color: #000000">
+          Français
+        </a>
+      </li>
+    
+      <li>
+        <a href="/ja" class="inline-flex items-center p-2 cursor-pointer" style = "color: #000000">
+          日本語
+        </a>
+      </li>
+    
+      <li>
+        <a href="/en" class="inline-flex items-center p-2 cursor-pointer" style = "color: #000000">
+          English
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+    </section>
+  </div>
+</nav>
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+           
+
+          <div class="container">
+            
+<div class="lg:grid lg:grid-cols-4 gap-4 mt-4 px-4">
+  <div class="hidden lg:block">
+    
+  </div>
+
+  <div class="lg:col-span-2">
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+	<meta itemprop="name" content="白神山地 ― 特別な原生林">
+	<meta itemprop="description" content="日本列島最大の島、本州の北部。">
+	<meta itemprop="datePublished" content="2026-09-06T14:00:00+01:00">
+	<meta itemprop="dateModified" content="2026-09-06T14:00:00+01:00">
+	<meta itemprop="wordCount" content="71">
+	<meta itemprop="keywords" content="2026年探査のすべて">
+
+      <header>
+        <h1 itemprop="headline">白神山地 ― 特別な原生林</h1>
+        <p class="text-sm">
+          
+            日曜日,  6, 2026
+          
+
+          | <span>1分で読めます</span>
+
+          
+          | <span>更新日時
+            
+              日曜日,  6, 2026
+            </span>
+          
+        </p>
+
+        
+        <div class="flex justify-between">
+          
+            
+
+
+<div class="flex items-center">
+  
+    <div class="avatar mr-1">
+      <div class="w-8 rounded-full">
+        <img class="my-0" src="/images/authors/avatar_hugo.jpg" alt="Hugo" />
+      </div>
+    </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+    
+      
+        <span itemprop="name">Hugo</span>
+      
+    
+  </span>
+</div>
+
+          
+
+          
+
+<div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=http://localhost:6879/ja/posts/%E7%99%BD%E7%A5%9E%E5%B1%B1%E5%9C%B0-%E7%89%B9%E5%88%A5%E3%81%AA%E5%8E%9F%E7%94%9F%E6%9E%97/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="text-gray-500 group-hover:text-white" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e7%99%bd%e7%a5%9e%e5%b1%b1%e5%9c%b0%20%e2%80%95%20%e7%89%b9%e5%88%a5%e3%81%aa%e5%8e%9f%e7%94%9f%e6%9e%97%20http://localhost:6879/ja/posts/%E7%99%BD%E7%A5%9E%E5%B1%B1%E5%9C%B0-%E7%89%B9%E5%88%A5%E3%81%AA%E5%8E%9F%E7%94%9F%E6%9E%97/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="text-gray-500 group-hover:text-white" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div> 
+
+        </div>
+      </header>
+
+      <section id="dream-single-post-content" itemprop="articleBody">
+       
+    <img class="w-full z-30" src="/images/article/shirakami_sanchi/DSC01736.jpg" alt="白神山地 ― 特別な原生林" />
+
+
+  <hr>
+<p>日本列島最大の島、本州の北部。</p>
+<p>白神山地の奥深くには、8,000年以上もの歴史を持つ森が広がっています。この地域では、数千年にわたりブナが森を支配し、気候の変化や氷河期を乗り越えてきました。現在、白神山地には東アジア最大規模の原生的なブナ林が残されています。約13万ヘクタールに及ぶ森林地帯のうち、1万7,000ヘクタールがユネスコ世界遺産に登録されています。</p>
+<p>白神山地世界遺産センターで環境アドバイザーを務める白取真理さんに、この世界でも類を見ない生態系について詳しくお話を伺いました。</p>
+<h2 id="数千年の歴史を持つ森">数千年の歴史を持つ森</h2>
+<h4 id="森の成り立ち">森の成り立ち</h4>
+<p>約1万年前、最後の氷河期が終わり、地球全体の気候が温暖化すると、世界各地で動植物が徐々に北へと移動していきました。現在の森を構成するブナもこの移動に伴って北上し、白神山地のブナ林は約8,000年前に形成されたと考えられています。</p>
+<p>こうした植物の北方への移動は日本列島では可能でしたが、世界のどこでも同じように起こったわけではありません。当時、ヨーロッパや北アメリカにも同様のブナ林が存在していました。しかし、この2つの大陸には、山脈や大きな湖といった広大な自然の障壁が東西方向に延びています。そのため、過去250万年間に繰り返された氷期において、植物が移動できる範囲は大きく制限されました。</p>
+<p><img src="/images/article/shirakami_sanchi/DSC01742.jpg" alt="雪に覆われた森の写真">
+<em>雪に覆われた白神山地の森</em></p>
+<p>このような自然の障壁が少ない日本列島では、森林は多様性を維持しながら、繰り返される氷期を生き延びることができました。現在の白神山地の森には、数百万年前にまで遡る植物群集の姿が残されています。</p>
+<h4 id="林業の歴史">林業の歴史</h4>
+<p>16世紀末、この地域の森林からは建造物の建設に使用するため、大量の木材が伐採されました。山で伐採された木々は、海上輸送によって西日本へ運ばれていました。17世紀になると林業はさらに発展しましたが、やがて統治者から「山は国の宝である。山が貧しくなれば、国もまた貧しくなる」という重要な考えが示されます。白神山地は険しい山岳地形であったことに加え、こうした森林保全の取り組みによって大規模な開発を免れました。</p>
+<p>第二次世界大戦後、日本国内では再び木材需要が急増し、それまで伐採を免れていた森林にも開発の手が伸びるようになりました。1982年には、白神山地の中心部へ向かう2本の林道の建設が始まり、それまで手つかずだった地域が危機にさらされます。これに対して日本自然保護協会が介入し、工事は中断されました。その後、地域住民から反対の声が集まり、最終的に工事は全面的に中止されました。1990年には林野庁によって、白神山地が「森林生態系保護地域」に指定されました。</p>
+<p><img src="/images/article/shirakami_sanchi/DSC01560.jpg" alt="夕日の写真"></p>
+<p>現在、日本の国土のおよそ69％が森林に覆われています。しかし白取真理さんは、「日本には広大な森林がありますが、古くから残る森林は決して多くありません」と語ります。実際、人間による伐採や大規模な改変を一度も受けていない原生林は、日本の森林面積全体のおよそ4％にすぎないとされています。そのため白神山地は、林業による開発を免れてきた日本最後の森林生態系の一つといえます。</p>
+<h2 id="豊かな生態系">豊かな生態系</h2>
+<p>この森の大きな特徴は、ブナ (<em>Fagus crenata</em>) を中心とした植物相にあります。</p>
+<p>世界の他の地域では、これほど厳しい冬の気候にさらされる森林は、主に針葉樹によって構成されています。しかし一般的に、落葉広葉樹林は針葉樹林よりも豊かな生物多様性を育むことがあります。ブナのような柔らかい葉は、多くの草食動物にとって針葉樹の葉よりも利用しやすい栄養源となります。また、落ち葉は長期にわたって土壌に有機物を供給し、水の循環を改善します。一方、硬くタンニンを多く含む針葉樹の葉は分解されにくく、樹木の下の土壌を酸性化させます。</p>
+<p>白取真理さんによると、日本のブナ (<em>Fagus crenata</em>) は、ヨーロッパで一般的に見られるヨーロッパブナ (<em>Fagus sylvatica</em>) とは大きく異なります。ブナがつける実は「ブナの実」と呼ばれ、タンパク質や脂質を豊富に含む、小さな栗のような堅果です。ヨーロッパのブナの実は小さく硬いのに対し、日本のブナの実はより大きく、豊富に実ります。そのため、多種多様な動物にとって重要な食料となり、生態系の中で中心的な役割を果たしています。</p>
+<p><img src="/images/article/shirakami_sanchi/01579166.jpg" alt="ブナの実の写真">
+<em>ブナがつける果実「ブナの実」</em></p>
+<p>生産性が高く多様な植物相に支えられ、白神山地には非常に豊かな動物相が形成されています。食物連鎖の上位には、ニホンツキノワグマ (<em>Ursus thibetanus</em> ssp. <em>japonicus</em>)、ニホンカモシカ (<em>Capricornis crispus</em>)、ニホンザル (<em>Macaca fuscata</em>) <a href="https://biodyssee.netlify.app/fr/posts/le-macaque-japonais/"> (ニホンザルの記事へのリンク)</a> がいます。また、この森では90種の鳥類が確認されており、その中でも大型の種としてクマタカ (<em>Nisaetus nipalensis</em>)、イヌワシ (<em>Aquila chrysaetos</em>)、クマゲラ (<em>Dryocopus martius</em>) などが生息しています。これらの鳥類は、げっ歯類とともに、ブナの実をはじめとする種子の散布に重要な役割を果たしています。さらに、森を流れる清らかな水には13種の両生類と9種の爬虫類が生息しており、これほど寒冷な気候の生態系としては非常に高い多様性を誇ります。</p>
+<p><img src="/images/article/shirakami_sanchi/DSC00627_1.jpg" alt="アカゲラの写真">
+<em>アカゲラの写真</em></p>
+<p>手つかずの生態系と、そこで維持されている卓越した生態学的・生物学的プロセスが評価され、白神山地は1993年、日本で最初にユネスコ世界遺産に登録された地域の一つとなりました。</p>
+<h2 id="保全センターの取り組み">保全センターの取り組み</h2>
+<p>ユネスコ世界遺産への登録後、森の北側に位置する青森県に最初の施設が建設されました。その後、1998年には森の南側に位置する秋田県にも2つ目の施設が建設されました。これが、現在白取真理さんが勤務している白神山地世界遺産センターです。</p>
+<p>白取真理さんにとって、人々の意識を高めることは白神山地を守っていくうえで不可欠であり、それこそがセンターの主要な目的です。施設内には大規模な展示が設けられ、森の歴史や生物多様性について解説するパンフレットも用意されています。また、ガイドによる森の案内も行われ、訪れた人々は実際に森の中へ入り、その雰囲気を自ら体験することができます。さらにセンターでは、気候データや現地調査のデータを収集し、白神山地の継続的なモニタリングにも貢献しています。</p>
+<p><img src="/images/article/shirakami_sanchi/DSC_9094.jpg" alt="保全センターの写真">
+<em>白神山地世界遺産センター</em></p>
+<p>白取真理さんは、今後さらに多くの人々に足を運んでもらい、この場所の美しさをできるだけ多くの人に知ってもらいたいと願っています。</p>
+<h2 id="脅威と今後の展望">脅威と今後の展望</h2>
+<p>保護地域に指定され、保全団体によるさまざまな対策が実施されているにもかかわらず、白神山地の未来にはいくつもの脅威が存在しています。</p>
+<h4 id="気候変動">気候変動</h4>
+<p>長期的に森林が維持されるうえで、気候変動は最も予測が難しい要因の一つです。平均寿命が150～300年に及ぶ成熟したブナは、極端な気象現象に対してある程度の耐性を示すことができます。しかし、若い個体は、自らに適さなくなった環境の中で成長することが難しくなる可能性があります。気温が全体的に上昇すれば、他の落葉広葉樹が成長しやすい環境へと徐々に変化し、ブナの個体群が減少していく可能性があります。</p>
+<p>一方、花粉を媒介する生物の数や多様性が減少し続ければ、ブナが十分な量の実をつける能力が損なわれ、その影響が生態系全体へ波及する可能性があります。</p>
+<p><img src="/images/article/shirakami_sanchi/IMG_4903_edit.jpg" alt="花粉媒介昆虫の写真">
+<em>花粉を媒介する昆虫の写真</em></p>
+<h4 id="移動する野生動物">移動する野生動物</h4>
+<p>2025年、日本ではツキノワグマによる襲撃によって13人が死亡しました。近年、この種に関するリスクは大きな問題となっており、白神山地も例外ではありません。</p>
+<p>白取真理さんによると、かつては多くの人々が山のより高い場所で暮らし、家庭菜園や果樹を育てていました。現在ではそうした住居の多くが放棄されていますが、一部の果樹園はそのまま残されており、クマがそこで餌を得るようになっています。2025年は、クマにとって重要な食料であるブナの実がほとんど実らない年でもありました。非常に発達した嗅覚を持つクマは、人間が植えた果樹の匂いを認識し、食べ物を求めて山から人里へと下りてきます。そして人間の生活圏で遭遇することで、事故が発生します。こうした状況は地域住民に不安をもたらすとともに、白神山地のイメージにも悪影響を及ぼしています。</p>
+<p><img src="/images/article/shirakami_sanchi/539939.jpg" alt="ツキノワグマの写真">
+<em>東京の多摩動物公園で飼育されているニホンツキノワグマ</em></p>
+<p>ニホンジカ (<em>Cervus nippon</em>) の個体数の変化も、森林管理者にとって懸念材料となっています。冬季の積雪量が多いといった環境要因により、白神山地では2015年に初めて個体が確認されるまで、この種は生息していませんでした。ニホンジカの個体数は20世紀半ば以降、日本全国で増加しており、捕食者がいない環境では農作物や自然環境に大きな被害をもたらしています <a href="https://biodyssee.netlify.app/fr/posts/le-cerf-sika/"> (ニホンジカの記事へのリンク)</a>。特に懸念されているのは成熟した樹木で、シカは冬になるとその樹皮を食べます。林野庁は現在、将来的な個体数管理を検討するため、シカの個体数を調査しています。</p>
+<p><img src="/images/article/shirakami_sanchi/DSC01085.jpg" alt="北海道のニホンジカの写真">
+<em>北海道のニホンジカ</em></p>
+<h2 id="守るべき唯一無二の生態系">守るべき唯一無二の生態系</h2>
+<p>幾度もの氷河期を生き延びてきた白神山地の森は、現在、かつての氷河期に温帯地域を覆っていた森林の姿を伝える生きた証人となっています。この山地を訪れることは、単に人里離れた自然環境を探索するだけではありません。そこには、時を遡り、私たちの祖先がどのような環境の中で生きていたのかを知ることのできる、貴重な機会があります。</p>
+<p>20世紀末、白神山地の森は伐採の危機から<em>間一髪で</em>救われました。しかし現在、この森は人間活動がもたらす影響に対して、これまで以上に脆弱な存在となっています。この貴重な森を守り、私たちから何世代も後の人々もまた、悠久の歴史を刻んできた木々の下で感動を味わえるようにすること。それは、今を生きる私たちの責任です。</p>
+
+        
+      </section>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <div></div>
+        
+
+        
+        <a class="group btn btn-outline" href="/ja/posts/%E3%82%B3%E3%82%A6%E3%83%8E%E3%83%88%E3%83%AA%E8%B1%8A%E5%B2%A1%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E7%94%9F%E6%85%8B%E7%B3%BB%E5%86%8D%E7%94%9F%E3%81%AE%E3%82%B7%E3%83%B3%E3%83%9C%E3%83%AB/" title="コウノトリ：豊岡における生態系再生のシンボル">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">次へ</span>
+            <span class="max-w-48 truncate">コウノトリ：豊岡における生態系再生のシンボル</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+
+      
+      <div class="divider"></div>
+
+      <section class="space-y-4">
+        
+
+
+
+
+<article>
+
+  <div id="vcomments"></div>
+<script src="https://unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+  new Valine({
+    el: '#vcomments',
+    appId: '',
+    appKey: '',
+    placeholder: 'Leave a comment...',
+    lang: 'en',
+    avatar: 'mp',
+    visitor: true,
+    requiredFields: ['nick','mail']
+  });
+</script>
+
+
+</article>
+
+
+
+
+
+
+      </section>
+      
+    </article>
+  </div>
+
+  <div class="hidden lg:flex lg:flex-col lg:items-end">
+    
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#数千年の歴史を持つ森">数千年の歴史を持つ森</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#豊かな生態系">豊かな生態系</a></li>
+    <li><a href="#保全センターの取り組み">保全センターの取り組み</a></li>
+    <li><a href="#脅威と今後の展望">脅威と今後の展望</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#守るべき唯一無二の生態系">守るべき唯一無二の生態系</a></li>
+  </ul>
+</nav>
+    
+  </div>
+</div>
+
+
+
+            
+<footer class="px-4 py-4">
+
+
+  <div class="w-full flex flex-col gap-4">
+    <style>
+.partners-footer {
+  text-align: center;
+  margin: 15px 0 5px 0;
+}
+
+.partners-footer h3 {
+  margin-bottom: 12px;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.partners-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.partners-logos img {
+  height: 200px;
+  object-fit: contain;
+  transition: transform .2s ease;
+}
+
+.partners-logos img:hover {
+  transform: scale(1.08);
+}
+</style>
+
+
+<div class="partners-footer">
+  <h3>Nos partenaires</h3>
+
+  <div class="partners-logos">
+    <a href="https://www.agroparistech.fr/partenariats-socioeconomiques/nous-soutenir/fondation-agroparistech" target="_blank">
+      <img src="/images/partners/fondation APT.png" alt="Partenaire 1" />
+    </a>
+
+  </div>
+</div>
+
+
+    <div class="flex justify-between items-center gap-2">
+      <div>
+  
+  <p>© 2026 BiOdyssée</p>
+  
+
+  
+  <p>Tous droits réservés</p>
+  
+</div>
+
+       
+
+    </div>
+  </div>
+
+</footer>
+
+
+<script>
+  function scrollCategories(direction) {
+    const container = document.getElementById("categoriesScroll");
+    const scrollAmount = 300; 
+    container.scrollBy({
+      left: direction * scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+</script>
+
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid dream-grid-about">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">こちらが2026年ミッションのメンバーです。</div>
+
+        <div class="prose dark:prose-invert">
+          <p>こちらは、BiOdysséeの創設メンバーであり、2026年の日本遠征に参加するメンバーの簡単な紹介です。</p>
+<p><img src="/images/nous.jpg" alt="photo équipe"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Hugo </div>
+
+        <div class="prose dark:prose-invert">
+          <p>AgroParisTechで環境マネジメントと工学を学んでいる学生で、古生物学と進化に情熱を持っています🦖🦴🧬。
+将来は自然環境の管理、特にフランスにおける湿地の保全や再生に関わる仕事を目指しています🐸🐟🌿。
+これらの湿地は過去数世紀の間に大きく減少してしまいました。
+昔から種や生態系の進化と変遷に興味があり、それがこのギャップイヤー・プロジェクトに強く惹かれる理由でもあります！</p>
+<p><strong>Contact :</strong>
+<a href="mailto:hugo.roger@agroparistech.fr" target="_blank">hugo.roger@agroparistech.fr</a>
+</p>
+<p><img src="/images/hugo.jpg" alt="photo rando"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Lucie </div>
+
+        <div class="prose dark:prose-invert">
+          <p>環境マネジメントと工学を学ぶ学生であり、海に関するあらゆることに魅了されています🌊。
+仕事と情熱を結びつけたいという思いから、海洋生物学の道を目指しています。
+特に、海洋生態系の保全や管理に関わる仕事をしたいと考えています。
+海の動物たち🐠🐋🐙はもちろん、水中の植物にも強く惹かれており、それらをもっと間近で観察したくてスキューバダイビング🤿をしています。
+このプロジェクトは、私にとって新たな水中環境を発見し🌊🪸🌿、それらに関わる課題を深く理解する絶好のチャンスです。</p>
+<p><strong>Contact :</strong>
+<a href="mailto:lucie.lowagie@agroparistech.fr" target="_blank">lucie.lowagie@agroparistech.fr</a>
+</p>
+<p><img src="/images/lucie-plongee.jpg" alt="photo plongée"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Solal</div>
+
+        <div class="prose dark:prose-invert">
+          <p>農学を学んでおり、歴史🧭⌛🏹と動物行動学（エトロジー）🐁🧠🧪に情熱を持っています。
+この機会を活かして、動物たちが自然な環境でどのように振る舞うかを観察したいと考えています。
+将来的には研究👨‍🔬や高等教育機関での教育🧑‍🏫に携わることを目指しており、このギャップイヤーは、観察力や情報整理・分析の力を高める絶好のチャンスです。
+歴史的な視点と動物の観察を結びつけ、「過去の過ちを繰り返さない」という目的のもとに活動できることこそが、このプロジェクトに惹かれる理由です。</p>
+<p><strong>Contact :</strong>
+<a href="mailto:solal.free@agroparistech.fr" target="_blank">solal.free@agroparistech.fr</a>
+</p>
+<p><img src="/images/solal.jpg" alt="photo qui fait peur"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Théophile </div>
+
+        <div class="prose dark:prose-invert">
+          <p>環境工学を学ぶ学生で、昆虫学、特にアリの研究（ミルメコロジー）🐜に強い関心があります。
+私の目標は、環境分野、特にアリの集団遺伝学的ダイナミクス🧬🐜に関する研究に携わることです。
+私は自然観察を行う団体「Blairoudeurs 🦡」のメンバーでもあり、コルシカ島で行われた「Mission Isula」にて、調査や環境教育活動に参加しました。
+このギャップイヤー・プロジェクトは、そうした経験をさらに広く、よりエキゾチックなスケールで継続できる素晴らしい機会であり、他国の生態系やその管理方法について学び続けるチャンスでもあります。</p>
+<p><strong>Contact :</strong>
+<a href="mailto:theophie.thomas@agroparistech.fr" target="_blank">theophie.thomas@agroparistech.fr</a>
+</p>
+<p><img src="/images/theophile.jpg" alt="photo stylée"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">SNS</div>
+
+        <ul class="menu menu-horizontal flex-wrap w-full px-0 [&_ion-icon]:text-lg">
+  
+
+  
+  <li>
+    <a href="https://www.facebook.com/profile.php?id=61576052068851" target="_blank" title="Facebook">
+      <ion-icon name="logo-facebook"></ion-icon>
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://www.instagram.com/bio_dyssee/" target="_blank" title="Instagram">
+      <ion-icon name="logo-instagram"></ion-icon>
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://www.linkedin.com/company/107400672/admin/dashboard/" target="_blank" title="Linkedin">
+      <ion-icon name="logo-linkedin"></ion-icon>
+    </a>
+  </li>
+  
+  <li>
+    <a href="mailto:biodyssee2026@gmail.com" target="_blank" title="Email">
+      <ion-icon name="mail-outline"></ion-icon>
+    </a>
+  </li>
+  
+</ul>
+
+      </div>
+    </article>
+  </div>
+  
+
+  
+</div>
+
+            
+
+            
+<footer class="px-4 py-4">
+
+
+  <div class="w-full flex flex-col gap-4">
+    <style>
+.partners-footer {
+  text-align: center;
+  margin: 15px 0 5px 0;
+}
+
+.partners-footer h3 {
+  margin-bottom: 12px;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.partners-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.partners-logos img {
+  height: 200px;
+  object-fit: contain;
+  transition: transform .2s ease;
+}
+
+.partners-logos img:hover {
+  transform: scale(1.08);
+}
+</style>
+
+
+<div class="partners-footer">
+  <h3>Nos partenaires</h3>
+
+  <div class="partners-logos">
+    <a href="https://www.agroparistech.fr/partenariats-socioeconomiques/nous-soutenir/fondation-agroparistech" target="_blank">
+      <img src="/images/partners/fondation APT.png" alt="Partenaire 1" />
+    </a>
+
+  </div>
+</div>
+
+
+    <div class="flex justify-between items-center gap-2">
+      <div>
+  
+  <p>© 2026 BiOdyssée</p>
+  
+
+  
+  <p>Tous droits réservés</p>
+  
+</div>
+
+       
+
+    </div>
+  </div>
+
+</footer>
+
+
+<script>
+  function scrollCategories(direction) {
+    const container = document.getElementById("categoriesScroll");
+    const scrollAmount = 300; 
+    container.scrollBy({
+      left: direction * scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+</script>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+  <script src="/js/grid.js"></script>
+
+
+
+
+<script src="/js/main.js"></script>
+
+    
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-2PHJBK75DX"></script>
+      <script>
+        var doNotTrack = false;
+        if ( true ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-2PHJBK75DX');
+        }
+      </script>
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
+

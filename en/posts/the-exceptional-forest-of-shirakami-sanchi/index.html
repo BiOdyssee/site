@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en"  
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=6879&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Exceptional Forest of Shirakami-Sanchi | BiOdyssée</title>
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+  
+
+    
+
+<link rel="canonical" href="http://localhost:6879/en/posts/the-exceptional-forest-of-shirakami-sanchi/" />
+
+
+
+<meta name="author" content="hugo" />
+<meta name="description" content=" In the north of Japan’s largest island, in the heart of the Shirakami Mountains, lies a forest more than 8,000 years old.
+" />
+
+
+<meta name="keywords" content="Everything you need to know about Expedition 2026">
+
+
+
+<meta name="generator" content="Hugo 0.163.2">
+
+
+<meta property="og:url" content="http://localhost:6879/en/posts/the-exceptional-forest-of-shirakami-sanchi/">
+	<meta property="og:site_name" content="BiOdyssée">
+	<meta property="og:title" content="The Exceptional Forest of Shirakami-Sanchi">
+	<meta property="og:description" content="In the north of Japan’s largest island, in the heart of the Shirakami Mountains, lies a forest more than 8,000 years old.">
+	<meta property="og:locale" content="en">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="posts">
+		<meta property="article:published_time" content="2026-09-06T14:00:00+01:00">
+		<meta property="article:modified_time" content="2026-09-06T14:00:00+01:00">
+
+
+
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="The Exceptional Forest of Shirakami-Sanchi">
+	<meta name="twitter:description" content="In the north of Japan’s largest island, in the heart of the Shirakami Mountains, lies a forest more than 8,000 years old.">
+
+
+
+
+<link rel="stylesheet" href="/css/output.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+<script src="//unpkg.com/valine@1.5.2/dist/Valine.min.js"></script>
+
+
+
+
+
+
+
+    
+    <link rel="stylesheet" href="/css/custom.css" />
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="py-4"> 
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="Flip it!">
+        <div class="h-10 rounded-full">
+          <img src="/images/logo.jpg" alt="BiOdyssée" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="http://localhost:6879/" class="text-lg font-semibold cursor-pointer">
+          BiOdyssée
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm" style="color: #ffffff" >À la (re)découverte du vivant</div>
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+<li>
+  <div role="link" tabindex="0" class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title="About">
+    <ion-icon name="information-circle"></ion-icon>About</div>
+</li>
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/en/search" title="Search">
+    <ion-icon name="search"></ion-icon>
+    Search
+  </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/en/posts" title="Archives">
+    <ion-icon name="archive"></ion-icon>
+    Archives
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/en/categories" title="All Categories">
+    <ion-icon name="grid"></ion-icon>
+    All Categories
+  </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="menu-title px-2 pt-2">Langue</li>
+
+  <li>
+    <a href="/fr" class="inline-flex items-center p-2 text-black hover:underline">
+      Français
+    </a>
+  </li>
+
+  <li>
+    <a href="/ja" class="inline-flex items-center p-2 text-black hover:underline">
+      日本語
+    </a>
+  </li>
+
+  <li>
+    <a href="/en" class="inline-flex items-center p-2 text-black hover:underline">
+      English
+    </a>
+  </li>
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      <div role="link" tabindex="0"
+        class="text-sm font-semibold cursor-pointer hover:underline"
+        @click="flip = !flip"
+        title="About"
+      >About</div>
+      
+      
+
+      
+      
+
+      
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/en/search" title="Search">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+
+
+
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/en/posts" title="Archives">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/en/categories" title="All Categories">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+
+
+
+
+
+      
+
+      
+
+      
+
+
+ 
+<div class="dropdown dropdown-end">
+  <div tabindex="0" role="button" class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" aria-label="Select an option">
+  <ion-icon name="earth-outline"> </ion-icon> 
+  
+  </div>
+  <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-xl">
+    
+      <li>
+        <a href="/fr" class="inline-flex items-center p-2 cursor-pointer" style = "color: #000000">
+          Français
+        </a>
+      </li>
+    
+      <li>
+        <a href="/ja" class="inline-flex items-center p-2 cursor-pointer" style = "color: #000000">
+          日本語
+        </a>
+      </li>
+    
+      <li>
+        <a href="/en" class="inline-flex items-center p-2 cursor-pointer" style = "color: #000000">
+          English
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+    </section>
+  </div>
+</nav>
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+           
+
+          <div class="container">
+            
+<div class="lg:grid lg:grid-cols-4 gap-4 mt-4 px-4">
+  <div class="hidden lg:block">
+    
+  </div>
+
+  <div class="lg:col-span-2">
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+	<meta itemprop="name" content="The Exceptional Forest of Shirakami-Sanchi">
+	<meta itemprop="description" content="In the north of Japan’s largest island, in the heart of the Shirakami Mountains, lies a forest more than 8,000 years old.">
+	<meta itemprop="datePublished" content="2026-09-06T14:00:00+01:00">
+	<meta itemprop="dateModified" content="2026-09-06T14:00:00+01:00">
+	<meta itemprop="wordCount" content="1431">
+	<meta itemprop="keywords" content="Everything you need to know about Expedition 2026">
+
+      <header>
+        <h1 itemprop="headline">The Exceptional Forest of Shirakami-Sanchi</h1>
+        <p class="text-sm">
+          
+            Sunday, Sep 6, 2026
+          
+
+          | <span>7 minute read</span>
+
+          
+          | <span>Updated at
+            
+              Sunday, Sep 6, 2026
+            </span>
+          
+        </p>
+
+        
+        <div class="flex justify-between">
+          
+            
+
+
+<div class="flex items-center">
+  
+    <div class="avatar mr-1">
+      <div class="w-8 rounded-full">
+        <img class="my-0" src="/images/authors/avatar_hugo.jpg" alt="Hugo" />
+      </div>
+    </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+    
+      
+        <span itemprop="name">Hugo</span>
+      
+    
+  </span>
+</div>
+
+          
+
+          
+
+<div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=http://localhost:6879/en/posts/the-exceptional-forest-of-shirakami-sanchi/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="text-gray-500 group-hover:text-white" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=The%20Exceptional%20Forest%20of%20Shirakami-Sanchi%20http://localhost:6879/en/posts/the-exceptional-forest-of-shirakami-sanchi/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="text-gray-500 group-hover:text-white" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div> 
+
+        </div>
+      </header>
+
+      <section id="dream-single-post-content" itemprop="articleBody">
+       
+    <img class="w-full z-30" src="/images/article/shirakami_sanchi/DSC01736.jpg" alt="The Exceptional Forest of Shirakami-Sanchi" />
+
+
+  <hr>
+<p>In the north of Japan’s largest island, in the heart of the Shirakami Mountains, lies a forest more than 8,000 years old.</p>
+<p>Beech trees have dominated this region for millennia, surviving changes in climate and an ice age. Today, the Shirakami-Sanchi forest is the largest pristine beech forest in East Asia. Of the 130,000 hectares that make up the forested mountain range, 17,000 hectares are inscribed as a UNESCO World Heritage Site.</p>
+<p>Mari Shiratori, an environmental advisor at the Shirakami-Sanchi World Heritage Conservation Center, gave us the opportunity to learn more about this unique ecosystem.</p>
+<h2 id="an-ancient-forest">An ancient forest</h2>
+<h4 id="origins-of-its-formation">Origins of its formation</h4>
+<p>Following the global warming of the Earth’s climate at the end of the last ice age 10,000 years ago, flora and fauna gradually migrated northward around the world. The beech trees that make up the present-day forest followed this migration, and it is therefore estimated that the Shirakami-Sanchi forest formed around 8,000 years ago.</p>
+<p>This northward migration of plant species was possible in Japan, but this was not the case everywhere in the world. Similar beech forests also existed in Europe and North America during the same period. However, on these two continents, vast natural barriers such as mountain ranges and large lakes extend along an east-west axis. These natural barriers greatly limited the migration of plant species during the successive glacial periods of the past 2.5 million years.</p>
+<p><img src="/images/article/shirakami_sanchi/DSC01742.jpg" alt="Photo of the forest under the snow">
+<em>Photograph of the Shirakami-Sanchi forest under the snow</em></p>
+<p>With a territory free from natural barriers of this kind, Japanese forests survived successive glacial periods while retaining their diversity. Today, the Shirakami-Sanchi forest is a remnant of plant communities dating back several million years.</p>
+<h4 id="forestry-activity">Forestry activity</h4>
+<p>At the end of the 16th century, large quantities of timber were harvested from forests in the region for the construction of monuments. Trees were cut in the mountains and then transported by sea to western Japan. During the 17th century, the forestry industry expanded further, until the authorities issued a key declaration: “The mountains are the treasures of the nation; if the mountains become impoverished, the country will become impoverished as well.” Thanks to its mountainous topography, the Shirakami-Sanchi forest was spared through these conservation measures.</p>
+<p>Following the Second World War, Japan’s demand for timber increased once again, and the nation turned to forests that had previously been spared from logging. In 1982, construction began on two forest roads leading into the heart of the forest, threatening a region that had until then remained untouched. The Nature Conservation Society of Japan intervened, bringing the construction work to a halt. The collection of objections from local residents eventually led to the complete abandonment of the project. In 1990, the Forestry Agency, part of Japan’s Ministry of the Environment, designated the Shirakami-Sanchi forest as a “Protected Forest Ecosystem.”</p>
+<p><img src="/images/article/shirakami_sanchi/DSC01560.jpg" alt="Photo of sunset"></p>
+<p>Today, around 69% of Japan’s territory is covered by forest. However, Mari Shiratori points out that “despite the large area covered by forests in Japan, old-growth forests are quite rare.” Indeed, primary forests—that is, forests that have never been logged or significantly modified by humans—are estimated to account for around 4% of Japan’s total forest area. This makes the Shirakami-Sanchi forest one of the last forest ecosystems to have remained untouched by logging.</p>
+<h2 id="a-rich-ecosystem">A rich ecosystem</h2>
+<p>The distinctive character of this forest lies in its plant composition, dominated by the Japanese beech (<em>Fagus crenata</em>).</p>
+<p>Elsewhere in the world, forests exposed to such harsh winter climates are mainly dominated by conifers. Yet deciduous forests often support richer biodiversity than coniferous forests. Tender leaves such as those of beech trees provide a much more accessible source of nutrients for many herbivores than conifer needles. In addition, fallen leaves provide the soil with a lasting supply of organic matter and improve the water cycle, whereas tough, tannin-rich conifer needles decompose less readily and acidify the soil beneath them.</p>
+<p>Mari Shiratori adds that the Japanese beech (<em>Fagus crenata</em>) is very different from the beech commonly found in Europe (<em>Fagus sylvatica</em>). The fruits produced by beech trees, known as beechnuts, are dry fruits rich in protein and fat, resembling small chestnuts. In Europe, the beechnuts produced are small and tough, whereas those of Japanese beech trees are much larger and more abundant. They therefore play a central role in the ecosystem, serving as a staple food source for a wide variety of animals.</p>
+<p><img src="/images/article/shirakami_sanchi/01579166.jpg" alt="Photo of a beechnut">
+<em>Photograph of a beechnut, the fruit produced by the beech tree</em></p>
+<p>Thanks to its productive and diverse flora, the forest supports particularly rich wildlife. At the top of the food chain are the Japanese black bear (<em>Ursus thibetanus</em> ssp. <em>japonicus</em>), the Japanese serow (<em>Capricornis crispus</em>) and the Japanese macaque (<em>Macaca fuscata</em>) <a href="https://biodyssee.netlify.app/fr/posts/le-macaque-japonais/"> (link to the article about the Japanese Macaque)</a>. The forest is home to 90 bird species, the largest of which include the Mountain Hawk-Eagle (<em>Nisaetus nipalensis</em>), the Golden Eagle (<em>Aquila chrysaetos</em>) and the Black Woodpecker (<em>Dryocopus martius</em>). Along with rodents, they actively contribute to the dispersal of beechnuts and other seeds. In addition, the clear waters flowing through the forest provide suitable habitats for the 13 amphibian species and 9 reptile species found there, which is remarkably high for an ecosystem with such a cold climate.</p>
+<p><img src="/images/article/shirakami_sanchi/DSC00627_1.jpg" alt="Photo of a Great Spotted Woodpecker">
+<em>Photograph of a Great Spotted Woodpecker</em></p>
+<p>The intact ecosystems and exceptional ecological and biological processes of the Shirakami-Sanchi forest led to its designation as one of Japan’s first UNESCO World Heritage Sites in 1993.</p>
+<h2 id="conservation-center-initiatives">Conservation center initiatives</h2>
+<p>Following its inscription as a UNESCO World Heritage Site, a first center was built in Aomori Prefecture, to the north of the forest. A second center was subsequently built in 1998 in Akita Prefecture, to the south of the forest. This is the Shirakami-Sanchi World Heritage Conservation Center, where Mari Shiratori currently works.</p>
+<p>For Mari Shiratori, raising public awareness is essential to ensuring the conservation of the forest, and this is precisely the center’s main objective. Inside, visitors can find a large exhibition as well as informative brochures about the forest, its history and its biodiversity. Guides offer tours into the heart of the forest, allowing visitors to experience its atmosphere for themselves. Alongside these activities, the center collects climate and field data, contributing to the monitoring of the forested mountain range.</p>
+<p><img src="/images/article/shirakami_sanchi/DSC_9094.jpg" alt="Photo of the conservation center">
+<em>Photograph of the Shirakami-Sanchi World Heritage Conservation Center</em></p>
+<p>Mari Shiratori hopes to attract more and more visitors and introduce the beauty of this place to as many people as possible.</p>
+<h2 id="threats-and-future-prospects">Threats and future prospects</h2>
+<p>Despite its protected status and the measures implemented by conservation organizations, several threats loom over the future of the forest.</p>
+<h4 id="climate-change">Climate change</h4>
+<p>Climate change remains the greatest uncertainty regarding the long-term survival of the forest. With an average lifespan of 150 to 300 years, mature beech trees can prove resilient to extreme climatic events. Younger individuals, however, may struggle to grow in an environment that is no longer suitable for them. A general rise in temperatures would gradually make the environment more favorable to the growth of other deciduous species, leading to a decline in beech populations.</p>
+<p>On the other hand, if the abundance and diversity of pollinators continue to decline, this could compromise the ability of beech trees to produce sufficient quantities of beechnuts, with potential consequences for the entire ecosystem.</p>
+<p><img src="/images/article/shirakami_sanchi/IMG_4903_edit.jpg" alt="Photo of a pollinator">
+<em>Photograph of a pollinating insect</em></p>
+<h4 id="wildlife-on-the-move">Wildlife on the move</h4>
+<p>In 2025, 13 people died as a result of black bear attacks in Japan. The risks associated with this species have become a major concern in recent years, and the Shirakami-Sanchi forest has not been spared from the issue.</p>
+<p>Mari Shiratori explains that in the past, many people lived higher up in the mountains, where they maintained vegetable gardens and fruit trees. Many of these homes have since been abandoned, but some orchards remain, providing bears with a source of food. The year 2025 was marked by an almost complete absence of beech seeds, despite their importance in the bears’ diet. Thanks to their highly developed sense of smell, bears recognize the scents of fruit trees planted by humans and descend from the mountains towards human settlements in search of food, where accidents occur. This creates insecurity for local residents and damages the image of the forest.</p>
+<p><img src="/images/article/shirakami_sanchi/539939.jpg" alt="Photo of a black bear">
+<em>Photograph of a captive Japanese black bear at Tama Zoo in Tokyo</em></p>
+<p>Changes in Sika deer (<em>Cervus nippon</em>) populations are also a source of concern for forest managers. Due to environmental factors such as the large amount of snow in winter, the forest did not support this species before the first individual was identified in 2015. Sika deer numbers have been increasing throughout Japan since the mid-20th century, and in the absence of predators, they cause significant damage to crops and natural</p>
+
+        
+      </section>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <div></div>
+        
+
+        
+        <a class="group btn btn-outline" href="/en/posts/the-oriental-stork-a-symbol-of-ecological-restoration-in-toyooka/" title="The Oriental Stork: A Symbol of Ecological Restoration in Toyooka">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 group-hover:text-neutral-content/60 text-xs font-normal">Next page</span>
+            <span class="max-w-48 truncate">The Oriental Stork: A Symbol of Ecological Restoration in Toyooka</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+
+      
+      <div class="divider"></div>
+
+      <section class="space-y-4">
+        
+
+
+
+
+<article>
+
+  <div id="vcomments"></div>
+<script src="https://unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+  new Valine({
+    el: '#vcomments',
+    appId: '',
+    appKey: '',
+    placeholder: 'Leave a comment...',
+    lang: 'en',
+    avatar: 'mp',
+    visitor: true,
+    requiredFields: ['nick','mail']
+  });
+</script>
+
+
+</article>
+
+
+
+
+
+
+      </section>
+      
+    </article>
+  </div>
+
+  <div class="hidden lg:flex lg:flex-col lg:items-end">
+    
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#an-ancient-forest">An ancient forest</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#a-rich-ecosystem">A rich ecosystem</a></li>
+    <li><a href="#conservation-center-initiatives">Conservation center initiatives</a></li>
+    <li><a href="#threats-and-future-prospects">Threats and future prospects</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    
+  </div>
+</div>
+
+
+
+            
+<footer class="px-4 py-4">
+
+
+  <div class="w-full flex flex-col gap-4">
+    <style>
+.partners-footer {
+  text-align: center;
+  margin: 15px 0 5px 0;
+}
+
+.partners-footer h3 {
+  margin-bottom: 12px;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.partners-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.partners-logos img {
+  height: 200px;
+  object-fit: contain;
+  transition: transform .2s ease;
+}
+
+.partners-logos img:hover {
+  transform: scale(1.08);
+}
+</style>
+
+
+<div class="partners-footer">
+  <h3>Nos partenaires</h3>
+
+  <div class="partners-logos">
+    <a href="https://www.agroparistech.fr/partenariats-socioeconomiques/nous-soutenir/fondation-agroparistech" target="_blank">
+      <img src="/images/partners/fondation APT.png" alt="Partenaire 1" />
+    </a>
+
+  </div>
+</div>
+
+
+    <div class="flex justify-between items-center gap-2">
+      <div>
+  
+  <p>© 2026 BiOdyssée</p>
+  
+
+  
+  <p>Tous droits réservés</p>
+  
+</div>
+
+       
+
+    </div>
+  </div>
+
+</footer>
+
+
+<script>
+  function scrollCategories(direction) {
+    const container = document.getElementById("categoriesScroll");
+    const scrollAmount = 300; 
+    container.scrollBy({
+      left: direction * scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+</script>
+
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid dream-grid-about">
+  
+  
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Meet the Mission 2026 team</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Here&rsquo;s a brief introduction to the founding team of BiOdyssée, who will be taking part in the 2026 expedition to Japan.</p>
+<p><img src="/images/nous.jpg" alt="photo équipe"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Hugo </div>
+
+        <div class="prose dark:prose-invert">
+          <p>As a student in Environmental Management and Engineering at AgroParisTech, I’m passionate about paleontology and evolution 🦖🦴🧬. I aspire to work in the field of natural area management, specifically in the conservation or restoration of wetlands in France 🐸🐟🌿, which have lost a significant portion of their surface area over the past centuries. I’ve always been fascinated by the evolution of species and ecosystems over time, which is why this gap year project is such a strong source of motivation for me!</p>
+<p><strong>Contact :</strong>
+<a href="mailto:hugo.roger@agroparistech.fr" target="_blank">hugo.roger@agroparistech.fr</a>
+</p>
+<p><img src="/images/hugo.jpg" alt="photo rando"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Lucie </div>
+
+        <div class="prose dark:prose-invert">
+          <p>Student in Environmental Management and Engineering, I’m fascinated by just about everything related to the ocean 🌊. Wanting to combine work and passion, I’m pursuing a path in marine biology. More specifically, I’d like to work in marine ecosystem conservation or management. I’m deeply passionate about marine wildlife 🐠🐋🐙 as well as aquatic flora, and it’s to get a closer look at it all that I practice scuba diving 🤿. This project is an opportunity for me to explore new aquatic environments 🌊🪸🌿 and better understand the challenges they face.</p>
+<p><strong>Contact :</strong>
+<a href="mailto:lucie.lowagie@agroparistech.fr" target="_blank">lucie.lowagie@agroparistech.fr</a>
+</p>
+<p><img src="/images/lucie-plongee.jpg" alt="photo plongée"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Solal</div>
+
+        <div class="prose dark:prose-invert">
+          <p>Student in agronomy and passionate about history 🧭⌛🏹 and ethology 🐁🧠🧪, I hope to use this opportunity to observe animal behavior in their natural environment. Later on, I would like to pursue a career in research 👨‍🔬 or teach in higher education 🧑‍🏫, and this gap year would allow me to develop my analytical and observational skills. The possibility of combining historical research with animal observation — all with the goal of avoiding the mistakes of the past — is what makes this project so meaningful to me.</p>
+<p><strong>Contact :</strong>
+<a href="mailto:solal.free@agroparistech.fr" target="_blank">solal.free@agroparistech.fr</a>
+</p>
+<p><img src="/images/solal.jpg" alt="photo qui fait peur"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Théophile </div>
+
+        <div class="prose dark:prose-invert">
+          <p>As an environmental engineering student with a passion for entomology and myrmecology in particular 🐜, my aim is to do environmental research, particularly into the genetic dynamics of 🧬🐜 populations (of ants of course). I&rsquo;m part of the naturalist association ‘les “Blairoudeurs 🦡”’ with which I went out to do some prospecting and awareness-raising in Corsica during the Isula Mission. This gap year project is a great opportunity to continue this experience, but on a much larger and more exotic scale, while continuing to learn about different ecosystems and how they are managed in another country.</p>
+<p><strong>Contact :</strong>
+<a href="mailto:theophie.thomas@agroparistech.fr" target="_blank">theophie.thomas@agroparistech.fr</a>
+</p>
+<p><img src="/images/theophile.jpg" alt="photo stylée"></p>
+
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  
+
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Social Links</div>
+
+        <ul class="menu menu-horizontal flex-wrap w-full px-0 [&_ion-icon]:text-lg">
+  
+
+  
+  <li>
+    <a href="https://www.facebook.com/profile.php?id=61576052068851" target="_blank" title="Facebook">
+      <ion-icon name="logo-facebook"></ion-icon>
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://www.instagram.com/bio_dyssee/" target="_blank" title="Instagram">
+      <ion-icon name="logo-instagram"></ion-icon>
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://www.linkedin.com/company/107400672/admin/dashboard/" target="_blank" title="Linkedin">
+      <ion-icon name="logo-linkedin"></ion-icon>
+    </a>
+  </li>
+  
+  <li>
+    <a href="mailto:biodyssee2026@gmail.com" target="_blank" title="Email">
+      <ion-icon name="mail-outline"></ion-icon>
+    </a>
+  </li>
+  
+</ul>
+
+      </div>
+    </article>
+  </div>
+  
+
+  
+</div>
+
+            
+
+            
+<footer class="px-4 py-4">
+
+
+  <div class="w-full flex flex-col gap-4">
+    <style>
+.partners-footer {
+  text-align: center;
+  margin: 15px 0 5px 0;
+}
+
+.partners-footer h3 {
+  margin-bottom: 12px;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.partners-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.partners-logos img {
+  height: 200px;
+  object-fit: contain;
+  transition: transform .2s ease;
+}
+
+.partners-logos img:hover {
+  transform: scale(1.08);
+}
+</style>
+
+
+<div class="partners-footer">
+  <h3>Nos partenaires</h3>
+
+  <div class="partners-logos">
+    <a href="https://www.agroparistech.fr/partenariats-socioeconomiques/nous-soutenir/fondation-agroparistech" target="_blank">
+      <img src="/images/partners/fondation APT.png" alt="Partenaire 1" />
+    </a>
+
+  </div>
+</div>
+
+
+    <div class="flex justify-between items-center gap-2">
+      <div>
+  
+  <p>© 2026 BiOdyssée</p>
+  
+
+  
+  <p>Tous droits réservés</p>
+  
+</div>
+
+       
+
+    </div>
+  </div>
+
+</footer>
+
+
+<script>
+  function scrollCategories(direction) {
+    const container = document.getElementById("categoriesScroll");
+    const scrollAmount = 300; 
+    container.scrollBy({
+      left: direction * scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+</script>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+  <script src="/js/grid.js"></script>
+
+
+
+
+<script src="/js/main.js"></script>
+
+    
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-2PHJBK75DX"></script>
+      <script>
+        var doNotTrack = false;
+        if ( true ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-2PHJBK75DX');
+        }
+      </script>
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
+
