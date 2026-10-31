@@ -221,42 +221,6 @@
                 href="https://biodyssee.netlify.app/en/posts/marine-emblematic-species-profile/"
                 />
   </url><url>
-    <loc>https://biodyssee.netlify.app/categories/rubrique_fourmi/</loc>
-    <lastmod>2025-12-22T14:00:00+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://biodyssee.netlify.app/categories/rubrique_fourmi/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://biodyssee.netlify.app/ja/categories/rubrique_fourmi/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://biodyssee.netlify.app/en/categories/rubrique_fourmi/"
-                />
-  </url><url>
-    <loc>https://biodyssee.netlify.app/fr/posts/les-fourmis-champignonnistes/</loc>
-    <lastmod>2025-12-22T14:00:00+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://biodyssee.netlify.app/fr/posts/les-fourmis-champignonnistes/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://biodyssee.netlify.app/ja/posts/%E8%8F%8C%E6%A0%BD%E5%9F%B9%E3%82%A2%E3%83%AA/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://biodyssee.netlify.app/en/posts/fungus-growing-ants/"
-                />
-  </url><url>
     <loc>https://biodyssee.netlify.app/galerie/guadeloupe/cactus_tete_anglais/</loc>
     <lastmod>2025-12-12T14:00:00+01:00</lastmod>
     <xhtml:link
@@ -371,27 +335,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://biodyssee.netlify.app/en/galerie/guadeloupe/pelican_brun/"
-                />
-  </url><url>
-    <loc>https://biodyssee.netlify.app/fr/posts/%C3%A0-la-d%C3%A9couverte-des-coraux/</loc>
-    <lastmod>2025-11-10T14:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://biodyssee.netlify.app/categories/coraux/</loc>
-    <lastmod>2025-11-10T14:00:00+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://biodyssee.netlify.app/categories/coraux/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://biodyssee.netlify.app/ja/categories/coraux/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://biodyssee.netlify.app/en/categories/coraux/"
                 />
   </url><url>
     <loc>https://biodyssee.netlify.app/galerie/galerie_guadeloupe/</loc>
@@ -541,27 +484,6 @@
                 href="https://biodyssee.netlify.app/en/posts/a-bit-of-history-to-define-biodiversity/"
                 />
   </url><url>
-    <loc>https://biodyssee.netlify.app/categories/histoire/</loc>
-    <lastmod>2025-07-08T14:00:00+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://biodyssee.netlify.app/categories/histoire/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://biodyssee.netlify.app/ja/categories/histoire/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://biodyssee.netlify.app/en/categories/histoire/"
-                />
-  </url><url>
-    <loc>https://biodyssee.netlify.app/fr/posts/histoire_paleolitique/</loc>
-    <lastmod>2025-07-08T14:00:00+01:00</lastmod>
-  </url><url>
     <loc>https://biodyssee.netlify.app/fr/posts/la-grue-du-japon/</loc>
     <lastmod>2025-06-26T14:00:00+01:00</lastmod>
     <xhtml:link
@@ -578,27 +500,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://biodyssee.netlify.app/en/posts/the-red-crowned-crane/"
-                />
-  </url><url>
-    <loc>https://biodyssee.netlify.app/fr/posts/glossaire-de-la-rubrique-fourmi/</loc>
-    <lastmod>2025-06-08T14:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://biodyssee.netlify.app/fr/posts/la-place-de-la-fourmi-dans-larbre-du-vivant/</loc>
-    <lastmod>2025-06-04T14:00:00+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://biodyssee.netlify.app/fr/posts/la-place-de-la-fourmi-dans-larbre-du-vivant/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://biodyssee.netlify.app/ja/posts/%E7%94%9F%E5%91%BD%E3%81%AE%E6%A8%B9%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E3%82%A2%E3%83%AA%E3%81%AE%E4%BD%8D%E7%BD%AE/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://biodyssee.netlify.app/en/posts/the-place-of-the-ant-in-the-tree-of-life/"
                 />
   </url><url>
     <loc>https://biodyssee.netlify.app/fr/posts/quest-ce-que-la-biodiversit%C3%A9/</loc>
@@ -819,6 +720,23 @@
                 href="https://biodyssee.netlify.app/en/search/"
                 />
   </url><url>
+    <loc>https://biodyssee.netlify.app/categories/histoire/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://biodyssee.netlify.app/categories/histoire/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://biodyssee.netlify.app/ja/categories/histoire/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://biodyssee.netlify.app/en/categories/histoire/"
+                />
+  </url><url>
     <loc>https://biodyssee.netlify.app/categories/flore/</loc>
     <xhtml:link
                 rel="alternate"
@@ -834,6 +752,40 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://biodyssee.netlify.app/en/categories/flore/"
+                />
+  </url><url>
+    <loc>https://biodyssee.netlify.app/categories/rubrique_fourmi/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://biodyssee.netlify.app/categories/rubrique_fourmi/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://biodyssee.netlify.app/ja/categories/rubrique_fourmi/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://biodyssee.netlify.app/en/categories/rubrique_fourmi/"
+                />
+  </url><url>
+    <loc>https://biodyssee.netlify.app/categories/coraux/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://biodyssee.netlify.app/categories/coraux/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://biodyssee.netlify.app/ja/categories/coraux/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://biodyssee.netlify.app/en/categories/coraux/"
                 />
   </url><url>
     <loc>https://biodyssee.netlify.app/tags/</loc>
